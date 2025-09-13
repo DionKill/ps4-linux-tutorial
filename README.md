@@ -196,6 +196,8 @@ You're done! Plug your drive in the PS4, and go to the next step!
 
 </details>
 
+---
+
 After that, either launch your payload with Payload Guest, or use a payload website, such as:
 - [PS4boot.github.io](https://ps4boot.github.io/) (5.05-6.72)
 - [PS4boot.duckdns.org/pppwn/](https://ps4boot.duckdns.org/pppwn/) (9.00-12.02)
