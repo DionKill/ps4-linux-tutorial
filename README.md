@@ -7,7 +7,7 @@ In this very professional tutorial, I'll go over how to install Linux on your PS
 > 
 > All original sources are mentioned (maybe), none of this stuff is mine, I'm just reuploading for ease of use, do not send a cease and desist letter to my house, I'm just trying to help you guys out.
 > 
- > Thanks to all the amazing developers who work on the PS4.
+> Thanks to all the amazing developers who work on the PS4.
 
 # Quick Q&A
 > [!TIP]
@@ -37,6 +37,7 @@ In this very professional tutorial, I'll go over how to install Linux on your PS
 </details>
 
 Done with the boring stuff, let's start with the real tutorial:
+
 # Preparations
 In order to install Linux on your PS4, we need some things:
 1. A compatible, moddable PS4 (newest exploit is the BD-JB by Gezine, [available here](https://github.com/Gezine/BD-JB-1250))
@@ -63,6 +64,7 @@ In order to install Linux on your PS4, we need some things:
 	1. [Modded Warfare](https://www.youtube.com/@MODDEDWARFARE)
 	2. ???
 5. Mental Health Institute of your choice (optional, if you feel overwhelmed)
+
 # Getting the required files
 Because getting this files is a complete and utter joke, I've decided that reuploading them myself is probably the better idea. I'll be reuploading this stuff on this GitHub. Again do not send a cease and desist letter to my house like the Maryo company.
 ## Kernel
@@ -70,6 +72,7 @@ Let's start with the kernels: they are very important as they have the software 
 
 >[!NOTE]
 >In this small tutorial I'll be helping you to use this table. Do you see it? Great, read it! Download the one with your same Southbridge! If one doesn't work, skill issue.
+>
 >No, really, try another version.
 
 | Kernel version | Download | Source code | Developer | Extra info                                                                                                       |
@@ -82,6 +85,7 @@ Let's start with the kernels: they are very important as they have the software 
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums.
 You can download it. If you feel like it. Oh, you do? Here it is.
+
 ## Distros (that you ACTUALLY wanna use)
 Yes! Finally the time has come. Which one will you choose?
 Honestly there's a neptillion distros. Most however, are very outdated, especially the ones on the PS4Linux's website.
@@ -98,11 +102,13 @@ IF you choose the CachyOS installation, remember to use the specified kernel, an
 
 >[!TIP]
 >Want to add more distros? Make an issue and your wish shall be granted.
+>
 >Want to make your own? [Check this out!](https://ps4linux.com/make-ps4-linux-distro/)
 
 ## Payloads (if you want offline use)
 [Download them from here](https://github.com/ps4boot/ps4-linux-payloads), and extract the one you want in your `data/payloads` folder. Remember to use the one that is for your Southbridge (you have understood that by now).
 If it doesn't have any particularly append, it's for both Aeolia and Belize.
+
 # Let'sa install!
 Installing Linux on the PS4 is surprisingly easy, and it helps you free your mind from the hardships of everyday life.
 Just kidding, it's fucking terrible.
@@ -144,6 +150,7 @@ Anyways, here we go: (queue dream's speedrunning music)
 Now the fun part, copying the files to wherever you want to install your distro.
 There are three routes: one is the internal drive, then one that might work if you have an expensive (more than 15$ or € or $ or whatever) "USB to SATA" adapter, and one that works on every adapter and USB device (even pendrives).
 
+### Internal HDD installation
 > [!CAUTION]
 > This shit on the internal HDD is slow. Be careful and prepare your balls for imminent explosion.
 
@@ -158,6 +165,7 @@ When installed, you can remove your Linux installation by removing the above fil
 
 </details>
 
+### External Drive installation methods
 > [!WARNING]
 > IF you choose the external drive route, remember we'll format the drive! Back up any existing data you care about.
 
