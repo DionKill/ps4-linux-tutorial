@@ -2,7 +2,7 @@
 
 In this very professional tutorial, I'll go over how to install Linux on your PS4. I've made this because the PS4Linux.com website hasn't been updated in ages and their documentation is pretty bad (still, I appreciate their work). This tutorial focuses ONLY on modern versions of Linux. That's what people want, and that's also the tutorial that nobody wants to make. For older stuff, check out... the internet?
 
-> [!INFO]
+> [!NOTE]
 > This tutorial is mainly meant to showcase newer methods that nobody is really talking about. If you break something, it's your fault.
 > 
 > All original sources are mentioned (maybe), none of this stuff is mine, I'm just reuploading for ease of use, do not send a cease and desist letter to my house, I'm just trying to help you guys out.
@@ -12,9 +12,11 @@ In this very professional tutorial, I'll go over how to install Linux on your PS
 # Quick Q&A
 > [!TIP]
 > For your average newbie questions, click down here
+
 <details>
   <summary>Questions you probably have</summary>
 
+## Questions
 1. Oh my god! Linux? Eww!
 	1. ???
 2. What? Installing? I knew it. You are just a ragebaiter who wants to ERASE my precious PS4's HDD! How dare you!
@@ -22,12 +24,14 @@ In this very professional tutorial, I'll go over how to install Linux on your PS
 	2. You can also use an external drive and it'll work wonders (DO NOT use a USB stick or HDD if you want to keep your sanity) and it won't take up space on your preciously dying hard drive :3
 3. This shit doesn't work. You're a liar!
 	1. Honestly I wish I could help you out. If the tutorial doesn't work, try asking for help on the [PS4Linux forums](ps4linux.com/forums/) or their Discord server.
-4. Can I play my PC games on Linux?
+4. How does it run?
+    1. This is a good question. On an external SSD, it's really usable. Though the CPU is a huge limiting factor.
+6. Can I play my PC games on Linux?
 	1. Of course. That's the whole point of doing this, no?
 	2. Not all games will run though. Set your expectations low.
-5. But... How does it work?
+7. But... How does it work?
 	1. I have no idea. Judging by how the PS4 reacts, I'm assuming it gets tricked into going into sleep mode, and then resumes immediately which wakes up the console with it's OS erased from memory and only the Linux kernel loaded. This is just speculation though, because I like to spread misinformation on the internet and can't be bothered to do my homework. Oh, and I use arch btw (only on PS4).
-6. I have encountered issues and want to help out. Can I make an issue so the guide can be updated?
+8. I have encountered issues and want to help out. Can I make an issue so the guide can be updated?
 	1. Yes! Please do not gatekeep information!
 
 </details>
@@ -64,7 +68,7 @@ Because getting this files is a complete and utter joke, I've decided that reupl
 ## Kernel
 Let's start with the kernels: they are very important as they have the software that controls all of the PS4's hardware. There's plenty of them, and I'll list them from newer to older:
 
->[!TUTORIAL]
+>[!NOTE]
 >In this small tutorial I'll be helping you to use this table. Do you see it? Great, read it! Download the one with your same Southbridge! If one doesn't work, skill issue.
 >No, really, try another version.
 
@@ -74,6 +78,7 @@ Let's start with the kernels: they are very important as they have the software 
 | 5.15.25-rc1    |          | N/A         | saya      | Necessary for CachyOS. Multiple power LED colors supported. LTO. Includes the bootargs.txt.                      |
 | 5.15.15        |          | N/A         | saya      | Multiple power LED colors supported. LTO.                                                                        |
 | ???            |          |             |           | I'm too bored to add more.<br>[For now, check this.](https://ps4linux.com/downloads/#PS4_Linux_Kernel_Downloads) |
+
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums.
 You can download it. If you feel like it. Oh, you do? Here it is.
@@ -88,6 +93,7 @@ So here I'm listing the ones that are actually new and I'd recommend you install
 | CachyOS                                       | Arch | Elokuba, DionKill | My version. It fixes language (mostly) and removes the anime girl backgrounds that I found particularly annoying to have on the living room TV. |
 | Manjaro                                       | Arch | Elokuba           | A Manjaro KDE distro. Didn't try it, but I bet works well.                                                                                      |
 | [JaguarLinux](https://github.com/Jaguarlinux) | None | TigerClips1       | A distro made from scratch for the PS4! Still in development, but worth mentioning.                                                             |
+
 IF you choose the CachyOS installation, remember to use the specified kernel, and also use the bootargs.txt file. **Move it in the same folder the bzImage goes**.
 
 >[!TIP]
@@ -107,6 +113,7 @@ I'd recommend reading the following:
 <details>
 	<summary>Useful information about Internal/External installation</summary>
 
+## Information
 As I've mentioned beforehand, you can't install Linux on the internal PS4's HDD on Baikal systems. I know, you're crying your heart out because you wanted to use it, but trust me it's atrocious.
 To give you an explanation, it took me 30 MINUTES to update my CachyOS installation (500MBs) and the system was so unresponsive that I watched anime in between clicks.
 
@@ -132,23 +139,28 @@ Anyways, here we go: (queue dream's speedrunning music)
 	1. For CachyOS, use the 5.15.25-rc1 version with the bootargs.txt.
 4. Choose your distro and and rename it psxitarch.tar.** (xz or gz), seriously remember this is your distro
 
+---
+
 Now the fun part, copying the files to wherever you want to install your distro.
 There are three routes: one is the internal drive, then one that might work if you have an expensive (more than 15$ or € or $ or whatever) "USB to SATA" adapter, and one that works on every adapter and USB device (even pendrives).
 
-> [!WARNING]
-> IF you choose the external drive route, remember we'll format the drive! Back up any existing data you care about.
+> [!CAUTION]
+> This shit on the internal HDD is slow. Be careful and prepare your balls for imminent explosion.
 
 <details>
 	<summary>Internal HDD</summary>
-> [!WARNING]
-> This shit is slow. Be careful and prepare your balls for imminent explosion.
-
-FTP to your PS4. Go to the folder `/data/boot/linux/` (create it if it doesn't exist) and place your bzImage and initramfs in there.
+	
+## Internal HDD installation
+FTP to your PS4. Go to the `/data/` folder, and create the folder `/boot/linux/` and place your bzImage and initramfs in there.
 Then, go to `/user/system/`, create a folder called boot, and paste your distro in there.
 
 When installed, you can remove your Linux installation by removing the above files, and the "linux.img" found in `/user/home/` folder. Just in case you realize I was correct.
 
 </details>
+
+> [!WARNING]
+> IF you choose the external drive route, remember we'll format the drive! Back up any existing data you care about.
+
 <details>
 	<summary>External Drive - Method 1</summary>
 
