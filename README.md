@@ -137,7 +137,7 @@ Again I haven't tried with an internal SSD swap, so your mileage may vary if you
 
 TLDR: for Internal only Aeolia/Belize. Every console supports external.
 
-Anyways, here we go: (queue dream's speedrunning music)
+### Anyways, here we go: (queue dream's speedrunning music)
 1. Boot your PS4 and launch GoldHen. If you haven't modded your PS4, check out Modded Warfare on YouTube.
 2. Take the initramfs.zip file, open it, and choose your version (mind the Southbridge).
 	1. Put it somewhere like on your desktop as we'll need it
@@ -145,19 +145,18 @@ Anyways, here we go: (queue dream's speedrunning music)
 	1. For CachyOS, use the 5.15.25-rc1 version with the bootargs.txt.
 4. Choose your distro and and rename it psxitarch.tar.** (xz or gz), seriously remember this is your distro
 
----
-
+### Choosing a method of installation
 Now the fun part, copying the files to wherever you want to install your distro.
 There are three routes: one is the internal drive, then one that might work if you have an expensive (more than 15$ or € or $ or whatever) "USB to SATA" adapter, and one that works on every adapter and USB device (even pendrives).
 
 ### Internal HDD installation
 > [!CAUTION]
-> This shit on the internal HDD is slow. Be careful and prepare your balls for imminent explosion.
+> This shit is slow. Be careful and prepare your balls for imminent explosion.
 
 <details>
 	<summary>Internal HDD</summary>
 	
-## Internal HDD installation
+#### Internal HDD installation
 FTP to your PS4. Go to the `/data/` folder, and create the folder `/boot/linux/` and place your bzImage and initramfs in there.
 Then, go to `/user/system/`, create a folder called boot, and paste your distro in there.
 
@@ -172,11 +171,11 @@ When installed, you can remove your Linux installation by removing the above fil
 <details>
 	<summary>External Drive - Method 1</summary>
 
-### External Drive - Method 1
+#### External Drive - Method 1
 Put the kernel (bzImage), initramfs (initramfs.cpio.gz), and your distro (psxitarch.tar.**) on the root of a FAT32 formatted drive.
 
 If the drive is larger than 32GB, Windows will dastardly act like it can't format it in FAT32, but only in NTFS or ExFAT, which is just wrong, as FAT32 supports up to 2TB drives.
-To fix it, go ahead and download the mythical [Rufus](rufus.ie) program. Select "Show USB devices" or something like that, and then select "No boot" as a type of format, followed by "MBR" as partition scheme and "FAT32" as filesystem. Click start and wait.
+To fix it, go ahead and download the mythical [Rufus](https://rufus.ie) program. Select "Show USB devices" or something like that, and then select "No boot" as a type of format, followed by "MBR" as partition scheme and "FAT32" as filesystem. Click start and wait.
 
 Once done, place the three files on the drive.
 Plug your drive on the PS4 and move over to the next step.
@@ -185,7 +184,7 @@ Plug your drive on the PS4 and move over to the next step.
 <details>
 	<summary>External Drive - Method 2</summary>
 	
-### Method 2 (recommended)
+#### External Drive - Method 2 (recommended)
 Get a Linux PC or VM (even a live iso works), plug in your drive, and use GParted or KDE Partition Manager to format your external drive like so:
 - 50MB of FAT32 at the start of the drive (for bzImage and initramfs)
 - The rest of the drive as EXT4, specifically with a label called "psxitarch"
