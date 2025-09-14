@@ -37,6 +37,7 @@ In this very professional tutorial, I'll go over how to install Linux on your PS
 	1. Yes! Please do not gatekeep information!
 
 </details>
+
 ### Important places
 1. [PS4Linux Website](ps4linux.com)
 2. [PS4Linux Forums](ps4linux.com/forums/)
