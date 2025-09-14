@@ -1,4 +1,4 @@
-# PS4 LINUX INSTALLATION TUTORIAL
+# PS4 Linux Installation Tutorial 2025 Re;Birth Limited GOTY Edition
 
 > [!WARNING]
 > This guide is still under development, so don't worry if something sounds off, I'll try to fix it. There's plenty of downloads and data that's missing, and I'm relatively new to this myself. I'm doing this guide because nobody else seems to have done it so far, and I decided to pick up the slack and try to do something meaningful with my existence.
@@ -6,7 +6,9 @@
 In this very professional tutorial, I'll go over how to install Linux on your PS4. I've made this because the PS4Linux.com website hasn't been updated in ages and their documentation is pretty bad (still, I appreciate their work, this guide is heavily inspired by it). This tutorial focuses ONLY on modern versions of Linux. That's what people want, and that's also the tutorial that nobody wants to make. For older stuff, check out... the internet?
 
 > [!NOTE]
-> This tutorial is mainly meant to showcase newer methods that nobody is really talking about. If you break something, it's your fault.
+> This tutorial is mainly meant to make this stuff accessible because stuff gets old fast. It's also very unserious (to cheer you up).
+> 
+> If you break something, it's your fault.
 > 
 > All original sources are mentioned (maybe), none of this stuff is mine, I'm just reuploading for ease of use, do not send a cease and desist letter to my house, I'm just trying to help you guys out.
 > 
@@ -103,7 +105,7 @@ So here I'm listing the ones that are actually new and I'd recommend you install
 | [Batocera 40](https://ps4linux.com/forums/d/252-batocera-40-for-ps4-installation-setup-tutorial) | No clue | Noob404                                                                             | For retrogaming                                                                                                                                                     |
 | [JaguarLinux](https://github.com/Jaguarlinux)                                                    | None    | TigerClips1                                                                         | A distro made from scratch for the PS4! Still in development, but worth mentioning.                                                                                 |
 
-IF you choose CachyOS (probably the other ones too), remember to use the specified kernel, and also use the bootargs.txt file. **Move it in the same folder the bzImage goes**.
+IF you choose CachyOS (probably the other ones too), remember to use the specified kernel, and also use the bootargs.txt file. **Needs to be in the same folder of the bzImage**.
 
 >[!TIP]
 >Want to add more distros? Make an issue and your wish shall be granted.
@@ -226,3 +228,5 @@ Once it's done (or if you used Method 2) you'll be sent to the Linux desktop! If
 
 # Ending
 Done! Enjoy Linux on your PS4! Please share this guide if it was helpful! For any questions on this guide, make an issue, with general Linux issues use the links provided at the start of the guide to get to the PS4Linux Forums.
+
+Again, a big thanks for all of the people who made this possible, you're too many to count.
