@@ -12,7 +12,7 @@ In this very professional tutorial, I'll go over how to install Linux on your PS
 > 
 > Thanks to all the amazing developers who work on the PS4.
 
-# Quick Q&A
+## Quick Q&A
 > [!TIP]
 > For your average newbie questions, click down here
 <details>
@@ -37,8 +37,19 @@ In this very professional tutorial, I'll go over how to install Linux on your PS
 	1. Yes! Please do not gatekeep information!
 
 </details>
+### Important places
+1. [PS4Linux Website](ps4linux.com)
+2. [PS4Linux Forums](ps4linux.com/forums/)
+3. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
+4. YouTubers
+	1. [Modded Warfare](https://www.youtube.com/@MODDEDWARFARE)
+	2. [Qba](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)
+	3. [Noob404 (PS4Linux Forums)](https://www.youtube.com/channel/UC9pY5BDCjDLOC4j-zkHPu8A)
+5. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
-Done with the boring stuff, let's start with the real tutorial:
+---
+
+Done with the boring stuff, let's start with the real tutorial.
 
 # Preparations
 In order to install Linux on your PS4, we need some things:
@@ -54,53 +65,44 @@ In order to install Linux on your PS4, we need some things:
 	3. A distro of your choice, already preinstalled and modified to work on the PS4
 		1. You can also make your own. More on that later.
 3. A device to install Linux to, either:
-	1. Internal HDD (Baikal still unsupported, very slow)
+	1. Internal HDD (Baikal still unsupported, veeery slow)
 	2. External HDD/SSD
 4. A lot of patience and time!
-
-## Other important stuff you might want to check out
-1. [PS4Linux Website](ps4linux.com)
-2. [PS4Linux Forums](ps4linux.com/forums/)
-3. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
-4. YouTubers
-	1. [Modded Warfare](https://www.youtube.com/@MODDEDWARFARE)
-	2. ???
-5. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
 # Getting the required files
 Because getting this files is a complete and utter joke, I've decided that reuploading them myself is probably the better idea. I'll be reuploading this stuff on this GitHub. Again do not send a cease and desist letter to my house like the Maryo company.
 ## Kernel
 Let's start with the kernels: they are very important as they have the software that controls all of the PS4's hardware. There's plenty of them, and I'll list them from newer to older:
 
->[!NOTE]
->In this small tutorial I'll be helping you to use this table. Do you see it? Great, read it! Download the one with your same Southbridge! If one doesn't work, skill issue.
->
->No, really, try another version.
+| Kernel                                                                                                                                                           | Source code                                                       | Developer  | Extra info                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------- |
+| 6.15                                                                                                                                                             | [GitHub](https://github.com/crashniels/linux)                     | crashniels | No precompiled downloads available                                                                               |
+| [5.15.25-rc1](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.25-rc1_belize_ThinLTO_Led_LAVANDE_Debian-Trixie_LLVM_19.1.2.zip) | N/A, [original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya       | Necessary for CachyOS. Multiple power LED colors supported. LTO. Includes the bootargs.txt.                      |
+| 5.15.15                                                                                                                                                          | N/A, [original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya       | Multiple power LED colors supported. LTO.                                                                        |
+| Other                                                                                                                                                            | Maybe                                                             | Plenty     | I'm too bored to add more.<br>[For now, check this.](https://ps4linux.com/downloads/#PS4_Linux_Kernel_Downloads) |
 
-| Kernel                                                                                                                                                           | Source code                                                       | Developer | Extra info                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------- |
-| 6.15                                                                                                                                                             |                                                                   | ???       |                                                                                                                  |
-| [5.15.25-rc1](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.25-rc1_belize_ThinLTO_Led_LAVANDE_Debian-Trixie_LLVM_19.1.2.zip) | N/A, [original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya      | Necessary for CachyOS. Multiple power LED colors supported. LTO. Includes the bootargs.txt.                      |
-| 5.15.15                                                                                                                                                          | N/A, [original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya      | Multiple power LED colors supported. LTO.                                                                        |
-| ???                                                                                                                                                              |                                                                   |           | I'm too bored to add more.<br>[For now, check this.](https://ps4linux.com/downloads/#PS4_Linux_Kernel_Downloads) |
+> [!NOTE]
+> If you are having issues, you could try a different kernel, though remember that the older the version and the less compatibility there is with newer programs and games.
 
 ## Initramfs
-This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums.
-You can download it. If you feel like it. Oh, you do? [Here it is](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip).
+This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums. [Here it is](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip).
 
 ## Distros (that you ACTUALLY wanna use)
 Yes! Finally the time has come. Which one will you choose?
-Honestly there's a neptillion distros. Most however, are very outdated, especially the ones on the PS4Linux's website.
+Honestly there's a neptillion distros. Most however, are very outdated, especially the ones on the PS4Linux's website list.
 So here I'm listing the ones that are actually new and I'd recommend you install:
 
-| Distro                                                                                           | Base | Developer         | Info                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------ | ---- | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CachyOS](https://ps4linux.com/forums/d/347-linux-pack-cachyos-final-fix-biglinux-and-other-fix) | Arch | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | "Final Fix". The distro is half polish, half english. But it works and is up to date. Uses KDE.                                                 |
-| CachyOS                                                                                          | Arch | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw), DionKill | My version. It fixes language (mostly) and removes the anime girl backgrounds that I found particularly annoying to have on the living room TV. |
-| [Manjaro](https://ps4linux.com/forums/d/342-manjaro-from-scratch)                                | Arch | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | A Manjaro KDE distro. Didn't try it, but I bet works well.                                                                                      |
-| [JaguarLinux](https://github.com/Jaguarlinux)                                                    | None | TigerClips1       | A distro made from scratch for the PS4! Still in development, but worth mentioning.                                                             |
+| Distro                                                                                           | Base    | Developer                                                                           | Info                                                                                                                                                                |
+| ------------------------------------------------------------------------------------------------ | ------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [CachyOS](https://ps4linux.com/forums/d/347-linux-pack-cachyos-final-fix-biglinux-and-other-fix) | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | "Final Fix". The distro is half polish, half english. But it works and is up to date. Uses KDE.                                                                     |
+| CachyOS                                                                                          | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw), DionKill | My version. It fixes language (mostly) and removes the anime girl backgrounds that I found particularly annoying to have on the living room TV (with other people). |
+| [Manjaro](https://ps4linux.com/forums/d/342-manjaro-from-scratch)                                | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | A Manjaro KDE distro.                                                                                                                                               |
+| [Garuda](https://ps4linux.com/forums/d/334-garuda-linux-ext4-rc1-yakuza)                         | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | Gaming focused distro                                                                                                                                               |
+| [Xubuntu](https://ps4linux.com/forums/d/337-xubuntu-2504-final-release)                          | Ubuntu  | triki1                                                                              | Divided into multiple files                                                                                                                                         |
+| [Batocera 40](https://ps4linux.com/forums/d/252-batocera-40-for-ps4-installation-setup-tutorial) | No clue | Noob404                                                                             | For retrogaming                                                                                                                                                     |
+| [JaguarLinux](https://github.com/Jaguarlinux)                                                    | None    | TigerClips1                                                                         | A distro made from scratch for the PS4! Still in development, but worth mentioning.                                                                                 |
 
-IF you choose the CachyOS installation, remember to use the specified kernel, and also use the bootargs.txt file. **Move it in the same folder the bzImage goes**.
+IF you choose CachyOS (probably the other ones too), remember to use the specified kernel, and also use the bootargs.txt file. **Move it in the same folder the bzImage goes**.
 
 >[!TIP]
 >Want to add more distros? Make an issue and your wish shall be granted.
