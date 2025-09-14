@@ -147,7 +147,10 @@ TLDR: for Internal only Aeolia/Belize. Every console supports external.
 
 ### Choosing a method of installation
 Now the fun part, copying the files to wherever you want to install your distro.
-There are three routes: one is the internal drive, then one that might work if you have an expensive (more than 15$ or € or $ or whatever) "USB to SATA" adapter, and one that works on every adapter and USB device (even pendrives).
+There are three routes:
+1. The internal drive,
+2. One that might work if you have an expensive (more than 15$ or € or $ or whatever) "USB to SATA" adapter
+3. One that works on every adapter and USB device (even pendrives), **which I recommend for external installation**, as it works even with OS packages bigger than 4GiB.
 
 ### Internal HDD installation
 > [!CAUTION]
@@ -166,7 +169,8 @@ When installed, you can remove your Linux installation by removing the above fil
 
 ### External Drive installation methods
 > [!WARNING]
-> IF you choose the external drive route, remember we'll format the drive! Back up any existing data you care about.
+> IF you choose the external drive route, remember we'll format the drive!
+> Back up any existing data you care about.
 
 <details>
 	<summary>External Drive - Method 1</summary>
@@ -182,9 +186,9 @@ Plug your drive on the PS4 and move over to the next step.
 
 </details>
 <details>
-	<summary>External Drive - Method 2</summary>
+	<summary>External Drive - Method 2 (recommended)</summary>
 	
-#### External Drive - Method 2 (recommended)
+#### External Drive - Method 2
 Get a Linux PC or VM (even a live iso works), plug in your drive, and use GParted or KDE Partition Manager to format your external drive like so:
 - 50MB of FAT32 at the start of the drive (for bzImage and initramfs)
 - The rest of the drive as EXT4, specifically with a label called "psxitarch"
@@ -195,7 +199,7 @@ You're done! Plug your drive in the PS4, and go to the next step!
 
 </details>
 
----
+### Launching Linux Rescue Shell
 
 After that, either launch your payload with Payload Guest, or use a payload website, such as:
 - [PS4boot.github.io](https://ps4boot.github.io/) (5.05-6.72)
