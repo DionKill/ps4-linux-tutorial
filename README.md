@@ -181,7 +181,7 @@ Put the kernel (bzImage), initramfs (initramfs.cpio.gz), and your distro (psxita
 If the drive is larger than 32GB, Windows will dastardly act like it can't format it in FAT32, but only in NTFS or ExFAT, which is just wrong, as FAT32 supports up to 2TB drives.
 To fix it, go ahead and download the mythical [Rufus](https://rufus.ie) program. Select "Show USB devices" or something like that, and then select "No boot" as a type of format, followed by "MBR" as partition scheme and "FAT32" as filesystem. Click start and wait.
 
-Once done, place the three files on the drive.
+Once done, place the files on the drive.
 Plug your drive on the PS4 and move over to the next step.
 
 </details>
@@ -220,4 +220,4 @@ Hydrate yourself while you wait. It'll take a while.
 Once it's done (or if you used Method 2) you'll be sent to the Linux desktop! If you didn't, just type resume-boot until it works.
 
 # Ending
-Done! Enjoy Linux on your PS4! Please share this guide if it was helpful! For any questions, 
+Done! Enjoy Linux on your PS4! Please share this guide if it was helpful! For any questions on this guide, make an issue, with general Linux issues use the links provided at the start of the guide to get to the PS4Linux Forums.
