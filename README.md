@@ -8,6 +8,8 @@ In this very professional tutorial, I'll go over how to install Linux on your PS
 > All original sources are mentioned (maybe), none of this stuff is mine, I'm just reuploading for ease of use, do not send a cease and desist letter to my house, I'm just trying to help you guys out.
 > 
 > Thanks to all the amazing developers who work on the PS4.
+>
+> Oh, I nearly forgot, this guide is still under building, some things haven't been added just yet. I've got exams and gacha games to worry about so give me some time!
 
 # Quick Q&A
 > [!TIP]
