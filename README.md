@@ -231,3 +231,11 @@ Once it's done (or if you used Method 2) you'll be sent to the Linux desktop! If
 Done! Enjoy Linux on your PS4! Please share this guide if it was helpful! For any questions on this guide, make an issue, with general Linux issues use the links provided at the start of the guide to get to the PS4Linux Forums.
 
 Again, a big thanks for all of the people who made this possible, you're too many to count.
+
+
+# Credits 
+
+Big Thanks for this Tutorial  DionKill 
+adding some information by me. 
+
+and anyway all PS4 Dev`s to make this possible fail0verfl0w , psxita-team .... 
