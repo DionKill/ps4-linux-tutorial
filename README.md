@@ -209,8 +209,8 @@ You're done! Plug your drive in the PS4, and go to the next step!
 ### Launching Linux Rescue Shell
 
 After that, either launch your payload with Payload Guest, or use a payload website, such as:
-- [PS4boot.github.io](https://ps4boot.github.io/) (5.05-6.72)
-- [PS4boot.duckdns.org/pppwn/](https://ps4boot.duckdns.org/pppwn/) (9.00-12.02)
+- [PS4boot.github.io](https://ps4boot.github.io/) (5.05+6.72+9.60) (Webkit method)  
+- [PS4boot.free.nf/index.html](http://ps4boot.free.nf/index.html) (5.05-12.02) (GoldHEN method) (only HTTP works with GoldHEN BinLoader)
 
 Okay, the shitty part is over. Now comes the easy stuff. You'll be sent to the Rescue Shell, and all you need to do is:
 - Internal HDD
