@@ -5,7 +5,7 @@
 > 
 > I'm doing this guide because nobody else seems to have done it so far, and I decided to pick up the slack and try to do something meaningful with my existence.
 
-In this very professional tutorial, I'll go over how to install Linux on your PS4. I've made this because the PS4Linux.com website hasn't been updated in ages and their documentation is pretty bad (still, I appreciate their work, this guide is heavily inspired by it). This tutorial focuses ONLY on modern versions of Linux.
+In this very professional tutorial, I'll go over how to install Linux on your PS4. I've made this because the PS4Linux website hasn't been updated in ages and their documentation is pretty bad (still, I appreciate their work, this guide is heavily inspired by it). This tutorial focuses ONLY on modern versions of Linux.
 
 > [!NOTE]
 > This tutorial is mainly meant to make this stuff accessible because stuff gets old fast. It's also very unserious (to cheer you up).
@@ -17,8 +17,8 @@ In this very professional tutorial, I'll go over how to install Linux on your PS
 > Thanks to all the amazing developers who work on the PS4.
 
 ## Important places
-1. [PS4Linux Website](ps4linux.com)
-2. [PS4Linux Forums](ps4linux.com/forums/)
+1. [PS4Linux Website](https://ps4linux.com)
+2. [PS4Linux Forums](https://ps4linux.com/forums/)
 3. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
 4. YouTubers
 	1. [Modded Warfare](https://www.youtube.com/@MODDEDWARFARE)
@@ -36,7 +36,7 @@ In this very professional tutorial, I'll go over how to install Linux on your PS
 -  Erm actually... It doesn't. It creates a huge file that contains your whole installation (only for internal HDD installation). You can obviously still use your PS4 normally- also you need to boot to the "normal homescreen" aka OrbisOS to launch Linux.
 - You can also use an external drive and it'll work wonders (DO NOT use a USB stick or HDD if you want to keep your sanity) and it won't take up space on your preciously dying hard drive :3
 ### This shit doesn't work. You're a liar!
-- Honestly I wish I could help you out. If the tutorial doesn't work, try asking for help on the [PS4Linux forums](ps4linux.com/forums/) or their Discord server.
+- Honestly I wish I could help you out. If the tutorial doesn't work, try asking for help on the [PS4Linux forums](https://ps4linux.com/forums/) or their Discord server.
 ### How does it run?
 - This is a good question. On an external SSD, it's really usable. Though the CPU is a huge limiting factor.
 ### Can I play my PC games on Linux?

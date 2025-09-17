@@ -2,7 +2,6 @@
 Done! Enjoy Linux on your PS4! Please share this guide if it was helpful! For any questions on this guide, make an issue, with general Linux issues use the links provided at the start of the guide to get to the PS4Linux Forums.
 
 Now go, spread misinformation online.
-![[misinformation.jpg](public/images/misinformation.jpg)]
 
 ---
 
