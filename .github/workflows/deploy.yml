@@ -1,6 +1,33 @@
-- name: Deploy to GitHub Pages
-  uses: peaceiris/actions-gh-pages@v4
-  with:
-    github_token: ${{ secrets.GITHUB_TOKEN }}
-    publish_dir: docs/.vitepress/dist
-    keep_files: false
+name: Deploy VitePress Site
+
+on:
+  push:
+    branches:
+      - main  # deploy whenever you push to main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repo
+      - uses: actions/checkout@v4
+
+      # Setup Node.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Install dependencies
+      - run: npm ci
+
+      # Build VitePress
+      - run: npx vitepress build docs
+
+      # Deploy to gh-pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
+          keep_files: false  # removes old files
