@@ -1,4 +1,4 @@
 .git
 .obsidian
 node_modules
-docs/.vitepress/dist/images/
+docs/.vitepress/dist
