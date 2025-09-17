@@ -1,23 +1,10 @@
 {
-  "name": "ps4-linux-tutorial",
-  "version": "1.0.0",
-  "description": "> [!WARNING] > This guide is still under development, so don't worry if something sounds off, I'll try to fix it. There's plenty of downloads and data that's missing, and I'm relatively new to this myself. I'm doing this guide because nobody else seems to have done it so far, and I decided to pick up the slack and try to do something meaningful with my existence.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DionKill/ps4-linux-tutorial.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DionKill/ps4-linux-tutorial/issues"
-  },
-  "homepage": "https://github.com/DionKill/ps4-linux-tutorial#readme",
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "vitepress": "^2.0.0-alpha.12"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   }
 }
