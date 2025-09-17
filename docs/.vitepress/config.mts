@@ -4,7 +4,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "PS4 Linux Tutorial",
   description: "A simple and modern guide on how to install Linux on PS4 systems.",
-  base: "ps4-linux-tutorial",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
