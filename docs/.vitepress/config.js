@@ -1,6 +1,7 @@
 export default {
   title: "PS4 Linux Guide",
   description: "A guide for installing Linux on any PS4",
+  base: "/ps4-linux-tutorial/",
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
