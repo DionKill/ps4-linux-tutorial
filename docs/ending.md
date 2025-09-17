@@ -3,6 +3,8 @@ Done! Enjoy Linux on your PS4! Please share this guide if it was helpful! For an
 
 Now go, spread misinformation online.
 
+<img src="/misinformation.jpg" width="50%">
+
 ---
 
 Also, install:
