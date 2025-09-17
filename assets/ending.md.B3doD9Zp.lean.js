@@ -1,0 +1,1 @@
+import{_ as t,c as n,o as a,ae as i}from"./chunks/framework.Bi6zybwU.js";const p=JSON.parse('{"title":"Ending","description":"","frontmatter":{},"headers":[],"relativePath":"ending.md","filePath":"ending.md"}'),o={name:"ending.md"};function s(r,e,l,d,u,h){return a(),n("div",null,[...e[0]||(e[0]=[i("",7)])])}const m=t(o,[["render",s]]);export{p as __pageData,m as default};
