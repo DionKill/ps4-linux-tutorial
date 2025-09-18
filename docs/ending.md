@@ -7,12 +7,5 @@ Now go, spread misinformation online.
 
 ---
 
-Also, install:
-- Steam
-- Heroic Games Launcher (for Epic, GOG and Amazon)
-- Lutris (for other PC games not in those launchers)
-- Prism Launcher instead of those other shitty Minecraft launchers
-- And a bunch of emulators!
-
 Again, a big thanks for all of the people who made this possible, you're too many to count.
 If you want to be credited, don't hesitate to contact me/make an issue. I'll gladly add you there.

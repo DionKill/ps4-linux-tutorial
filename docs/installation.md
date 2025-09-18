@@ -5,12 +5,17 @@ Just kidding, it's fucking terrible.
 
 But don't worry, cuz I've suffered before you (and still am by writing this absolute monstrosity of a guide) so that the only thing you have to do is follow my guide as I spoonfeed you with information.
 
-## Internal vs External: The Finale - GOTY Limited Edition
-As I've mentioned beforehand, you can't install Linux on the internal PS4's HDD on Baikal systems. I know, you're crying your heart out because you wanted to use it, but trust me it's atrocious.
-To give you an explanation, it took me 30 MINUTES to update my CachyOS installation (500MBs) and the system was so unresponsive that I watched anime in between clicks.
+> [!TIP]
+> TL;DR:
+> 
+> Internal only for Aeolia/Belize, but not recommended.
+> Every console supports external, which I recommend with an SSD via a SATA Adapter.
 
-> [!NOTE]
-> TLDR: for Internal only Aeolia/Belize, but not recommended. Every console supports external.
+::: details Internal vs External: The Finale - GOTY Limited Edition
+As I've mentioned beforehand, you can't install Linux on the internal PS4's HDD on Baikal systems. I know, you're crying your heart out because you wanted to use it, but trust me it's atrocious.
+To give you an explanation, it took me 30 MINUTES to update my CachyOS installation (1500MBs) and the system was so unresponsive that I watched anime in between clicks.
+
+Using an external SATA-USB adapter with a Samsung 870 EVO 500GB, the time it took shrinked to less than 5 minutes.
 
 Therefore, I want to clear some misinformation here:
 - The PS4's internal HDD is a repurposed laptop 5400RPM drive. Please, for the love of GOD, do NOT use this. Even the PS4's own menus lag because of how slow it is.
@@ -21,7 +26,7 @@ Therefore, I want to clear some misinformation here:
 	- External SSD, on my 500GB Samsung 870 EVO, is 350MB/s-ish. So you'd get the same performance as an internal drive (theoretically)
 
 Again I haven't tried with an internal SSD swap, so your mileage may vary if you wanna go that route. If you have info on that, let me know.
-
+:::
 ## Anyways, here we go: (queue dream's speedrunning music)
 1. Boot your PS4 and launch GoldHen.
 2. Take the initramfs.zip file, open it, and choose your version (mind the Southbridge).
@@ -44,28 +49,20 @@ There are three routes:
 > [!CAUTION]
 > This shit is slow. Be careful and prepare your balls for imminent explosion.
 
-<details>
-	<summary>Internal HDD</summary>
-	
-#### Internal HDD installation
+::: details Internal HDD
 Check your PS4 storage, as you'll need to choose the size of the installation. Leave some free space in your console, and remember that the PS4 doesn't report the space taken internally by Linux!
 
 FTP to your PS4. Go to the `/data/` folder, and create the folder `/boot/linux/` and place your bzImage (and bootargs.txt if you have it) and initramfs in there.
 Then, go to `/user/system/`, create a folder called boot, and paste your distro in there.
 
 When installed, you can remove your Linux installation by removing the above files, and the "linux.img" found in `/user/home/` folder. Just in case you realize I was correct.
-
-</details>
-
+:::
 ### External Drive installation methods
 > [!WARNING]
 > IF you choose the external drive route, remember we'll format the drive!
 > Back up any existing data you care about.
 
-<details>
-	<summary>External Drive - Method 1</summary>
-
-#### External Drive - Method 1
+::: details External Drive - Method 1
 Put the kernel (bzImage, and the bootargs if you have them), initramfs (initramfs.cpio.gz), and your distro (psxitarch.tar.**) on the root of a FAT32 formatted drive.
 
 If the drive is larger than 32GB, Windows will dastardly act like it can't format it in FAT32, but only in NTFS or ExFAT, which is just wrong, as FAT32 supports up to 2TB drives.
@@ -73,12 +70,9 @@ To fix it, go ahead and download the mythical [Rufus](https://rufus.ie) program.
 
 Once done, place the files on the drive.
 Plug your drive on the PS4 and move over to the next step.
+:::
 
-</details>
-<details>
-	<summary>External Drive - Method 2 (recommended)</summary>
-	
-#### External Drive - Method 2
+::: details External Drive - Method 2 (recommended)
 Get a Linux PC or VM (even a live iso works), plug in your drive, and use GParted or KDE Partition Manager to format your external drive like so:
 - 50MB of FAT32 at the start of the drive (for bzImage and initramfs)
 - The rest of the drive as EXT4, specifically with a label called "psxitarch"
@@ -86,10 +80,9 @@ Get a Linux PC or VM (even a live iso works), plug in your drive, and use GParte
 Now move your bzImage (and bootargs if you have them) and initramfs to the FAT32 partition, and untar your distro of choice at the root of the bigger EXT4 partition
 
 You're done! Plug your drive in the PS4, and go to the next step!
+:::
 
-</details>
-
-### Launching Linux Rescue Shell
+## Launching Linux Rescue Shell
 
 After that, either launch your payload with Payload Guest, or use a payload website, such as:
 - [ps4boot.github.io](https://ps4boot.github.io/) (5.05/6.72/9.60) (Webkit method)
@@ -97,14 +90,23 @@ After that, either launch your payload with Payload Guest, or use a payload webs
 
 ## Installation commands
 Okay, the shitty part is over. Now comes the easy stuff. You'll be sent to the Rescue Shell, and all you need to do is:
-### Internal HDD
+
+::: details Internal HDD
 - Type "linux-hdd-install.sh"
 - Type how much storage you want to use for the installation (check how much free space you have, don't fill up your drive as the PS4 won't report it!)
-### External Drive - Method 1
+
+:::
+
+::: details External Drive - Method 1
 - Type "psxitarch-install.sh"
 	- If it fails, (doesn't recognize the drive or something else) use Method 2
-### External Drive - Method 2
+
+:::
+
+::: details External Drive - Method 2
 - It's already installed! You'll boot right into the desktop!
+
+:::
 
 Hydrate yourself while you wait. It'll take a while.
 
