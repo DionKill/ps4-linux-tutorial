@@ -29,7 +29,7 @@ Again I haven't tried with an internal SSD swap, so your mileage may vary if you
 :::
 ## Anyways, here we go: (queue dream's speedrunning music)
 1. Boot your PS4 and launch GoldHen.
-2. Take the initramfs.zip file, open it, and choose your version (mind the Southbridge).
+2. Take the initramfs.zip file, open it, and choose your installation method (mind the Southbridge).
 	- Put it somewhere like on your desktop as we'll need it
 3. Choose your kernel of choice.
 	- For CachyOS, use the 5.15.25-rc1 version with the bootargs.txt.
@@ -63,7 +63,7 @@ When installed, you can remove your Linux installation by removing the above fil
 > Back up any existing data you care about.
 
 ::: details External Drive - Method 1
-Put the kernel (bzImage, and the bootargs if you have them), initramfs (initramfs.cpio.gz), and your distro (psxitarch.tar.**) on the root of a FAT32 formatted drive.
+Put the kernel (bzImage, and the bootargs if you need it), initramfs (initramfs.cpio.gz), and your distro (psxitarch.tar.**) on the root of a FAT32 formatted drive.
 
 If the drive is larger than 32GB, Windows will dastardly act like it can't format it in FAT32, but only in NTFS or ExFAT, which is just wrong, as FAT32 supports up to 2TB drives.
 To fix it, go ahead and download the mythical [Rufus](https://rufus.ie) program. Select "Show USB devices" or something like that, and then select "No boot" as a type of format, followed by "MBR" as partition scheme and "FAT32" as filesystem. Click start and wait.
@@ -77,7 +77,7 @@ Get a Linux PC or VM (even a live iso works), plug in your drive, and use GParte
 - 50MB of FAT32 at the start of the drive (for bzImage and initramfs)
 - The rest of the drive as EXT4, specifically with a label called "psxitarch"
 
-Now move your bzImage (and bootargs if you have them) and initramfs to the FAT32 partition, and untar your distro of choice at the root of the bigger EXT4 partition
+Now move your bzImage (and bootargs if you need it) and initramfs to the FAT32 partition, and untar your distro of choice at the root of the bigger EXT4 partition
 
 You're done! Plug your drive in the PS4, and go to the next step!
 :::
