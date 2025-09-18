@@ -40,8 +40,8 @@ However, it mostly depends on how you install it, as there's two ways:
 We'll get to the details later though.
 # Important places
 Here are some links you'll probably find useful. You can come back to them if needed.
-1. [PS4Linux Website](ps4linux.com)
-2. [PS4Linux Forums](ps4linux.com/forums/)
+1. [PS4Linux Website](https://ps4linux.com)
+2. [PS4Linux Forums](https://ps4linux.com/forums/)
 3. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
 4. YouTube
 	1. [Modded Warfare](https://www.youtube.com/@MODDEDWARFARE)
