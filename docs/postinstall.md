@@ -3,7 +3,7 @@ Once you've installed Linux and are on the desktop, before rushing to do things,
 
 To change some config files (nothing to worry about), I'll recommend `nano` because it just works. To save a file, use `ctrl+s` and to exit `ctrl+x`.
 
-## Update your system
+## Update your system <Badge type="danger" text="caution" />
 Updating your system can be a bit of a pain in the ass, as some of the packages can't be updated.
 
 > [!WARNING]
@@ -59,7 +59,7 @@ sudo pacman -S
 
 Otherwise, you can always update everything but not those packages.
 ## Fix language
-Some distros you can download are in god forbidden languages. None of us like that. Unfortunately changing it from your DE (KDE, Gnome...) doesn't work, at least not system wide. So here's a cheap rundown of all of the commands:
+Some pre-packaged distros you can download are in foreign languages. Unfortunately changing it from your DE (KDE, Gnome...) doesn't apply system wide. So here's a cheap rundown of all of the commands:
 
 ::: details Debian/Ubuntu based distros (thanks triky1)
 ```bash
@@ -94,11 +94,80 @@ If needed, change your language in yout DE (KDE, Gnome...)
 
 Reboot to apply these changes.
 
-## Change username
-Honestly? Create a new user. It's faster.
+## Change username and password
+Honestly? Create a new user. It's faster. Or just keep it.
 
-## Add applications
-I recommend you install these:
+You can however change the password, by doing:
+```bash
+sudo passwd
+```
+And setting a new password.
+
+## Download more RAM?!
+No, seriously, we can do such a thing. To do that, we must use Swap and ZRAM.
+
+::: details Enabling Swap
+> [!CAUTION]
+> It's ABSOLUTELY NOT recommended to use the internal HDD as swap, you'd just add fuel to the dumpsterfire of slowness that it already is. Disable it and move on.
+
+Swap is storage that you are taking from your drive and allocating as "extra RAM": it works by moving unused software over there if extra main memory needs to be reserved for another program or game. This means we can improve the memory situation a little bit.
+
+We will be using a swap file instead of a swap partition, as it's easier to change in size.
+First of all, we need to remove any existing swap:
+```bash
+sudo swapoff -v /swapfile  
+sudo rm /swapfile
+```
+
+Then, we need to enable new swap (I'll do 8GB for this tutorial):
+```bash
+sudo fallocate -l XG /swapfile 8GB # Allocates 8GBs
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
+
+Finally, go to the `fstab` file, and check if  the line `/swapfile none swap sw 0 0` exists.
+If it doesn't, add it by going here and pasting it at the end of the file:
+```bash
+sudo nano /etc/fstab
+```
+:::
+
+::: details Enabling ZRAM (thanks Qba for mentioning [this](https://forum.endeavouros.com/t/enabling-zram-in-endeavouros/37746))
+ZRAM on the other hand, is a part of your memory that you are compressing and allocating as swap.
+
+This means that we trade some CPU cycles for compressing and decompressing a part of your system memory. But if it is enabled by default on Android you can guess how little performance impact there is.
+
+To enable ZRAM, we need to install the `zram-generator` package.
+On Arch, we installing using:
+```bash
+sudo pacman -Syu zram-generator
+```
+
+We then create the config file:
+```bash
+sudo nano /usr/lib/systemd/zram-generator.conf
+```
+
+And we paste this inside of it:
+```bash
+[zram0]
+zram-size=ram
+compression-algorithm=zstd
+swap-priority=60
+```
+`zram-size` is how much RAM we are allocating for the ZRAM device. Possible values are, for example, `50%`, `2G` (i.e. 2 GB), `ram` or `max` for maximum allocation (all RAM is ZRAM).
+Don't change the other values unless you really know what you're doing.
+
+Also, thanks again to Qba for this [showcase](https://youtu.be/f_kXks8z9dc).
+:::
+
+And that's it. You now have a bit of extra memory to work with. I say it's pretty useful, so you can have like 2GB of VRAM, and the 6GB of remaining memory allocated as RAM become more like 6.5 or 7. On top of that, add that Linux is more memory efficient than Windows, and it's like having 8GB of RAM! Pretty sweet huh?
+
+Oh, and don't worry if you see that your installation is using a lot of memory. It's normal and is meant to happen in order to improve performance. Check this [link](https://linuxatemyram.com) to learn more.
+## Install more applications
+I recommend you install these programs:
 - Steam
 - Heroic Games Launcher (for Epic, GOG and Amazon)
 - Lutris (for other PC games not in those launchers)

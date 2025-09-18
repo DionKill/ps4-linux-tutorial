@@ -5,7 +5,7 @@ export default defineConfig({
   title: "PS4 Linux Tutorial",
   description: "A simple and modern guide on how to install Linux on PS4 systems.",
   base: "/ps4-linux-tutorial/",
-  head: [['link', { rel: 'icon', href: '/base/favicon.ico' }]],
+  head: [['link', { rel: 'icon', type: 'image/png', href: '/ps4-linux-tutorial/favicon.png', sizes: '32x32' }]],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -16,14 +16,22 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'The Guide',
+        text: '📖 The Installation Guide',
+        collapsed: false,
         items: [
           { text: 'Overview', link: '/overview' },
           { text: 'Setup', link: '/setup' },
           { text: 'Files', link: '/files' },
           { text: 'Installation', link: '/installation' },
-          { text: 'Post install', link: '/postinstall' },
           { text: 'Ending', link: '/ending' },
+        ]
+      },
+      {
+        text: '💜 Post Installation',
+        collapsed: false,
+        items: [
+          { text: 'Post install setup', link: '/postinstall' },
+          { text: 'Common gotchas', link: '/gotchas' },
         ]
       }
     ],
