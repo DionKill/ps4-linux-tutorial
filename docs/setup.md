@@ -1,49 +1,59 @@
-# Setup & getting the warez
-Because getting this files is a complete and utter joke, I've decided that re-uploading some of them myself is probably the better idea. Again do not send a cease and desist letter to my house like the Maryo company.
-## Kernel
-Let's start with the kernels: they are very important as they have the software that controls all of the PS4's hardware. This is, by definition, Linux.
+# Requirements and initial setup
+In order to install Linux on the PS4, a lot of things are needed.
+## PS4 system
+### HEN
+You need a system that is already modded and has a homebrew enabler (such as GoldHEN) running. Refer to Modded Warfare's YouTube channel to mod it if you haven't already.
 
-There's plenty of them, and I'll list them from newer to older:
+### Settings
+Go to your PS4 settings and make sure that:
+- Your resolution is set not to *Automatic*, but to a value like *1080p* or *720p*
+	- You won't be able to change resolution on Linux, and automatic has issues as far as I've understood (I would have to test it)
+- HDR is disabled
+- Your color gamut is set to something different than *Automatic*, like *Full*.
+	- Some old monitors/TVs don't support *Full*. If when changing it you see that the image looks different, set it to *Limited*.
+- ~~Disable HDCP~~
+	- Actually it's not true, I have it on and it works. Also, you need it enabled for the BD-JB exploit.
+- Connect to the internet
+	- You need to be connected to the internet before going into Linux.
 
-| Kernel                                                                                                                                                           | Source code                                                       | Developer  | Extra info                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------- |
-| 6.15                                                                                                                                                             | [GitHub](https://github.com/crashniels/linux)                     | crashniels | No precompiled downloads available                                                                               |
-| [5.15.25-rc1](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.25-rc1_belize_ThinLTO_Led_LAVANDE_Debian-Trixie_LLVM_19.1.2.zip) | N/A, [original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya       | Necessary for CachyOS. Multiple power LED colors supported. LTO. Includes the bootargs.txt.                      |
-| 5.15.15                                                                                                                                                          | N/A, [original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya       | Multiple power LED colors supported. LTO.                                                                        |
-| Other                                                                                                                                                            | Maybe                                                             | Plenty     | I'm too bored to add more.<br>[For now, check this.](https://ps4linux.com/downloads/#PS4_Linux_Kernel_Downloads) |
+I'm not sure if audio settings matter. Again I'm too broke to try out surround, so your mileage may vary, report if you find any issues.
 
-> [!NOTE]
-> If you are having issues, you could try a different kernel, though remember that the older the version and the less compatibility there is with newer programs and games.
+## PC
+You'll need a way to connect to your PS4 to transfer files. A PC is recommended. You will also need an internet connection.
+In order to input text on your PS4, you can't use the PS4 built in keyboard, as that is not available on Linux. You must have a keyboard and mouse combo ready to use with your PS4.
 
-## Initramfs
-This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums. [Here it is](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
+You'll be accessing your PS4's filesystem from FTP. You can also transfer files with a USB drive if you feel so inclined.
 
-## Distros (that you ACTUALLY wanna use)
-Yes! Finally the time has come. Which one will you choose?
-Honestly there's a neptillion distros. Most however, are very outdated, especially the ones on the PS4Linux's website list.
-So here I'm listing the ones that are actually new and I'd recommend you install:
+### FTP connections
+In order to do that, open up your FTP file manager of choice.
 
-| Distro                                                                                           | Base    | Developer                                                                           | Info                                                                                            |
-| ------------------------------------------------------------------------------------------------ | ------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [CachyOS](https://ps4linux.com/forums/d/347-linux-pack-cachyos-final-fix-biglinux-and-other-fix) | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | "Final Fix". The distro is half polish, half english. But it works and is up to date. Uses KDE. |
-| CachyOS                                                                                          | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw), DionKill | My version. It fixes language (mostly) and disables the anime girl backgrounds.                 |
-| [Manjaro](https://ps4linux.com/forums/d/342-manjaro-from-scratch)                                | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | A Manjaro KDE distro.                                                                           |
-| [Garuda](https://ps4linux.com/forums/d/334-garuda-linux-ext4-rc1-yakuza)                         | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | Gaming focused distro (it just has a weird UI)                                                  |
-| [Xubuntu](https://ps4linux.com/forums/d/337-xubuntu-2504-final-release)                          | Ubuntu  | triki1                                                                              | Divided into multiple files                                                                     |
-| [Batocera 40](https://ps4linux.com/forums/d/252-batocera-40-for-ps4-installation-setup-tutorial) | No clue | Noob404                                                                             | For retrogaming                                                                                 |
-| [JaguarLinux](https://github.com/Jaguarlinux)                                                    | None    | TigerClips1                                                                         | A distro made from scratch for the PS4! Still in development, but worth mentioning.             |
+#### Windows
+- Windows' built-in file manager
+	- This one likes to crash the desktop if it can't connect, be careful
+- WinSCP (my personal choice, using the simple interface)
+- Filezilla
 
-IF you choose CachyOS (probably the other ones too), remember to use the specified kernel, and also use the bootargs.txt file. **Needs to be in the same folder of the bzImage**.
+#### Linux
+- Built in File explorer, if yours allows it (KDE, Gnome and Cinnamon should)
+- Filezilla
 
->[!TIP]
->Want to add more distros? Make an issue and your wish shall be granted.
->
->Want to make your own? [Check this out!](https://ps4linux.com/make-ps4-linux-distro/)
+#### MacOS
+- I'm not rich, you tell me
+- Probably Filezilla
 
-## Payloads (kinda optional)
-For those who don't want to open a browser everytime (saves like 15-30 seconds for those sweet top 1% speedruns)
+For instance, on my PS4 I would connect to the IP `192.168.1.50:2121`. I'd put a picture if I was bothered enough to turn my PS4 back on and take a screenshot.
 
-[Download them from the ps4boot repositories](https://github.com/ps4boot/ps4-linux-payloads), and extract the one you want in your `data/payloads` folder. Remember to use the one that is for your Southbridge (you have understood that by now).
-If it doesn't have any particularly append, it's for both Aeolia and Belize.
+### Necessary files
+You also will need to download the Linux distro of your choice, as well as additional stuff:
+- bzImage (the kernel)
+- initramfs.cpio.gz (Linux loader)
+- A distro of your choice, already preinstalled and modified to work on the PS4
+	- You can also make your own. More on that later.
 
-You should go to the next step.
+## Storage devices to install to
+You will need a device to store Linux, obviously.
+1. Internal HDD
+	- Baikal still unsupported, veeery slow, needs free space
+2. External HDD/SSD
+	- Requires an external SATA-USB adapter.
+
