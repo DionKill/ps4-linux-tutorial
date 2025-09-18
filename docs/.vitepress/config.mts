@@ -17,7 +17,7 @@ export default defineConfig({
         text: 'The Guide',
         items: [
           { text: 'Overview', link: '/overview' },
-          { text: 'Preparations', link: '/preparations' },
+          { text: 'Requirements', link: '/requirements' },
           { text: 'Setup', link: '/setup' },
           { text: 'Installation', link: '/installation' },
           { text: 'Ending', link: '/ending' },
