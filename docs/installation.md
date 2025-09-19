@@ -32,7 +32,6 @@ Again I haven't tried with an internal SSD swap, so your mileage may vary if you
 2. Take the initramfs.zip file, open it, and choose your installation method (mind the Southbridge).
 	- Put it somewhere like on your desktop as we'll need it
 3. Choose your kernel of choice.
-	- For CachyOS, use the 5.15.25-rc1 version with the bootargs.txt.
 4. Choose your distro and and rename it psxitarch.tar.** (xz or gz), seriously remember this is your distro
 
 ### Choosing a method of installation
@@ -88,8 +87,13 @@ After that, either launch your payload with Payload Guest, or use a payload webs
 - [ps4boot.github.io](https://ps4boot.github.io/) (5.05/6.72/9.60) (Webkit method)
 - [ps4boot.free.nf/index.html](http://ps4boot.free.nf/index.html) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
 
+> [!WARNING]
+> Use a 1GB VRAM payload for installation and first boot. After that, you can change to whatever you want, but I recommend 2GB.
+
 ## Installation commands
-Okay, the shitty part is over. Now comes the easy stuff. You'll be sent to the Rescue Shell, and all you need to do is:
+Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
+
+If you get an error, go to the Gotchas section.
 
 ::: details Internal HDD
 - Type "linux-hdd-install.sh"
