@@ -96,14 +96,14 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 If you get an error, go to the Gotchas section.
 
 ::: details Internal HDD
-- Type "linux-hdd-install.sh"
+- Type `linux-hdd-install.sh`
 - Type how much storage you want to use for the installation (check how much free space you have, don't fill up your drive as the PS4 won't report it!)
 
 :::
 
 ::: details External Drive - Method 1
-- Type "psxitarch-install.sh"
-	- If it fails, (doesn't recognize the drive or something else) use Method 2
+- Type `install-psxitarch.sh`
+	- If it fails, go to the [Installation Issues](issues.md#installation-issues)
 
 :::
 
