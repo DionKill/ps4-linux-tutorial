@@ -31,7 +31,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Post install setup', link: '/postinstall' },
-          { text: 'Common gotchas', link: '/gotchas' },
+          { text: 'Common issues', link: '/issues' },
         ]
       }
     ],

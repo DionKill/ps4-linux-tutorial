@@ -54,8 +54,12 @@ Here are some links you'll probably find useful. You can come back to them if ne
 5. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
 ---
+# Warning before you proceed
 
-> [!CAUTION]
+> [!CAUTION] 
+> Read the guide carefully to avoid any mistakes.
+> 
 > This guide is offered as is, with no warranty whatsoever. I'm not responsible if you screw something up.
 
-With the boring stuff out of the way, you're free to procede.
+
+If you understood that correctly, we can continue over to the next step.
