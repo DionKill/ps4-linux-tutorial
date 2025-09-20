@@ -11,7 +11,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Getting started', link: '/overview' }
+      { text: 'Getting started', link: '/overview' },
+      { text: 'Post-install', link: '/postinstall' },
+      { text: 'Legacy', link: '/legacy' }
     ],
 
     sidebar: [
@@ -20,6 +22,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Overview', link: '/overview' },
+          { text: 'Language and terms', link: '/language' },
           { text: 'Setup', link: '/setup' },
           { text: 'Files', link: '/files' },
           { text: 'Installation', link: '/installation' },
@@ -32,6 +35,14 @@ export default defineConfig({
         items: [
           { text: 'Post install setup', link: '/postinstall' },
           { text: 'Common issues', link: '/issues' },
+        ]
+      }
+      ,
+      {
+        text: '☠️ Legacy Content',
+        collapsed: true,
+        items: [
+          { text: 'Legacy and preservation', link: '/legacy' },
         ]
       }
     ],

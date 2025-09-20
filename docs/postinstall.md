@@ -178,3 +178,6 @@ I recommend you install these programs:
 To do that, if using anything other than Arch based distros, use your Store app from the Start menu and install as a Flatpak. It works well.
 
 If you chose an Arch based distro however, use `pacman` or `yay` to install your packages. All packages you can even think of and more are available.
+
+## If you have any issues...
+... Go to the next page! I'll walk you through most problems and help you fix them!

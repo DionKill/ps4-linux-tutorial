@@ -14,7 +14,8 @@ This happens when the installer can't find the `psxitarch.tar.xz` or `psxitarch.
 ::: details Can't find USB device
 If the installer can't find the USB device, you have two options:
 1. Try to disconnect everything, and connect the drive first. If that doesn't work, try to reboot but only with the drive connected, then connect a keyboard and a mouse.
-2. If that other method didn't work, you can try to scan for USB storage devices with `lsblk`. It should show all the storage devices.
+2. Don't use a USB hub for your drive! If the plug is too thick... Well, that's what she said! No seriously, try to get another drive.
+3. If that other method didn't work, you can try to scan for USB storage devices with `lsblk`. It should show all the storage devices.
 	- If it shows, but you can't install to it, it's probably because the drive (or adapter if you are using one) doesn't support UAS, which is required in newer kernels. In that case, you the Method 2 described.
 
 :::
@@ -28,9 +29,9 @@ If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip
 ::: details Graphical issues
 Sometimes you can encounter graphical issues. Screen flickers at boot, or is unresponsive. There can also be weird graphical glitches in menus and even in games, especially Nintendo Switch emulators for what I've seen.
 
-Hell, even Minecraft has issues. I managed to get a stable run only on 1.21.5 using the Vulkan Renderer mod.
+Hell, even Minecraft has issues. After some testing, I found out that in 25w16a, one of the snapshots for Minecraft 1.21.6, they changed a lot in the engine's renderer pipeline, and now it doesn't render properly anymore. You are forced to either play 1.21.5, which has loads of performance regressions and runs like shit, or go even lower and miss out on new features.
 
-Linux on PS4 is using modified AMDGPU drivers that are unfortunately old and unstable or bleeding-edge and unstable. There's nothing you can do about it, unless you know how to work with GPU drivers. Which I don't. I'd say it's a miracle we got this far and honestly, we shouldn't complain that things are a bit unstable.
+Linux on PS4 is using modified AMDGPU drivers that are unfortunately old and unstable or bleeding-edge and unstable. There's nothing you can do about it, unless you know how to work with GPU drivers. Also Mesa has a lot of issues, I'm not too sure on how GPU works on Linux.
 :::
 
 ::: details Rebooting goes to OrbisOS
@@ -55,7 +56,3 @@ Sorry for this rant, I don't want to be mean to anyone, again it's your choice h
 ::: details How can I improve the situation?
 I don't know man, my laptop battery is about to die and I wanna stop yapping. Check the links at the start of the guide.
 :::
-
----
-
-And here we are. Thanks for reading!
