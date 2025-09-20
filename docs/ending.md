@@ -5,13 +5,9 @@ Now go forth, spread misinformation online.
 
 <img src="/misinformation.jpg" width="50%">
 
----
-
 Again, a big thanks for all of the people who made this possible, you're too many to count.
 If you want to be credited, don't hesitate to contact me/make an issue. I'll gladly add you here.
-
----
-
+## Post install setup is next!
 > [!TIP]
 > I highly recommend continuing to the "Post Installation" setup, to change language and downloading RAM!
 > 

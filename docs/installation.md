@@ -17,7 +17,7 @@ To give you an explanation, it took me 30 MINUTES to update my CachyOS installat
 
 Using an external SATA-USB adapter with a Samsung 870 EVO 500GB, the time it took shrinked to less than 5 minutes.
 
-Therefore, I want to clear some misinformation here:
+Therefore, let's clear some misinformation here:
 - The PS4's internal HDD is a repurposed laptop 5400RPM drive. Please, for the love of GOD, do NOT use this. Even the PS4's own menus lag because of how slow it is.
 - The PS4 internal drive uses UFS encryption so it slows down significantly.
 - You CAN clone your PS4 HDD into an SSD, if internal installation is a must for you
@@ -25,7 +25,7 @@ Therefore, I want to clear some misinformation here:
 - PS4 Phat and Slim are limited to SATA-II, which is 3Gbps in speed (roughly 375MB/s), which people online say it's not enough (it's enough for a PS4). On the other hand, the PS4 Pro runs at SATA-III, which is 6Gbps (up to 750MB/s), so that can saturate every SATA SSD on the market.
 	- External SSD, on my 500GB Samsung 870 EVO, is 350MB/s-ish. So you'd get the same performance as an internal drive (theoretically)
 
-Again I haven't tried with an internal SSD swap, so your mileage may vary if you wanna go that route. If you have info on that, let me know.
+Again, internal SSD swap hasn't been tested, so your mileage may vary if you wanna go that route. If you have info on that, let me know.
 :::
 ## Anyways, here we go: (queue dream's speedrunning music)
 1. Boot your PS4 and launch GoldHen.
@@ -115,3 +115,6 @@ If you get an error, go to the Gotchas section.
 Hydrate yourself while you wait. It'll take a while.
 
 Once it's done (or if you used Method 2) you'll be sent to the Linux desktop! If you didn't, just type resume-boot until it works.
+
+## Finale
+Go now, conquer the finale. Also, watch the post-credit scenes.

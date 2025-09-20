@@ -1,28 +1,42 @@
 # Requirements and initial setup
 In order to install Linux on the PS4, a lot of things are needed. You may have to buy some gear to make this work.
 
-In a nutshell:
-- A PS4
+
+## Requirements
+
+In a nutshell, you'll need:
+- A PS4 (duh)
 	- Extra mouse and keyboard
+	- A USB hub to connect all the peripherals is recommended
 - A computer
 - An internet connection
 - (Optional) - one or more USB drives
-	- If you want to install to an external drive, you can use a USB pendrive, but I recommend a SATA SSD and a SATA to USB adapter (preferrably one that supports UAS).
+	- If you want to install to an external drive, you can use a USB pendrive, but it's recommend to have a SATA SSD and a SATA to USB adapter (preferrably one that supports UAS).
+
+## Storage devices to install to
+Before we talk about anything, you must choose now a method of installation.
+You will need a device to store Linux, obviously.
+1. Internal HDD
+	- Baikal still unsupported, veeery slow, needs free space
+2. External HDD/SSD
+	- Requires an external SATA-USB or NVMe-USB adapter
+	- You can use a pendrive, nobody's stopping you, but it's gonna be painful
 
 ## PS4 system
+Some configuration is necessary on the PS4's side.
 ### HEN
-You need a system that is already modded and has a homebrew enabler (such as GoldHEN) running. Refer to Modded Warfare's YouTube channel to mod it if you haven't already.
+You need a system that is already modded and has a homebrew enabler (such as GoldHEN or ps4hen) running. Refer to Modded Warfare's YouTube channel to mod it if you haven't already.
 
 In order to input text on your PS4, you can't use the PS4 built in keyboard, as that is not available on Linux. You must have a keyboard and mouse combo ready to use with your PS4.
 ### Settings
 Go to your PS4 settings and make sure that:
 - Your resolution is set not to *Automatic*, but to a value like *1080p* or *720p*
-	- You won't be able to change resolution on Linux, and automatic has issues as far as I've understood (I would have to test it)
+	- You won't be able to change resolution on Linux, and automatic has issues as far as I've understood (needs testing)
 - HDR is disabled
 - Your color gamut is set to something different than *Automatic*, like *Full*.
 	- Some old monitors/TVs don't support *Full*. If when changing it you see that the image looks different, set it to *Limited*.
 - ~~Disable HDCP~~
-	- Actually it's not true, I have it on and it works. Also, you need it enabled for the BD-JB exploit.
+	- This is not true anymore. Also, it's required for the BD-JB exploit.
 - Connect to the internet
 	- You need to be connected to the internet before going into Linux.
 
@@ -59,10 +73,6 @@ In the next step, you also will need to download the following:
 - A distro of your choice, already preinstalled and modified to work on the PS4
 	- You can also make your own. More on that later.
 
-## Storage devices to install to
-You will need a device to store Linux, obviously.
-1. Internal HDD
-	- Baikal still unsupported, veeery slow, needs free space
-2. External HDD/SSD
-	- Requires an external SATA-USB adapter.
+## To the files section
 
+You can go now go to the files section, where we'll cover how to download the required data.
