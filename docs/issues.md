@@ -1,22 +1,20 @@
 # Installation issues
 During the installation, things can fail. Most of this stuff is undocumented too. There's dozens of posts online where people don't even get a response. I'm hopefully going to resolve these issues. If not, contact me on the forums.
 
-::: details Missing `root` error
-It can't find the root directory because the installation isn't completed. Don't worry if you see this.
-
-If you do see this after installing, most likely it means you've broken your install.
+::: details Root error `The "root" variable is empty, set to false or zero but shouldn't be`
+It shows when booting up before installing, don't worry as it's normal because there is no installed system it can boot. You can proceed with the installation.
 :::
 
-::: details Moving to `/dev /newroot` failed
+::: details Newroot error - `mount -o ro /newroot failed`
 This happens when the installer can't find the `psxitarch.tar.xz` or `psxitarch.tar.gz` file. Check that the name and location are correct. Also, use the payloads mentioned as older ones either don't work or require different folders for the files.
 :::
 
-::: details Can't find USB device
+::: details Mounting error - `No valid USB device found`
 If the installer can't find the USB device, you have two options:
-1. Try to disconnect everything, and connect the drive first. If that doesn't work, try to reboot but only with the drive connected, then connect a keyboard and a mouse.
-2. Don't use a USB hub for your drive! If the plug is too thick... Well, that's what she said! No seriously, try to get another drive.
-3. If that other method didn't work, you can try to scan for USB storage devices with `lsblk`. It should show all the storage devices.
-	- If it shows, but you can't install to it, it's probably because the drive (or adapter if you are using one) doesn't support UAS, which is required in newer kernels. In that case, you the Method 2 described.
+1. Try to disconnect everything, and connect the drive first. If that doesn't work, try to reboot but only with the drive connected, only when you get to the rescue shell connect a keyboard and a mouse.
+2. If that other method didn't work, you can try to scan for USB storage devices with `lsblk`. It should show all the storage devices.
+	- If it shows with the commands, but the installer fails to find it, it's probably because the drive (or adapter if you are using one) doesn't support UAS, which is required in newer kernels. In that case, use the [Method 2](installation#method-2-manual-partitioning) described.
+	- Also, don't use USB hubs, the drive may not show up.
 
 :::
 # Post-install issues
