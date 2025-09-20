@@ -49,6 +49,7 @@ There are three routes:
 > This shit is slow. Be careful and prepare your balls for imminent explosion.
 
 ::: details Internal HDD
+#### Internal HDD installation
 Check your PS4 storage, as you'll need to choose the size of the installation. Leave some free space in your console, and remember that the PS4 doesn't report the space taken internally by Linux!
 
 FTP to your PS4. Go to the `/data/` folder, and create the folder `/boot/linux/` and place your bzImage (and bootargs.txt if you have it) and initramfs in there.
@@ -62,6 +63,7 @@ When installed, you can remove your Linux installation by removing the above fil
 > Back up any existing data you care about.
 
 ::: details External Drive - Method 1
+#### Method 1 - using the install script
 Put the kernel (bzImage, and the bootargs if you need it), initramfs (initramfs.cpio.gz), and your distro (psxitarch.tar.**) on the root of a FAT32 formatted drive.
 
 If the drive is larger than 32GB, Windows will dastardly act like it can't format it in FAT32, but only in NTFS or ExFAT, which is just wrong, as FAT32 supports up to 2TB drives.
@@ -72,9 +74,12 @@ Plug your drive on the PS4 and move over to the next step.
 :::
 
 ::: details External Drive - Method 2 (recommended)
-Get a Linux PC or VM (even a live iso works), plug in your drive, and use GParted or KDE Partition Manager to format your external drive like so:
-- 50MB of FAT32 at the start of the drive (for bzImage and initramfs)
-- The rest of the drive as EXT4, specifically with a label called "psxitarch"
+#### Method 2 - Manual partitioning
+Get a Linux PC or VM (even a Live ISO works), or any program that can format drives in Linux's formats.
+
+Then, plug in your drive, and use "GParted" or "KDE Partition Manager" to format your external drive like so:
+- 50MB of FAT32 at the start of the drive <u>with an empty label</u>
+- And a partition of the remaining space formatted as EXT4 <u>labeled "psxitarch"</u>
 
 Now move your bzImage (and bootargs if you need it) and initramfs to the FAT32 partition, and untar your distro of choice at the root of the bigger EXT4 partition
 
@@ -98,6 +103,7 @@ If you get an error, go to the Gotchas section.
 ::: details Internal HDD
 - Type `linux-hdd-install.sh`
 - Type how much storage you want to use for the installation (check how much free space you have, don't fill up your drive as the PS4 won't report it!)
+	- If it fails, go to the [Installation Issues](issues.md#installation-issues)
 
 :::
 
