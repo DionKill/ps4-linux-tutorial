@@ -119,9 +119,9 @@ sudo swapoff -v /swapfile
 sudo rm /swapfile
 ```
 
-Then, we need to enable new swap (I'll do 8GB for this tutorial):
+Then, we need to enable new swap (8GB for this tutorial
 ```bash
-sudo fallocate -l XG /swapfile 8GB # Allocates 8GBs
+sudo fallocate -l 8G /swapfile 8GB # Allocates 8GBs
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
