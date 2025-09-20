@@ -114,8 +114,13 @@ If you get an error, go to the Gotchas section.
 :::
 
 ::: details External Drive - Method 2
-- It's already installed! You'll boot right into the desktop!
+You should already boot into the desktop. If for some reason it doesn't work for you, run the following commands (thanks @gryoza on Discord and @bene4k on Reddit for this):
+```bash
+mount /dev/sdb2 /newroot
+exec chroot
+```
 
+And that should do it. If you have more issues, check the [Installation Issues](issues.md#installation-issues).
 :::
 
 Hydrate yourself while you wait. It'll take a while.

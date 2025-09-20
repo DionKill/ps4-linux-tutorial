@@ -24,6 +24,16 @@ There are a lot of undocumented issues. Or, if they are documented, I couldn't e
 If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip that is incompatible with your current kernel. This means that you will need to try one of the other kernels, and if they don't work, try to ask on the forums or scout the internet until you can find one. Unfortunately the development is scattered and it's hard to get hands on these kernels.
 :::
 
+::: details Black screen after boot / nothing works?
+If booting a display manager or your desktop environment results in a black screen, and the distro is using X11, try Wayland.
+
+To do that, you can try a Wayland based distro, there's plenty out there, or you can also try to change window manager by running `dbus-run-session -- <name of DE/WM>` on another TTY (change by doing CTRL+ALT+F2).
+
+This is a lot of stuff to cover on the guide so you will need to look it up yourselves.
+
+Thanks to @kalaposfos on Discord for mentioning this fix.
+:::
+
 ::: details Graphical issues
 Sometimes you can encounter graphical issues. Screen flickers at boot, or is unresponsive. There can also be weird graphical glitches in menus and even in games, especially Nintendo Switch emulators for what I've seen.
 
