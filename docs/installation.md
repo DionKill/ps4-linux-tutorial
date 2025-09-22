@@ -37,6 +37,8 @@ Again, internal SSD swap hasn't been tested, so your mileage may vary if you wan
 ### Choosing a method of installation
 > [!WARNING]
 > Choose ONLY ONE method of installation.
+> 
+> Installing on the internal and external drives can cause problems! Remove the files or the drives before changing!
 
 Now the fun part, copying the files to wherever you want to install your distro.
 There are three routes:
@@ -93,12 +95,21 @@ After that, either launch your payload with Payload Guest, or use a payload webs
 - [ps4boot.free.nf/index.html](http://ps4boot.free.nf/index.html) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
 
 > [!WARNING]
-> Use a 1GB VRAM payload for installation and first boot. After that, you can change to whatever you want, but I recommend 2GB.
+> Use a 1GB VRAM payload for installation and first boot.
+> 
+> Afterwards, 2GB is recommended.
+
+> [!TIP]
+> I cannot believe I have to say this, but remember that the amount of VRAM you allocate is taken from your system memory!
+> 
+> For example, for a 2GB of VRAM payload, you'd have 8-2 = 6GB of remaining system RAM!
+> You aren't creating memory out of thin air!
+
 
 ## Installation commands
 Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
 
-If you get an error, go to the Gotchas section.
+If you get an error, go to the [Installation issues section](issues#installation-issues).
 
 ::: details Internal HDD
 - Type `linux-hdd-install.sh`

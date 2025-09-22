@@ -119,7 +119,7 @@ sudo swapoff -v /swapfile
 sudo rm /swapfile
 ```
 
-Then, we need to enable new swap (8GB for this tutorial
+Then, we need to enable new swap (8GB for this tutorial, you may change it)
 ```bash
 sudo fallocate -l 8G /swapfile 8GB # Allocates 8GBs
 sudo chmod 600 /swapfile
@@ -135,9 +135,9 @@ sudo nano /etc/fstab
 :::
 
 ::: details Enabling ZRAM (thanks Qba for mentioning [this](https://forum.endeavouros.com/t/enabling-zram-in-endeavouros/37746))
-ZRAM on the other hand, is a part of your memory that you are compressing and allocating as swap.
+ZRAM on the other hand, is a part of your memory that you are compressing and allocating as swap. A kernel that supports it is necessary.
 
-This means that we trade some CPU cycles for compressing and decompressing a part of your system memory. But if it is enabled by default on Android you can guess how little performance impact there is.
+This means that we trade some CPU cycles for compressing and decompressing a part of your system memory. If it is enabled by default on Android you can guess how little performance impact there is.
 
 To enable ZRAM, we need to install the `zram-generator` package.
 On Arch, we installing using:
@@ -160,19 +160,50 @@ swap-priority=60
 `zram-size` is how much RAM we are allocating for the ZRAM device. Possible values are, for example, `50%`, `2G` (i.e. 2 GB), `ram` or `max` for maximum allocation (all RAM is ZRAM).
 Don't change the other values unless you really know what you're doing.
 
-Also, thanks again to Qba for this [showcase](https://youtu.be/f_kXks8z9dc).
+It is also recommended to disable ZSWAP. Some distro already do this, but just in case go to your grub config:
+```bash
+sudo nano /etc/default/grub
+```
+
+And in the `LINUX_CMDLINE_DEFAULT` check that `zswap-enabled=0` is present. If not, add it.
+
+---
+
+Thanks again to Qba for this [showcase](https://youtu.be/f_kXks8z9dc).
 :::
 
 And that's it. You now have a bit of extra memory to work with. I say it's pretty useful, so you can have like 2GB of VRAM, and the 6GB of remaining memory allocated as RAM become more like 6.5 or 7. On top of that, add that Linux is more memory efficient than Windows, and it's like having 8GB of RAM! Pretty sweet huh?
 
 Oh, and don't worry if you see that your installation is using a lot of memory. It's normal and is meant to happen in order to improve performance. Check this [link](https://linuxatemyram.com) to learn more.
+
+## Get more CPU performance
+You may have realized that the PS4's CPU is pretty lacking and is most likely it's biggest disadvantage. But apart from a really optimized distro, what else can you do?
+
+In computing you are always going to gain something and loose something else. Either your time, money, or in this case...
+
+::: details Disable security mitigations to gain performance
+Yes, you can disable some security patches for attacks like Meltdown and Spectre, to gain some CPU performance. It does work and should have a noticeable improvement.
+
+Obviously this is not recommended in most cases, but if all you want to do is game from your Steam library and occasionally browse the web (which is most of us), you are probably going to be fine.
+
+To do that it's surprisingly simple. Open the `bootargs.txt` file, or create it in the same folder of the kernel if it doesn't exist already, then add this line, save and reboot:
+```bash
+mitigations=off
+```
+
+And there you go! You can change it anytime of course.
+:::
+
+In the past there were overclocked kernels, but alas they don't make them anymore. Maybe in the future...
+
+Do not go and download an older kernel to try as they don't work anymore either!
 ## Install more applications
 I recommend you install these programs:
 - Steam
 - Heroic Games Launcher (for Epic, GOG and Amazon)
 - Lutris (for other PC games not in those launchers)
 - Prism Launcher instead of those other shitty Minecraft launchers
-	- Minecraft has graphical issues in newer versions btw, lmao
+	- Minecraft has graphical issues in versions newer than 1.21.5
 - And a bunch of emulators!
 
 To do that, if using anything other than Arch based distros, use your Store app from the Start menu and install as a Flatpak. It works well.

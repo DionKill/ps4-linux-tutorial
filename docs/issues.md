@@ -1,5 +1,5 @@
 # Installation issues
-During the installation, things can fail. Most of this stuff is undocumented too. There's dozens of posts online where people don't even get a response. I'm hopefully going to resolve these issues. If not, contact me on the forums.
+During the installation, things can fail. Most of this stuff is undocumented too. There's dozens of posts online where people don't even get a response. I'm hopefully going to resolve these issues here. If not, write on the forums or on the PS4 Linux Discord.
 
 ::: details Root error `The "root" variable is empty, set to false or zero but shouldn't be`
 It shows when booting up before installing, don't worry as it's normal because there is no installed system it can boot. You can proceed with the installation.
@@ -58,9 +58,11 @@ Like, did we need a NEPTILLION different kernels? I'm no developer, but if the n
 
 Also the fact that we can't even find source code for stuff like up to date drivers is absolute insanity! How am I supposed to make my own distro? It feels overwhelming and it's the whole reason I made this guide, to provide a place where you can find it all.
 
+But it gets worse. Wanna know why? I've spoken to some developers, and it seems that they would love to make it open source... If it wasn't for people who steal their code, not credit them, and end up getting all the attention. A big fuck you to all of these assholes from the bottom of my heart.
+
 Sorry for this rant, I don't want to be mean to anyone, again it's your choice how to distribute your code, but this situation is ridiculous. In comparison, the 3DS and especially the PS Vita communities are light years ahead.
 :::
 
 ::: details How can I improve the situation?
-I don't know man, my laptop battery is about to die and I wanna stop yapping. Check the links at the start of the guide.
+Join the Discord servers, share this tutorial, help in any way you can. That's all.
 :::

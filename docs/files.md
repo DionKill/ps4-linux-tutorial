@@ -3,24 +3,26 @@ Because getting this files is a complete and utter joke, I've decided that re-up
 
 > [!WARNING]
 > I'm sorry if some of the following links are sketchy, but the community is a divided mess unfortunately. Refer to the [Other Issues](issues.md#other-issues) section for a rant.
-## Kernel
+## Kernels
 Let's start with the kernels: they are very important as they have the software that controls all of the PS4's hardware. This is, by definition, Linux.
 
 It's really hard to pinpoint you to one, so bear with me here. Some kernels are specific for some models of consoles, or for specific Wi-Fi or Bluetooth chipsets, or even for your distro of choice.
 Development has slowed down over time as interest starts to move over to the PS5 scene, as the PS4 is in this weird limbo where not many are interested in working on it. On top of this, the scene is scattered, and everyone makes private forks and patches so that in reality nobody is contributing on making a single kernel that works for every console.
 
-> [!TIP]
-> If you are having issues, you could try a different kernel, though remember that the older the version and the less features you have.
+| Kernel        | Source and Download                                                                                                                                                                                          | Developers      | Compatible Southbridges    | Extra info                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- | -------------------------- | ------------------------------------------------------------------------------------------- |
+| 6.15.y<br>5.x | [Releases](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>[More on "Actions"](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>Source [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | freeRnt, others | All, depends on the branch | You may have to test a lot of them, check the Actions tab.<br><br>One of these should work. |
+| 5.15.186      | [Download](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.186.src-KHEOPS_V2.1-FullLTO-belize-zram.tar.gz)<br>No source                                                    | saya            | Belize                     | Stable kernel. Requires the bootargs. Supports ZRAM.                                        |
 
-| Kernel                                   | Source and Download                                                                                                                                                                                                           | Developers                | Compatible Southbridges    | Extra info                         |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| 6.15.y                                   | [GitHub](https://github.com/crashniels/linux)                                                                                                                                                                                 | crashniels                | All, depends on the branch | No precompiled downloads available |
-| 5.4.247<br>5.15.15<br>5.15.189<br>6.15.y | [GitHub](https://github.com/feeRnt/ps4-linux-12xx)                                                                                                                                                                            | Everyone, quite literally | All, depends on the branch | Mostly for Phat PS4s               |
-| 6.12.11                                  | [Download](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/bz-6.12.11.tar.xz)<br>No source                                                                                                       | triky1                    | Belize                     | Reupload, links were temporary     |
-| 5.15.186                                 | [Download](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.186.src-KHEOPS_V2.1-FullLTO-belize-zram.tar.gz)<br>No source                                                                     | saya                      | Belize                     | Recommended.                       |
-| 5.15.25-rc1<br>5.15.15                   | [Download](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.25-rc1_belize_ThinLTO_Led_LAVANDE_Debian-Trixie_LLVM_19.1.2.zip)<br>[Original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya                      | Belize                     | Multiple power LED colors. LTO.    |
-### Bootargs (optional, depends on the kernel)
-The `bootargs.txt` is necessary for saya's kernels. It adds certain parameters when launching the kernel to make the GPU work properly.
+
+> [!TIP]
+> If you are having issues, you could try a different kernel.
+> 
+> If you can't find one that works, there are older and legacy kernels to be found [here](legacy#not-recommended-kernels).
+### Bootargs (depends, mostly for saya's kernels)
+The `bootargs.txt` is necessary for saya's kernels. You may need to use these for your own kernels.
+
+This adds certain parameters when launching the kernel to make the GPU work properly.
 
 In order to use it, create a new text file, and input this line inside, then save it as `bootargs.txt`:
 ```
