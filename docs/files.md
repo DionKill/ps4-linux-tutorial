@@ -14,13 +14,15 @@ Development has slowed down over time as interest starts to move over to the PS5
 > 
 > If you can't find one that works, there are older and legacy kernels to be found [here](legacy#not-recommended-kernels).
 ### Recommended kernels
-Here are some kernels I recommend you start with.
+There's literally dozens to start with. To make it readable, some of these are linked twice per version even if the download links or sources are the same.
 
-| Kernel          | Source and Download                                                                                                                                                                                                           | Developers      | Compatible Southbridges    | Extra info                                                                                  |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------------- | ------------------------------------------------------------------------------------------- |
-| 6.15.y<br>5.x   | [Releases](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>[More on "Actions"](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>Source [GitHub](https://github.com/feeRnt/ps4-linux-12xx)                  | freeRnt, others | All, depends on the branch | You may have to test a lot of them, check the Actions tab.<br><br>One of these should work. |
-| 5.15.25-rc1<br> | [Download](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.25-rc1_belize_ThinLTO_Led_LAVANDE_Debian-Trixie_LLVM_19.1.2.zip)<br>[Original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya            | Belize                     | Multiple power LED colors. LTO.                                                             |
-| 5.15.15         | [Original link](https://www.youtube.com/watch?v=mpcE9LLS59k)                                                                                                                                                                  | saya            | Aeolia?<br>Belize          | Multiple power LED colors. LTO.                                                             |
+| Kernel          | Source and Download                                                                                                                                                                                                           | Developers      | Compatible Southbridges    | Extra info                                                                                        |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------------- | ------------------------------------------------------------------------------------------------- |
+| 6.15.y<br>5.x   | [Releases](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>[More on "Actions"](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>Source [GitHub](https://github.com/feeRnt/ps4-linux-12xx)                  | freeRnt, others | All, depends on the branch | You may have to test a lot of them, check the Actions tab. Remember to check for the southbridge. |
+| 6.15.4          | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/actions/runs/17358604885)                                                                                                                                                   | freeRnt, others | Belize                     | Specific branch that works on my and other's Belizes.                                             |
+| 5.15.25-rc1<br> | [Download](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.25-rc1_belize_ThinLTO_Led_LAVANDE_Debian-Trixie_LLVM_19.1.2.zip)<br>[Original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya            | Belize                     | Multiple power LED colors. LTO.                                                                   |
+| 5.15.15         | [Original link](https://www.youtube.com/watch?v=mpcE9LLS59k)                                                                                                                                                                  | saya            | Aeolia?<br>Belize          | Multiple power LED colors. LTO.                                                                   |
+
 ### Other kernels
 These kernels exist and are relatively new, but I don't recommend them anymore as there are better alternatives. If none of the others work for you, or you are using a specific distro, you can try these.
 
@@ -29,7 +31,7 @@ These kernels exist and are relatively new, but I don't recommend them anymore a
 | 6.15.y         | [GitHub](https://github.com/crashniels/linux)                                                                             | crashniels | All, depends on the branch | No precompiled downloads available. No idea if it's still maintained. |
 | 4.4<br>5.x     | No source.<br>[Download](https://www.logic-sunrise.com/news-1160961-ps4-linux-bzimages-pour-toutes-versions-de-ps4.html). | saya       | All                        | Website is in French. Overclocked.                                    |
 
-If you want more help, check out the [Discord servers](overview#important-links)
+If you want more help, ask out the [Discord servers](overview#important-places). We'll try to help you out.
 ### Bootargs (depends, mostly for saya's kernels)
 The `bootargs.txt` is necessary for saya's kernels. You may need to use these for your own kernels.
 
