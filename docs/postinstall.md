@@ -1,4 +1,4 @@
-# Post installation things
+g# Post installation things
 Once you've installed Linux and are on the desktop, before rushing to do things, you may want to do a couple of additional steps.
 
 To change some config files (nothing to worry about), I'll recommend `nano` because it just works. To save a file, use `ctrl+s` and to exit `ctrl+x`.
@@ -181,7 +181,7 @@ You may have realized that the PS4's CPU is pretty lacking and is most likely it
 
 In computing you are always going to gain something and loose something else. Either your time, money, or in this case...
 
-::: details Disable security mitigations to gain performance
+::: details Disengage safety protocols, and run program.
 Yes, you can disable some security patches for attacks like Meltdown and Spectre, to gain some CPU performance. It does work and should have a noticeable improvement.
 
 Obviously this is not recommended in most cases, but if all you want to do is game from your Steam library and occasionally browse the web (which is most of us), you are probably going to be fine.
