@@ -9,16 +9,27 @@ Let's start with the kernels: they are very important as they have the software 
 It's really hard to pinpoint you to one, so bear with me here. Some kernels are specific for some models of consoles, or for specific Wi-Fi or Bluetooth chipsets, or even for your distro of choice.
 Development has slowed down over time as interest starts to move over to the PS5 scene, as the PS4 is in this weird limbo where not many are interested in working on it. On top of this, the scene is scattered, and everyone makes private forks and patches so that in reality nobody is contributing on making a single kernel that works for every console.
 
-| Kernel        | Source and Download                                                                                                                                                                                          | Developers      | Compatible Southbridges    | Extra info                                                                                  |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- | -------------------------- | ------------------------------------------------------------------------------------------- |
-| 6.15.y<br>5.x | [Releases](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>[More on "Actions"](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>Source [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | freeRnt, others | All, depends on the branch | You may have to test a lot of them, check the Actions tab.<br><br>One of these should work. |
-| 5.15.186      | [Download](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.186.src-KHEOPS_V2.1-FullLTO-belize-zram.tar.gz)<br>No source                                                    | saya            | Belize                     | Stable kernel. Requires the bootargs. Supports ZRAM.                                        |
-
-
 > [!TIP]
 > If you are having issues, you could try a different kernel.
 > 
 > If you can't find one that works, there are older and legacy kernels to be found [here](legacy#not-recommended-kernels).
+### Recommended kernels
+Here are some kernels I recommend you start with.
+
+| Kernel          | Source and Download                                                                                                                                                                                                           | Developers      | Compatible Southbridges    | Extra info                                                                                  |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------------- | ------------------------------------------------------------------------------------------- |
+| 6.15.y<br>5.x   | [Releases](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>[More on "Actions"](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>Source [GitHub](https://github.com/feeRnt/ps4-linux-12xx)                  | freeRnt, others | All, depends on the branch | You may have to test a lot of them, check the Actions tab.<br><br>One of these should work. |
+| 5.15.25-rc1<br> | [Download](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.25-rc1_belize_ThinLTO_Led_LAVANDE_Debian-Trixie_LLVM_19.1.2.zip)<br>[Original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya            | Belize                     | Multiple power LED colors. LTO.                                                             |
+| 5.15.15         | [Original link](https://www.youtube.com/watch?v=mpcE9LLS59k)                                                                                                                                                                  | saya            | Aeolia?<br>Belize          | Multiple power LED colors. LTO.                                                             |
+### Other kernels
+These kernels exist and are relatively new, but I don't recommend them anymore as there are better alternatives. If none of the others work for you, or you are using a specific distro, you can try these.
+
+| Kernel version | Source and download                                                                                                       | Developer  | Compatible Southbridges    | Extra info                                                            |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------- | --------------------------------------------------------------------- |
+| 6.15.y         | [GitHub](https://github.com/crashniels/linux)                                                                             | crashniels | All, depends on the branch | No precompiled downloads available. No idea if it's still maintained. |
+| 4.4<br>5.x     | No source.<br>[Download](https://www.logic-sunrise.com/news-1160961-ps4-linux-bzimages-pour-toutes-versions-de-ps4.html). | saya       | All                        | Website is in French. Overclocked.                                    |
+
+If you want more help, check out the [Discord servers](overview#important-links)
 ### Bootargs (depends, mostly for saya's kernels)
 The `bootargs.txt` is necessary for saya's kernels. You may need to use these for your own kernels.
 
