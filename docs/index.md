@@ -13,8 +13,14 @@ hero:
       text: 🏁 Let's get it on!
       link: /overview
     - theme: alt
-      text: 🔎 Or visit another guide
+      text: 📹 Alternative YouTube Guide (by Modded Warfare)
+      link: https://www.youtube.com/watch?v=KW_lRyXQcb8
+    - theme: alt
+      text: 🔎 Another guide (very outdated)
       link: https://ps4linux.com
+    - theme: alt
+      text: ☠️ Legacy content
+      link: /legacy
 
 features:
   - icon: 🧹
@@ -26,9 +32,6 @@ features:
   - icon: 📖
     title: A comprehensive guide
     details: The other online guides keep on missing the point. A lot of them either lack information, or are simply bad documented. This guide is made from the ground up by pure rage because nobody has one that details everything.
-  - icon: 🔽
-    title: Downloads that stay
-    details: For some reason, a lot of the people in the PS4 Linux community keep on hosting stuff on weird ass websites or temp links. Just why are you doing this?? Can't you host it on GitHub at least? I've decided to host some of the files i find myself and credit the authors. Please do not send a cease and desist letter.
 ---
 ## Before we start
 Here are some questions you probably want to know the answer to if you are a novice on this stuff.

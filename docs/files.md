@@ -6,20 +6,24 @@ Because getting this files is a complete and utter joke, I've decided that re-up
 ## Kernels
 Let's start with the kernels: they are very important as they have the software that controls all of the PS4's hardware. This is, by definition, Linux.
 
-It's really hard to pinpoint you to one, so bear with me here. Some kernels are specific for some models of consoles, or for specific Wi-Fi or Bluetooth chipsets, or even for your distro of choice.
-Development has slowed down over time as interest starts to move over to the PS5 scene, as the PS4 is in this weird limbo where not many are interested in working on it. On top of this, the scene is scattered, and everyone makes private forks and patches so that in reality nobody is contributing on making a single kernel that works for every console.
+::: details "Which one to pick" or "I have issues"
+Hard to say as there's a neptillion of them, but I'd recommend starting from the newest and going down until you can find one that works.
 
-> [!TIP]
-> If you are having issues, you could try a different kernel.
-> 
-> If you can't find one that works, there are older and legacy kernels to be found [here](legacy#not-recommended-kernels).
+If you still have issues, write on the forums or join the Discords. Links are at the start of the guide.
+:::
+
+::: details Where are the ZRAM kernels?
+ZRAM kernels have momentarely been removed, as they haven't been fully tested.
+
+I'll keep this guide up to date in case one becomes available.
+:::
 ### Recommended kernels
 There's literally dozens to start with. To make it readable, some of these are linked twice per version even if the download links or sources are the same.
 
 | Kernel          | Source and Download                                                                                                                                                                                                           | Developers      | Compatible Southbridges    | Extra info                                                                                        |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------------- | ------------------------------------------------------------------------------------------------- |
-| 6.15.y<br>5.x   | [Releases](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>[More on "Actions"](https://github.com/feeRnt/ps4-linux-12xx/actions),<br><br>Source [GitHub](https://github.com/feeRnt/ps4-linux-12xx)                  | freeRnt, others | All, depends on the branch | You may have to test a lot of them, check the Actions tab. Remember to check for the southbridge. |
-| 6.15.4          | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/actions/runs/17358604885)                                                                                                                                                   | freeRnt, others | Belize                     | Specific branch that works on my and other's Belizes.                                             |
+| 6.15.y<br>5.x   | [GitHub](https://github.com/feeRnt/ps4-linux-12xx)                                                                                                                                                                            | freeRnt, others | All, depends on the branch | You may have to test a lot of them, check the Actions tab. Remember to check for the southbridge. |
+| 6.15.4          | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/actions/runs/17358604885)                                                                                                                                                   | freeRnt, others | Belize                     | Recommended.                                                                                      |
 | 5.15.25-rc1<br> | [Download](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.25-rc1_belize_ThinLTO_Led_LAVANDE_Debian-Trixie_LLVM_19.1.2.zip)<br>[Original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya            | Belize                     | Multiple power LED colors. LTO.                                                                   |
 | 5.15.15         | [Original link](https://www.youtube.com/watch?v=mpcE9LLS59k)                                                                                                                                                                  | saya            | Aeolia?<br>Belize          | Multiple power LED colors. LTO.                                                                   |
 
@@ -69,14 +73,6 @@ So here I'm listing the ones that are actually new and I'd recommend you install
 >Want to add more distros? Make an issue and your wish shall be granted.
 >
 >Want to make your own? [Check this out!](https://ps4linux.com/make-ps4-linux-distro/)
-
-## Payloads (kinda optional)
-For those who don't want to open a browser everytime (saves like 15-30 seconds for those sweet top 1% speedruns)
-
-[Download them from the ps4boot repositories](https://github.com/ps4boot/ps4-linux-payloads), and extract the one you want in your `data/payloads` folder. Remember to use the one that is for your Southbridge (you have understood that by now).
-If it doesn't have any particularly append, it's for both Aeolia and Belize.
-
-You MUST use the 1GB one for installation, you can use whatever thereafter.
 
 ## To the installation we go!
 

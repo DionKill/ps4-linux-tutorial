@@ -22,6 +22,16 @@ You will need a device to store Linux, obviously.
 
 ## PS4 system
 Some configuration is necessary on the PS4's side before we load Linux.
+### Things to note down
+Note down what you see in "Settings -> System Information":
+- System software version
+- Southbridge
+- Your GoldHEN or ps4hen version
+
+![system-info.png](screenshots/system-info.png)
+
+In my case, I have the latest version of GoldHEN (minimum for this guide is v2.4b18.5), running on a Belize PS4 Slim.
+
 ### HEN
 You need a system that is already jailbroken and has a homebrew enabler (such as GoldHEN or ps4hen) running.
 
@@ -31,27 +41,43 @@ You need a system that is already jailbroken and has a homebrew enabler (such as
 > Refer to [Modded Warfare](https://www.youtube.com/@MODDEDWARFARE) on YouTube if you haven't already.
 
 In order to input text on your PS4, you can't use the PS4 built in keyboard, as that is not available on Linux. You must have a keyboard and mouse combo ready to use with your PS4.
+
+#### Payload server settings
+Remember to check the GoldHEN "Server" settings (or ps4hen's equivalent if you're using that) so that they look like this:
+
+![payload-server-conf.png](screenshots/payload-server-conf.png)
+
+These are required to be able to move files and load Linux later into the guide.
 ### Settings
 These need to be taken as a precaution, not as a necessity, as they aren't actually needed anymore.
 However, as some issues may arise on certain consoles, you should still go and tweak these settings.
-
 #### "Audio and Display" settings
+##### Resolution
+![settings-sound-and-screen.png](screenshots/settings-sound-and-screen.png)
+![resolution.png](screenshots/resolution.png)
+
 - Set your resolution to 1080p (or 720p)
 	- 4K may not work on PS4 Pro. Try 1080p first.
 	- Not always required? Works on Belize in Automatic.
-- Set your color gamut
-	- It may be automatically set to Limited even if your display supports Full.
+
+##### RGB Color gamut
+![rgb-range.png](screenshots/rgb-range.png)
+
+- Set your RGB color gamut
+	- It may be automatically set to "Limited" even if your display supports "Full".
 	- Full may not work on really old displays. If the image looks weird, set it to Limited.
 
 If you change displays, make sure to check these settings again!
 
 #### "System" settings
-- ~~Disable "HDCP" and "Turn on HDMI devices"~~
-	- This is just not true anymore. Also, it's required for the BD-JB exploit.
+![settings-system.png](screenshots/settings-system.png)
+![hdmi-and-device-link.png](screenshots/hdcp-and-device-link.png)
+
+- ~~Disable "HDCP" and "HDMI device link"~~
+	- This is just not true anymore. Also, it must be on for the BD-JB exploit to work.
 - Check your internet connection
 	- Some models have issues if they aren't already connected to internet.
 	- Ethernet may not work on PS4Pro Baikal
-
 
 ## PC
 You'll need a way to connect to your PS4 to transfer files. A PC is recommended. You will also need an internet connection.

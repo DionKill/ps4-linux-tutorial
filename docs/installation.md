@@ -32,7 +32,7 @@ Again, internal SSD swap hasn't been tested, so your mileage may vary if you wan
 2. Take the initramfs.zip file, open it, and choose your installation method (mind the Southbridge).
 	- Put it somewhere like on your desktop as we'll need it
 3. Choose your kernel of choice.
-4. Choose your distro and and rename it psxitarch.tar.** (xz or gz), seriously remember this is your distro
+4. Choose your distro and and rename it `psxitarch.tar.xz/gz` depending on the original file type
 
 ### Choosing a method of installation
 > [!WARNING]
@@ -55,7 +55,10 @@ There are three routes:
 Check your PS4 storage, as you'll need to choose the size of the installation. Leave some free space in your console, and remember that the PS4 doesn't report the space taken internally by Linux!
 
 FTP to your PS4. Go to the `/data/` folder, and create the folder `/boot/linux/` and place your bzImage (and bootargs.txt if you have it) and initramfs in there.
-Then, go to `/user/system/`, create a folder called boot, and paste your distro in there.
+
+![internal-drive-conf.png](screenshots/internal-drive-conf.png)
+
+Then, go to `/user/system/`, create a folder called boot, and paste your distro in there. Remember that it needs to be called `psxitarch.tar.gz or xz`!
 
 When installed, you can remove your Linux installation by removing the above files, and the "linux.img" found in `/user/home/` folder. Just in case you realize I was correct.
 :::
@@ -66,20 +69,33 @@ When installed, you can remove your Linux installation by removing the above fil
 
 ::: details External Drive - Method 1
 #### Method 1 - using the install script
-Put the kernel (bzImage, and the bootargs if you need it), initramfs (initramfs.cpio.gz), and your distro (psxitarch.tar.**) on the root of a FAT32 formatted drive.
+Put the kernel (bzImage, and the bootargs if you need it), initramfs (initramfs.cpio.gz), and your distro `psxitarch.tar.xz/gz` on the root of a FAT32 formatted drive, like so:
 
+![external-drive-conf.png](screenshots/external-drive-conf.png)
+
+---
+##### Manual format for big drives
 If the drive is larger than 32GB, Windows will dastardly act like it can't format it in FAT32, but only in NTFS or ExFAT, which is just wrong, as FAT32 supports up to 2TB drives.
-To fix it, go ahead and download the mythical [Rufus](https://rufus.ie) program. Select "Show USB devices" or something like that, and then select "No boot" as a type of format, followed by "MBR" as partition scheme and "FAT32" as filesystem. Click start and wait.
+To fix it, go ahead and download the mythical [Rufus](https://rufus.ie) program.
 
+- Select "List USB Hard Drives"
+- Select "Non bootable" as a type of format
+- Select "MBR" as partition scheme
+- Select "FAT32" as filesystem
+
+Click start and wait.
 Once done, place the files on the drive.
-Plug your drive on the PS4 and move over to the next step.
+Plug your drive on the PS4 and continue.
+
+![rufus-format.png](screenshots/rufus-format.png)
+
 :::
 
 ::: details External Drive - Method 2 (recommended)
 #### Method 2 - Manual partitioning
 Get a Linux PC or VM (even a Live ISO works), or any program that can format drives in Linux's formats.
 
-Then, plug in your drive, and use "GParted" or "KDE Partition Manager" to format your external drive like so:
+Then, plug in your drive, and use "GParted", "KDE Partition Manager", or "Aoemi Partition Assistant" on Windows to format your external drive like so:
 - 50MB of FAT32 at the start of the drive <u>with an empty label</u>
 - And a partition of the remaining space formatted as EXT4 <u>labeled "psxitarch"</u>
 
@@ -89,10 +105,12 @@ You're done! Plug your drive in the PS4, and go to the next step!
 :::
 
 ## Launching Linux Rescue Shell
-
-After that, either launch your payload with Payload Guest, or use a payload website, such as:
+After that, either launch your payload with Payload Guest, or use a payload website to load them.
+### Website payloads
 - [ps4boot.github.io](https://ps4boot.github.io/) (5.05/6.72/9.60) (Webkit method)
 - [ps4boot.free.nf/index.html](http://ps4boot.free.nf/index.html) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
+
+![ps4boot-payloads.png](screenshots/ps4boot-payloads.png)
 
 > [!WARNING]
 > Use a 1GB VRAM payload for installation and first boot.
@@ -105,7 +123,15 @@ After that, either launch your payload with Payload Guest, or use a payload webs
 > For example, for a 2GB of VRAM payload, you'd have 8-2 = 6GB of remaining system RAM!
 > You aren't creating memory out of thin air!
 
+### Local payloads
+If you so desire, it's possible to load these payloads locally (I personally do).
 
+In order to do that, go [download them from the ps4boot repositories](https://github.com/ps4boot/ps4-linux-payloads):
+- Install "Payload Loader" on your PS4 to load the payloads locally
+- Extract from the ELF folders, and rename the file to have a `.bin` extension instead of `.elf`, because Payload Loader can't load ELFs
+	- Enable "see file extensions" on Windows Explorer or what you're using
+	- If it doesn't have any particularly append, it's for both Aeolia and Belize
+- Remember to check sometimes to see if there's any updates
 ## Installation commands
 Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
 
