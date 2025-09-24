@@ -28,7 +28,7 @@ Note down what you see in "Settings -> System Information":
 - Southbridge
 - Your GoldHEN or ps4hen version
 
-![system-info.png](screenshots/system-info.png)
+<img src="/screenshots/system-info.png">
 
 In my case, I have the latest version of GoldHEN (minimum for this guide is v2.4b18.5), running on a Belize PS4 Slim.
 
@@ -45,7 +45,7 @@ In order to input text on your PS4, you can't use the PS4 built in keyboard, as 
 #### Payload server settings
 Remember to check the GoldHEN "Server" settings (or ps4hen's equivalent if you're using that) so that they look like this:
 
-![payload-server-conf.png](screenshots/payload-server-conf.png)
+<img src="/screenshots/payload-server-conf.png">
 
 These are required to be able to move files and load Linux later into the guide.
 ### Settings
@@ -53,15 +53,17 @@ These need to be taken as a precaution, not as a necessity, as they aren't actua
 However, as some issues may arise on certain consoles, you should still go and tweak these settings.
 #### "Audio and Display" settings
 ##### Resolution
-![settings-sound-and-screen.png](screenshots/settings-sound-and-screen.png)
-![resolution.png](screenshots/resolution.png)
+
+<img src="/screenshots/settings-sound-and-screen.png">
+<img src="/screenshots/resolution.png">
 
 - Set your resolution to 1080p (or 720p)
 	- 4K may not work on PS4 Pro. Try 1080p first.
 	- Not always required? Works on Belize in Automatic.
 
 ##### RGB Color gamut
-![rgb-range.png](screenshots/rgb-range.png)
+
+<img src="/screenshots/rgb-range.png">
 
 - Set your RGB color gamut
 	- It may be automatically set to "Limited" even if your display supports "Full".
@@ -70,8 +72,9 @@ However, as some issues may arise on certain consoles, you should still go and t
 If you change displays, make sure to check these settings again!
 
 #### "System" settings
-![settings-system.png](screenshots/settings-system.png)
-![hdmi-and-device-link.png](screenshots/hdcp-and-device-link.png)
+
+<img src="/screenshots/settings-system.png">
+<img src="/screenshots/hdcp-and-device-link.png">
 
 - ~~Disable "HDCP" and "HDMI device link"~~
 	- This is just not true anymore. Also, it must be on for the BD-JB exploit to work.

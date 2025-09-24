@@ -50,6 +50,8 @@ Remember that this `bootargs.txt` needs to be placed in the same folder as the b
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums. [Here it is](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
 
+There's another in-dev initramfs, if you want to check it out it's [here](https://github.com/ps4gentoo/initramfs).
+
 Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial-for-building-a-custom-initramfs-research-development) on the PS4 Linux forums, I found it and thought was really interesting.
 
 ## Distros (that you ACTUALLY wanna use)
