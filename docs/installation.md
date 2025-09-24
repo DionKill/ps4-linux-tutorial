@@ -56,7 +56,7 @@ Check your PS4 storage, as you'll need to choose the size of the installation. L
 
 FTP to your PS4. Go to the `/data/` folder, and create the folder `/boot/linux/` and place your bzImage (and bootargs.txt if you have it) and initramfs in there.
 
-<img src="/screenshots/internal-drive-conf.png">
+<img src="/screenshots/internal-drive-conf.png" width="50%">
 
 Then, go to `/user/system/`, create a folder called boot, and paste your distro in there. Remember that it needs to be called `psxitarch.tar.gz or xz`!
 
@@ -71,7 +71,7 @@ When installed, you can remove your Linux installation by removing the above fil
 #### Method 1 - using the install script
 Put the kernel (bzImage, and the bootargs if you need it), initramfs (initramfs.cpio.gz), and your distro `psxitarch.tar.xz/gz` on the root of a FAT32 formatted drive, like so:
 
-<img src="/screenshots/external-drive-conf.png">
+<img src="/screenshots/external-drive-conf.png" width="75%">
 
 ---
 ##### Manual format for big drives
@@ -87,7 +87,7 @@ Click start and wait.
 Once done, place the files on the drive.
 Plug your drive on the PS4 and continue.
 
-<img src="/screenshots/rufus-format.png">
+<img src="/screenshots/rufus-format.png" width="50%">
 
 :::
 
@@ -110,7 +110,7 @@ After that, either launch your payload with Payload Guest, or use a payload webs
 - [ps4boot.github.io](https://ps4boot.github.io/) (5.05/6.72/9.60) (Webkit method)
 - [ps4boot.free.nf/index.html](http://ps4boot.free.nf/index.html) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
 
-<img src="/screenshots/ps4boot-payloads.png">
+<img src="/screenshots/ps4boot-payloads.png" width="75%">
 
 > [!WARNING]
 > Use a 1GB VRAM payload for installation and first boot.
