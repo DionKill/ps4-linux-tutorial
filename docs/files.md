@@ -6,8 +6,12 @@ Because getting this files is a complete and utter joke, I've decided that re-up
 ## Kernels
 Let's start with the kernels: they are very important as they have the software that controls all of the PS4's hardware. This is, by definition, Linux.
 
+This is the section for recommended kernels. There are both vanilla kernels and performance kernels. Ordered by most to least recommended.
+
 ::: details "Which one to pick" or "I have issues"
-Hard to say as there's a neptillion of them, but I'd recommend starting from the newest and going down until you can find one that works.
+Hard to say as there's a neptillion of them, but I'd recommend starting from the top (mind the Southbridge) and going down until you can find one that works.
+
+If all you care about is squeezing as much performance as possible out of the PS4 (you do) try the performance kernel section first.
 
 If you still have issues, write on the forums or join the Discords. Links are at the start of the guide.
 :::
@@ -17,36 +21,41 @@ ZRAM kernels have momentarely been removed, as they haven't been fully tested.
 
 I'll keep this guide up to date in case one becomes available.
 :::
-### Recommended kernels
-There's literally dozens to start with. To make it readable, some of these are linked twice per version even if the download links or sources are the same.
 
-| Kernel          | Source and Download                                                                                                                                                                                                           | Developers      | Compatible Southbridges    | Extra info                                                                                        |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------------- | ------------------------------------------------------------------------------------------------- |
-| 6.15.y<br>5.x   | [GitHub](https://github.com/feeRnt/ps4-linux-12xx)                                                                                                                                                                            | freeRnt, others | All, depends on the branch | You may have to test a lot of them, check the Actions tab. Remember to check for the southbridge. |
-| 6.15.4          | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/actions/runs/17358604885)                                                                                                                                                   | freeRnt, others | Belize                     | Recommended.                                                                                      |
-| 5.15.25-rc1<br> | [Download](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/kernels/5.15.25-rc1_belize_ThinLTO_Led_LAVANDE_Debian-Trixie_LLVM_19.1.2.zip)<br>[Original link](https://www.youtube.com/watch?v=mpcE9LLS59k) | saya            | Belize                     | Multiple power LED colors. LTO.                                                                   |
-| 5.15.15         | [Original link](https://www.youtube.com/watch?v=mpcE9LLS59k)                                                                                                                                                                  | saya            | Aeolia?<br>Belize          | Multiple power LED colors. LTO.                                                                   |
+::: details Do newer kernels matter?
+Not really. New features are mostly added for newer processors and devices, though there are cool things like better performance on specific scenarios and native drivers for things like PS4's controllers, but as long as you have a 5.x+ kernel your experience should be mostly the same, as those support Vulkan.
+:::
+### Vanilla kernels
+These are normal linux kernels with additional patches to make them work with the PS4. Nothing else has been added.
 
-### Other kernels
-These kernels exist and are relatively new, but I don't recommend them anymore as there are better alternatives. If none of the others work for you, or you are using a specific distro, you can try these.
+| Kernel                                                                                                                                                                                   | Source and Download                                | Developers        | Compatible Southbridges | Extra info                                       |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------- | ----------------------- | ------------------------------------------------ |
+| [6.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases)<br>[5.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases)<br>[5.4.x](https://github.com/feeRnt/ps4-linux-12xx/releases) | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | freeRnt (Package) | All                     | Check Actions section if the releases don't work |
+| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__wifi_blkscrn)                                                                                                    | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | freeRnt (Package) | Aeolia<br>Belize        | Specific blackscreen-fix release quick link      |
 
-| Kernel version | Source and download                                                                                                       | Developer  | Compatible Southbridges    | Extra info                                                            |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------- | --------------------------------------------------------------------- |
-| 6.15.y         | [GitHub](https://github.com/crashniels/linux)                                                                             | crashniels | All, depends on the branch | No precompiled downloads available. No idea if it's still maintained. |
-| 4.4<br>5.x     | No source.<br>[Download](https://www.logic-sunrise.com/news-1160961-ps4-linux-bzimages-pour-toutes-versions-de-ps4.html). | saya       | All                        | Website is in French. Overclocked.                                    |
+### Performance oriented kernels
+These kernels are especially tailored to gain as much performance as possible. They should also have GPU optimizations for PS4 Pros.
 
-If you want more help, ask out the [Discord servers](overview#important-places). We'll try to help you out.
-### Bootargs (depends, mostly for saya's kernels)
-The `bootargs.txt` is necessary for saya's kernels. You may need to use these for your own kernels.
+| Kernel                                                                                                  | Source and Download                                          | Developers | Compatible Southbridges | Extra info                                      |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------- | ----------------------- | ----------------------------------------------- |
+| [6.8.12](https://e.pcloud.link/publink/show?code=XZALxqZr6mCsjqBmdFQF1i3DTUYsJFY6iSV) (slow boot, beta) | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | saya       | Aeolia<br>Belize        | FullLTO, more optimizations                     |
+| [5.15.25-rc1](https://e.pcloud.link/publink/show?code=XZ6LxqZMjOjBKQVi7B5XS1OUXbn8QrYgAx7)              | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | saya       | Belize                  | FullLTO, more optimizations                     |
+| [5.15.15](https://e.pcloud.link/publink/show?code=XZtLxqZPCy9fq0R1A7Xa7T5USXJt4GNpiYk)                  | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | saya       | Aeolia<br>Belize        | FullLTO, more optimizations                     |
+| [5.4.213](https://e.pcloud.link/publink/show?code=XZqLxqZxO1NAbr0RMbvdYnRob2KjyPiXLPV)                  | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | saya       | Baikal                  | Requires [bootargs](legacy#bootargs), optimized |
 
-This adds certain parameters when launching the kernel to make the GPU work properly.
+### About the `bootargs.txt`
+> [!WARNING]
+> DO NOT SET IT UP UNLESS REQUIRED.
+> 
+> Very new kernels (6.15+) shouldn't need it anyways.
 
-In order to use it, create a new text file, and input this line inside, then save it as `bootargs.txt`:
-```
-panic=0 clocksource=tsc consoleblank=0 net.ifnames=0 radeon.dpm=0 amdgpu.dpm=0 drm.debug=0 console=uart8250,mmio32,0xd0340000 console=ttyS0,115200n8 console=tty0 drm.edid_firmware=edid/1920x1080.bin 
-```
+Your distro or kernel may require the `bootargs.txt`. If you get a grey screen instead of the login screen, check [this](legacy#bootargs) out for how to set it up.
 
-Remember that this `bootargs.txt` needs to be placed in the same folder as the bzImage.
+### More kernels
+If you really want to try other and older kernels, even though it's highly discouraged, you can go to the [Legacy and other Kernels](legacy#kernels) section.
+
+If you want more kernels or help, ask out the [Discord servers](overview#important-places).
+
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums. [Here it is](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
 
@@ -59,17 +68,17 @@ Yes! Finally the time has come. Which one will you choose?
 Honestly there's a neptillion distros. Most however, are very outdated, especially the ones on the PS4Linux's website list.
 So here I'm listing the ones that are actually new and I'd recommend you install:
 
-| Distro                                                                                           | Base    | Developer                                                                           | Info                                                                                            |
-| ------------------------------------------------------------------------------------------------ | ------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [CachyOS](https://ps4linux.com/forums/d/347-linux-pack-cachyos-final-fix-biglinux-and-other-fix) | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | "Final Fix". The distro is half polish, half english. But it works and is up to date. Uses KDE. |
-| CachyOS                                                                                          | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw), DionKill | My version. It fixes language (mostly) and disables the anime girl backgrounds.                 |
-| [Manjaro](https://ps4linux.com/forums/d/342-manjaro-from-scratch)                                | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | A Manjaro KDE distro.                                                                           |
-| [Garuda](https://ps4linux.com/forums/d/334-garuda-linux-ext4-rc1-yakuza)                         | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | Gaming focused distro (it just has a weird UI)                                                  |
-| [Debian Forky](https://ps4linux.com/forums/d/373-debian-forky-sid/3)                             | Debian  | [triki1](https://ps4linux.com/forums/u/triki1)                                      | Very new distro. Extremely bleeding edge.                                                       |
-| [Debian Trixie](https://ps4linux.com/forums/d/369-debien-trixie-full-update-mesa-2520-devel/13)  | Debian  | [triki1](https://ps4linux.com/forums/u/triki1)                                      | Latest Debian                                                                                   |
-| [Xubuntu](https://ps4linux.com/forums/d/337-xubuntu-2504-final-release)                          | Ubuntu  | [triki1](https://ps4linux.com/forums/u/triki1)                                      | Divided into multiple files                                                                     |
-| [Batocera 40](https://ps4linux.com/forums/d/252-batocera-40-for-ps4-installation-setup-tutorial) | No clue | Noob404                                                                             | For retrogaming                                                                                 |
-| [JaguarLinux](https://github.com/Jaguarlinux)                                                    | None    | TigerClips1                                                                         | A distro made from scratch for the PS4! Still in development, but worth mentioning.             |
+| Distro                                                                                                               | Base    | Developer                                                                           | Info                                                                                            |
+| -------------------------------------------------------------------------------------------------------------------- | ------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [CachyOS](https://ps4linux.com/forums/d/347-linux-pack-cachyos-final-fix-biglinux-and-other-fix) (may need bootargs) | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | "Final Fix". The distro is half polish, half english. But it works and is up to date. Uses KDE. |
+| CachyOS                                                                                                              | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw), DionKill | My version. It fixes language (mostly) and disables the anime girl backgrounds.                 |
+| [Manjaro](https://ps4linux.com/forums/d/342-manjaro-from-scratch)                                                    | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | A Manjaro KDE distro.                                                                           |
+| [Garuda](https://ps4linux.com/forums/d/334-garuda-linux-ext4-rc1-yakuza)                                             | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)           | Gaming focused distro (it just has a weird UI)                                                  |
+| [Debian Forky](https://ps4linux.com/forums/d/373-debian-forky-sid/3)                                                 | Debian  | [triki1](https://ps4linux.com/forums/u/triki1)                                      | Very new distro. Extremely bleeding edge.                                                       |
+| [Debian Trixie](https://ps4linux.com/forums/d/369-debien-trixie-full-update-mesa-2520-devel/13)                      | Debian  | [triki1](https://ps4linux.com/forums/u/triki1)                                      | Latest Debian                                                                                   |
+| [Xubuntu](https://ps4linux.com/forums/d/337-xubuntu-2504-final-release)                                              | Ubuntu  | [triki1](https://ps4linux.com/forums/u/triki1)                                      | Divided into multiple files                                                                     |
+| [Batocera 40](https://ps4linux.com/forums/d/252-batocera-40-for-ps4-installation-setup-tutorial)                     | No clue | Noob404                                                                             | For retrogaming                                                                                 |
+| [JaguarLinux](https://github.com/Jaguarlinux)                                                                        | None    | TigerClips1                                                                         | A distro made from scratch for the PS4! Still in development, but worth mentioning.             |
 
 >[!TIP]
 >Want to add more distros? Make an issue and your wish shall be granted.

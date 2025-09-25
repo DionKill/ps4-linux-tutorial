@@ -52,15 +52,17 @@ Sometime the exploit fails, or loading the Linux payload crashes the console, or
 
 # Other issues
 ::: details The scene is a complete mess
-Yeah I know. The links are sketchy as hell, unfortunately a lot of developers in the community don't provide source code or releases on GitHub which makes using this stuff very annoying.
+Alright, this section needed a complete rewrite so here it is.
+Previously I used this as a rant to pour all of my stress into figuring how the fuck this shit is supposed to work, but the more I got into it and the more I understood.
 
-Like, did we need a NEPTILLION different kernels? I'm no developer, but if the normal Linux kernel doesn't have variants for different Wi-Fi chips, then I'm sure we don't either. Also why are patches private? Of course, the code is yours, but at least publicly share the built files in a common place? Not even the Maryo company would be able to find those.
+In a nutshell, the scene is a mess and a lot of stuff may be shared privately or on Discord servers because:
+- It's in testing phase and therefore not public yet
+- It's not open sourced because there's a lot of people who steal the developer's work
+- A lot of this stuff is from developers all across the world and there's a language barrier
 
-Also the fact that we can't even find source code for stuff like up to date drivers is absolute insanity! How am I supposed to make my own distro? It feels overwhelming and it's the whole reason I made this guide, to provide a place where you can find it all.
+Especially the second reason is why the community is like this, unfortunately.
 
-But it gets worse. Wanna know why? I've spoken to some developers, and it seems that they would love to make it open source... If it wasn't for people who steal their code, not credit them, and end up getting all the attention. A big fuck you to all of these assholes from the bottom of my heart.
-
-Sorry for this rant, I don't want to be mean to anyone, again it's your choice how to distribute your code, but this situation is ridiculous. In comparison, the 3DS and especially the PS Vita communities are light years ahead.
+It will take time, I'm gratefull for all the help from everyone in the community, and I'm also hopefully making the scene a little bit better and one day we'll all have stuff uploaded in proper places :D
 :::
 
 ::: details How can I improve the situation?
