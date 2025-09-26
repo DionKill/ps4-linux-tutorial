@@ -4,15 +4,17 @@ If you don't trust people on the internet (and rightfully so), you may want to p
 > [!WARNING]
 > This is meant for advanced users ONLY.
 > 
-> Some things may not work properly. If you encounter issues, write on the PS4Linux's Discord.
+> Some things may not work properly. If you encounter issues, chat on the [Discords](overview#important-places).
 
 ## Requirements
-You need to get the **drivers**. Now here's the fun part: I can't point you to anything, because there are no up to date sources available. I found some, and instead of losing them I'll be uploading them here
+You need to get the **drivers**.
+
+Now here's the fun part: I can't point you to anything, because there are no up to date sources available.
 
 | Repo                                                                          | Info                            |
 | ----------------------------------------------------------------------------- | ------------------------------- |
 | [Mesa-PS4 Docker config](https://github.com/FalsePhilosopher/mesa-docker-ps4) | Docker config to build mesa ps4 |
 | [libdrm](https://github.com/Jaguarlinux/ps4linux-libdrm)                      | no clue what it's for           |
-| ...                                                                           | ???                             |
+| ???                                                                           | ???                             |
 ## WIP
 Not much info here. I'm not even going to link it yet, I can't find open source drivers so to avoid confrontation with the developers in case of leaks none that are open source will be reported for now.

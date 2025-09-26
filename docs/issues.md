@@ -46,13 +46,12 @@ Linux on PS4 is using modified AMDGPU drivers that are unfortunately old and uns
 I mean it was kind of expected. How else are you gonna go back to the main menu?
 :::
 
-::: details Sometime it just doesn't work
-Sometime the exploit fails, or loading the Linux payload crashes the console, or when booting into Linux things don't work and you gotta reboot. Again, things are unstable, it'll take a lot of work and time to fix.
+::: details Stuck on a white LED
+Sometimes the console gets stuck on a white LED instead of launching Linux. Make sure you are following all steps correctly, and that you are using the correct payloads.
 :::
 
 # Other issues
 ::: details The scene is a complete mess
-Alright, this section needed a complete rewrite so here it is.
 Previously I used this as a rant to pour all of my stress into figuring how the fuck this shit is supposed to work, but the more I got into it and the more I understood.
 
 In a nutshell, the scene is a mess and a lot of stuff may be shared privately or on Discord servers because:
@@ -62,9 +61,9 @@ In a nutshell, the scene is a mess and a lot of stuff may be shared privately or
 
 Especially the second reason is why the community is like this, unfortunately.
 
-It will take time, I'm gratefull for all the help from everyone in the community, and I'm also hopefully making the scene a little bit better and one day we'll all have stuff uploaded in proper places :D
+It will take time, I'm grateful for all the help from everyone in the community, and I'm also hopefully making the scene a little bit better and one day we'll all have stuff uploaded in proper places :D
 :::
 
 ::: details How can I improve the situation?
-Join the Discord servers, share this tutorial, help in any way you can. That's all.
+Join the Discord servers, share this tutorial, star it on GitHub (pretty please), also don't forget to like, comment and subscribe!
 :::

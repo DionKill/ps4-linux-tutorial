@@ -69,7 +69,10 @@ However, as some issues may arise on certain consoles, you should still go and t
 	- It may be automatically set to "Limited" even if your display supports "Full".
 	- Full may not work on really old displays. If the image looks weird, set it to Limited.
 
-If you change displays, make sure to check these settings again!
+> [!TIP]
+> Remember to check these settings again if you change your display.
+> 
+> Also, make sure that your TV/monitor doesn't change the source while rebooting to Linux, as Linux currently doesn't support Monitor hot-plug. If you ever loose signal or change display you must reboot the system.
 
 #### "System" settings
 

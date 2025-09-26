@@ -10,16 +10,17 @@ In all honesty: most of these can be found on the PS4Linux.com website, as it ha
 #### Other kernels
 These are additional kernels that are kind of up to date but also not really or that do not offer prebuilts, which aren't useful for 99% of people.
 
-| Kernel version | Source and download                           | Developer  | Compatible Southbridges    | Extra info                          |
-| -------------- | --------------------------------------------- | ---------- | -------------------------- | ----------------------------------- |
-| 6.15.y         | [GitHub](https://github.com/crashniels/linux) | crashniels | All, depends on the branch | No precompiled downloads available. |
+| Kernel version | Source and download                           | Compatible Southbridges    | Extra info                          |
+| -------------- | --------------------------------------------- | -------------------------- | ----------------------------------- |
+| 6.15.y         | [GitHub](https://github.com/crashniels/linux) | All, depends on the branch | No precompiled downloads available. |
 #### Really old kernels
 These kernels are so old that probably don't even boot anymore. Do not use these.
 
-| Kernel version | Source and download                                                                                         | Developer | Compatible Southbridges | Extra info                                                       |
-| -------------- | ----------------------------------------------------------------------------------------------------------- | --------- | ----------------------- | ---------------------------------------------------------------- |
-| 4.4<br>5.x     | [Download](https://www.logic-sunrise.com/news-1160961-ps4-linux-bzimages-pour-toutes-versions-de-ps4.html). | saya      | All                     | Website is in French. Overclocked. Better kernels are available. |
-| 4.4<br>5.x     | Probably no source.<br>[Download](https://ps4linux.com/downloads/#PS4_Linux_Kernel_Downloads).              | Many      | All                     | The old list from PS4Linux.                                      |
+| Kernel version | Source and download                                                                            | Compatible Southbridges | Extra info                  |
+| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- | --------------------------- |
+| 4.4<br>5.x     | Probably no source.<br>[Download](https://ps4linux.com/downloads/#PS4_Linux_Kernel_Downloads). | All                     | The old list from PS4Linux. |
+
+Credits for the kernels can be found [here](ending#credits).
 #### Bootargs
 The `bootargs.txt` is not really necessary anymore, unless your "distro + kernel" combo of choice requires it or on certain kernels for Baikal PS4s. Therefore, it has been moved to the legacy section.
 
