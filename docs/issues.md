@@ -24,7 +24,19 @@ There are a lot of undocumented issues. Or, if they are documented, I couldn't e
 If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip that is incompatible with your current kernel. This means that you will need to try one of the other kernels, and if they don't work, try to ask on the forums or scout the internet until you can find one. Unfortunately the development is scattered and it's hard to get hands on these kernels.
 :::
 
-::: details Black screen after boot / nothing works?
+::: details Black/gray screen after boot
+This is a very long answer.
+
+> [!TIP]
+> The PS4 on Linux doesn't support monitor hot-plugging, so this means you can't change nor disconnect your display or you will be forced to reboot (or maybe you can just change TTY by doing `CTRL+ALT+F2` and `CTRL+ALT+F1/F7`)
+
+### Gray screen
+If you see a gray screen and/or loose signal right AFTER seeing the login screen, then you may need to use the bootargs.txt or change kernel.
+
+Instead, if you loose signal or get an "unsupported resolution" error from your TV/monitor right after booting or BEFORE seeing the login screen, then you must change to a different kernel, as some kernels try to run the PS4 in 120hz mode (no, it doesn't show anything on a high refresh-rate capable display).
+
+Thanks to mircoho and saya for helping out in clarifying these problems.
+### Other possible fixes
 If booting a display manager or your desktop environment results in a black screen, and the distro is using X11, try Wayland.
 
 To do that, you can try a Wayland based distro, there's plenty out there, or you can also try to change window manager by running `dbus-run-session -- <name of DE/WM>` on another TTY (change by doing CTRL+ALT+F2).

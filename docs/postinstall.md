@@ -1,7 +1,7 @@
 g# Post installation things
 Once you've installed Linux and are on the desktop, before rushing to do things, you may want to do a couple of additional steps.
 
-To change some config files (nothing to worry about), I'll recommend `nano` because it just works. To save a file, use `ctrl+s` and to exit `ctrl+x`.
+To change some config files (nothing to worry about), I'll recommend `nano` because it just works. To save a file, use `CTRL+S` and to exit `CTRL+X`.
 
 ## Update your system <Badge type="danger" text="caution" />
 Updating your system can be a bit of a pain in the ass, as some of the packages can't be updated.
