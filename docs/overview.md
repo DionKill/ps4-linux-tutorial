@@ -5,6 +5,16 @@
 In this very professional tutorial, we'll go over how to install Linux on your PS4. The guide has been created because the PS4Linux website hasn't been updated in ages and their documentation is pretty bad (still, their work is appreciated, this guide is heavily inspired by it).
 
 This tutorial focuses ONLY on modern versions of Linux.
+
+## Video guide (optional)
+
+> [!TIP]
+> If you prefer a video guide, I recommend Modded Warfare's on YT.
+> 
+> As is the nature with videos, it may not be up to date with the content here.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KW_lRyXQcb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Warning before you proceed
 
 > [!CAUTION] 
@@ -26,6 +36,7 @@ Here are some links you'll probably find useful. You can come back to them if ne
 5. Discord
 	1. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
 	2. [tux4orbis](https://discord.gg/UYFrkueH)
+	3. [PS4-LINUX](https://discord.gg/88ZrcmpJ) (saya's)
 6. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
 ## To the setup
