@@ -24,12 +24,12 @@ There are a lot of undocumented issues. Or, if they are documented, I couldn't e
 If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip that is incompatible with your current kernel. This means that you will need to try one of the other kernels, and if they don't work, try to ask on the forums or scout the internet until you can find one. Unfortunately the development is scattered and it's hard to get hands on these kernels.
 :::
 
-::: details Black/gray screen after boot
-This is a very long answer.
+::: details Black/gray screen or "no signal"
+Rarely, a gray image can happen even with fixes like bootargs. Make sure that you try to reboot at least twice.
 
-> [!TIP]
-> The PS4 on Linux doesn't support monitor hot-plugging, so this means you can't change nor disconnect your display or you will be forced to reboot (or maybe you can just change TTY by doing `CTRL+ALT+F2` and `CTRL+ALT+F1/F7`)
+Also, remember that the PS4 on Linux doesn't support monitor hot-plugging, so this means you can't change nor disconnect your display or you will be forced to reboot (or maybe you can just change TTY by doing CTRL+ALT+F2 and CTRL+ALT+F1/F7).
 
+If that doesn't fix it, you can read the following bible.
 ### Gray screen
 If you see a gray screen and/or loose signal right AFTER seeing the login screen, then you may need to use the bootargs.txt or change kernel.
 
