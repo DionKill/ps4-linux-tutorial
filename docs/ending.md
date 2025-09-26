@@ -42,7 +42,7 @@ If you want, you can check out their repos:
 	- Made kernel patches.
 - [crashniels](https://github.com/crashniels/linux)
 	- Ported newer kernel versions.
-- [freeRnt]((https://github.com/feeRnt/ps4-linux-12xx)) (Package)
+- [freeRnt](https://github.com/feeRnt/ps4-linux-12xx) (Package)
 	- Hosts and maintains the PS4 Linux kernel sources on GitHub.
 
 Additionally, I also want to mention:
