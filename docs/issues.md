@@ -20,10 +20,6 @@ If the installer can't find the USB device, you have two options:
 # Post-install issues
 There are a lot of undocumented issues. Or, if they are documented, I couldn't even find them because no search engine indexed those pages or they are in a foreign language.
 
-::: details Wi-Fi and/or Bluetooth don't work
-If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip that is incompatible with your current kernel. This means that you will need to try one of the other kernels, and if they don't work, try to ask on the forums or scout the internet until you can find one. Unfortunately the development is scattered and it's hard to get hands on these kernels.
-:::
-
 ::: details Black/gray screen or "no signal"
 Rarely, a gray image can happen even with fixes like bootargs. Make sure that you try to reboot at least twice.
 
@@ -49,17 +45,19 @@ Thanks to @kalaposfos on Discord for mentioning this fix.
 ::: details Graphical issues
 Sometimes you can encounter graphical issues. Screen flickers at boot, or is unresponsive. There can also be weird graphical glitches in menus and even in games, especially Nintendo Switch emulators for what I've seen.
 
-Hell, even Minecraft has issues. After some testing, I found out that in 25w16a, one of the snapshots for Minecraft 1.21.6, they changed a lot in the engine's renderer pipeline, and now it doesn't render properly anymore. You are forced to either play 1.21.5, which has loads of performance regressions and runs like shit, or go even lower and miss out on new features.
-
-Linux on PS4 is using modified AMDGPU drivers that are unfortunately old and unstable or bleeding-edge and unstable. There's nothing you can do about it, unless you know how to work with GPU drivers. Also Mesa has a lot of issues, I'm not too sure on how GPU works on Linux.
-:::
-
-::: details Rebooting goes to OrbisOS
-I mean it was kind of expected. How else are you gonna go back to the main menu?
+ANY graphical glitches you see are most likely caused by Mesa drivers. Try to find other distros that fix the problem, or try to change your Mesa driver version if you can find one.
 :::
 
 ::: details Stuck on a white LED
 Sometimes the console gets stuck on a white LED instead of launching Linux. Make sure you are following all steps correctly, and that you are using the correct payloads.
+:::
+
+::: details Wi-Fi and/or Bluetooth don't work
+If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip that is incompatible with your current kernel. This means that you will need to try one of the other kernels, and if they don't work, try to ask on the forums or scout the internet until you can find one. Unfortunately the development is scattered and it's hard to get hands on these kernels.
+:::
+
+::: details Rebooting goes to OrbisOS
+I mean it was kind of expected. How else are you gonna go back to the main menu?
 :::
 
 # Other issues
