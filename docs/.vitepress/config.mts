@@ -13,7 +13,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Getting started', link: '/overview' },
       { text: 'Post-install', link: '/postinstall' },
-      { text: 'Legacy', link: '/legacy' }
+      { text: 'General issues', link: '/issues' }
     ],
 
     sidebar: [

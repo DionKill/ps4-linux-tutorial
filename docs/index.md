@@ -13,14 +13,11 @@ hero:
       text: 🏁 Let's get it on!
       link: /overview
     - theme: alt
-      text: 📹 Alternative YouTube Guide (by Modded Warfare)
+      text: 📹 YT Guide (Modded Warfare)
       link: https://www.youtube.com/watch?v=KW_lRyXQcb8
     - theme: alt
-      text: 🔎 Another guide (very outdated)
-      link: https://ps4linux.com
-    - theme: alt
-      text: ☠️ Legacy content
-      link: /legacy
+      text: 📖 Source on GitHub
+      link: https://github.com/DionKill/ps4-linux-tutorial/
 
 features:
   - icon: 🧹
@@ -41,8 +38,8 @@ Linux is a kernel, though nowadays many refer to it as the whole fleet of operat
 :::
 
 ::: details What are the PS4's specifications?
-- "Liverpool" AMD APU based on the Jaguar architecture
-	- 8 core, x86-64 CPU @1.6GHz (Phat and Slim) or @2.1GHz (Pro)
+- "Liverpool" AMD APU
+	- 8 core, x86-64 CPU @1.6GHz (Phat and Slim) or @2.1GHz (Pro) based on the Jaguar architecture
 		- In theory, it's two Athlon 5150s duct taped together
 		- Performance similar to an i3-2120 in multicore, or a Pentium 4 in single core
 	- AMD "Gladius" GPU

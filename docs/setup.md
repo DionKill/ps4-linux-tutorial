@@ -67,9 +67,7 @@ However, as some issues may arise on certain consoles, you should still go and t
 
 - Set your RGB color gamut
 	- It may be automatically set to "Limited" even if your display supports "Full".
-	- Full may not work on really old displays. If the image looks weird, set it to Limited.
-
-If you change displays, make sure to check these settings again!
+	- "Full" may not work on really old displays. If the image looks weird, set it to "Limited".
 
 #### "System" settings
 
@@ -80,7 +78,7 @@ If you change displays, make sure to check these settings again!
 	- This is just not true anymore. Also, it must be on for the BD-JB exploit to work.
 - Check your internet connection
 	- Some models have issues if they aren't already connected to internet.
-	- Ethernet may not work on PS4Pro Baikal
+	- Ethernet may not work on PS4 Pro Baikal
 
 ## PC
 You'll need a way to connect to your PS4 to transfer files. A PC is recommended. You will also need an internet connection.
@@ -103,8 +101,6 @@ In order to do that, open up your FTP file manager of choice.
 #### MacOS
 - I'm not rich, you tell me
 - Probably Filezilla
-
-For instance, on my PS4 I would connect to the IP `192.168.1.50:2121`. I'd put a picture if I was bothered enough to turn my PS4 back on and take a screenshot.
 
 ### Necessary files
 In the next step, you also will need to download the following:

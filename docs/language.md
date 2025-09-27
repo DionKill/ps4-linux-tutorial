@@ -1,5 +1,8 @@
 # Language and terms
 We need to clear any confusion for people that are new to this stuff. The PS4 is a relatively quirky console and it can get pretty confusing with the myriad of models there are.
+
+> [!TIP]
+> Take notes and remember all you see in this page, as it will interest you during your installation.
 ## Revisions
 
 The PS4 family of consoles has had 3 revsions in total:
