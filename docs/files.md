@@ -8,6 +8,13 @@ Let's start with the kernels: they are very important as they have the software 
 
 This is the section for recommended kernels. There are both vanilla kernels and performance kernels. Ordered by most to least recommended.
 
+[Credits for all of these kernels](ending#credits).
+
+> [!TIP]
+> Newest kernels available:
+> - Aeolia/Belize: 6.15 (6.16 on some pre-releases)
+> - Baikal: 5.4
+
 ::: details "Which one to pick" or "I have issues"
 Hard to say as there's a neptillion of them, but I'd recommend starting from the top (mind the Southbridge) and going down until you can find one that works.
 
@@ -16,17 +23,9 @@ If all you care about is squeezing as much performance as possible out of the PS
 If you still have issues, write on the forums or join the Discords. Links are at the start of the guide.
 :::
 
-::: details Where are the ZRAM kernels?
-ZRAM kernels have momentarely been removed, as they haven't been fully tested.
-
-I'll keep this guide up to date in case one becomes available.
-:::
-
 ::: details Do newer kernels matter?
 Not really. New features are mostly added for newer processors and devices, though there are cool things like better performance on specific scenarios and native drivers for things like PS4's controllers, but as long as you have a 5.x+ kernel your experience should be mostly the same, as those support Vulkan.
 :::
-
-[Credits for all of these kernels](ending#credits).
 ### Vanilla kernels
 These are normal linux kernels with additional patches to make them work properly on the PS4. 
 
@@ -35,15 +34,16 @@ These are normal linux kernels with additional patches to make them work properl
 | [6.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases)<br>[5.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases)<br>[5.4.x](https://github.com/feeRnt/ps4-linux-12xx/releases) | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | All                     | Check Actions section if the releases don't work |
 | [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__wifi_blkscrn)                                                                                                    | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | Aeolia<br>Belize        | Specific blackscreen-fix release quick link      |
 
-### Performance oriented kernels
-These kernels are especially tailored to gain as much performance as possible.
+### Performance patched kernels
+These kernels are compiled using additional optimizations. Some of them use LTO, some also add CachyOS's patches, and some others also add ZRAM or additional features.
 
-| Kernel                                                                                                  | Source and Download                                          | Compatible Southbridges | Extra info                                      |
-| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------- | ----------------------------------------------- |
-| [6.8.12](https://e.pcloud.link/publink/show?code=XZALxqZr6mCsjqBmdFQF1i3DTUYsJFY6iSV) (slow boot, beta) | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Aeolia<br>Belize        | FullLTO, more optimizations                     |
-| [5.15.25-rc1](https://e.pcloud.link/publink/show?code=XZ6LxqZMjOjBKQVi7B5XS1OUXbn8QrYgAx7)              | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Belize                  | FullLTO, more optimizations                     |
-| [5.15.15](https://e.pcloud.link/publink/show?code=XZtLxqZPCy9fq0R1A7Xa7T5USXJt4GNpiYk)                  | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Aeolia<br>Belize        | FullLTO, more optimizations                     |
-| [5.4.213](https://e.pcloud.link/publink/show?code=XZqLxqZxO1NAbr0RMbvdYnRob2KjyPiXLPV)                  | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Baikal                  | Requires [bootargs](legacy#bootargs), optimized |
+| Kernel                                                                                                          | Source                                                       | Compatible Southbridges | Extra info                                                          |
+| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------- | ------------------------------------------------------------------- |
+| [6.15.4](https://mega.nz/folder/9woEhZjQ#auFuohUWBy-IiA1ayO6S1w) by triki1                                      | Present on Mega (but can't extract, corrupted)               | Aoelia<br>Belize        | Go to the 6.15.4-zram-fix... folder and download the bzImage there. |
+| [6.8.12](https://e.pcloud.link/publink/show?code=XZALxqZr6mCsjqBmdFQF1i3DTUYsJFY6iSV) (slow boot, beta) by saya | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Aeolia<br>Belize        | FullLTO, more optimizations                                         |
+| [5.15.25-rc1](https://e.pcloud.link/publink/show?code=XZ6LxqZMjOjBKQVi7B5XS1OUXbn8QrYgAx7) by saya              | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Belize                  | FullLTO, more optimizations                                         |
+| [5.15.15](https://e.pcloud.link/publink/show?code=XZtLxqZPCy9fq0R1A7Xa7T5USXJt4GNpiYk) by saya                  | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Aeolia<br>Belize        | FullLTO, more optimizations                                         |
+| [5.4.213](https://e.pcloud.link/publink/show?code=XZqLxqZxO1NAbr0RMbvdYnRob2KjyPiXLPV) by saya                  | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Baikal                  | Requires [bootargs](legacy#bootargs), optimized                     |
 
 ### Specific kernel problems
 Before continuing, I want to mention that there can be many issues with kernel and distro combinations.
