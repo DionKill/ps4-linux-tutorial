@@ -8,11 +8,13 @@ export default defineConfig({
 
   // Metadata and favicon
   head: [
+    // Favicon
+    ['link', { rel: 'icon', type: 'image/png', href: '/ps4-linux-tutorial/favicon.png', sizes: '32x32' }],
+    // SEO
+    ['meta', { name: 'robots', content: 'index, follow' }],
+
     // Basic metadata
     ['meta', { name: 'description', content: 'A step-by-step guide for running Linux on PS4' }],
-
-    // SEO
-    ['meta', { name: 'robots', content: 'index, follow' }]
 
     // Open Graph (Discord, Facebook, etc.)
     ['meta', { property: 'og:title', content: 'PS4 Linux Tutorial' }],
@@ -26,9 +28,6 @@ export default defineConfig({
     ['meta', { name: 'twitter:title', content: 'PS4 Linux Tutorial' }],
     ['meta', { name: 'twitter:description', content: 'Step-by-step guide for running Linux on PS4.' }],
     ['meta', { name: 'twitter:image', content: 'https://dionkill.github.io/ps4-linux-tutorial/preview.png' }],
-
-    // Favicon
-    ['link', { rel: 'icon', type: 'image/png', href: '/ps4-linux-tutorial/favicon.png', sizes: '32x32' }],
   ],
 
   themeConfig: {
