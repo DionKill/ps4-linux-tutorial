@@ -42,18 +42,19 @@ This is a lot of stuff to cover on the guide so you will need to look it up your
 Thanks to @kalaposfos on Discord for mentioning this fix.
 :::
 
-::: details Graphical issues
-Sometimes you can encounter graphical issues. Screen flickers at boot, or is unresponsive. There can also be weird graphical glitches in menus and even in games, especially Nintendo Switch emulators for what I've seen.
-
-ANY graphical glitches you see are most likely caused by Mesa drivers. Try to find other distros that fix the problem, or try to change your Mesa driver version if you can find one.
-:::
-
 ::: details Stuck on a white LED
-Sometimes the console gets stuck on a white LED instead of launching Linux. Make sure you are following all steps correctly, and that you are using the correct payloads.
+Sometimes it fails, try to reboot. It could take you even three or more attempts.
+However, if it keeps happening, and the console gets stuck on a white LED instead of launching Linux, make sure you are following all steps correctly, and that you are using the correct payloads. Also, if you are using FTP, wait for a while or move the data using a USB drive instead.
 :::
 
 ::: details Wi-Fi and/or Bluetooth don't work
 If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip that is incompatible with your current kernel. This means that you will need to try one of the other kernels, and if they don't work, try to ask on the forums or scout the internet until you can find one. Unfortunately the development is scattered and it's hard to get hands on these kernels.
+:::
+
+::: details Graphical glitches
+Sometimes you can encounter graphical issues. Screen flickers at boot, or is unresponsive. There can also be weird graphical glitches in menus and even in games, especially Nintendo Switch emulators for what I've seen.
+
+ANY graphical glitches you see are most likely caused by Mesa drivers. Try to find other distros that fix the problem, or try to change your Mesa driver version if you can find one.
 :::
 
 ::: details Rebooting goes to OrbisOS

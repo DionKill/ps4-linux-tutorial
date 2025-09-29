@@ -5,7 +5,30 @@ export default defineConfig({
   title: "PS4 Linux Tutorial",
   description: "A simple and modern guide on how to install Linux on PS4 systems.",
   base: "/ps4-linux-tutorial/",
-  head: [['link', { rel: 'icon', type: 'image/png', href: '/ps4-linux-tutorial/favicon.png', sizes: '32x32' }]],
+
+  // Metadata and favicon
+  head: [
+    // Favicon
+    ['link', { rel: 'icon', type: 'image/png', href: '/ps4-linux-tutorial/favicon.png', sizes: '32x32' }],
+    // SEO
+    ['meta', { name: 'robots', content: 'index, follow' }],
+
+    // Basic metadata
+    ['meta', { name: 'description', content: 'A step-by-step guide for running Linux on PS4' }],
+
+    // Open Graph (Discord, Facebook, etc.)
+    ['meta', { property: 'og:title', content: 'PS4 Linux Tutorial' }],
+    ['meta', { property: 'og:description', content: 'Learn how to run Linux on your PlayStation 4 with this modern and simple guide. We will go over how to setup, download kernel and distro, install, boot, customize and optimize your installation to your liking, and also fix any issues that may occur.' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:url', content: 'https://dionkill.github.io/ps4-linux-tutorial/' }],
+    ['meta', { property: 'og:image', content: 'https://dionkill.github.io/ps4-linux-tutorial/preview.png' }],
+
+    // Twitter Card
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'PS4 Linux Tutorial' }],
+    ['meta', { name: 'twitter:description', content: 'Step-by-step guide for running Linux on PS4.' }],
+    ['meta', { name: 'twitter:image', content: 'https://dionkill.github.io/ps4-linux-tutorial/preview.png' }],
+  ],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
