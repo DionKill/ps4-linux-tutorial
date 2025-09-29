@@ -6,7 +6,7 @@ Because getting this files is a complete and utter joke, I've decided that re-up
 ## Kernels
 Let's start with the kernels: they are very important as they have the software that controls all of the PS4's hardware. This is, by definition, Linux.
 
-This is the section for recommended kernels. There are both vanilla kernels and performance kernels. Ordered by most to least recommended.
+This is the section for recommended kernels. There are both vanilla kernels and performance kernels. Ordered by newst to oldest, the top ones are the recommended ones.
 
 [Credits for all of these kernels](ending#credits).
 
@@ -18,7 +18,7 @@ This is the section for recommended kernels. There are both vanilla kernels and 
 ::: details "Which one to pick" or "I have issues"
 Hard to say as there's a neptillion of them, but I'd recommend starting from the top (mind the Southbridge) and going down until you can find one that works.
 
-If all you care about is squeezing as much performance as possible out of the PS4 (you do) try the performance kernel section first.
+If all you care about is squeezing as much performance as possible out of the PS4 (you do) try the performance kernel section first. Those have patches to make the system more responsive (in theory).
 
 If you still have issues, write on the forums or join the Discords. Links are at the start of the guide.
 :::
@@ -31,19 +31,19 @@ These are normal linux kernels with additional patches to make them work properl
 
 | Kernel                                                                                                                                                                                   | Source and Download                                | Compatible Southbridges | Extra info                                       |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------- | ------------------------------------------------ |
+| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__wifi_blkscrn)                                                                                                    | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | Aeolia<br>Belize        | Specific blackscreen-fix release                 |
 | [6.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases)<br>[5.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases)<br>[5.4.x](https://github.com/feeRnt/ps4-linux-12xx/releases) | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | All                     | Check Actions section if the releases don't work |
-| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__wifi_blkscrn)                                                                                                    | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | Aeolia<br>Belize        | Specific blackscreen-fix release quick link      |
 
 ### Performance patched kernels
 These kernels are compiled using additional optimizations. Some of them use LTO, some also add CachyOS's patches, and some others also add ZRAM or additional features.
 
-| Kernel                                                                                                          | Source                                                       | Compatible Southbridges | Extra info                                                                        |
-| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------- | --------------------------------------------------------------------------------- |
-| [6.15.4](https://mega.nz/folder/9woEhZjQ#auFuohUWBy-IiA1ayO6S1w) by triki1                                      | Present on Mega (but can't extract, corrupted)               | Aoelia<br>Belize        | ZRAM, CachyOS patches, KVM... Download from the folder with same name as patches. |
-| [6.8.12](https://e.pcloud.link/publink/show?code=XZALxqZr6mCsjqBmdFQF1i3DTUYsJFY6iSV) (slow boot, beta) by saya | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Aeolia<br>Belize        | FullLTO, more optimizations                                                       |
-| [5.15.25-rc1](https://e.pcloud.link/publink/show?code=XZ6LxqZMjOjBKQVi7B5XS1OUXbn8QrYgAx7) by saya              | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Belize                  | FullLTO, more optimizations                                                       |
-| [5.15.15](https://e.pcloud.link/publink/show?code=XZtLxqZPCy9fq0R1A7Xa7T5USXJt4GNpiYk) by saya                  | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Aeolia<br>Belize        | FullLTO, more optimizations                                                       |
-| [5.4.213](https://e.pcloud.link/publink/show?code=XZqLxqZxO1NAbr0RMbvdYnRob2KjyPiXLPV) by saya                  | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Baikal                  | Requires [bootargs](legacy#bootargs), optimized                                   |
+| Kernel                                                                                                          | Source                                                       | Compatible Southbridges | Extra info                                      |
+| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------- | ----------------------------------------------- |
+| [6.15.4](https://mega.nz/folder/N0QjHSBT#609IHevkWEW0vnTCFW-Rhw) by triki1                                      | FreeRnt's and crashniels'                                    | Aoelia<br>Belize        | ZRAM, CachyOS patches, KVM and more             |
+| [6.8.12](https://e.pcloud.link/publink/show?code=XZALxqZr6mCsjqBmdFQF1i3DTUYsJFY6iSV) (slow boot, beta) by saya | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Aeolia<br>Belize        | FullLTO, more optimizations                     |
+| [5.15.25-rc1](https://e.pcloud.link/publink/show?code=XZ6LxqZMjOjBKQVi7B5XS1OUXbn8QrYgAx7) by saya              | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Belize                  | FullLTO, more optimizations                     |
+| [5.15.15](https://e.pcloud.link/publink/show?code=XZtLxqZPCy9fq0R1A7Xa7T5USXJt4GNpiYk) by saya                  | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Aeolia<br>Belize        | FullLTO, more optimizations                     |
+| [5.4.213](https://e.pcloud.link/publink/show?code=XZqLxqZxO1NAbr0RMbvdYnRob2KjyPiXLPV) by saya                  | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Baikal                  | Requires [bootargs](legacy#bootargs), optimized |
 
 ### Specific kernel problems
 Before continuing, I want to mention that there can be many issues with kernel and distro combinations.
@@ -68,7 +68,7 @@ So here I'm listing the ones that are actually new and I'd recommend you install
 
 | Distro                                                                                           | Base    | Port credits                                                              | Info                                                                                |
 | ------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| CachyOS (may need bootargs)                                                                      | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | A new version came out, but it's corrupted and we're waiting for a reupload.        |
+| [CachyOS](https://mega.nz/file/RyUVQARB#HZD49XXac_v2CYKD4Oqa7Tg1aiZ7ltH_cnDxixw9JjY)             | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | "Final Fantasy v2" version. It has nothing to do with FF.                           |
 | [Manjaro](https://ps4linux.com/forums/d/342-manjaro-from-scratch)                                | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | A Manjaro KDE distro.                                                               |
 | [Garuda](https://ps4linux.com/forums/d/334-garuda-linux-ext4-rc1-yakuza)                         | Arch    | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | "Gaming focused" distro (not really)                                                |
 | [Debian Forky](https://ps4linux.com/forums/d/373-debian-forky-sid/3)                             | Debian  | [triki1](https://www.youtube.com/@trakerchris9876)                        | Very new distro. Extremely bleeding edge.                                           |
