@@ -12,6 +12,8 @@ This tutorial focuses ONLY on modern versions of Linux.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KW_lRyXQcb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="http://localhost:5173/ps4-linux-tutorial/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Warning before you proceed
 
 > [!CAUTION] 
