@@ -36,7 +36,7 @@ Here are some links you'll probably find useful. You can come back to them if ne
 	3. [Qba](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)
 5. Discord
 	1. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
-	2. [tux4orbis](https://discord.gg/UYFrkueH)
+	2. [tux4orbis](https://discord.gg/s6DMgxxqQb)
 	3. [PS4-LINUX](https://discord.gg/88ZrcmpJ) (saya's)
 6. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
