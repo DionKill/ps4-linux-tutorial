@@ -23,6 +23,8 @@ There are a lot of undocumented issues. Or, if they are documented, I couldn't e
 ::: details Black/gray screen or "no signal"
 Rarely, a gray image can happen even with fixes like bootargs. Make sure that you try to reboot at least twice.
 
+This happens because in newer kernels the monitor information must be given to the kernel at boot, which would require us to copy the EDID from the PS4's OS to Linux. This is a known problem, and we currently have workarounds.
+
 Also, remember that the PS4 on Linux doesn't support monitor hot-plugging, so this means you can't change nor disconnect your display or you will be forced to reboot (or maybe you can just change TTY by doing CTRL+ALT+F2 and CTRL+ALT+F1/F7).
 
 If that doesn't fix it, you can read the following bible.
@@ -42,8 +44,9 @@ This is a lot of stuff to cover on the guide so you will need to look it up your
 Thanks to @kalaposfos on Discord for mentioning this fix.
 :::
 
-::: details Stuck on a white LED
-Sometimes it fails, try to reboot. It could take you even three or more attempts.
+::: details Stuck on a white LED / instant crash
+Sometimes it fails, try to reboot. It could take you even three or more attempts. Do not leave any apps "suspended" while you launch the exploit.
+
 However, if it keeps happening, and the console gets stuck on a white LED instead of launching Linux, make sure you are following all steps correctly, and that you are using the correct payloads. Also, if you are using FTP, wait for a while or move the data using a USB drive instead.
 :::
 
@@ -55,6 +58,10 @@ If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip
 Sometimes you can encounter graphical issues. Screen flickers at boot, or is unresponsive. There can also be weird graphical glitches in menus and even in games, especially Nintendo Switch emulators for what I've seen.
 
 ANY graphical glitches you see are most likely caused by Mesa drivers. Try to find other distros that fix the problem, or try to change your Mesa driver version if you can find one.
+:::
+
+::: details DS4 must be paired again every time
+This is because we would need to copy the Bluetooth information from the PS4's OS to Linux before booting. It's a known problem and will get fixed at some point.
 :::
 
 ::: details Rebooting goes to OrbisOS
