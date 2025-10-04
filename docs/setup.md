@@ -110,5 +110,4 @@ In the next step, you also will need to download the following:
 	- You can also make your own. More on that later.
 
 ## To the files section
-
 You can go now go to the files section, where we'll cover how to download the required data.

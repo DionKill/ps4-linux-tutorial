@@ -1,8 +1,13 @@
 # Overview
-In this *very professional* tutorial, we'll go over how to install Linux on your PS4. The guide has been created because the PS4Linux website hasn't been updated in ages and their documentation is pretty bad (still, their work is appreciated, this guide is heavily inspired by it).
+In this *very professional* tutorial, we'll go over how to install Linux on your PS4.
 
+This guide was originally made because the PS4Linux.com's guide was old, hard to understand, incomplete and with tons of ads. It was updated recently, but the guide section hasn't really changed.
+
+I still want to thank noob404 for their website, as this is a better-put-together version of their work. This guide wouldn't exist without it.
+## Focus
 This tutorial focuses ONLY on modern versions of Linux.
 
+If you need, for some odd reason, old builds of Linux, you can check out the [legacy section](legacy).
 ## Video guide (optional)
 
 > [!TIP]
@@ -11,19 +16,6 @@ This tutorial focuses ONLY on modern versions of Linux.
 > As is the nature with videos, it may not be up to date with the content here.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KW_lRyXQcb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Warning before you proceed
-
-> [!CAUTION] 
-> Read the guide carefully to avoid any mistakes. It is recommended to read it fully at least once, as it may be a little bit overwhelming at first.
-> 
-> This guide is offered as is, with no warranty whatsoever. The writers are not responsible if you screw something up.
-
-> [!TIP]
-> If you do share this tutorial, remember to mention the source and that things are subject to change.
-
-
-Read all warnings and don't just skip over them please.
 
 ## Important places
 Here are some links you'll probably find useful. You can come back to them if needed.
@@ -40,5 +32,15 @@ Here are some links you'll probably find useful. You can come back to them if ne
 	3. [PS4-LINUX](https://discord.gg/88ZrcmpJ) (saya's)
 6. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
-## To the setup
-If you understood that correctly, you can continue over to the next step, the requirements and setup.
+## Warning before you proceed
+
+> [!CAUTION] 
+> Read the guide carefully to avoid any mistakes. It is recommended to read it fully at least once, as it may be a little bit overwhelming at first.
+> 
+> This guide is offered as is, with no warranty whatsoever. The writers are not responsible if you screw something up.
+
+> [!TIP]
+> If you do share this tutorial, remember to mention the source and that things are subject to change.
+
+## To the Information section
+In the next section, we'll figure out what are the differences between all consoles and southbridges, as well as additional terms.

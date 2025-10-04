@@ -45,7 +45,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Overview', link: '/overview' },
-          { text: 'Language and terms', link: '/language' },
+          { text: 'Information', link: '/information' },
           { text: 'Setup', link: '/setup' },
           { text: 'Files', link: '/files' },
           { text: 'Installation', link: '/installation' },
