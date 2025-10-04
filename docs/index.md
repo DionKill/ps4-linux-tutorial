@@ -38,14 +38,16 @@ Linux is a kernel, though nowadays many refer to it as the whole fleet of operat
 :::
 
 ::: details What are the PS4's specifications?
-- "Liverpool" AMD APU
-	- 8 core, x86-64 CPU @1.6GHz (Phat and Slim) or @2.1GHz (Pro) based on the Jaguar architecture
+- AMD APU
+	- 8 cores, x86-64 CPU @1.6GHz (Phat and Slim) or @2.1GHz (Pro) based on the Jaguar architecture
 		- In theory, it's two Athlon 5150s duct taped together
 		- Performance similar to an i3-2120 in multicore, or a Pentium 4 in single core
-	- AMD "Gladius" GPU
-		- Performance is comparable to an AMD HD 7850 or a Nvdia GTX 750 Ti
+	- AMD "Liverpool" (Phat/Slim) or "Gladius" (Pro) GPU
+		- Performance is comparable to an AMD HD 7850 or a Nvdia GTX 750 Ti on the Phat/Slim
+		- For the Pro, we don't really know. Roughly a GTX 1060
 - 8GB of GDDR5 memory
-	- Note the G, stands for Graphics. This isn't DDR5 as it wasn't invented in 2013.
+  - Note the G, stands for Graphics. This isn't DDR5 as it wasn't invented in 2013. DDR3 was the only one available.
+  - Additional 256MB DDR3 for "Background applications" on Phat/Slim, or 1GB DDR3 on Pro
 :::
 
 ::: details What do these specs mean in practice?
