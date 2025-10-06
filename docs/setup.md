@@ -9,7 +9,7 @@ In a nutshell, you'll need:
 - A computer
 - An internet connection
 - (Optional) - one or more USB drives
-	- If you want to install to an external drive, you can use a USB pendrive, but it's recommend to have a SATA SSD and a SATA to USB adapter (preferrably one that supports UAS).
+	- If you want to install to an external drive, you can use a USB pendrive or HDD, but it's recommend to have a SATA SSD and a SATA to USB adapter (preferrably one that supports UAS).
 
 ## Storage devices to install to
 Before we talk about anything, you must choose now a method of installation.
@@ -17,7 +17,8 @@ You will need a device to store Linux, obviously.
 1. Internal HDD
 	- Baikal still unsupported, veeery slow, needs free space
 2. External HDD/SSD
-	- Requires an external SATA-USB or NVMe-USB adapter
+    - External USB Hard Disk Drive or USB Solid State Drive. Use a USB 3.x capable disk and cable for the best performance
+	- External SATA-USB or NVMe-USB adapter (if using a SATA/NVMe drive)
 	- You can use a pendrive, nobody's stopping you, but it's gonna be painful
 
 ## PS4 system
@@ -105,7 +106,7 @@ In order to do that, open up your FTP file manager of choice.
 ### Necessary files
 In the next step, you also will need to download the following:
 - bzImage (the kernel)
-- initramfs.cpio.gz (Linux loader)
+- initramfs.cpio.gz (the rescueshell/terminal before the main distro)
 - A distro of your choice, already preinstalled and modified to work on the PS4
 	- You can also make your own. More on that later.
 
