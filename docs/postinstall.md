@@ -1,4 +1,4 @@
-g# Post installation things
+# Post installation things
 Once you've installed Linux and are on the desktop, before rushing to do things, you may want to do a couple of additional steps.
 
 To change some config files (don't worry, it won't hurt), I'll recommend `nano` because it just works. To save a file, use `CTRL+S` and to exit `CTRL+X`.
