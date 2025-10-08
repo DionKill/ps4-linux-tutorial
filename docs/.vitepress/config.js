@@ -48,7 +48,16 @@ export default defineConfig({
           { text: 'Revisions and Southbridges', link: '/revisions' },
           { text: 'Setup', link: '/setup' },
           { text: 'Files', link: '/files' },
-          { text: 'Installation', link: '/installation' },
+          {
+            text: '💿 Choose your Install',
+            collapsed: true,
+            items: [
+              { text: 'Installation Methods', link: '/installation' },
+              { text: 'Internal Installation', link: '/internal-installation' },
+              { text: 'External Installation', link: '/external-installation' },
+              { text: 'Alternative External Installation', link: '/external-installation-alternative' },
+            ],
+          },
           { text: 'Ending', link: '/ending' },
         ]
       },

@@ -6,8 +6,9 @@ Now go forth, spread misinformation online.
 <img src="/misinformation.jpg" width="50%">
 
 > [!TIP]
-> I highly recommend continuing to the "Post Installation" setup, to change language and downloading RAM!
-> 
+> I highly recommend continuing to the ["Post Installation" setup](postinstall), to change language and downloading RAM!
+
+> [!NOTE]
 > For any problems, [check the issues page](issues)!
 > 
 > And thanks for reading!

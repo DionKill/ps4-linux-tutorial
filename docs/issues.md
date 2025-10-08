@@ -54,14 +54,21 @@ Sometimes it fails, try to reboot. It could take you even three or more attempts
 However, if it keeps happening, and the console gets stuck on a white LED instead of launching Linux, make sure you are following all steps correctly, and that you are using the correct payloads. Also, if you are using FTP, wait for a while or move the data using a USB drive instead.
 :::
 
-::: details Wi-Fi and/or Bluetooth don't work
-If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip that is incompatible with your current kernel. This means that you will need to try one of the other kernels, and if they don't work, try to ask on the forums or scout the internet until you can find one. Unfortunately the development is scattered and it's hard to get hands on these kernels.
+::: details Wi-Fi and/or Bluetooth don't work (MediaTek modem)
+If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip that is made by MediaTek, and unfortunately you will need to find a kernel that includes the fixes for that specific chip. MediaTek does not make open source drivers, so that's the reason it doesn't work normally.
+
+Try feeRnt's kernels, hopefully one of them will work for you.
 :::
 
-::: details Graphical glitches
-Sometimes you can encounter graphical issues. Screen flickers at boot, or is unresponsive. There can also be weird graphical glitches in menus and even in games, especially Nintendo Switch emulators for what I've seen.
+::: details Graphical glitches in games
+Sometimes you can encounter graphical issues. There are some things you can try to fix that.
 
-ANY graphical glitches you see are most likely caused by Mesa drivers. Try to find other distros that fix the problem, or try to change your Mesa driver version if you can find one.
+To solve Vulkan graphical issues you can:
+- Set `RADV_DEBUG=nocompute` in `/etc/environment` (use nano or similar)
+- Try `amdgpu.abmlevel=0` with bootargs
+- Use WineD3D (terrible performance)
+
+Graphical glitches can also be caused by Mesa drivers. You could search for newer versions of Mesa as well, but you'll have to install them manually.
 :::
 
 ::: details DS4 must be paired again every time
