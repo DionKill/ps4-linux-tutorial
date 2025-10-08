@@ -1,7 +1,7 @@
 g# Post installation things
 Once you've installed Linux and are on the desktop, before rushing to do things, you may want to do a couple of additional steps.
 
-To change some config files (nothing to worry about), I'll recommend `nano` because it just works. To save a file, use `CTRL+S` and to exit `CTRL+X`.
+To change some config files (don't worry, it won't hurt), I'll recommend `nano` because it just works. To save a file, use `CTRL+S` and to exit `CTRL+X`.
 
 ## Update your system <Badge type="danger" text="caution" />
 Updating your system can be a bit of a pain in the ass, as some of the packages can't be updated.
@@ -168,6 +168,27 @@ sudo nano /etc/default/grub
 And in the `LINUX_CMDLINE_DEFAULT` check that `zswap-enabled=0` is present. If not, add it.
 
 ---
+To disable ZRAM, in case of swapping out kernels often for instance, you need to stop and disable the service and remove the zram-generator package:
+```bash
+sudo systemctl stop zram-generator.service
+sudo systemctl disable zram-generator.service
+sudo pacman -Rns zram-generator
+```
+
+Also, remove the swap partitions:
+```bash
+sudo swapoff /dev/zram0
+sudo rm /dev/zram0
+```
+
+Lastly, you need to remove all configurations:
+```bash
+sudo rm /etc/systemd/zram-generator.conf
+```
+
+Then reboot the system. It should be gone.
+
+---
 
 Thanks again to Qba for this [showcase](https://youtu.be/f_kXks8z9dc).
 :::
@@ -181,7 +202,7 @@ You may have realized that the PS4's CPU is pretty lacking and is most likely it
 
 In computing you are always going to gain something and loose something else. Either your time, money, or in this case...
 
-::: details Disengage safety protocols, and run program.
+::: details Disengage safety protocols, and run program
 Yes, you can disable some security patches for attacks like Meltdown and Spectre, to gain some CPU performance. It does work and should have a noticeable improvement.
 
 Obviously this is not recommended in most cases, but if all you want to do is game from your Steam library and occasionally browse the web (which is most of us), you are probably going to be fine.
@@ -191,10 +212,10 @@ To do that it's surprisingly simple. Open the `bootargs.txt` file, or create it 
 mitigations=off
 ```
 
-And there you go! You can change it anytime of course.
+And there you go! You can change it back anytime of course.
 :::
 
-In the past there were overclocked kernels, but alas they don't make them anymore. Maybe in the future...
+In the past there were overclocked kernels, but alas they don't make them anymore. This is because overclocked kernels... didn't actually overclock the CPU.
 
 Do not go and download an older kernel to try as they don't work anymore either!
 ## Install more applications

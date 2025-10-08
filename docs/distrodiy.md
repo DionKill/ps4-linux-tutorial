@@ -4,7 +4,7 @@ If you don't trust people on the internet (and rightfully so), you may want to p
 > [!WARNING]
 > This is meant for advanced users ONLY.
 > 
-> Some things may not work properly. If you encounter issues, chat on the [Discords](overview#important-places).
+> Some things may not work properly. If you encounter issues, chat on the [Discords](revisions.md#important-places).
 
 ## Requirements
 You need to get the **drivers**.

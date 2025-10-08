@@ -43,7 +43,7 @@ You need a system that is already jailbroken and has a homebrew enabler (such as
 In order to input text on your PS4, you can't use the PS4 built in keyboard, as that is not available on Linux. You must have a keyboard and mouse combo ready to use with your PS4.
 
 #### Payload server settings
-Remember to check the GoldHEN "Server" settings (or ps4hen's equivalent if you're using that) so that they look like this:
+Remember to check the GoldHEN "Server" settings (or ps4hen's equivalent if you're using that) so that they are both enabled:
 
 <img src="/screenshots/payload-server-conf.png" width="75%">
 

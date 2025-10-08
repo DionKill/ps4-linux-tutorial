@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 🏁 Let's get it on!
-      link: /overview
+      link: /information
     - theme: alt
       text: 📹 YT Guide (Modded Warfare)
       link: https://www.youtube.com/watch?v=KW_lRyXQcb8

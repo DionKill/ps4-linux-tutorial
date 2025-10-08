@@ -34,7 +34,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Getting started', link: '/overview' },
+      { text: 'Getting started', link: '/information' },
       { text: 'Post-install', link: '/postinstall' },
       { text: 'General issues', link: '/issues' }
     ],
@@ -44,8 +44,8 @@ export default defineConfig({
         text: '📖 The Installation Guide',
         collapsed: false,
         items: [
-          { text: 'Overview', link: '/overview' },
-          { text: 'Information', link: '/information' },
+          { text: 'Key Information', link: '/information' },
+          { text: 'Revisions and Southbridges', link: '/revisions' },
           { text: 'Setup', link: '/setup' },
           { text: 'Files', link: '/files' },
           { text: 'Installation', link: '/installation' },
@@ -91,6 +91,6 @@ export default defineConfig({
         dateStyle: 'full',
         timeStyle: 'full'
       }
-    }
+    },
   }
 })

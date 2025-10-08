@@ -1,5 +1,4 @@
 # Getting the warez
-Because getting this files is a complete and utter joke, I've decided that re-uploading some of them myself is probably the better idea. Again do not send a cease and desist letter to my house like the Maryo company.
 
 > [!WARNING]
 > I'm sorry if some of the following links are sketchy, but the community is a divided mess unfortunately. Refer to the [Other Issues](issues.md#other-issues) section for a rant.
@@ -26,11 +25,11 @@ But apart from that, not really. New features are mostly added for newer process
 ### Vanilla kernels
 These are normal linux kernels with additional patches to make them work properly on the PS4. 
 
-| Kernel                                                                                                                                                                                   | Source and Download                                | Compatible Southbridges    | Extra info                                          |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | -------------------------- | --------------------------------------------------- |
-| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__wifi_blkscrn)                                                                                                    | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | Aeolia<br>Belize           | Specific blackscreen-fix release                    |
-| [6.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases)<br>[5.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases)<br>[5.4.x](https://github.com/feeRnt/ps4-linux-12xx/releases) | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | All                        | Check Actions section if the releases don't work    |
-| 6.x<br>5.x<br>4.x                                                                                                                                                                        | [tux4orbis' Discord](https://discord.gg/UYFrkueH)  | All (Baikal in particular) | These kernels are in beta<br>Recommended for Baikal |
+| Kernel                                                                                                                                                                                   | Source and Download                                 | Compatible Southbridges    | Extra info                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | -------------------------- | --------------------------------------------------- |
+| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__wifi_blkscrn)                                                                                                    | [GitHub](https://github.com/feeRnt/ps4-linux-12xx)  | Aeolia<br>Belize           | Specific blackscreen-fix release                    |
+| [6.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases)<br>[5.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases)<br>[5.4.x](https://github.com/feeRnt/ps4-linux-12xx/releases) | [GitHub](https://github.com/feeRnt/ps4-linux-12xx)  | All                        | Check Actions section if the releases don't work    |
+| 6.x<br>5.x<br>4.x                                                                                                                                                                        | [tux4orbis' Discord](https://discord.gg/s6DMgxxqQb) | All (Baikal in particular) | These kernels are in beta<br>Recommended for Baikal |
 
 ### "Performance patched" kernels
 These kernels are compiled using additional optimizations. Some of them use LTO, some also add CachyOS's patches, and some others also add ZRAM or additional features.
@@ -51,7 +50,7 @@ If you have issues, remember to check the [Issues page](issues).
 ### More kernels
 If you really want to try other and older kernels, even though it's highly discouraged, you can go to the [Legacy and other Kernels](legacy#kernels) section.
 
-If you want more kernels or help, ask out the [Discord servers](overview#important-places).
+If you want more kernels or help, ask out the [Discord servers](revisions.md#important-places).
 
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums. [Here it is](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
@@ -75,7 +74,7 @@ I'm listing the ones that are actually new and I'd recommend you install. CachyO
 | [Debian Forky](https://ps4linux.com/forums/d/373-debian-forky-sid/3)                             | Debian  | [triki1](https://www.youtube.com/@trakerchris9876)                        | Very new distro. Extremely bleeding edge.                                           |
 | [Debian Trixie](https://ps4linux.com/forums/d/369-debien-trixie-full-update-mesa-2520-devel/13)  | Debian  | [triki1](https://www.youtube.com/@trakerchris9876)                        | Latest Debian                                                                       |
 | [Xubuntu](https://ps4linux.com/forums/d/337-xubuntu-2504-final-release)                          | Ubuntu  | [triki1](https://www.youtube.com/@trakerchris9876)                        | Divided into multiple files                                                         |
-| [Batocera 40](https://ps4linux.com/forums/d/252-batocera-40-for-ps4-installation-setup-tutorial) | No clue | Noob404                                                                   | For retrogaming                                                                     |
+| [Batocera 40](https://ps4linux.com/forums/d/252-batocera-40-for-ps4-installation-setup-tutorial) | No clue | [Noob404](https://www.youtube.com/channel/UC9pY5BDCjDLOC4j-zkHPu8)        | For retrogaming                                                                     |
 | [JaguarLinux](https://github.com/Jaguarlinux)                                                    | None    | TigerClips1                                                               | A distro made from scratch for the PS4! Still in development, but worth mentioning. |
 
 >[!TIP]
