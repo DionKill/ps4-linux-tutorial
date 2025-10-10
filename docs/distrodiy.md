@@ -9,7 +9,7 @@ If you don't trust people on the internet (and rightfully so), you may want to p
 ## Requirements
 You need to get the **drivers**.
 
-Now here's the fun part: I can't point you to anything, because there are no up to date sources available.
+You may find closed-sourced versions of the drivers shared privately on Discord (is that even legal?) but you may want to compile these yourself.
 
 | Repo                                                                          | Info                            |
 | ----------------------------------------------------------------------------- | ------------------------------- |
