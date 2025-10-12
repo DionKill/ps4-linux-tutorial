@@ -45,13 +45,13 @@ Again, internal SSD swap hasn't been tested, so your mileage may vary if you wan
 > [!WARNING]
 > Choose ONLY ONE method of installation.
 > 
-> Installing on the internal and external drives can cause problems! Remove the previous installation!
+> Installing on both the internal and external drives can cause problems! Remove one of the previous installations if you already have one!
 
 Here you will choose a method of installation.
 
 Again, choose only one method and stick with it, and remember that Baikal can't currently install to internal.
 
-::: tip Internal Installation
+::: tip Internal Installation (NOT FOR BAIKAL)
 [Click here to go to the Internal Installation section.](internal-installation)
 :::
 
