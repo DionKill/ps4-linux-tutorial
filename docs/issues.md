@@ -1,5 +1,5 @@
 # Installation issues
-During the installation, things can fail. Most of this stuff is undocumented too. There's dozens of posts online where people don't even get a response. I'm hopefully going to resolve these issues here. If not, write on the forums or on the PS4 Linux Discord.
+During the installation, things can fail. Most of this stuff is undocumented too. There's dozens of posts online where people don't even get a response. We will hopefully fix these problems. If not, write on the forums or on the PS4 Linux Discord.
 
 ::: details Root error `The "root" variable is empty, set to false or zero but shouldn't be`
 It shows when booting up before installing, don't worry as it's normal because there is no installed system it can boot. You can proceed with the installation.

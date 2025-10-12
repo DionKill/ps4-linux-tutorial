@@ -167,13 +167,17 @@ sudo nano /etc/default/grub
 
 And in the `LINUX_CMDLINE_DEFAULT` check that `zswap-enabled=0` is present. If not, add it.
 
----
-To disable ZRAM, in case of swapping out kernels often for instance, you need to stop and disable the service and remove the zram-generator package:
+:::
+
+::: details Disabling ZRAM (if you need to)
+To disable ZRAM, in case of swapping out kernels often for instance, you need to disable the service and remove the zram-generator package:
 ```bash
-sudo systemctl stop zram-generator.service
-sudo systemctl disable zram-generator.service
+sudo systemctl disable zram-generator.service # This may not be needed
 sudo pacman -Rns zram-generator
 ```
+
+> [!NOTE]
+> This alone is enough if you're doing it for testing. If you want to remove it fully, continue.
 
 Also, remove the swap partitions:
 ```bash
@@ -193,7 +197,7 @@ Then reboot the system. It should be gone.
 Thanks again to Qba for this [showcase](https://youtu.be/f_kXks8z9dc).
 :::
 
-And that's it. You now have a bit of extra memory to work with. I say it's pretty useful, so you can have like 2GB of VRAM, and the 6GB of remaining memory allocated as RAM become more like 6.5 or 7. On top of that, add that Linux is more memory efficient than Windows, and it's like having 8GB of RAM! Pretty sweet huh?
+And that's it. You now have a bit of extra memory to work with. So you can have like 2GB of VRAM, and the 6GB of remaining memory allocated as RAM become more like 6.5 or 7. On top of that, add that Linux is more memory efficient than Windows, and it's like having 8GB of RAM! Pretty sweet huh?
 
 Oh, and don't worry if you see that your installation is using a lot of memory. It's normal and is meant to happen in order to improve performance. Check this [link](https://linuxatemyram.com) to learn more.
 
@@ -205,7 +209,7 @@ In computing you are always going to gain something and loose something else. Ei
 ::: details Disengage safety protocols, and run program
 Yes, you can disable some security patches for attacks like Meltdown and Spectre, to gain some CPU performance. It does work and should have a noticeable improvement.
 
-Obviously this is not recommended in most cases, but if all you want to do is game from your Steam library and occasionally browse the web (which is most of us), you are probably going to be fine.
+Obviously this is usually not recommended, but if all you want to do is game from your Steam library and occasionally browse the web (which is most of us), you are probably going to be fine. Also remember the console is already jailbroken... Not really going for security with that one.
 
 To do that it's surprisingly simple. Open the `bootargs.txt` file, or create it in the same folder of the kernel if it doesn't exist already, then add this line, save and reboot:
 ```bash
@@ -219,7 +223,7 @@ In the past there were overclocked kernels, but alas they don't make them anymor
 
 Do not go and download an older kernel to try as they don't work anymore either!
 ## Install more applications
-I recommend you install these programs:
+To play games, these are the recommended softwares:
 - Steam
 - Heroic Games Launcher (for Epic, GOG and Amazon)
 - Lutris (for other PC games not in those launchers)
@@ -230,6 +234,3 @@ I recommend you install these programs:
 To do that, if using anything other than Arch based distros, use your Store app from the Start menu and install as a Flatpak. It works well.
 
 If you chose an Arch based distro however, use `pacman` or `yay` to install your packages. All packages you can even think of and more are available.
-
-## If you have any issues...
-... Go to the next page! I'll walk you through most problems and help you fix them!

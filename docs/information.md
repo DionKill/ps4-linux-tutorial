@@ -3,7 +3,7 @@ In this *very professional* tutorial, we'll go over how to install Linux on your
 
 This guide was originally made because the PS4Linux.com's guide was old, hard to understand, incomplete and with tons of ads. It was updated recently, but the guide section hasn't really changed.
 
-I still want to thank noob404 for their website, as this is a better-put-together version of their work. This guide wouldn't exist without it.
+Still, thanks to noob404 for their website, as this is a better-put-together version of their work. This guide wouldn't exist without it.
 
 ::: details Focus of the guide
 This tutorial focuses ONLY on modern versions of Linux.

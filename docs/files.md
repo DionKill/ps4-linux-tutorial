@@ -63,7 +63,7 @@ Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial
 Yes! Finally the time has come. Which one will you choose?
 Honestly there's a neptillion distros. Most however, are very outdated, especially the ones on the PS4Linux's website list.
 
-I'm listing the ones that are actually new and I'd recommend you install. CachyOS was used for this guide, but you can follow the same method of installation for all the other ones reported here.
+These distros are newer, supported by updates and recommended. CachyOS was used for this guide, but you can follow the same method of installation for all the other ones reported here.
 
 | Distro                                                                                           | Base    | Port credits                                                              | Info                                                                                |
 | ------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |

@@ -31,7 +31,7 @@ Note down what you see in "Settings -> System Information":
 
 <img src="/screenshots/system-info.png" width="75%">
 
-In my case, I have the latest version of GoldHEN (minimum for this guide is v2.4b18.5), running on a Belize PS4 Slim.
+In the example case, the latest version of GoldHEN is used (minimum for this guide is v2.4b18.5), running on a Belize PS4 Slim.
 
 ### HEN
 You need a system that is already jailbroken and has a homebrew enabler (such as GoldHEN or ps4hen) running.
@@ -92,7 +92,7 @@ In order to do that, open up your FTP file manager of choice.
 #### Windows
 - Windows' built-in file manager
 	- This one likes to crash the desktop if it can't connect, be careful
-- WinSCP (my personal choice, using the simple interface)
+- WinSCP (recommended, using the simple interface)
 - Filezilla
 
 #### Linux
