@@ -26,15 +26,13 @@ Now move your bzImage (and bootargs if you need it) and initramfs to the FAT32 p
 
 Then, you will need to untar your distro of choice at the root of the bigger EXT4 partition, using this command:
 ```bash
-`sudo tar -xvJpf ps4linux.tar.xz -C /media/YOURNAME/psxitarch --numeric-owner`
+sudo tar -xvJpf ps4linux.tar.xz -C /media/YOURNAME/psxitarch --numeric-owner
 ```
 
-Replace YOURNAME and ps4linux.tar.xz if needed.
-
-You're done! Plug your drive in the PS4, and go to the next step!
+Replace `YOURNAME` and `ps4linux.tar.xz` accordingly.
 
 <!--@include: ./_includes/payloads.md-->
-## Installation commands
+## Booting up
 Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
 
 > [!TIP]
@@ -47,12 +45,13 @@ resume-boot
 
 <!--@include: ./_includes/resume-boot-warning.md-->
 
+::: details If it doesn't work check this!
 If for some reason it doesn't work for you, run the following commands (thanks @gryoza on Discord and @bene4k on Reddit for this):
 ```bash
 mount /dev/sdb2 /newroot
 exec chroot
 ```
 You may need to do this at every reboot.
-
+:::
 ## Finale
 Go now, conquer the finale. Also, watch the post-credit scenes.
