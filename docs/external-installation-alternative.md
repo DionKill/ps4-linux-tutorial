@@ -22,7 +22,14 @@ Then, plug in your drive, and use "GParted", "KDE Partition Manager", or "Aoemi 
 - And a partition of the remaining space formatted as EXT4 <u>labeled "psxitarch"</u>
 	- BTRFS works too, but EXT4 is faster and recommended
 
-Now move your bzImage (and bootargs if you need it) and initramfs to the FAT32 partition, and untar your distro of choice at the root of the bigger EXT4 partition
+Now move your bzImage (and bootargs if you need it) and initramfs to the FAT32 partition.
+
+Then, you will need to untar your distro of choice at the root of the bigger EXT4 partition, using this command:
+```bash
+`sudo tar -xvJpf ps4linux.tar.xz -C /media/YOURNAME/psxitarch --numeric-owner`
+```
+
+Replace YOURNAME and ps4linux.tar.xz if needed.
 
 You're done! Plug your drive in the PS4, and go to the next step!
 
