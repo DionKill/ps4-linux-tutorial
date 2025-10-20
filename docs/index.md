@@ -37,6 +37,15 @@ Here are some questions you probably want to know the answer to if you are a nov
 Linux is a kernel, though nowadays many refer to it as the whole fleet of operating systems using it. In layman's terms, think of it as the core of the OS. Installing Linux refers to installing a Linux distribution to use on your PS4 so that you can turn it into something like a desktop computer.
 :::
 
+::: details Is it reversible? Will it delete all my games and saves?
+All your data will stay intact. Whether you install it on the internal HDD or an external drive, you will keep your data as you first need to exploit your console at every boot.
+
+The internal drive method actually creates a file as big as you want it to be which is going to be mounted whenever you launch Linux as it's own virtual hard disk, so it won't overwrite any data you have on your console.
+For the external drive method your HDD isn't even touched at all.
+
+TLDR: yes it is reversible, and no you won't loose any data.
+:::
+
 ::: details What are the PS4's specifications?
 - AMD APU
 	- 8 cores, x86-64 CPU @1.6GHz (Phat and Slim) or @2.1GHz (Pro) based on the Jaguar architecture
