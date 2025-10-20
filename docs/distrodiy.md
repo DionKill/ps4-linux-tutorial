@@ -53,11 +53,6 @@ IgnoreGroup = mesa
 
 After that, you can compress your installation and move it over to your PS4 for installation:
 ```bash
-sudo tar -cvJpf ps4linux.tar.xz --exclude=/ps4linux.tar.xz --exclude=/var/cache /
-```
-
-If that didn't work:
-```bash
 sudo tar -cvf ps4linux.tar.xz --exclude=/ps4linux.tar.xz --exclude=/var/cache --one-file-system / -I "xz -9"
 ```
 

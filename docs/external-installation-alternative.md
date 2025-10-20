@@ -26,7 +26,7 @@ Now move your bzImage (and bootargs if you need it) and initramfs to the FAT32 p
 
 Then, you will need to untar your distro of choice at the root of the bigger EXT4 partition, using this command:
 ```bash
-sudo tar -xvJpf ps4linux.tar.xz -C /media/YOURNAME/psxitarch --numeric-owner
+sudo tar -xvJpf ps4linux.tar.xz -C /run/media/YOURNAME/psxitarch --numeric-owner
 ```
 
 Replace `YOURNAME` and `ps4linux.tar.xz` accordingly.
