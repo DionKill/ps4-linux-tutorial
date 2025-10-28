@@ -36,12 +36,11 @@ These kernels are compiled using additional optimizations. Some of them use LTO,
 
 Don't expect a 3x improvement in performance, they just add features and make the system a bit more responsive.
 
-| Kernel                                                                                             | Source                                                       | Compatible Southbridges | Extra info                                      |
-| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------- | ----------------------------------------------- |
-| [6.15.4](https://mega.nz/folder/N0QjHSBT#609IHevkWEW0vnTCFW-Rhw) by triki1                         | feeRnt's and crashniels'                                    | Aeolia<br>Belize        | ZRAM, CachyOS patches, KVM and more             |
-| [5.15.25-rc1](https://e.pcloud.link/publink/show?code=XZ6LxqZMjOjBKQVi7B5XS1OUXbn8QrYgAx7) by saya | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Belize                  | FullLTO, more optimizations                     |
-| [5.15.15](https://e.pcloud.link/publink/show?code=XZtLxqZPCy9fq0R1A7Xa7T5USXJt4GNpiYk) by saya     | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Aeolia<br>Belize        | FullLTO, more optimizations                     |
-| [5.4.213](https://e.pcloud.link/publink/show?code=XZqLxqZxO1NAbr0RMbvdYnRob2KjyPiXLPV) by saya     | [Original link](https://www.youtube.com/watch?v=9Q1WwvZUEQc) | Baikal                  | Requires [bootargs](legacy#bootargs), optimized |
+| Kernel                                                                     | Source                   | Compatible Southbridges | Extra info                                                                                                  |
+| -------------------------------------------------------------------------- | ------------------------ | ----------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [5.x and 6.15](https://www.youtube.com/watch?v=zVzHzJT7dHk) by saya        | feeRnt's and crashniels' | All                     | FullLTO, 120Hz support, 4K for PS4 Pro. You need to download the whole archive and pick one for your needs. |
+| [6.15.4](https://mega.nz/folder/N0QjHSBT#609IHevkWEW0vnTCFW-Rhw) by triki1 | feeRnt's and crashniels' | Aeolia<br>Belize        | ZRAM, CachyOS patches, KVM and more                                                                         |
+
 
 ### Specific kernel problems
 Before continuing, I want to mention that there can be many issues with kernel and distro combinations.
