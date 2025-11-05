@@ -9,6 +9,9 @@ Updating your system can be a bit of a pain in the ass, as some of the packages 
 > [!WARNING]
 > Some packages can't be updated on PS4, at least for the time being. This is because they are specifically tailored to the system, and updating them breaks the entire OS.
 
+> [!IMPORTANT]
+> Video drivers are being made for Arch, you can download them using the `video-drivers-ps4` AUR package. It hasn't been fully tested. More on the tux4orbis Discord.
+
 ::: details Debian/Ubuntu based distros (untested)
 To make sure that the PS4 packages don't get updated run the command below:
 ```bash
