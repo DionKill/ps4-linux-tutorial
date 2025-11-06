@@ -26,7 +26,7 @@ To get the drivers, there's a couple of ways:
 SigLevel = Optional
 Server = https://centi07.github.io/repo/
 ```
-Otherwise, it's possible to get them from the AUR. You just need to download the video-drivers-ps4 package, which will fail installing so you can go to the working directory of yay and install the packages manually by doing `sudo pacman -U *`.
+Otherwise, it's possible to get them from the AUR. You just need to download the video-drivers-ps4 package, which will fail installing so you can go to the working directory of yay and install the packages manually by doing `sudo pacman -U *`. Actually nevermind I couldn't get it to work so ask in the tux4orbis discord...
 
 - The `mesa-git`, `libdrm`, and `xf86-video-amdgpu` packages compiled with patches for the PS4, or compile them yourself
 	- It is necessary to compile mesa in 32 bit too, for some games I guess?

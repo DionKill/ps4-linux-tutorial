@@ -6,11 +6,44 @@ To change some config files (don't worry, it won't hurt), I'll recommend `nano` 
 ## Update your system <Badge type="danger" text="caution" />
 Updating your system can be a bit of a pain in the ass, as some of the packages can't be updated.
 
-> [!WARNING]
-> Some packages can't be updated on PS4, at least for the time being. This is because they are specifically tailored to the system, and updating them breaks the entire OS.
+Let's talk about that first. The PS4 requires specific patches that need to be applied to the source code of several packages and drivers: mainly `mesa-git`, `libdrm`, and `xf86-video-amdgpu` (for X11 support, can be avoided by using Wayland)
+
+> [!CAUTION]
+> This means that if we update the system without excluding those packages and all of the ones that are included in them it means that there's no GPU support and your system will break. So you need to do some work to get up-to-date drivers.
 
 > [!IMPORTANT]
-> Video drivers are being made for Arch, you can download them using the `video-drivers-ps4` AUR package. It hasn't been fully tested. More on the tux4orbis Discord.
+> Video driver repos are being made for Arch based distros. More on the tux4orbis Discord.
+> 
+> Other distros are supported, check out triki1's profile on PS4 Linux Forums for Debian/Ubuntu/Fedora stuff.
+
+::: details Arch based distros (with driver updates)
+Now, to update the drivers, you need to open the pacman config:
+```bash
+sudo nano /etc/pacman.conf
+```
+
+If you installed a distro from the forums, you have a section about package ignore, so comment out those lines, by going to the `[Options]` section and commenting the lines `IgnorePkg` and `IgnoreGroup`.
+
+Then, under the `REPOSITORIES` section, add this:
+```bash
+[ps4-video]
+SigLevel = Optional
+Server = https://centi07.github.io/repo/
+```
+> [!NOTE]
+> This repo will only work as long as the developer is updating it and keeping it online. It may be changed in the future.
+
+Then, `CTRL+S` to save and `CTRL+X` to exit.
+
+Finally, install the driver packages:
+```bash
+sudo pacman -Syu lib32-mesa-ps4 mesa-ps4 lib32-libdrm-ps4 libdrm-ps4 xf86-video-amdgpu-ps4
+```
+
+If it asks you to remove pre-existing packages, do it, as that's exactly what we're trying to do.
+
+Now you should have up-to-date drivers. If you want to, you can also go to the [DIY section](distrodiy) and make them from the AUR or from scratch!
+:::
 
 ::: details Debian/Ubuntu based distros (untested)
 To make sure that the PS4 packages don't get updated run the command below:
@@ -42,25 +75,7 @@ sudo dnf update
 ```
 :::
 
-::: details Arch based distros
-To make sure that the PS4 packages don't get updated, you need to modify the pacman config:
-```bash
-sudo nano /etc/pacman.conf
-```
-
-Then, in the `[Options]` section, add this:
-```bash
-IgnorePkg = lib32-libdrm-git lib32-mesa-git libdrm-git mesa-git lib32-libdrm lib32-mesa libdrm mesa lib32-llvm-libs llvm-libs
-IgnoreGroup = mesa
-```
-
-Then, you should be free to update your system with:
-```bash
-sudo pacman -S
-```
-:::
-
-Otherwise, you can always update everything but not those packages.
+Otherwise, you can always update everything but not the driver packages.
 ## Fix language
 Some pre-packaged distros you can download are in foreign languages. Unfortunately changing it from your DE (KDE, Gnome...) doesn't apply system wide. So here's a cheap rundown of all of the commands:
 
@@ -173,14 +188,16 @@ And in the `LINUX_CMDLINE_DEFAULT` check that `zswap-enabled=0` is present. If n
 :::
 
 ::: details Disabling ZRAM (if you need to)
-To disable ZRAM, in case of swapping out kernels often for instance, you need to disable the service and remove the zram-generator package:
+To disable ZRAM, in case of swapping out kernels often for instance, you can simply remove the config file:
+```bash
+sudo rm /etc/systemd/zram-generator.conf
+```
+
+However, if you wish to completely remove it, do the following:
 ```bash
 sudo systemctl disable zram-generator.service # This may not be needed
 sudo pacman -Rns zram-generator
 ```
-
-> [!NOTE]
-> This alone is enough if you're doing it for testing. If you want to remove it fully, continue.
 
 Also, remove the swap partitions:
 ```bash
@@ -188,14 +205,7 @@ sudo swapoff /dev/zram0
 sudo rm /dev/zram0
 ```
 
-Lastly, you need to remove all configurations:
-```bash
-sudo rm /etc/systemd/zram-generator.conf
-```
-
 Then reboot the system. It should be gone.
-
----
 
 Thanks again to Qba for this [showcase](https://youtu.be/f_kXks8z9dc).
 :::

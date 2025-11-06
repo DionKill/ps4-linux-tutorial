@@ -49,3 +49,21 @@ The `vram.txt` is a file contaning a number, which is your VRAM allocation amoun
 You may still be able to use this, but to avoid confusion, it has been moved to the legacy section, as you can just as easily reboot the console and change the payload.
 
 You can create this file yourself. Create an empty text file called `vram.txt`, and in it, input a number between 1 and 3. That's how many GBs will be allocated to your GPU. Remember you are removing that from your system memory!
+
+## Updates
+### Arch-based distros (legacy)
+To make sure that the PS4 packages don't get updated, you need to modify the pacman config:
+```bash
+sudo nano /etc/pacman.conf
+```
+
+Then, in the `[Options]` section, add this:
+```bash
+IgnorePkg = lib32-libdrm-git lib32-mesa-git libdrm-git mesa-git lib32-libdrm lib32-mesa libdrm mesa lib32-llvm-libs llvm-libs
+IgnoreGroup = mesa
+```
+
+Then, you should be free to update your system with:
+```bash
+sudo pacman -S
+```
