@@ -4,19 +4,21 @@ Once you've installed Linux and are on the desktop, before rushing to do things,
 To change some config files (don't worry, it won't hurt), I'll recommend `nano` because it just works. To save a file, use `CTRL+S` and to exit `CTRL+X`.
 
 ## Update your system <Badge type="danger" text="caution" />
-Updating your system can be a bit of a pain in the ass, as some of the packages can't be updated.
-
-Let's talk about that first. The PS4 requires specific patches that need to be applied to the source code of several packages and drivers: mainly `mesa-git`, `libdrm`, and `xf86-video-amdgpu` (for X11 support, can be avoided by using Wayland)
+Updating your system can be a bit of a pain in the ass, as some of the packages can't be updated because they contain modifications to make them work on the PS4.
 
 > [!CAUTION]
-> This means that if we update the system without excluding those packages and all of the ones that are included in them it means that there's no GPU support and your system will break. So you need to do some work to get up-to-date drivers.
+> This means that if we update the system without excluding those packages your system will break. So you need to do some work to get up-to-date drivers.
 
 > [!IMPORTANT]
-> Video driver repos are being made for Arch based distros. More on the tux4orbis Discord.
+> Driver repos are being made for Arch based distros. More on the tux4orbis Discord.
 > 
-> Other distros are supported, check out triki1's profile on PS4 Linux Forums for Debian/Ubuntu/Fedora stuff.
+> Check out triki1's profile on PS4 Linux Forums for Debian/Ubuntu/Fedora.
 
 ::: details Arch based distros (with driver updates)
+> [!NOTE]
+> You should try to use the AUR package instead, as that is more up-to-date.
+> You can download it by doing `yay -Syu video-drivers-ps4`. It may not work, we are working on it.
+
 Now, to update the drivers, you need to open the pacman config:
 ```bash
 sudo nano /etc/pacman.conf
@@ -30,6 +32,7 @@ Then, under the `REPOSITORIES` section, add this:
 SigLevel = Optional
 Server = https://centi07.github.io/repo/
 ```
+
 > [!NOTE]
 > This repo will only work as long as the developer is updating it and keeping it online. It may be changed in the future.
 
@@ -39,8 +42,6 @@ Finally, install the driver packages:
 ```bash
 sudo pacman -Syu lib32-mesa-ps4 mesa-ps4 lib32-libdrm-ps4 libdrm-ps4 xf86-video-amdgpu-ps4
 ```
-
-If it asks you to remove pre-existing packages, do it, as that's exactly what we're trying to do.
 
 Now you should have up-to-date drivers. If you want to, you can also go to the [DIY section](distrodiy) and make them from the AUR or from scratch!
 :::

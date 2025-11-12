@@ -11,7 +11,7 @@ Now go forth, spread misinformation online.
 > [!NOTE]
 > For any problems, [check the issues page](issues)!
 > 
-> And thanks for reading!
+> Thanks for reading! Star this project on GitHub if you want to support the guide!
 ## Credits
 ### Kernel developers
 These are the original kernel developers, who did the hard work to port the kernels on which all of the modern kernels are based on:
