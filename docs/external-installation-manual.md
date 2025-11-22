@@ -7,7 +7,7 @@ next:
   link: '/ending'
 ---
 
-# External Installation - Method 2
+# External Installation - Method 2 (manual partitioning)
 > [!WARNING]
 > Remember we'll format the external drive!
 > Back up any existing data you care about.

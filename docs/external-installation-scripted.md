@@ -7,14 +7,14 @@ next:
   link: '/ending'
 ---
 
-# External Installation - Method 1
+# External Installation - Method 1 (using a script)
 
 > [!WARNING]
 > Remember we'll format the external drive!
 > Back up any existing data you care about.
 
 > [!TIP]
-> If you have issues or just want to do manual partitioning (which often works better) try the [alternative installation here](external-installation-alternative).
+> If you have issues or just want to do manual partitioning (which often works better) try the [alternative installation here](external-installation-manual.md).
 ## Installation scripts
 Put the kernel (bzImage, and the bootargs if you need it), initramfs (initramfs.cpio.gz), and your distro `psxitarch.tar.xz/gz` on the root of a FAT32 formatted drive, like so:
 
@@ -42,7 +42,7 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 > [!TIP]
 > If you get an error, go to the [Installation issues section](issues#installation-issues).
 > 
-> You may have to use the [alternative method](external-installation-alternative).
+> You may have to use the [alternative method](external-installation-manual.md).
 
 - Type `install-psxitarch.sh`
 	- If it fails, go to the [Installation Issues](issues.md#installation-issues)

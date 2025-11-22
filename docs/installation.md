@@ -52,9 +52,18 @@ Here you will choose a method of installation.
 Again, choose only one method and stick with it, and remember that Baikal can't currently install to internal.
 
 ::: tip Internal Installation (NOT FOR BAIKAL)
-[Click here to go to the Internal Installation section.](internal-installation)
+This method installs Linux on the internal PS4 HDD, by creating a small partition, as big as you want. It will not overwrite anything on the drive.
+
+[Internal Installation section.](internal-installation)
 :::
 
 ::: tip External Installation
-[Click here to go to the External Installation methods section.](external-installation)
+For external installation, there are two methods: the first one involving a script on the PS4 (faster to configure), and another one with manual partitioning (higher success rate).
+
+The manual partitioning method is indeed preferred, but it involves the use of a Linux computer or virtual machine.
+You may choose the scripted method, however if any issues arise you should try the manual partitioning method.
+
+[Scripted External Installation.](external-installation-scripted)
+
+[Manual External Installation.](external-installation-manual)
 :::
