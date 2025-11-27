@@ -46,7 +46,16 @@ sudo pacman -Syu lib32-mesa-ps4 mesa-ps4 lib32-libdrm-ps4 libdrm-ps4 xf86-video-
 Now you should have up-to-date drivers. If you want to, you can also go to the [DIY section](distrodiy) and make them from the AUR or from scratch!
 :::
 
-::: details Debian/Ubuntu based distros (untested)
+::: details Debian/Ubuntu based distros (WITH Mesa updates, WIP)
+Use triki1's updater (should be included in their distro releases now)
+
+Use uar's script updater:
+```bash
+wget [https://uar.no/ps4/baikal/mesa-25.sh](https://uar.no/ps4/baikal/mesa-25.sh "https://uar.no/ps4/baikal/mesa-25.sh") && sudo sh mesa-25.sh
+```
+:::
+
+::: details Debian/Ubuntu based distros (disabled Mesa updates)
 To make sure that the PS4 packages don't get updated run the command below:
 ```bash
 sudo apt-mark hold lib32-libdrm-git lib32-mesa-git libdrm-git mesa-git lib32-libdrm lib32-mesa libdrm mesa lib32-llvm-libs llvm-libs mesa
