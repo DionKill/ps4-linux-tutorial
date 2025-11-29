@@ -16,7 +16,7 @@ Here you'll setup the internal HDD for installation of a Linux distro.
 > If you proceed, either it won't boot, or you'll inevitably corrupt your whole drive and loose all your data!
 
 > [!WARNING]
-> This shit is slow. Be careful and prepare your balls for imminent explosion.
+> This shit is slow on an HDD. Be careful and prepare your balls for imminent explosion.
 
 
 ## Internal HDD setup
@@ -54,4 +54,4 @@ resume-boot
 <!--@include: ./_includes/resume-boot-warning.md-->
 
 ## Finale
-Go now, conquer the finale. Also, watch the post-credit scenes.
+Go now, conquer the finale. Also, read the post-credit stuff.

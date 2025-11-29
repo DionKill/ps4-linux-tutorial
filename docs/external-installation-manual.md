@@ -54,4 +54,4 @@ exec chroot
 You may need to do this at every reboot.
 :::
 ## Finale
-Go now, conquer the finale. Also, watch the post-credit scenes.
+Go now, conquer the finale. Also, read the post-credit stuff.

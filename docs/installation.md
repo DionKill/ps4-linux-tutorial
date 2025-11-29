@@ -10,7 +10,7 @@ Installing Linux on the PS4 is surprisingly easy, and it helps you free your min
 
 Just kidding, it's fucking terrible.
 
-But don't worry, cuz I've suffered before you (and still am by writing this absolute monstrosity of a guide) so that the only thing you have to do is follow my guide as I spoonfeed you with information.
+But don't worry,  the only thing you have to do is follow this guide and you can get a working system.
 
 > [!TIP]
 > TL;DR:
@@ -18,7 +18,7 @@ But don't worry, cuz I've suffered before you (and still am by writing this abso
 > Internal only for Aeolia/Belize, not recommended.
 > Every console supports external, which is recommend with an SSD via an Adapter.
 
-::: details Internal vs External: The Finale - GOTY Limited Edition
+::: details Internal vs External: The Finale - GOTY Limited Edition (rant)
 As I've mentioned beforehand, you can't install Linux on the internal PS4's HDD on Baikal systems. I know, you're crying your heart out because you wanted to use it, but trust me it's atrocious.
 To give you an explanation, it took me 30 MINUTES to update my CachyOS installation (1500MBs) and the system was so unresponsive that I could watch entire anime episodes in between clicks.
 
@@ -32,9 +32,9 @@ Therefore, let's clear some misinformation here:
 - PS4 Phat and Slim are limited to SATA-II, which is 3Gbps in speed (roughly 375MB/s), which people online say it's not enough (it's enough for a PS4). On the other hand, the PS4 Pro runs at SATA-III, which is 6Gbps (up to 750MB/s), so that can saturate every SATA SSD on the market.
 	- External SSD, on my 500GB Samsung 870 EVO, is 350MB/s-ish. So you'd get the same performance as an internal drive (theoretically)
 
-Again, internal SSD swap hasn't been tested, so your mileage may vary if you wanna go that route. If you have info on that, let me know.
+An internal SSD is going to be much faster and probably more reliable than a dangling USB drive, so it's recommended, just remember to get a good quality one as the PS4 doesn't support TRIM.
 :::
-## Anyways, here we go: (queue dream's speedrunning music)
+## Preparing the installation
 1. Boot your PS4 and launch GoldHen.
 2. Take the initramfs.zip file, open it, and choose your installation method (mind the Southbridge)
 	- Put it somewhere like on your desktop as we'll need it
@@ -49,9 +49,9 @@ Again, internal SSD swap hasn't been tested, so your mileage may vary if you wan
 
 Here you will choose a method of installation.
 
-Again, choose only one method and stick with it, and remember that Baikal can't currently install to internal.
+Again, choose only one method and stick with it, and remember that Baikal can't currently install to internal reliably.
 
-::: tip Internal Installation (NOT FOR BAIKAL)
+::: tip Internal Installation (NOT FOR BAIKAL, you may loose data)
 This method installs Linux on the internal PS4 HDD, by creating a small partition, as big as you want. It will not overwrite anything on the drive.
 
 [Internal Installation section.](internal-installation)

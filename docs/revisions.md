@@ -62,8 +62,9 @@ You are also supposed to know what all of these mean, but if not, here's an extr
 :::
 ::: details Other other terms
 For all the other terms that didn't fit anywhere else:
-- PS4: pfft are you serious?
+- PS4
+	- pfft are you serious?
 
 :::
 ## To the setup
-Now you've finally become the most powerful human in the world with all these achronyms! You should totally go to the next step, where you'll set up the console and PC to start the installation!
+Now you've finally become the most powerful human in the world with all these achronyms! You should go to the next step, where you'll set up the console and PC to start the installation.

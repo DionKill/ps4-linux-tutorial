@@ -56,4 +56,4 @@ resume-boot
 
 <!--@include: ./_includes/resume-boot-warning.md-->
 ## Finale
-Go now, conquer the finale. Also, watch the post-credit scenes.
+Go now, conquer the finale. Also, read the post-credit stuff.

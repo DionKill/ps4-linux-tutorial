@@ -14,7 +14,7 @@ Now go forth, spread misinformation online.
 > Thanks for reading! Star this project on GitHub if you want to support the guide!
 ## Credits
 ### Kernel developers
-These are the original kernel developers, who did the hard work to port the kernels on which all of the modern kernels are based on:
+These are the original kernel developers, who did the hard work to port the kernels on which all of the modern kernels are based on. None of this would've been possible without them.
 - 4.4  kernel
 	- marcan, fail0verflow team
 - 4.14 kernel
@@ -46,11 +46,17 @@ If you want, you can check out their repos:
 - [feeRnt](https://github.com/feeRnt/ps4-linux-12xx) (Package)
 	- Hosts and maintains the PS4 Linux kernel sources on GitHub.
 
-Additionally, I also want to mention:
+### Additional credits
 - [saya](https://www.youtube.com/@saya7068)
-	- For their kernels and tutorials.
+	- For their great kernels and tutorials.
+- [Qba](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)
+	- For their constant updates and new distros.
 - [triki1](https://www.youtube.com/@trakerchris9876)
-	- Also for their kernel and tutorials.
+	- For their kernel and tutorials, distros and Mesa updaters.
+- [centi07](https://github.com/centi07/)
+	- For their help with up-to-date mesa package repos on Arch and more.
+- [FlyingPhantom](https://github.com/FlyingPhantom) / z_fentom
+	- Provided a lot of... Entertainment, and forked this repo for new additions.
 
 Thank you all so much for making this possible.
 ## Post install setup is next!
