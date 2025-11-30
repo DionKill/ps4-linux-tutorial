@@ -41,11 +41,13 @@ Thanks to mircoho and saya for helping out in clarifying these problems.
 ### Other possible fixes
 If booting a display manager or your desktop environment results in a black screen, and the distro is using X11, try Wayland.
 
-To do that, you can try a Wayland based distro, there's plenty out there, or you can also try to change window manager by running `dbus-run-session -- <name of DE/WM>` on another TTY (change by doing `CTRL+ALT+F2`).
+To do that, you can try a Wayland based distro, there's plenty out there, or you can also try to change window manager by running:
+
+`dbus-run-session -- startplasma-x11` or `dbus-run-session -- startplasma-wayland` on another TTY (change by doing `CTRL+ALT+F3`).
 
 This is a lot of stuff to cover on the guide so you will need to look it up yourselves.
 
-Thanks to @kalaposfos on Discord for mentioning this fix.
+Thanks to @kalaposfos and @package on Discord for mentioning this fix.
 :::
 
 ::: details Stuck on a white LED / instant crash

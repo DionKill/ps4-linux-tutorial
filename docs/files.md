@@ -84,6 +84,5 @@ These distros are newer, supported by updates and recommended. CachyOS was used 
 >
 >Want to make your own? [Check this out!](distrodiy)
 
-## To the installation we go!
-
+## To the installation we go
 You should go to the next step, where you'll finally complete your installation!

@@ -44,17 +44,17 @@ Jokes aside, you would need to do something like so:
 	- If you want to make it public... Please don't. Leave it with American English and move on. Don't put 90s renders of anime girls, we don't want them...
 
 Uninstall the `mesa-git`, `libdrm`, and `xf86-video-amdgpu` packages, and install the ones that are required by the PS4.
-To uninstall the mesa packages, use your package manager instructions. You will probably need to remove all the dependencies as well.
+To uninstall the mesa packages, use your package manager instructions. Do not remove the dependencies, as it could break your system. just remove `mesa` and `lib32-mesa`.
 - DO NOT USE MESA 22 FFS, IF YOU DO YOU ARE LIKE ACTUALLY A MORON
 - The PS4 does NOT support hardware video encoding. It's locked behind DRM.
 
-::: details Package config (if you don't want to update Mesa)
+::: details Package management config (if you don't want to update Mesa)
 After that you need to add these packages to the ignore section so they can't be updated. On Arch based distros, change your pacman config, and add these packages to the ignore section:
 ```bash
 sudo nano /etc/pacman.conf
 ```
 
-Then, add this under somewhere i dont' remembr it's almost 1am
+Then, add this inside your pacman config:
 ```bash
 IgnorePkg = lib32-mesa lib32-opencl-mesa ib32-vulkan-asahi lib32-vulkan-dzn lib32-vulkan-freedreno lib32-vulkan-gfxstream lib32-vulkan-intel lib32-vulkan-mesa-device-select lib32-vulkan-mesa-layers lib32-vulkan-nouveau lib32-vulkan-radeon lib32-vulkan-swrast lib32-vulkan-virtio mesa mesa-docs opencl-mesa vulkan-asahi vulkan-dzn vulkan-freedreno vulkan-gfxstream vulkan-intel vulkan-mesa-device-select vulkan-mesa-layers vulkan-nouveau vulkan-radeon vulkan-swrast vulkan-virtio lib32-vulkan-asahi  
 IgnoreGroup = mesa

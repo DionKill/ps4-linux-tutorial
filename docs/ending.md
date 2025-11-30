@@ -1,17 +1,16 @@
 # Finishing up
-Done! Enjoy Linux on your PS4! Please share this guide if it was helpful! For any questions on this guide, make an issue, with general Linux issues use the links provided at the start of the guide to get to the PS4Linux Forums.
+And you're done! If this guide was helpful, you can star it on GitHub and share it!
 
 Now go forth, spread misinformation online.
 
 <img src="/misinformation.jpg" width="50%">
 
 > [!TIP]
-> I highly recommend continuing to the ["Post Installation" setup](postinstall), to change language and downloading RAM!
+> I highly recommend continuing to the ["Post Installation" setup](postinstall), to change language and download more RAM!
 
 > [!NOTE]
 > For any problems, [check the issues page](issues)!
-> 
-> Thanks for reading! Star this project on GitHub if you want to support the guide!
+
 ## Credits
 ### Kernel developers
 These are the original kernel developers, who did the hard work to port the kernels on which all of the modern kernels are based on. None of this would've been possible without them.
@@ -53,11 +52,11 @@ If you want, you can check out their repos:
 	- For their constant updates and new distros.
 - [triki1](https://www.youtube.com/@trakerchris9876)
 	- For their kernel and tutorials, distros and Mesa updaters.
+- [uar](https://uar.no/ps4/)
+	- For their tutorial and fixes for baikal consoles and more.
 - [centi07](https://github.com/centi07/)
 	- For their help with up-to-date mesa package repos on Arch and more.
 - [FlyingPhantom](https://github.com/FlyingPhantom) / z_fentom
-	- Provided a lot of... Entertainment, and forked this repo for new additions.
+	- For their forking this project for new additions.
 
 Thank you all so much for making this possible.
-## Post install setup is next!
-Go and modify your distro in the next step. You will find a lot of useful stuff!
