@@ -57,6 +57,6 @@ If you want, you can check out their repos:
 - [centi07](https://github.com/centi07/)
 	- For their help with up-to-date mesa package repos on Arch and more.
 - [FlyingPhantom](https://github.com/FlyingPhantom) / z_fentom
-	- For their forking this project for new additions.
+	- For their forking this project for new additions. You can find it [here](https://flyingphantom.github.io/ps4-linux-tutorial/).
 
 Thank you all so much for making this possible.
