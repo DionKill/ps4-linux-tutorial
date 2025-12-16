@@ -123,7 +123,7 @@ export default defineConfig({
         timeStyle: 'full'
       }
     },
-  }
+  },
 
   locales: {
     root: {
@@ -221,9 +221,8 @@ export default defineConfig({
 
         lastUpdated: {
           text: 'Aggiornato il'
-          }
-        },
-      }
+        }
+      },
     }
-  },
+  }
 })
