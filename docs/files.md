@@ -77,7 +77,7 @@ These distros are newer, supported by updates and recommended. CachyOS was used 
 | [Xubuntu](https://ps4linux.com/forums/d/337-xubuntu-2504-final-release)                          | Ubuntu  | [triki1](https://www.youtube.com/@trakerchris9876)                        | Divided into multiple files                                                         |
 | [Arch](https://ps4linux.com/forums/d/413-archlinux-minimal)                                      | Arch    | [centi07](https://github.com/centi07)                                     | A basic Arch install                                                                |
 | [Batocera 40](https://ps4linux.com/forums/d/252-batocera-40-for-ps4-installation-setup-tutorial) | No clue | [Noob404](https://www.youtube.com/channel/UC9pY5BDCjDLOC4j-zkHPu8)        | For retrogaming                                                                     |
-| [JaguarLinux](https://github.com/Jaguarlinux)                                                    | None    | TigerClips1                                                               | A distro made from scratch for the PS4! Still in development, but worth mentioning. |
+| [JaguarLinux](https://ps4linux.com/forums/d/265-jaguarlinux-a-ps4-linux-only-distro-beta-release/3)                                                    | None    | [TigerClips1](https://github.com/TigerClips1/)                                                               | A distro made from scratch for the PS4! Still in development, but worth mentioning. |
 
 >[!TIP]
 >Want to add more distros? Make an issue and your wish shall be granted.
