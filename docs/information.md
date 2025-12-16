@@ -17,7 +17,7 @@ TLDR: yes it is reversible, and no you won't loose any data.
 ::: details What consoles are compatible?
 All consoles that can run a homebrew enabler (like GoldHEN or ps4hen) are able to run Linux.
 
-At the time of writing, the newest compatible firmware is 12.02.
+At the time of writing, the newest compatible firmware is 12.52.
 
 However, every console has a different southbridge, and Baikal in particular has many issues. You should be able to get a working installation either way.
 :::
@@ -35,19 +35,18 @@ However, every console has a different southbridge, and Baikal in particular has
 Here are some links you'll probably find useful. You can come back to them if needed.
 1. [PS4Linux Website](https://ps4linux.com)
 2. [PS4Linux Forums](https://ps4linux.com/forums/)
-3. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
-4. YouTube
+3. YouTube
 	1. [Modded Warfare](https://www.youtube.com/@MODDEDWARFARE)
 	2. [Noob404 (PS4Linux Forums)](https://www.youtube.com/channel/UC9pY5BDCjDLOC4j-zkHPu8A)
 	3. [Qba](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw)
-5. Discord
+4. Discord
 	1. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
 		1. For general help regarding things not working
 	2. [tux4orbis](https://discord.gg/jebUjgBu6T)
 		1. More development focused
 	3. [PS4-LINUX](https://discord.gg/88ZrcmpJ) (saya's)
 		1. Mostly in French
-6. Mental Health Institute of your choice (optional, if you feel overwhelmed)
+5. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
 ## Warning before you proceed
 

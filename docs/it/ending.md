@@ -6,10 +6,10 @@ Now go forth, spread misinformation online.
 <img src="/misinformation.jpg" width="50%">
 
 > [!TIP]
-> I highly recommend continuing to the ["Post Installation" setup](docs/postinstall.md), to change language and download more RAM!
+> I highly recommend continuing to the ["Post Installation" setup](docs/it/postinstall.md), to change language and download more RAM!
 
 > [!NOTE]
-> For any problems, [check the issues page](docs/issues.md)!
+> For any problems, [check the issues page](docs/it/issues.md)!
 
 ## Credits
 ### Kernel developers

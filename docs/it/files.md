@@ -1,13 +1,13 @@
 # Getting the warez
 
 > [!WARNING]
-> I'm sorry if some of the following links are sketchy, but the community is a divided mess unfortunately. Refer to the [Other Issues](docs/issues.md#other-issues) section for a rant.
+> I'm sorry if some of the following links are sketchy, but the community is a divided mess unfortunately. Refer to the [Other Issues](docs/it/issues.md#other-issues) section for a rant.
 ## Kernels
 Let's start with the kernels: they are very important as they have the software that controls all of the PS4's hardware. This is, by definition, Linux.
 
 This is the section for recommended kernels. There are both vanilla kernels and performance kernels. Ordered by newest to oldest, the top ones are the recommended ones.
 
-[Credits for all of these kernels](docs/ending.md#credits).
+[Credits for all of these kernels](docs/it/ending.md#credits).
 
 ::: details "Which one to pick" or "I have issues"
 Hard to say as there's a neptillion of them, but I'd recommend starting from the top (mind the Southbridge) and going down until you can find one that works.
@@ -45,11 +45,11 @@ Don't expect a 3x improvement in performance, they just add features and make th
 ### Specific kernel problems
 Before continuing, I want to mention that there can be many issues with kernel and distro combinations.
 
-If you have issues, remember to check the [Issues page](docs/issues.md).
+If you have issues, remember to check the [Issues page](docs/it/issues.md).
 ### More kernels
 If you really want to try other and older kernels, even though it's highly discouraged, you can go to the [Legacy and other Kernels](legacy#kernels) section.
 
-If you want more kernels or help, ask out the [Discord servers](docs/revisions.md#important-places).
+If you want more kernels or help, ask out the [Discord servers](docs/it/revisions.md#important-places).
 
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums. [Here it is](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).

@@ -36,7 +36,7 @@ Replace `YOURNAME` and `ps4linux.tar.xz` accordingly.
 Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
 
 > [!TIP]
-> If you get an error, go to the [Installation issues section](docs/issues.md#installation-issues).
+> If you get an error, go to the [Installation issues section](docs/it/issues.md#installation-issues).
 
 You should already boot into the desktop. If it doesn't, run
 ```bash

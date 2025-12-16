@@ -7,7 +7,7 @@ If you don't trust people on the internet (and rightfully so), you may want to p
 > [!WARNING]
 > This is meant for advanced users ONLY.
 > 
-> Some things may not work properly. If you encounter issues, chat on the [Discords](docs/revisions.md#important-places).
+> Some things may not work properly. If you encounter issues, chat on the [Discords](docs/it/revisions.md#important-places).
 
 ## Preamble - why is this necessary?
 The community, as we've established before, is divided: there's the french (that nobody understands), there's people who want to work for real, but in the end none of them work together. So, even after almost 10 years, we still haven't seen these patches merged onto the original projects. Bruh.

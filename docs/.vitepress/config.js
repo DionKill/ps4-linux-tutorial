@@ -30,6 +30,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:image', content: 'https://dionkill.github.io/ps4-linux-tutorial/preview.png' }],
   ],
 
+  // Theme configuration
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -123,4 +124,106 @@ export default defineConfig({
       }
     },
   }
+
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en-US',
+    },
+    it: {
+      label: 'Italiano',
+      lang: 'it-IT',
+
+      // Theme configuration
+      themeConfig: {
+        // https://vitepress.dev/reference/default-theme-config
+        nav: [
+          { text: 'Home', link: '/it/' },
+          { text: 'Informazioni', link: '/it/information' },
+          {
+            text: 'Problemi',
+            items: [
+              { text: 'Problemi generali', link: '/it/issues' },
+              { text: 'Problemi per Baikal', link: '/it/baikal' },
+            ]
+          },
+          {
+            text: 'Altre cose interessanti',
+            items: [
+              { text: 'Post-installazione', link: '/it/postinstall' },
+              { text: 'Distro DIY', link: '/it/distrodiy' },
+            ]
+          },
+        ],
+
+        sidebar: [
+          {
+            text: '📖 La Guida',
+            collapsed: false,
+            items: [
+              { text: 'Informazioni Chiave', link: '/it/information' },
+              { text: 'Revisioni e Southbridge', link: '/it/revisions' },
+              { text: 'Setup', link: '/it/setup' },
+              { text: 'File', link: '/it/files' },
+              {
+                text: '💿 Scegli il metodo di installazione',
+                collapsed: true,
+                items: [
+                  { text: 'Metodi di installazione', link: '/installation' },
+                  { text: 'Installazione interna', link: '/internal-installation' },
+                  { text: 'Installazione esterna - Script', link: '/external-installation-scripted' },
+                  { text: 'Installazione esterna - Manuale', link: '/external-installation-manual' },
+                ],
+              },
+              { text: 'Fine', link: '/ending' },
+            ]
+          },
+          {
+            text: '💜 Post Installazione',
+            collapsed: false,
+            items: [
+              { text: 'Setup post-installazione', link: '/postinstall' },
+              { text: 'Distro DIY', link: '/distrodiy' },
+              { text: 'Game testing', link: '/game-testing' },
+            ]
+          },
+          {
+            text: '💔 Problemi comuni',
+            collapsed: false,
+            items: [
+              { text: 'Problemi comuni', link: '/issues' },
+              { text: 'Problemi su Baikal', link: '/baikal' },
+            ]
+          }
+          ,
+          {
+            text: '☠️ Contenuti Legacy',
+            collapsed: true,
+            items: [
+              { text: 'Legacy e preservazione', link: '/legacy' },
+            ]
+          }
+        ],
+
+        // Custom added stuff
+
+        socialLinks: [
+          { icon: 'github', link: 'https://github.com/DionKill/ps4-linux-tutorial/' }
+        ],
+
+        search: {
+          provider: 'local'
+        },
+
+        footer: {
+          message: 'Rilasciato sotto la <a href="https://github.com/DionKill/ps4-linux-tutorial/blob/main/LICENSE">Licenza MIT</a>.',
+        },
+
+        lastUpdated: {
+          text: 'Aggiornato il'
+          }
+        },
+      }
+    }
+  },
 })

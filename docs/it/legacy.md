@@ -20,7 +20,7 @@ These kernels are so old that probably don't even boot anymore. Do not use these
 | -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- | --------------------------- |
 | 4.4<br>5.x     | Probably no source.<br>[Download](https://ps4linux.com/downloads/#PS4_Linux_Kernel_Downloads). | All                     | The old list from PS4Linux. |
 
-Credits for the kernels can be found [here](docs/ending.md#credits).
+Credits for the kernels can be found [here](docs/it/ending.md#credits).
 #### Bootargs
 The `bootargs.txt` is not really necessary anymore, unless your "distro + kernel" combo of choice requires it or on certain kernels for Baikal PS4s. Therefore, it has been moved to the legacy section.
 
