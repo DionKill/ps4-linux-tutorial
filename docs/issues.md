@@ -19,7 +19,7 @@ If none of these help you, go to the PS4Linux.com Discord server.
 If the installer can't find the USB device, you have two options:
 1. Try to disconnect everything, and connect the drive first. If that doesn't work, try to reboot but only with the drive connected, only when you get to the rescue shell connect a keyboard and a mouse.
 2. If that other method didn't work, you can try to scan for USB storage devices with `fdisk -l` or `lsblk`. It should show all the storage devices.
-	- If it shows with the commands, but the installer fails to find it, it's probably because the drive (or adapter if you are using one) doesn't support UAS, which is required in newer kernels. In that case, use the [Method 2](docs/installation#method-2-manual-partitioning) described.
+	- If it shows with the commands, but the installer fails to find it, it's probably because the drive (or adapter if you are using one) doesn't support UAS, which is required in newer kernels. In that case, use the [Method 2](/installation#method-2-manual-partitioning) described.
 	- Also, don't use USB hubs, the drive may not show up.
 
 :::

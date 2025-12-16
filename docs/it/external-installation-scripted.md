@@ -14,7 +14,7 @@ next:
 > Back up any existing data you care about.
 
 > [!TIP]
-> If you have issues or just want to do manual partitioning (which often works better) try the [alternative installation here](docs/external-installation-manual).
+> If you have issues or just want to do manual partitioning (which often works better) try the [alternative installation here](/external-installation-manual).
 ## Installation scripts
 Put the kernel (bzImage, and the bootargs if you need it), initramfs (initramfs.cpio.gz), and your distro `psxitarch.tar.xz/gz` on the root of a FAT32 formatted drive, like so:
 
@@ -40,12 +40,12 @@ Plug your drive on the PS4 and continue.
 Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
 
 > [!TIP]
-> If you get an error, go to the [Installation issues section](docs/issues#installation-issues).
+> If you get an error, go to the [Installation issues section](/issues#installation-issues).
 > 
-> You may have to use the [alternative method](docs/external-installation-manual).
+> You may have to use the [alternative method](/external-installation-manual).
 
 - Type `install-psxitarch.sh`
-	- If it fails, go to the [Installation Issues](docs/issues#installation-issues)
+	- If it fails, go to the [Installation Issues](/issues#installation-issues)
 
 Hydrate yourself while you wait. It'll take a while.
 
