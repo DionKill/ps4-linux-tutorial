@@ -29,7 +29,9 @@ Then, you will need to untar your distro of choice at the root of the bigger EXT
 sudo tar -xvJpf ps4linux.tar.xz -C /run/media/YOURNAME/psxitarch --numeric-owner
 ```
 
-Replace `YOURNAME` and `ps4linux.tar.xz` accordingly.
+> [!NOTE]
+> Replace `YOURNAME` and `ps4linux.tar.xz` accordingly.
+> Also, you need to check that the drive is actually called psxitarch, it'll be different if you didn't set it.
 
 <!--@include: ./_includes/payloads.md-->
 ## Booting up
