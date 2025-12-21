@@ -35,7 +35,7 @@ Plug your drive on the PS4 and continue.
 
 <img src="/screenshots/rufus-format.png" width="50%">
 
-<!--@include: /_includes/payloads-->
+<!-- @include: /_includes/payloads.md -->
 ## Installation commands
 Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
 
@@ -54,6 +54,6 @@ You should already boot into the desktop. If it doesn't, run
 resume-boot
 ```
 
-<!--@include: /_includes/resume-boot-warning-->
+<!-- @include: /_includes/resume-boot-warning.md -->
 ## Finale
 Go now, conquer the finale. Also, read the post-credit stuff.

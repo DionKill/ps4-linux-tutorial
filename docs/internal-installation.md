@@ -31,7 +31,7 @@ Then, go to `/user/system/`, create a folder called `boot`, and paste your distr
 When installed, you can remove your Linux installation by removing the above files, and the "linux.img" found in `/user/home/` folder. Just in case you realize I was correct.
 
 
-<!--@include: /_includes/payloads-->
+<!-- @include: /_includes/payloads.md -->
 
 ## Installation commands
 Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
@@ -51,7 +51,7 @@ You should already boot into the desktop. If it doesn't, run
 resume-boot
 ```
 
-<!--@include: /_includes/resume-boot-warning-->
+<!-- @include: /_includes/resume-boot-warnings.md -->
 
 ## Finale
 Go now, conquer the finale. Also, read the post-credit stuff.

@@ -33,7 +33,7 @@ sudo tar -xvJpf ps4linux.tar.xz -C /run/media/YOURNAME/psxitarch --numeric-owner
 > Replace `YOURNAME` and `ps4linux.tar.xz` accordingly.
 > Also, you need to check that the drive is actually called psxitarch, it'll be different if you didn't set it.
 
-<!--@include: /_includes/payloads-->
+<!-- @include: /_includes/payloads.md -->
 ## Booting up
 Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
 
@@ -45,7 +45,7 @@ You should already boot into the desktop. If it doesn't, run
 resume-boot
 ```
 
-<!--@include: /_includes/resume-boot-warning-->
+<!-- @include: /_includes/resume-boot-warning.md -->
 
 ::: details If it doesn't work check this!
 If for some reason it doesn't work for you, run the following commands (thanks @gryoza on Discord and @bene4k on Reddit for this):

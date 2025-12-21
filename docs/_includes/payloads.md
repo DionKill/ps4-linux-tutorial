@@ -8,7 +8,7 @@ Change your target firmware (in the picture it's firmware 11.50). If it doesn't 
 Do NOT use Pro payloads on non-Pro consoles.
 
 - [ps4boot.github.io](https://ps4boot.github.io/) (5.05/6.72/9.60) (Webkit method)
-- [ps4boot.free.nf/index.html](http://ps4boot.free.nf/index.html) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
+- [ps4boot.free.nf](http://ps4boot.free.nfl) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
 
 > [!WARNING]
 > Use a 1GB VRAM payload for installation and first boot.
