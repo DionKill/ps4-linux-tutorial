@@ -1,5 +1,5 @@
 ## Launching Linux Rescue Shell
-After that, either launch your payload with Payload Guest, or use a payload website to load them.
+After that, either launch your payload with Payload Guest, or use a payload website to load them, if the website doesn't work for you.
 ### Payload website hosts
 <img src="/screenshots/ps4boot-payloads.png" width="75%">
 
@@ -22,7 +22,7 @@ Do NOT use Pro payloads on non-Pro consoles.
 > You aren't creating memory out of thin air!
 
 ### Local payloads
-If you so desire, it's possible to load these payloads locally.
+If you so desire, or you can't launch it from the web browser for some reason, it's possible to load these payloads locally.
 
 In order to do that, go [download them from the ps4boot repositories](https://github.com/ps4boot/ps4-linux-payloads):
 - Install "Payload Loader" on your PS4 to load the payloads locally

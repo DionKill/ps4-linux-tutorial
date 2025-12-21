@@ -69,6 +69,8 @@ However, as some issues may arise on certain consoles, you should still go and t
 - Set your RGB color gamut
 	- It may be automatically set to "Limited" even if your display supports "Full".
 	- "Full" may not work on really old displays. If the image looks weird, set it to "Limited".
+- Wide color gamut
+	- Disable, or you won't have any video output at all!
 
 #### "System" settings
 
