@@ -44,7 +44,7 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 > 
 > You may have to use the [alternative method](/external-installation-manual).
 
-- Type `install-psxitarch.sh`
+- Type `exec install-psxitarch.sh`
 	- If it fails, go to the [Installation Issues](/issues#installation-issues)
 
 Hydrate yourself while you wait. It'll take a while.

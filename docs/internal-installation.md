@@ -40,7 +40,7 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 > If you get an error, go to the [Installation issues section](/issues#installation-issues).
 
 Internal HDD
-- Type `linux-install-hdd.sh`
+- Type `exec linux-install-hdd.sh`
 - Type how much storage you want to use for the installation (check how much free space you have, don't fill up your drive as the PS4 won't report it!)
 	- If it fails, go to the [Installation Issues](/issues#installation-issues)
 

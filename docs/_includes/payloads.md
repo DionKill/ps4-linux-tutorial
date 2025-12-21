@@ -11,14 +11,14 @@ Do NOT use Pro payloads on non-Pro consoles.
 - [ps4boot.free.nf](http://ps4boot.free.nfl) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
 
 > [!WARNING]
-> Use a 1GB VRAM payload for installation and first boot.
+> You MUST use a 1GB VRAM payload for installation and first boot.
 > 
 > Afterwards, 2GB is recommended.
 
 > [!TIP]
 > I cannot believe I have to say this, but remember that the amount of VRAM you allocate is taken from your system memory!
 > 
-> For example, for a 2GB of VRAM payload, you'd have 8-2 = 6GB of remaining system RAM!
+> For a 2GB of VRAM payload, you'd have 8-2 = 6GB of remaining system RAM!
 > You aren't creating memory out of thin air!
 
 ### Local payloads
@@ -29,4 +29,5 @@ In order to do that, go [download them from the ps4boot repositories](https://gi
 - Extract from the ELF folders, and rename the file to have a `.bin` extension instead of `.elf`, because Payload Loader can't load ELFs
 	- Enable "see file extensions" on Windows Explorer or what you're using
 	- If it doesn't have any particularly append, it's for both Aeolia and Belize
+- Put the files in the `/data/payloads/` directory
 - Remember to check sometimes to see if there's any updates
