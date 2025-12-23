@@ -54,10 +54,11 @@ If you want more kernels or help, ask out the [Discord servers](/revisions#impor
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. I'll be using one only, and it's going to be the one that was originally created for PSXITARCH, a distro based on Arch made by the PS3ITA Forums. [Here it is](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
 
-There's another in-dev initramfs, if you want to check it out it's [here](https://github.com/ps4gentoo/initramfs).
+::: details More stuff
+There's another in-dev initramfs (probably not working), if you want to check out the source it's [here](https://github.com/ps4gentoo/initramfs).
 
-Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial-for-building-a-custom-initramfs-research-development) on the PS4 Linux forums, I found it and thought was really interesting.
-
+Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial-for-building-a-custom-initramfs-research-development) on the PS4 Linux forums, I found it and thought was really interesting, it explains what an initramfs is and does in actuality.
+:::
 ## Distros (that you ACTUALLY wanna use)
 Yes! Finally the time has come. Which one will you choose?
 Honestly there's a neptillion distros. Most however, are very outdated, especially the ones on the PS4Linux's website list.

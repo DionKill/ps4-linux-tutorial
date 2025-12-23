@@ -19,19 +19,21 @@ The PS4 family of consoles has had 3 revsions in total:
 <img src="/pro.png" width="50%">
 
 ## Southbridges
-The PS4 family is also divided into 3 major Southbridges:
+A southbridge is a part of a motherboard chipset that connects all the slower parts of a motherboard, like USB, BIOS, ISA, IDE and SATA/PATA, and more, for support for such devices.
+
+The PS4 family is divided into 3 major Southbridges:
 ### Aeolia
 The oldest and very supported for Linux, but is known to have some Wi-Fi or Bluetooth chips that may not work with some kernels.
 
 It's only present on early Phat models.
 
 ### Belize
-The second gen Southbridge, and the one with the most support. Gets kernel updates faster and doesn't have any particular problems.
+The second gen southbridge, and the one with the most support. Gets kernel updates faster and doesn't have any particular problems.
 
 It can be found on late Phat models, but also on Slims and Pros.
 
 ### Baikal
-The third and final Southbridge, released very late into the console's lifespan, and the one with the least support. It doesn't have support for internal HDD installation, and is known to have issues, especially on PS4 Pros, but you may be able to get a working system.
+The third and final southbridge, released very late into the console's lifespan, and the one with the least support. It doesn't have support for internal HDD installation, and is known to have issues, especially on PS4 Pros, but you may be able to get a working system.
 
 This is because there are fewer people with Baikal PS4s, so there aren't many developers and testers.
 

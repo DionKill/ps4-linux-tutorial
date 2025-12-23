@@ -61,30 +61,30 @@ IgnoreGroup = mesa
 ```
 :::
 
-After that, you can compress your installation and move it over to your PS4 for installation. This next command skips all the useless folders and aims to be relatively fast at compression, using multiple cores. Compressions level higher than 6 are a waste of time.
+After that, you can compress your installation and move it over to your PS4 for installation. This next command skips all the useless folders and aims to be relatively fast at compression, using multiple cores. Compression levels higher than 6 are a waste of time.
 ```bash
 cd / && sudo tar \
   --one-file-system \
   --acls \
   --xattrs \
   --numeric-owner \
-  --exclude=/proc/* \
-  --exclude=/sys/* \
-  --exclude=/dev/* \
-  --exclude=/run/* \
-  --exclude=/tmp/* \
-  --exclude=/var/tmp/* \
-  --exclude=/var/cache/* \
-  --exclude=/var/log/* \
+  --exclude=/proc \
+  --exclude=/sys \
+  --exclude=/dev \
+  --exclude=/run \
+  --exclude=/tmp \
+  --exclude=/var/tmp \
+  --exclude=/var/cache \
+  --exclude=/var/log \
   --exclude=/swapfile \
   --exclude=/lost+found \
-  --exclude=/mnt/* \
-  --exclude=/media/* \
+  --exclude=/mnt \
+  --exclude=/media \
   --exclude=/ps4linux.tar.xz \
   -cvpf /ps4linux.tar.xz / -I "xz -T0 -6"
 ```
 
-Or, if you want a simpler command, that works on any system:
+Or, if you want a smaller command:
 ```bash
 cd / && sudo tar -cvpf ps4linux.tar.xz --exclude=/ps4linux.tar.xz --exclude=/var/cache/* --one-file-system / -I "xz -T0 -6"
 ```
