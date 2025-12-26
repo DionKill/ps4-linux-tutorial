@@ -37,7 +37,7 @@ In the example case, the latest version of GoldHEN is used (minimum for this gui
 You need a system that is already jailbroken and has a homebrew enabler (such as GoldHEN or ps4hen) running.
 
 > [!TIP]
-> To jailbreak your PS4, you need firmware 12.02 or lower.
+> To jailbreak your PS4, you need firmware 12.52 or lower.
 > 
 > Refer to [Modded Warfare](https://www.youtube.com/@MODDEDWARFARE) on YouTube if you haven't already.
 

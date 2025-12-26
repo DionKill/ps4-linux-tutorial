@@ -1,5 +1,8 @@
 ## Launching Linux Rescue Shell
 After that, either launch your payload with Payload Guest, or use a payload website to load them, if the website doesn't work for you.
+
+> [!CAUTION]
+> Firmware 12.50 and 12.52 users, click here!
 ### Payload website hosts
 <img src="/screenshots/ps4boot-payloads.png" width="75%">
 
@@ -24,7 +27,9 @@ Do NOT use Pro payloads on non-Pro consoles.
 ### Local payloads
 If you so desire, or you can't launch it from the web browser for some reason, it's possible to load these payloads locally.
 
-In order to do that, go [download them from the ps4boot repositories](https://github.com/ps4boot/ps4-linux-payloads):
+In order to do that, you need to download them [here](https://github.com/ArabPixel/ps4-linux-payloads/releases/tag/v20) (using the fork, for 12.50+ support)
+
+After downloading them:
 - Install "Payload Loader" on your PS4 to load the payloads locally
 - Extract from the ELF folders, and rename the file to have a `.bin` extension instead of `.elf`, because Payload Loader can't load ELFs
 	- Enable "see file extensions" on Windows Explorer or what you're using

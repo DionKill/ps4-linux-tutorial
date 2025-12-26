@@ -10,6 +10,8 @@ If you landed here, it means you have the unluckiest southbridges of them all: t
 - Internal HDD writing speeds are slow due to UFS encryption, you can however install internally (theoretically? you need a different initramfs).
 
 > List by uar
+> 
+> Check out their website's baikal section [here](https://uar.no/ps4/baikal/)
 
 ## Why is Baikal still unsupported?
 Because there are almost no developers willing to put so much effort into the chip.

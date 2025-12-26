@@ -17,6 +17,8 @@ Here you'll setup the internal HDD for installation of a Linux distro.
 
 > [!WARNING]
 > This shit is slow on an HDD. Be careful and prepare your balls for imminent explosion.
+> 
+> However, if you have swapped your internal HDD for an SSD, none of the slowness will apply to you. Remember that the console will still have to encrypt the data so it won't be super quick.
 
 
 ## Internal HDD setup

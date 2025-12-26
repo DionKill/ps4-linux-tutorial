@@ -11,7 +11,7 @@ All your data will stay intact. Whether you install it on the internal HDD or an
 The internal drive method actually creates a file as big as you want it to be which is going to be mounted whenever you launch Linux as it's own virtual hard disk, so it won't overwrite any data you have on your console.
 For the external drive method your HDD isn't even touched at all.
 
-TLDR: yes it is reversible, and no you won't loose any data.
+TLDR: yes it is reversible, and no you won't lose any data.
 :::
 
 ::: details What consoles are compatible?
@@ -46,7 +46,10 @@ Here are some links you'll probably find useful. You can come back to them if ne
 		1. More development focused
 	3. [PS4-LINUX](https://discord.gg/88ZrcmpJ) (saya's)
 		1. Mostly in French
-5. Mental Health Institute of your choice (optional, if you feel overwhelmed)
+5. Other websites
+	1. [uar's archive](https://uar.no/ps4/)
+		1. Includes payloads, distros, and stuff per-southbridge
+6. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
 ## Warning before you proceed
 

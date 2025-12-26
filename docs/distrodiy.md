@@ -34,6 +34,15 @@ Otherwise, it's possible to get them from the AUR. You just need to download the
 	- I haven't figured out how to compile these just yet... Better off using the ones from the AUR tbh
 - You will still need to use a kernel of choice (download one or git clone the ones listed before) and use the initramfs (or make your own? if you manage please contact us on the tux4orbis discord)
 
+::: details Compile your own drivers (not recommended)
+Here are a few repositories to get started:
+- [libdrm](https://github.com/Jaguarlinux/ps4linux-libdrm)
+- [mesa](https://github.com/Jaguarlinux/mesa-ps4linux-upstream)
+- [xf86-video-amdgpu](https://github.com/Jaguarlinux/ps4linux-xorg)
+
+This one for Jaguar Linux is recommended. Though I wanted to show how to compile them yourself, it goes outside the scope of the guide, and you probably don't need to as we are planning on upstreaming the changes anyways.
+:::
+
 Otherwise, on some Discords, you can find (possibly illegal?) personal forks for these drivers. Most of these are in french, so watch out.
 ## Porting
 > [!TIP]
