@@ -38,9 +38,7 @@ These kernels are compiled using additional optimizations. Don't expect a 3x imp
 
 :::
 
-<<<<<<< HEAD
 If you have issues, remember to check the [Issues page](/issues). If you want more help, check out [Discord servers](/information#important-places).
-=======
 
 ### Specific kernel problems
 Before continuing, I want to mention that there can be many issues with kernel and distro combinations.
