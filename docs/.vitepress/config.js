@@ -59,8 +59,8 @@ export default defineConfig({
         items: [
           { text: 'Key Information', link: '/information' },
           { text: 'Revisions and Southbridges', link: '/revisions' },
-          { text: 'Setup', link: '/setup' },
-          { text: 'Files', link: '/files' },
+          { text: '⌨️ Setup', link: '/setup' },
+          { text: '📁 Files', link: '/files' },
           {
             text: '💿 Choose your Install',
             collapsed: true,
