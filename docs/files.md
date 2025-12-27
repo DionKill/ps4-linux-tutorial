@@ -10,11 +10,8 @@ This is the section for recommended kernels. There are both vanilla kernels and 
 [Credits for all of these kernels](/ending#credits).
 
 ::: details Read this if you're confused!
-### Do versions matter?
-Yes, as Baikal has been stuck on 5.4 for a while and can't use modern GPU drivers anymore. For the rest, it doesn't matter.
-
-### Which distro to pick?
-Hard to say as there's a neptillion of them, but I'd recommend starting from the top (mind the Southbridge) and going down until you can find one that works.
+### Do kernel versions matter?
+Yes, but only for Baikal, as it has been stuck on 5.4 for a while and can't use modern GPU drivers anymore. For the rest, it doesn't matter.
 
 ### What about more performance!!!
 If all you care about is squeezing as much performance as possible out of the PS4 (you do) try the performance kernel section first. Those have patches to make the system more responsive.
@@ -41,15 +38,6 @@ These kernels are compiled using additional optimizations. Don't expect a 3x imp
 
 If you have issues, remember to check the [Issues page](/issues). If you want more help, check out [Discord servers](/information#important-places).
 
-### Specific kernel problems
-Before continuing, I want to mention that there can be many issues with kernel and distro combinations.
-
-If you have issues, remember to check the [Issues page](/issues).
-### More kernels
-If you really want to try other and older kernels, even though it's highly discouraged, you can go to the [Legacy and other Kernels](legacy#kernels) section.
-
-If you want more kernels or help, ask out the [Discord servers](/information#important-places).
-
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. We'll be using [this one](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
 
@@ -60,9 +48,7 @@ Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial
 :::
 ## Distros (that you ACTUALLY wanna use)
 Yes! Finally the time has come. Which one will you choose?
-Honestly there's a neptillion distros. Most however, are very outdated, especially the ones on the PS4Linux's website list.
-
-These distros are newer, supported by updates and recommended. CachyOS was used for this guide, but you can follow the same method of installation for all the other ones reported here. Time to distro hop!
+Honestly there's a neptillion distros... Choose one that you may like, or distro hop a bunch!
 
 | Distro                                                                                               | Base                            | Port credits                                                              | Info                                                                                |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
