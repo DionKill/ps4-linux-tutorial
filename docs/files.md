@@ -38,7 +38,19 @@ These kernels are compiled using additional optimizations. Don't expect a 3x imp
 
 :::
 
+<<<<<<< HEAD
 If you have issues, remember to check the [Issues page](/issues). If you want more help, check out [Discord servers](/information#important-places).
+=======
+
+### Specific kernel problems
+Before continuing, I want to mention that there can be many issues with kernel and distro combinations.
+
+If you have issues, remember to check the [Issues page](/issues).
+### More kernels
+If you really want to try other and older kernels, even though it's highly discouraged, you can go to the [Legacy and other Kernels](legacy#kernels) section.
+
+If you want more kernels or help, ask out the [Discord servers](/information#important-places).
+>>>>>>> 0e2e9539e45ba5b26241eeaed312db140b68f0db
 
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. We'll be using [this one](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
