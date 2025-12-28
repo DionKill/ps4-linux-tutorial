@@ -22,7 +22,7 @@ These are normal linux kernels with additional patches to make them work properl
 
 | Kernel Download                                                                                                                                                         | Source code                                        | Compatible Southbridges   | Extra info                                       |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------- | ------------------------------------------------ |
-| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__wifi_blkscrn)<br>(Recommended)                                                                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | Aeolia & Belize ONLY      | Specific blackscreen-fix releases. Recommended.  |
+| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__crashnt-3)<br>(Recommended)                                                                     | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | Aeolia & Belize ONLY      | Specific blackscreen-fix releases. Recommended.  |
 | [5.15.x](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__3.5.0)<br>[5.4.x](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.4.247__baikal_mt76) | [GitHub](https://github.com/feeRnt/ps4-linux-12xx) | All (5.4 only for Baikal) | Check Actions section if the releases don't work |
 
 ::: details Performance kernels
