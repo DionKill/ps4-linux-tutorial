@@ -88,7 +88,7 @@ export default defineConfig({
           { text: 'Distro DIY', link: '/distrodiy' },
           { text: 'Game compatibility', link: '/game-testing' },
         ]
-      }
+      },
       {
         text: '💔 Common issues',
         collapsed: false,
