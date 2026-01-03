@@ -47,7 +47,7 @@ export default defineConfig({
         text: 'More goodies',
         items: [
           { text: 'Post-install', link: '/postinstall' },
-          { text: 'Distro DIY', link: '/distrodiy' },
+          { text: 'Game compatibility', link: '/game-testing' },
         ]
       },
     ],
@@ -79,10 +79,16 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Post install setup', link: '/postinstall' },
-          { text: 'Distro DIY', link: '/distrodiy' },
-          { text: 'Game testing', link: '/game-testing' },
         ]
       },
+      {
+        text: '🧩 Extra',
+        collapsed: false,
+        items: [
+          { text: 'Distro DIY', link: '/distrodiy' },
+          { text: 'Game compatibility', link: '/game-testing' },
+        ]
+      }
       {
         text: '💔 Common issues',
         collapsed: false,

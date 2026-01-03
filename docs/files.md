@@ -13,8 +13,8 @@ This is the section for recommended kernels. There are both vanilla kernels and 
 ### Do kernel versions matter?
 Yes, but only for Baikal, as it has been stuck on 5.4 for a while and can't use modern GPU drivers anymore. For the rest, it doesn't matter.
 
-### What about more performance!!!
-If all you care about is squeezing as much performance as possible out of the PS4 (you do) try the performance kernel section first. Those have patches to make the system more responsive.
+### What about more performance?
+If all you care about is squeezing as much performance as possible out of the PS4 (you do) try the performance kernel section. Those have patches to make the system more responsive.
 :::
 
 ### Vanilla kernels
@@ -50,11 +50,12 @@ Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial
 :::
 ## Distros (that you ACTUALLY wanna use)
 Yes! Finally the time has come. Which one will you choose?
-Honestly there's a neptillion distros... Choose one that you may like, or distro hop a bunch!
+Honestly there's a neptillion distros... Choose one that you may like, or distro hop a bunch! If you're unsure, click on the links to the Forums and take a look at all of them.
 
 | Distro                                                                                               | Base                            | Port credits                                                              | Info                                                                                |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [CachyOS](https://mega.nz/file/RyUVQARB#HZD49XXac_v2CYKD4Oqa7Tg1aiZ7ltH_cnDxixw9JjY)                 | Arch                            | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | "Final Fantasy v2" version. It has nothing to do with FF. Mere fantasy.                          |
+| [CachyOS](https://mega.nz/file/RyUVQARB#HZD49XXac_v2CYKD4Oqa7Tg1aiZ7ltH_cnDxixw9JjY)                 | Arch                            | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | "Final Fantasy v2" version. It has nothing to do with FF. Mere fantasy.             |
+| [CachyOS Light](https://ps4linux.com/forums/d/422-cachyos-light-lxqt-a-light-and-fast-distro)        | Arch                            | DionKill                                                                  | CachyOS, but without it running like crap.                                          |
 | [EndeavourOS](https://ps4linux.com/forums/d/386-endeavouros-gaming-rebirth)                          | Arch                            | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | Arch based distro that's nice to use and easy to maintain                           |
 | [Manjaro](https://ps4linux.com/forums/d/342-manjaro-from-scratch)                                    | Arch                            | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | A Manjaro KDE distro                                                                |
 | [Garuda](https://ps4linux.com/forums/d/415-garuda-dr460nized-gaming-v2/2)                            | Arch                            | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | "Gaming focused" distro (not really)                                                |
