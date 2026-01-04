@@ -2,7 +2,7 @@
 This repo hosts the PS4 Linux installation tutorial website docs.
 It's hosted on a simple VitePress website, and I'm doing my best at documenting this in a way that doesn't give you a stroke.
 
-Thanks for all contributors, you're work has been incredibly helpful for maintaining the guide up-to-date.
+Thanks for all contributors, your work has been incredibly helpful for maintaining the guide up-to-date.
 
 You can visit the website [here](https://dionkill.github.io/ps4-linux-tutorial/).
 
