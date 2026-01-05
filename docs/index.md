@@ -16,7 +16,7 @@ hero:
       text: 📹 YT Guide (Modded Warfare)
       link: https://www.youtube.com/watch?v=KW_lRyXQcb8
     - theme: alt
-      text: 📹 More technical guide (FlyingPhantom)
+      text: 🪡 Technical guide (FlyingPhantom)
       link: https://flyingphantom.github.io/ps4-linux-tutorial/
     - theme: alt
       text: 📖 Source on GitHub

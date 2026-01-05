@@ -1,17 +1,29 @@
 ## Launching Linux Rescue Shell
-After that, either launch your payload with Payload Guest, or use a payload website to load them, if the website doesn't work for you.
+After that, either launch your payload with a payload website to load them, or use "Payload Guest" app if the website doesn't work for you.
 
 > [!CAUTION]
 > Firmware 12.50 and 12.52 users, click here!
 ### Payload website hosts
 <img src="/screenshots/ps4boot-payloads.png" width="75%">
 
-Change your target firmware (in the picture it's firmware 11.50). If it doesn't have any particularly append, it's for both Aeolia and Belize.
+
+Change your target firmware. If it doesn't have any particularly append, it's for both Aeolia and Belize.
 
 Do NOT use Pro payloads on non-Pro consoles.
 
+#### 5.05-12.02
+Even though this website is probably not maintained anymore I'm leaving it here, as the newer website doesn't work on low firmwares. The guide will be updated in case something changes.
 - [ps4boot.github.io](https://ps4boot.github.io/) (5.05/6.72/9.60) (Webkit method)
 - [ps4boot.free.nf](http://ps4boot.free.nfl) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
+
+If the website doesn't work, use the Payload Guest local method below.
+#### 12.50-12.52
+This website hosts for 12.50 and higher firmwares, as the other website doesn't seem to be maintained anymore.
+
+- [arabpixel.github.io/PSFree-Enhanced](https://arabpixel.github.io/PSFree-Enhanced): 12.50+
+	- Type the capital letters too when entering the address!
+
+If the website doesn't work, use the Payload Guest local method below.
 
 > [!WARNING]
 > You MUST use a 1GB VRAM payload for installation and first boot.
@@ -30,9 +42,10 @@ If you so desire, or you can't launch it from the web browser for some reason, i
 In order to do that, you need to download them [here](https://github.com/ArabPixel/ps4-linux-payloads/releases/tag/v20) (using the fork, for 12.50+ support)
 
 After downloading them:
-- Install "Payload Loader" on your PS4 to load the payloads locally
+- Install "Payload Guest" on your PS4 to load the payloads locally
 - Extract from the ELF folders, and rename the file to have a `.bin` extension instead of `.elf`, because Payload Loader can't load ELFs
+	- Using the `.elf` seems to lead to a higher success rate when launching
 	- Enable "see file extensions" on Windows Explorer or what you're using
 	- If it doesn't have any particularly append, it's for both Aeolia and Belize
 - Put the files in the `/data/payloads/` directory
-- Remember to check sometimes to see if there's any updates
+- Remember to check here sometimes to see if there's any updates

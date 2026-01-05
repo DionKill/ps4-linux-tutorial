@@ -85,8 +85,8 @@ export default defineConfig({
         text: '🧩 Extra',
         collapsed: false,
         items: [
-          { text: 'Distro DIY', link: '/distrodiy' },
           { text: 'Game compatibility', link: '/game-testing' },
+          { text: 'Distro DIY', link: '/distrodiy' },
         ]
       },
       {

@@ -18,8 +18,7 @@ Here you'll setup the internal HDD for installation of a Linux distro.
 > [!WARNING]
 > This shit is slow on an HDD. Be careful and prepare your balls for imminent explosion.
 > 
-> However, if you have swapped your internal HDD for an SSD, none of the slowness will apply to you. Remember that the console will still have to encrypt the data so it won't be super quick.
-
+> However, if you have swapped your internal HDD for an SSD, this doesn't apply.
 
 ## Internal HDD setup
 Check your PS4 storage, as you'll need to choose the size of the installation. Leave some free space in your console, and remember that the PS4 doesn't report the space taken internally by Linux!
