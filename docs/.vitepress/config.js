@@ -93,7 +93,7 @@ export default defineConfig({
     // Custom added stuff
     siteMap: {
       hostname: 'https://dionkill.github.io/ps4-linux-tutorial'
-    }
+    },
 
     cleanUrls: 'true',
 
