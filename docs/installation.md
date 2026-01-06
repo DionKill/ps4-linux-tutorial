@@ -10,14 +10,6 @@ Installing Linux on the PS4 is surprisingly easy, and it helps you free your min
 
 Just kidding, it's fucking terrible.
 
-But don't worry,  the only thing you have to do is follow this guide and you can get a working system.
-
-> [!TIP]
-> TL;DR:
-> 
-> Internal only for Aeolia/Belize, not recommended.
-> Every console supports external, which is recommend with an SSD via an Adapter.
-
 ::: details Internal vs External: The Finale - GOTY Limited Edition (rant)
 As I've mentioned beforehand, you can't install Linux on the internal PS4's HDD on Baikal systems. I know, you're crying your heart out because you wanted to use it, but trust me it's atrocious.
 To give you an explanation, it took me 30 MINUTES to update my CachyOS installation (1500MBs) and the system was so unresponsive that I could watch entire anime episodes in between clicks.
@@ -35,6 +27,12 @@ Therefore, let's clear some misinformation here:
 
 An internal SSD is going to be much faster and probably more reliable than a dangling USB drive (which constantly disconnects, too), so it's recommended, just remember to get a good quality one as the PS4 doesn't support TRIM.
 :::
+
+> [!TIP]
+> TL;DR:
+> 
+> Internal HDD is only for Aeolia/Belize, not recommended (unless you have switched to an SSD).
+> Every console supports external, which is recommend with an SSD via an adapter.
 ## Preparing the installation
 1. Boot your PS4 and launch GoldHen.
 2. Take the initramfs.zip file, open it, and choose your installation method (mind the Southbridge)
@@ -46,14 +44,14 @@ An internal SSD is going to be much faster and probably more reliable than a dan
 > [!WARNING]
 > Choose ONLY ONE method of installation.
 > 
-> Installing on both the internal and external drives can cause problems! Remove one of the previous installations if you already have one!
+> Installing on both the internal and external drives can cause problems! If you did, remove one of the previous installations!
 
 Here you will choose a method of installation.
 
 Again, choose only one method and stick with it, and remember that Baikal can't currently install to internal reliably.
 
-::: tip Internal Installation (NOT FOR BAIKAL, you may lose data)
-This method installs Linux on the internal PS4 HDD, by creating a small partition, as big as you want. It will not overwrite anything on the drive.
+::: tip Internal Installation
+This method installs Linux on the internal PS4 HDD, by creating a partition as big as you want. It will not overwrite anything on the drive.
 
 [Internal Installation section.](/internal-installation)
 :::
@@ -61,8 +59,8 @@ This method installs Linux on the internal PS4 HDD, by creating a small partitio
 ::: tip External Installation
 For external installation, there are two methods: the first one involving a script on the PS4 (faster to configure), and another one with manual partitioning (higher success rate).
 
-The manual partitioning method is indeed preferred, but it involves the use of a Linux computer or virtual machine.
-You may choose the scripted method, however if any issues arise you should try the manual partitioning method.
+The manual partitioning method is indeed preferred, but it involves the use of a Linux computer, virtual machine, or specific software on Windows.
+You may choose the scripted method, however if any issues arise, try the other one.
 
 [Scripted External Installation.](/external-installation-scripted)
 
