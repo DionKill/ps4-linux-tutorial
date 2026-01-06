@@ -1,13 +1,13 @@
 import { defineConfig } from 'vitepress'
+import { SitemapStream } from 'sitemap'
+import { createWriteStream } from 'node:fs'
+import { resolve } from 'node:path'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "PS4 Linux Tutorial",
   description: "A simple and modern guide on how to install Linux on PS4 systems.",
   base: "/ps4-linux-tutorial/",
-  sitemap: {
-    hostname: 'https://dionkill.github.io/ps4-linux-tutorial/'
-  },
 
   // Metadata and favicon
   head: [
@@ -32,6 +32,24 @@ export default defineConfig({
     ['meta', { name: 'twitter:description', content: 'Step-by-step guide for running Linux on PS4.' }],
     ['meta', { name: 'twitter:image', content: 'https://dionkill.github.io/ps4-linux-tutorial/preview.png' }],
   ],
+
+  buildEnd: async ({ outDir }) => {
+    const sitemap = new SitemapStream({ hostname: 'https://dionkill.github.io/ps4-linux-tutorial/' })
+    const pages = await createContentLoader('*.md').load()
+    const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
+
+    sitemap.pipe(writeStream)
+    pages.forEach((page) => sitemap.write(
+      page.url
+      // If `cleanUrls is enabled`
+      .replace(/index$/g, '')
+      // Optional: if Markdown files are located in a subfolder
+      .replace(/^\/docs/, '')
+    ))
+    sitemap.end()
+
+    await new Promise((r) => writeStream.on('finish', r))
+  },
 
   // Theme configuration
   themeConfig: {
@@ -215,6 +233,7 @@ export default defineConfig({
         ],
 
         // Custom added stuff
+        cleanUrls: 'true',
 
         socialLinks: [
           { icon: 'github', link: 'https://github.com/DionKill/ps4-linux-tutorial/' }

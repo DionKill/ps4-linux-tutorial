@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dionkill.github.io/ps4-linux-tutorial/sitemap.xml
