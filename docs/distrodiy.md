@@ -20,11 +20,11 @@ In order to port a distro on the PS4, you will need the following:
 
 ### Drivers
 To get the drivers, there's a couple of ways:
-- On Arch based distros, there are precompiled packages that can be found at this pacman repo:
+- On Arch based distros, there are precompiled packages that can be found at this pacman repo, forked and updated to latest stable ([source](https://github.com/DionKill/ps4-video-archlinux)):
 ```bash
 [ps4-video]
-SigLevel = Optional
-Server = https://centi07.github.io/repo/
+SigLevel = Optional 
+Server = https://dionkill.github.io/ps4-video-archlinux/repo/
 ```
 Otherwise, it's possible to get them from the AUR. You just need to download the video-drivers-ps4 package, which will fail installing so you can go to the working directory of yay and install the packages manually by doing `sudo pacman -U *`. Actually nevermind I couldn't get it to work so ask in the tux4orbis discord...
 

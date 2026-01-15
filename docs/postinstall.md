@@ -26,11 +26,11 @@ sudo nano /etc/pacman.conf
 
 If you installed a distro from the forums, you have a section about package ignore, so comment out those lines, by going to the `[Options]` section and commenting the lines `IgnorePkg` and `IgnoreGroup`.
 
-Then, under the `REPOSITORIES` section, add this:
+Then, under the `REPOSITORIES` section, add this ([source](https://github.com/DionKill/ps4-video-archlinux)):
 ```bash
 [ps4-video]
-SigLevel = Optional
-Server = https://centi07.github.io/repo/
+SigLevel = Optional 
+Server = https://dionkill.github.io/ps4-video-archlinux/repo/
 ```
 
 > [!NOTE]
@@ -58,7 +58,7 @@ wget [https://uar.no/ps4/baikal/mesa-25.sh](https://uar.no/ps4/baikal/mesa-25.sh
 ::: details Debian/Ubuntu based distros (disabled Mesa updates)
 To make sure that the PS4 packages don't get updated run the command below:
 ```bash
-sudo apt-mark hold lib32-libdrm-git lib32-mesa-git libdrm-git mesa-git lib32-libdrm lib32-mesa libdrm mesa lib32-llvm-libs llvm-libs mesa
+sudo apt-mark hold lib32-libdrm-git lib32-mesa-git libdrm-git mesa-git lib32-libdrm lib32-mesa libdrm mesa lib32-llvm-libs llvm-libs
 ```
 
 Then, you should be free to update your system with:
@@ -76,7 +76,7 @@ sudo nano /etc/dnf/dnf.conf
 
 Then, at the line next to the `[main]` section:
 ```bash
-exclude=lib32-libdrm-git lib32-mesa-git libdrm-git mesa-git lib32-libdrm lib32-mesa libdrm mesa lib32-llvm-libs llvm-libs mesa
+exclude=lib32-libdrm-git lib32-mesa-git libdrm-git mesa-git lib32-libdrm lib32-mesa libdrm mesa lib32-llvm-libs llvm-libs
 ```
 
 Then, you should be free to update your system with:
