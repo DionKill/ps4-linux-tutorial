@@ -1,3 +1,4 @@
+// @ts-check
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
@@ -5,6 +6,9 @@ export default defineConfig({
   title: "PS4 Linux Tutorial",
   description: "A simple and modern guide on how to install Linux on PS4 systems.",
   base: "/ps4-linux-tutorial/",
+  sitemap: {
+    hostname: 'https://dionkill.github.io/ps4-linux-tutorial/'
+  },
 
   locales: {
     root: {
@@ -89,11 +93,6 @@ export default defineConfig({
         ]
       }
     ],
-
-    // Custom added stuff
-    siteMap: {
-      hostname: 'https://dionkill.github.io/ps4-linux-tutorial'
-    },
 
     cleanUrls: 'true',
 
