@@ -41,9 +41,11 @@ These kernels are compiled using additional optimizations. Don't expect a 3x imp
 If you have issues, remember to check the [Issues page](/issues). If you want more help, check out [Discord servers](/information#important-places).
 
 ## Initramfs
-This is the rescue shell that boots your Linux installer/installation. We'll be using [this one](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
+This is the rescue shell that boots your Linux installer/installation. Think of it as GRUB, but more basic.
 
-::: details More stuff
+Download [this one](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
+
+::: details More details
 There's another in-dev initramfs (probably not working), if you want to check out the source it's [here](https://github.com/ps4gentoo/initramfs).
 
 Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial-for-building-a-custom-initramfs-research-development) on the PS4 Linux forums, it explains what an initramfs is and does in actuality.

@@ -7,26 +7,17 @@ To change some config files (don't worry, it won't hurt), I'll recommend `nano` 
 Updating your system can be a bit of a pain in the ass, as some of the packages can't be updated because they contain modifications to make them work on the PS4.
 
 > [!CAUTION]
-> This means that if we update the system without excluding those packages your system will break. So you need to do some work to get up-to-date drivers.
-
-> [!IMPORTANT]
-> Driver repos are being made for Arch based distros. More on the tux4orbis Discord.
-> 
-> Check out triki1's profile on PS4 Linux Forums for Debian/Ubuntu/Fedora.
+> Arch-based distros have repositories for drivers, other distros might not.
 
 ::: details Arch based distros (with driver updates)
-> [!NOTE]
-> You should try to use the AUR package instead, as that is more up-to-date.
-> You can download it by doing `yay -Syu video-drivers-ps4`. It may not work, we are working on it.
-
-Now, to update the drivers, you need to open the pacman config:
+To update the drivers, you need to open the pacman config:
 ```bash
 sudo nano /etc/pacman.conf
 ```
 
-If you installed a distro from the forums, you have a section about package ignore, so comment out those lines, by going to the `[Options]` section and commenting the lines `IgnorePkg` and `IgnoreGroup`.
+If you installed a distro from the forums, you may have go to the `[Options]` section and delete the lines `IgnorePkg` and `IgnoreGroup`.
 
-Then, under the `REPOSITORIES` section, add this ([source](https://github.com/DionKill/ps4-video-archlinux)):
+Then, under the `REPOSITORIES` section, add this ([GitHub](https://github.com/DionKill/ps4-video-archlinux)):
 ```bash
 [ps4-video]
 SigLevel = Optional 
@@ -43,7 +34,7 @@ Finally, install the driver packages:
 sudo pacman -Syu lib32-mesa-ps4 mesa-ps4 lib32-libdrm-ps4 libdrm-ps4 xf86-video-amdgpu-ps4
 ```
 
-Now you should have up-to-date drivers. If you want to, you can also go to the [DIY section](distrodiy) and make them from the AUR or from scratch!
+You should now have up-to-date drivers. If you want to, you can also go to the [DIY section](distrodiy) and make them from the AUR or from scratch!
 :::
 
 ::: details Debian/Ubuntu based distros (WITH Mesa updates, WIP)
@@ -162,7 +153,7 @@ sudo nano /etc/fstab
 ```
 :::
 
-::: details Enabling ZRAM (thanks Qba for mentioning [this](https://forum.endeavouros.com/t/enabling-zram-in-endeavouros/37746))
+::: details Enabling ZRAM
 ZRAM on the other hand, is a part of your memory that you are compressing and allocating as swap. A kernel that supports it is necessary.
 
 This means that we trade some CPU cycles for compressing and decompressing a part of your system memory. If it is enabled by default on Android you can guess how little performance impact there is.
@@ -219,8 +210,6 @@ Then reboot the system. It should be gone.
 
 Thanks again to Qba for this [showcase](https://youtu.be/f_kXks8z9dc).
 :::
-
-And that's it. You now have a bit of extra memory to work with. So you can have like 2GB of VRAM, and the 6GB of remaining memory allocated as RAM become more like 6.5 or 7. On top of that, add that Linux is more memory efficient than Windows, and it's like having 8GB of RAM! Pretty sweet huh?
 
 Oh, and don't worry if you see that your installation is using a lot of memory. It's normal and is meant to happen in order to improve performance. Check this [link](https://linuxatemyram.com) to learn more.
 
