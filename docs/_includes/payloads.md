@@ -1,15 +1,15 @@
 ## Launching Linux Rescue Shell
 After that, either launch your payload with a payload website to load them, or use "Payload Guest" app if the website doesn't work for you.
-### Payload website hosts
-<img src="/screenshots/payload-1.jpg" width="75%">
 
-
-> [!WARNING]
-> You MUST use a 1GB VRAM payload for installation and first boot. Afterwards, 2GB is recommended.
-> 
+> [!TIP]
+> <img src="/screenshots/trash-statement.png" width="50%">
 > Remember that the amount of VRAM you allocate is taken from your system memory!
 > For a 2GB of VRAM payload, you'd have 8-2 = 6GB of remaining system RAM!
 > You aren't creating memory out of thin air!
+
+> [!WARNING]
+> You MUST use a 1GB VRAM payload for installation and first boot. Afterwards, 2GB is recommended.
+### Payload website hosts
 
 ::: details Firmware 7.00-12.52
 Follow these steps:

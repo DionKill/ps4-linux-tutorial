@@ -54,11 +54,19 @@ Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial
 Yes! Finally the time has come. Which one will you choose?
 Honestly there's a neptillion distros... Choose one that you may like, or distro hop a bunch! If you're unsure, click on the links to the Forums and take a look at all of them.
 
+::: details Differences between distros
+Each distro has it's own pros and cons. But most of the difference on PS4 comes down to drivers; each distro requires it's own version of them and it can be a pain in the ass to install.
+
+Arch based distros are recommended, but not because you need to be part of the elite. They are the only ones that currently have automatic updates (meaning with the rest of the system) without breaking anything.
+
+You can of course use other distros, but you do run the risk of breaking your distro or having to reinstall everything when something needs updating, unless you know what you are doing.
+:::
+
 | Distro                                                                                              | Base                            | Port credits                                                              | Info                                                                                |
 | --------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | [CachyOS](https://mega.nz/file/RyUVQARB#HZD49XXac_v2CYKD4Oqa7Tg1aiZ7ltH_cnDxixw9JjY)                | Arch, Cachy                     | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | "Final Fantasy v2" version. It has nothing to do with FF. Mere fantasy.             |
-| ~~[CachyOS Light](https://ps4linux.com/forums/d/422-cachyos-light-lxqt-a-light-and-fast-distro)~~   | Arch, Cachy                     | DionKill                                                                  | CachyOS, but without it running like crap.                                          |
-| [Arch + KDE](https://github.com/ErkkolaMaitohappo/arch-ps4-aur-smth-fork/releases/)                 | Arch                            | [Erkkola](https://github.com/ErkkolaMaitohappo)                           | An Arch install with different desktops: KDE, XFCE or even TempleOS!                |
+| [CachyOS Light](https://ps4linux.com/forums/d/422-cachyos-light-lxqt-a-light-and-fast-distro)       | Arch, Cachy                     | DionKill                                                                  | CachyOS, but without it running like crap.                                          |
+| [Arch](https://github.com/ErkkolaMaitohappo/arch-ps4-aur-smth-fork/releases/)                       | Arch                            | [Erkkola](https://github.com/ErkkolaMaitohappo)                           | An Arch install with different desktops: KDE, XFCE or even TempleOS!                |
 | [EndeavourOS](https://ps4linux.com/forums/d/386-endeavouros-gaming-rebirth)                         | Arch                            | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | Arch based distro that's nice to use and easy to maintain                           |
 | [Manjaro](https://ps4linux.com/forums/d/342-manjaro-from-scratch)                                   | Arch                            | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | A Manjaro KDE distro                                                                |
 | [Garuda](https://ps4linux.com/forums/d/415-garuda-dr460nized-gaming-v2/2)                           | Arch                            | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | "Gaming focused" distro (not really)                                                |
