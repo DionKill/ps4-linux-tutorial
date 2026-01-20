@@ -25,6 +25,9 @@ Check your PS4 storage, as you'll need to choose the size of the installation. L
 
 FTP to your PS4. Go to the `/data/` folder, and create the folder `/linux/boot/` and place your bzImage (and bootargs.txt if you have it) and initramfs in there.
 
+> [!NOTE]
+> Files sent via FTP can transfer incorrectly, especially if overwritten. In that case, try to move them using a USB drive.
+
 <img src="/screenshots/internal-drive-conf.png" width="50%">
 
 Then, go to `/user/system/`, create a folder called `boot`, and paste your distro in there. Remember that it needs to be called `psxitarch.tar.gz` or `xz`!
