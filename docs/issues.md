@@ -29,6 +29,8 @@ There are a lot of undocumented issues. Or, if they are documented, I couldn't e
 ::: details Black/gray screen or "no signal"
 Once upon a time, these issues were caused by using old kernels that required bootargs, but they are not necessary anymore.
 
+First, try switching monitors or hooking up PS4 to a TV (you need a modern one with HDMI support). 
+
 If you are using CachyOS, make sure to change from Xorg/X11 to Wayland at the bottom of the login screen before clicking login.
 
 Rarely, a gray image can happen even with fixes like bootargs. Make sure that you try to reboot at least twice.
@@ -51,6 +53,8 @@ Thanks to @kalaposfos and @package on Discord for mentioning this fix.
 :::
 
 ::: details Stuck on a white LED / instant crash
+Make sure that in boot FAT32 partition/folder there no files or folders (there could hidden ones) besides `bzImage.tar.xz` and `initramfs.cpio.gz`. You can check it with PS4-Xplorer 2.0, delete them, as they *can* interrupt the payload.
+
 Sometimes it fails, try to reboot. It could take you even three or more attempts. Do not leave any apps "suspended" while you launch the exploit.
 
 However, if it keeps happening, and the console gets stuck on a white LED instead of launching Linux, make sure you are following all steps correctly, and that you are using the correct payloads. Also, if you are using FTP, wait for a while or move the data using a USB drive instead.
