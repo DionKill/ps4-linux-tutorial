@@ -40,6 +40,7 @@ In order to do that, you need to download them [here](https://github.com/ArabPix
 
 After downloading them:
 - Install "Payload Guest" on your PS4 to load the payloads locally
+	- If using PS Vue, you may not be able to load the payloads from there, as the app crashes.
 - Extract from the ELF folders, and rename the file to have a `.bin` extension instead of `.elf`, because Payload Loader can't load ELFs
 	- Using the `.elf` seems to lead to a higher success rate when launching
 	- Enable "see file extensions" on Windows Explorer or what you're using
