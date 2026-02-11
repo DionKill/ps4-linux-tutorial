@@ -17,7 +17,9 @@ TLDR: yes it is reversible, and no you won't lose any data.
 ::: details What consoles are compatible?
 All consoles that can run a homebrew enabler (like GoldHEN or ps4hen) are able to run Linux.
 
-At the time of writing, the newest compatible firmware is 12.52.
+At the time of writing, the **newest compatible firmware is 13.00**. On a side note, consoles above **12.02 have been reported with many issues**.
+
+If you haven't modded your console out, check out this video from [Modded Warfare](https://www.youtube.com/watch?v=Zy8pv7r1Cvg&t=308s).
 
 However, every console has a different southbridge, and Baikal in particular has many issues. You should be able to get a working installation either way.
 :::
