@@ -106,7 +106,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the <a href="https://github.com/DionKill/ps4-linux-tutorial/blob/main/LICENSE">MIT License</a>.',
-      copyright: 'Copyright © 2025 <a href="https://github.com/dionkill">Diego Pireddu</a>.'
+      copyright: 'Copyright © 2025-2026 <a href="https://github.com/dionkill">Diego Pireddu</a>.'
     },
 
     lastUpdated: {
