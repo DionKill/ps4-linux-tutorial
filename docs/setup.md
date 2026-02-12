@@ -23,6 +23,8 @@ You will need a device to store Linux, obviously.
 
 ## PS4 system
 Some configuration is necessary on the PS4's side before we load Linux.
+
+<!-- @include: /_includes/min-firm-ver.md -->
 ### Things to note down
 Note down what you see in "Settings -> System Information":
 - System software version
@@ -31,12 +33,13 @@ Note down what you see in "Settings -> System Information":
 
 <img src="/screenshots/system-info.png" width="75%">
 
-In the example case, the latest version of GoldHEN is used (minimum for this guide is v2.4b18.5), running on a Belize PS4 Slim.
-
 ### HEN
 You need a system that is already jailbroken and has a homebrew enabler (such as GoldHEN or ps4hen) running.
 
-<!-- @include: /_includes/min-firm-ver.md -->
+> [!WARNING]
+> If using GoldHen, remember to have version [v2.4b18.7](https://ko-fi.com/s/5d29f9e29c)!
+> 
+> Newer versions crash the console instead of booting Linux!
 
 In order to input text on your PS4, you can't use the PS4 built in keyboard, as that is not available on Linux. You must have a keyboard and mouse combo ready to use with your PS4.
 
