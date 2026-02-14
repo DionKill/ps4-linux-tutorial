@@ -38,12 +38,10 @@ When installed, you can remove your Linux installation by removing the above fil
 <!-- @include: /_includes/payloads.md -->
 
 ## Installation commands
-Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
+Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell, which will look like this:
 
-> [!TIP]
-> If you get an error, go to the [Installation issues section](/issues#installation-issues).
+<img src="/screenshots/rescue-shell.png" width="80%">
 
-Internal HDD
 - Type `install-linux-hdd.sh` or `linux-install-hdd.sh`
 - Type how much storage you want to use for the installation
 	- Check how much free space you have, don't fill up your drive as the PS4 will only report the used amount of space inside the partition, and not the total partition size!
@@ -51,7 +49,7 @@ Internal HDD
 
 Hydrate yourself while you wait. It'll take a while.
 
-You should already boot into the desktop. If it doesn't, run
+It should already boot into the desktop. If it doesn't, run:
 ```bash
 resume-boot
 ```

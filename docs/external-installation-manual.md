@@ -35,12 +35,7 @@ sudo tar -xvJpf ps4linux.tar.xz -C /run/media/YOURNAME/psxitarch --numeric-owner
 
 <!-- @include: /_includes/payloads.md -->
 ## Booting up
-Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
-
-> [!TIP]
-> If you get an error, go to the [Installation issues section](/issues#installation-issues).
-
-You should already boot into the desktop. If it doesn't, run
+Now that the storage is covered, here comes the moment of truth. It should already boot into the desktop. If it doesn't, and instead shows a Rescue Shell command prompt, type this until the distro starts:
 ```bash
 resume-boot
 ```

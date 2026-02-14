@@ -37,19 +37,16 @@ Plug your drive on the PS4 and continue.
 
 <!-- @include: /_includes/payloads.md -->
 ## Installation commands
-Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell.
+Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell, which will look like this:
 
-> [!TIP]
-> If you get an error, go to the [Installation issues section](/issues#installation-issues).
-> 
-> You may have to use the [alternative method](/external-installation-manual).
+<img src="/screenshots/rescue-shell.png" width="80%">
 
 - Type `install-psxitarch.sh`
-	- If it fails, go to the [Installation Issues](/issues#installation-issues)
+	- If it fails, go to the [Installation Issues](/issues#installation-issues), or use the [alternative method](external-installation-manual).
 
 Hydrate yourself while you wait. It'll take a while.
 
-You should already boot into the desktop. If it doesn't, run
+After that is done, it should boot into the desktop. If it doesn't, run
 ```bash
 resume-boot
 ```

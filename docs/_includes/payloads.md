@@ -2,16 +2,20 @@
 After that, either launch your payload with a payload website to load them, or use "Payload Guest" app if the website doesn't work for you.
 
 > [!TIP]
-> <img src="/screenshots/trash-statement.png" width="50%">
 > Remember that the amount of VRAM you allocate is taken from your system memory!
 > For a 2GB of VRAM payload, you'd have 8-2 = 6GB of remaining system RAM!
 > You aren't creating memory out of thin air!
+> 
+> <img src="/screenshots/trash-statement.png" width="33%">
 
-> [!WARNING]
-> You MUST use a 1GB VRAM payload for installation and first boot. Afterwards, 2GB is recommended.
 ### Payload website hosts
 
 ::: details Firmware 7.00-12.52
+
+> [!WARNING]
+> You MUST use a 1GB VRAM payload for installation and first boot. Afterwards, 2GB is recommended.
+
+
 Follow these steps:
 - Go to [psfree-enhanced.free.nf](http://psfree-enhanced.free.nf/)
 - Select Linux tab at the top center
@@ -25,6 +29,10 @@ Follow these steps:
 :::
 
 ::: details Alternative website (FW 5.05+)
+> [!WARNING]
+> You MUST use a 1GB VRAM payload for installation and first boot. Afterwards, 2GB is recommended.
+
+
 <img src="/screenshots/ps4boot-payloads.png" width="75%">
 
 Even though this website is probably not maintained anymore it'll stay here, as the newer website doesn't work on low firmwares.
@@ -38,9 +46,8 @@ If you so desire, or you can't launch it from the web browser for some reason, i
 
 In order to do that, you need to download them [here](https://github.com/ArabPixel/ps4-linux-payloads/releases/tag/v20).
 
-After downloading them:
-- Install "Payload Guest" on your PS4 to load the payloads locally
-	- If using PS Vue, you may not be able to load the payloads from there, as the app crashes.
+#### Local payloads setup
+- Install "Payload Guest" or similar app on your PS4 to load the payloads locally
 - Extract from the ELF folders, and rename the file to have a `.bin` extension instead of `.elf`, because Payload Loader can't load ELFs
 	- Using the `.elf` seems to lead to a higher success rate when launching
 	- Enable "see file extensions" on Windows Explorer or what you're using
