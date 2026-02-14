@@ -39,7 +39,7 @@ You need a system that is already jailbroken and has a homebrew enabler (such as
 > [!WARNING]
 > If using GoldHen, remember to have version [v2.4b18.7](https://ko-fi.com/s/5d29f9e29c)!
 > 
-> Newer versions crash the console instead of booting Linux!
+> Newer versions (including .9 which says it fixed the issue) crash the console instead of booting Linux!
 
 In order to input text on your PS4, you can't use the PS4 built in keyboard, as that is not available on Linux. You must have a keyboard and mouse combo ready to use with your PS4.
 
