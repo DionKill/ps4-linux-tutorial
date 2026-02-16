@@ -34,7 +34,6 @@ These kernels are compiled using additional optimizations. Don't expect a 3x imp
 | Kernel Download                                                                                  | Compatible Southbridges | Source Code | Extra info                                                                                                              |
 | ------------------------------------------------------------------------------------------------ | ----------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
 | [6.15,<br>5.15 and<br> 5.4](https://www.youtube.com/watch?v=zVzHzJT7dHk)                         | All                     | N/A         | FullLTO, 120Hz support, 4K for PS4 Pro. You need to download the whole archive and pick one for your needs.<br>By saya. |
-| [5.x (Pro patches)](https://e.pcloud.link/publink/show?code=XZfQR3Zr2LFaVugimFLa78ChwFVvjo6adbk) | Belize, Baikal          | N/A         | Adds patches for PS4 Pro, but will also work on Slim and Phats.                                                         |
 | [6.15.4](https://mega.nz/folder/N0QjHSBT#609IHevkWEW0vnTCFW-Rhw)                                 | Aeolia &<br>Belize      | N/A?        | ZRAM, CachyOS patches, KVM and more. <br>By triki1.                                                                     |
 
 :::
