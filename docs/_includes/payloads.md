@@ -1,7 +1,3 @@
-<script setup>
-import { useData } from 'vitepress'
-const { theme } = useData()
-</script>
 ## Launching Linux Rescue Shell
 After that, either launch your payload with a payload website to load them, or use "Payload Guest" app if the website doesn't work for you.
 
@@ -14,7 +10,7 @@ After that, either launch your payload with a payload website to load them, or u
 
 ### Payload website hosts
 
-::: details Firmware 7.00 - {{theme.latestFirm}}
+::: details Firmware 7.00 - <Badge type="tip" text="13.00" />
 
 > [!WARNING]
 > You MUST use a 1GB VRAM payload for installation and first boot. Afterwards, 2GB is recommended.

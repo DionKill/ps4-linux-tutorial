@@ -14,7 +14,7 @@ For the external drive method your HDD isn't even touched at all.
 TLDR: yes it is reversible, and no you won't lose any data.
 :::
 
-::: details What consoles are compatible?
+::: details What consoles are compatible? <Badge type="tip" text="Up to 13.00" />
 All consoles that can run a homebrew enabler (like GoldHEN or ps4hen) are able to run Linux.
 
 <!-- @include: /_includes/min-firm-ver.md -->
