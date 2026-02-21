@@ -1,3 +1,7 @@
+<script setup>
+import { useData } from 'vitepress'
+const { theme } = useData()
+</script>
 ## Launching Linux Rescue Shell
 After that, either launch your payload with a payload website to load them, or use "Payload Guest" app if the website doesn't work for you.
 
@@ -10,7 +14,7 @@ After that, either launch your payload with a payload website to load them, or u
 
 ### Payload website hosts
 
-::: details Firmware 7.00-12.52
+::: details Firmware 7.00 - {{theme.latestFirm}}
 
 > [!WARNING]
 > You MUST use a 1GB VRAM payload for installation and first boot. Afterwards, 2GB is recommended.
@@ -44,7 +48,7 @@ If the website doesn't work, use the Payload Guest local method below.
 ### Local payloads
 If you so desire, or you can't launch it from the web browser for some reason, it's possible to load these payloads locally.
 
-In order to do that, you need to download them [here](https://github.com/ArabPixel/ps4-linux-payloads/releases/tag/v20).
+In order to do that, you need to download them [here](https://github.com/ArabPixel/ps4-linux-payloads/releases/).
 
 #### Local payloads setup
 - Install "Payload Guest" or similar app on your PS4 to load the payloads locally

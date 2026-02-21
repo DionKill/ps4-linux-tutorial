@@ -19,6 +19,7 @@ export default defineConfig({
 
   // Theme configuration
   themeConfig: {
+    latestFirm: '13.00',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
