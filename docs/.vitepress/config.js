@@ -97,7 +97,9 @@ export default defineConfig({
     cleanUrls: 'true',
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/DionKill/ps4-linux-tutorial/' }
+      { icon: 'discord', link: 'https://discord.com/invite/QtcPmzHVVm' },
+      { icon: 'fluxer', link: 'https://fluxer.gg/b7fFDGsY' },
+      { icon: 'github', link: 'https://github.com/DionKill/ps4-linux-tutorial/' },
     ],
 
     search: {
