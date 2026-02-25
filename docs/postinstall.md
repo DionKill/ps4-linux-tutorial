@@ -33,6 +33,15 @@ Finally, install the driver packages:
 ```bash
 sudo pacman -Syu lib32-mesa-ps4 mesa-ps4 lib32-libdrm-ps4 libdrm-ps4 xf86-video-amdgpu-ps4
 ```
+If when you add  that repo to your /etc/pacman.conf and when you update and see that your ps4 drivers not working you may have to add this to your pacman.conf file
+```bash
+
+	IgnorePkg = lib32-mesa* lib32-libva-mesa-driver mesa-git lib32-libdrm-git lib32-mesa-git libdrm-git xf86-video-amdgpu-git lib32-llvm-libs llvm-libs lib32-mesa libdrm mesa* lib32-libdrm llvm-libs-git lib32-llvm-libs-git lib32-libelf lib32-vulkan-mesa* lib32-opencl-mesa lib32-mesa-vdpau lib32-vulkan libva-mesa opencl-mesa vulkan* xf86-video-amdgpu libry libelf rapidyaml lib32-vulkan-radeon*                    
+
+	IgnoreGroup = mesa* libdrm* llvm* vulkan* libry* libelf* rapidyaml*  lib32-vulkan-radeon*"
+```
+This would make sure pacman wont overwrite the ps4 mesa drivers
+
 
 You should now have up-to-date drivers. If you want to, you can also go to the [DIY section](distrodiy) and make them from the AUR or from scratch!
 :::
