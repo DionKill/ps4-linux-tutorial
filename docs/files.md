@@ -52,6 +52,11 @@ Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial
 :::
 ## Distros (that you ACTUALLY wanna use)
 Honestly there's a neptillion distros... If you're indecisive, click on all the links and check them out. Either way they are listed from most to least recommended.
+> [!DANGER]
+> If you have a Baikal console (many PS4 Pros are the Baikal variant) or are otherwise using the 5.4.x kernels, make sure your distro ships with Mesa version 25.1 or lower.
+> Newer versions are not supported on this Linux version, and so GPU acceleration will not work. See [this GitHub issue](https://github.com/feeRnt/ps4-linux-12xx/issues/8) or [this page to understand why](https://dionkill.github.io/ps4-linux-tutorial/baikal.html).
+>
+* [ ] TODO: Specify in the list below which distributions are known to be working correctly with Kernel 5.4 and Baikal models.
 
 ::: details More about these distros
 Each distro has it's own pros and cons. But most of the difference on PS4 comes down to drivers; each distro requires it's own version of them and it can be a pain in the ass to install.
