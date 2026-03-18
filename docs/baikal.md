@@ -1,6 +1,9 @@
 # Baikal specific page
 If you landed here, it means you have the unluckiest southbridges of them all: the despicable Baikal chip. Unfortunately there aren't many fixes for this chip, but you may be able to get a working installation.
 
+> [!note]
+> The community has been working hard to update Baikal systems to a stable 6.18 kernel. It may be released soon.
+
 ## Things that don't work on Baikal consoles
 
 - Stable kernels are on version 5.4 (newer are in development)

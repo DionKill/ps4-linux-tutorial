@@ -13,28 +13,33 @@ This is the section for recommended kernels. There are both vanilla kernels and 
 ### Do kernel versions matter?
 Yes, but only for Baikal, as it has been stuck on 5.4 for a while and can't use modern GPU drivers anymore. For the rest, it doesn't matter.
 
+The community has been stuck with 6.15 for a while, and now the scene is ready to move to 6.18 and later to 7.0 kernels, for all southbridges including Baikal.
+
 ### What about more performance?
 If all you care about is squeezing as much performance as possible out of the PS4 (you do) try the performance kernel section. Those have patches to make the system more responsive.
 :::
 
-### Vanilla kernels
-These are normal linux kernels with additional patches to make them work properly on the PS4. 
+### Kernel list
+These are normal Linux kernels with additional patches to make them work properly on the PS4.
 
-| Kernel Download                                                                                                                                                         | Compatible Southbridges                                         | Source Code   | Extra info                                       |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------- | ------------------------------------------------ |
-| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__crashnt-3)<br>(Recommended) | Aeolia &<br>Belize | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Specific blackscreen-fix releases. Recommended.  |
-| [5.4.247](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.4.247__baikal_mt76) | Baikal | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Check Actions section if the releases don't work |
-| [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__3.5.0) <br> Belize Ver. | Belize | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Might provide better performance than 6.15.4.
-| [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__1.0.0) <br>Aeolia Ver. | Aeolia | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | NOT RECOMMENDED.<br> Has half broken SATA/Bluray driver. Use for testing only.
+> [!tip]
+> Get the `bzImage_Clang_thinLTO`, if available. Some consoles may require the use of the `no-built-in-fw` variant.
 
-::: details Performance kernels
-### "Performance patched" kernels
-These kernels are compiled using additional optimizations. Don't expect a 3x improvement in performance, they just add features and make the system a bit more responsive.
+| Kernel Download                                                                                           | Compatible Southbridges | Source Code                                         | Extra info                                                                  |
+| --------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------- | --------------------------------------------------------------------------- |
+| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__crashnt-4.7)<br>(Recommended)     | Aeolia, Belize          | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Latest kernel, with LTO and other improvements.<br>**ThinLTO** recommended. |
+| [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__obsidianx-4.0) <br> Belize Ver. | Belize                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Same as above. Might provide better performance than 6.15.4.                |
+| [5.4.247](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.4.247__neocine-1.1)                    | Baikal                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Specific for Baikal systems. Don't use on any other console!                |
 
-| Kernel Download                                                                                  | Compatible Southbridges | Source Code | Extra info                                                                                                              |
-| ------------------------------------------------------------------------------------------------ | ----------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| [6.15,<br>5.15 and<br> 5.4](https://www.youtube.com/watch?v=zVzHzJT7dHk)                         | All                     | N/A         | FullLTO, 120Hz support, 4K for PS4 Pro. You need to download the whole archive and pick one for your needs.<br>By saya. |
-| [6.15.4](https://mega.nz/folder/N0QjHSBT#609IHevkWEW0vnTCFW-Rhw)                                 | Aeolia &<br>Belize      | N/A?        | ZRAM, CachyOS patches, KVM and more. <br>By triki1.                                                                     |
+::: details More kernels
+### Other kernels
+These are other kernels that you may want or need to use.
+
+| Kernel Download                                                                                  | Compatible Southbridges | Source Code                                         | Extra info                                                                                                              |
+| ------------------------------------------------------------------------------------------------ | ----------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [6.15,<br>5.15 and<br> 5.4](https://www.youtube.com/watch?v=zVzHzJT7dHk)                         | All                     | N/A                                                 | FullLTO, 120Hz support, 4K for PS4 Pro. You need to download the whole archive and pick one for your needs.<br>By saya. |
+| [6.15.4](https://mega.nz/folder/N0QjHSBT#609IHevkWEW0vnTCFW-Rhw)                                 | Aeolia &<br>Belize      | N/A?                                                | ZRAM, CachyOS patches, KVM and more. <br>By triki1.                                                                     |
+| [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__1.0.0) <br>Aeolia Ver. | Aeolia                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | NOT RECOMMENDED.<br>Has half broken SATA/Bluray driver. Use for testing only.                                           |
 
 :::
 
