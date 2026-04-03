@@ -27,15 +27,16 @@ If the installer can't find the USB device, you have two options:
 There are a lot of undocumented issues. Or, if they are documented, I couldn't even find them because no search engine indexed those pages or they are in a foreign language.
 
 ::: details Black/gray screen or "no signal"
+Since kernel 6.18, display issues should mostly be fixed, so if you can use that kernel, please do. It also supports monitor hotplugging. Wait about 10 seconds or more for it to show an image in case you disconnect the cable!
+
+> [!TIP]
+> The rest of this stuff is mostly for safekeeping, but shouldn't be necessary anymore. Keep on readying if you need to!
+
 Once upon a time, these issues were caused by using old kernels that required bootargs, but they are not necessary anymore.
 
-If you are using CachyOS, make sure to change from Xorg/X11 to Wayland at the bottom of the login screen before clicking login.
+If you are using CachyOS by Elokuba/Qba, make sure to change from Xorg/X11 to Wayland at the bottom of the login screen before clicking login. Doesn't apply for CachyOS "Light".
 
 Rarely, a gray image can happen even with fixes like bootargs. Make sure that you try to reboot at least twice.
-
-This happens because in newer kernels the monitor information must be given to the kernel at boot, which would require us to copy the EDID from the PS4's OS to Linux. This is a known problem, and we currently have workarounds.
-
-Also, remember that the PS4 on Linux doesn't support monitor hot-plugging, so this means you can't change nor disconnect your display or you will be forced to reboot (or maybe you can just change TTY by doing `CTRL+ALT+F2` and `CTRL+ALT+F1/F7`).
 
 Thanks to mircoho and saya for helping out in clarifying these problems.
 ### Other possible fixes
@@ -57,20 +58,20 @@ However, if it keeps happening, and the console gets stuck on a white LED instea
 :::
 
 ::: details Wi-Fi and/or Bluetooth don't work (MediaTek modem)
+Again this should be fixed, otherwise keep on reading.
+
 If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip that is made by MediaTek, and unfortunately you will need to find a kernel that includes the fixes for that specific chip. MediaTek does not make open source drivers, so that's the reason it doesn't work normally.
 
 Try feeRnt's kernels, hopefully one of them will work for you.
 :::
 
 ::: details Graphical glitches in games
-Sometimes you can encounter graphical issues. There are some things you can try to fix that.
+This is caused by broken Mesa drivers. The community is working hard to fix this, but don't expect it all to work properly!
 
-To solve Vulkan graphical issues you can:
+To solve Vulkan graphical issues you can try:
 - Set `RADV_DEBUG=nocompute` in `/etc/environment` (use nano or similar)
 - Try `amdgpu.abmlevel=0` with bootargs
 - Use WineD3D (terrible performance)
-
-Graphical glitches can also be caused by Mesa drivers. You could search for newer versions of Mesa as well, but you'll have to install them manually.
 :::
 
 ::: details DS4 must be paired again every time
@@ -88,6 +89,7 @@ Previously I used this as a rant to pour all of my stress into figuring how the 
 In a nutshell, the scene is a mess and a lot of stuff may be shared privately or on Discord servers because:
 - It's in testing phase and therefore not public yet
 - It's not open sourced because there's a lot of people who steal the developer's work
+- It hasn't been merged into main projects because it would be too difficult to maintain thereafter, and would require it to be in a perfect condition
 - A lot of this stuff is from developers all across the world and there's a language barrier
 
 Especially the second reason is why the community is like this, unfortunately.
