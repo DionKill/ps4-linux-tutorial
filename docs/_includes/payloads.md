@@ -10,7 +10,7 @@ After that, either launch your payload with a payload website to load them, or u
 
 ### Payload website hosts
 
-::: details Firmware 7.00 - <Badge type="tip" text="13.00" />
+::: details Firmware <Badge type="tip" text="7.00 - 13.02" />
 
 > [!WARNING]
 > You MUST use a 1GB VRAM payload for installation and first boot. Afterwards, 2GB is recommended.
@@ -19,9 +19,10 @@ After that, either launch your payload with a payload website to load them, or u
 Follow these steps:
 - Go to [psfree-enhanced.free.nf](http://psfree-enhanced.free.nf/)
 - Select Linux tab at the top center
-- Select your PS4 model and southbridge
+	- Wait for the cache to finish installing!
 - Load your desired payload
-	- Again, 1GB is necessary for installation!
+	- Again, 1GB is necessary for first time installation!
+	- If you use the PS4 as a server, you may want to have more RAM. In that case, select a lower VRAM amount like 128MB.
 
 <img src="/screenshots/payload-1.jpg" width="75%">
 <img src="/screenshots/payload-2.jpg" width="75%">
