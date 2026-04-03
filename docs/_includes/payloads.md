@@ -24,9 +24,8 @@ Follow these steps:
 	- Again, 1GB is necessary for first time installation!
 	- If you use the PS4 as a server, you may want to have more RAM. In that case, select a lower VRAM amount like 128MB.
 
-<img src="/screenshots/payload-1.jpg" width="75%">
-<img src="/screenshots/payload-2.jpg" width="75%">
-<img src="/screenshots/payload-3.jpg" width="75%">
+
+<img src="/screenshots/psfree-payloads.jpg" width="75%">
 :::
 
 ::: details Alternative website (FW 5.05+)
@@ -52,6 +51,5 @@ In order to do that, you need to download them [here](https://github.com/ArabPix
 - Extract from the ELF folders, and rename the file to have a `.bin` extension instead of `.elf`, because Payload Loader can't load ELFs
 	- Using the `.elf` seems to lead to a higher success rate when launching
 	- Enable "see file extensions" on Windows Explorer or what you're using
-	- If it doesn't have any particularly append, it's for both Aeolia and Belize
 - Put the files in the `/data/payloads/` directory
 - Remember to check here sometimes to see if there's any updates

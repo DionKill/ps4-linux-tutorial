@@ -32,7 +32,8 @@ panic=0 clocksource=tsc consoleblank=0 net.ifnames=0 radeon.dpm=0 amdgpu.dpm=0 d
 ```
 
 Remember that this `bootargs.txt` needs to be placed in the same folder as the bzImage.
-### Distros
+### Distro
+
 If you are looking for really old distros, check out the downloads from PS4Linux [here](https://ps4linux.com/downloads/#PS4_Linux_Distro_Downloads).
 
 ### Initramfs
