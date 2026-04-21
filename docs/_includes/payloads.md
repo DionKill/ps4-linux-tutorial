@@ -22,7 +22,7 @@ Follow these steps:
 	- Wait for the cache to finish installing!
 - Load your desired payload
 	- Again, 1GB is necessary for first time installation!
-	- If you use the PS4 as a server, you may want to have more RAM. In that case, select a lower VRAM amount like 128MB.
+	- If you use the PS4 as a server after installation, switch to one of the server payloads for more system RAM.
 
 
 <img src="/screenshots/psfree-payloads.jpg" width="75%">
@@ -39,6 +39,10 @@ Even though this website is probably not maintained anymore it'll stay here, as 
 - [ps4boot.github.io](https://ps4boot.github.io/) (5.05/6.72/9.60) (Webkit method)
 - [ps4boot.free.nf](http://ps4boot.free.nfl) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
 :::
+
+> [!TIP]
+> Server payloads are available in `32MB`, `64MB`, and `128MB` VRAM variants.
+> Use `128MB` by default for server or general headless use, as `32MB` and `64MB` can cause display issues on some setups.
 
 If the website doesn't work, use the Payload Guest local method below.
 ### Local payloads

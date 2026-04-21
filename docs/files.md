@@ -13,24 +13,36 @@ This is the section for recommended kernels. There are both vanilla kernels and 
 ### Do kernel versions matter?
 Yes, but only for Baikal, as it has been stuck on 5.4 for a while and can't use modern GPU drivers anymore. For the rest, it doesn't matter.
 
-The community has been stuck with 6.15 for a while, and now the scene is ready to move to 6.18 and later to 7.0 kernels, for all southbridges including Baikal.
+The community has moved on from 6.15 to 6.18, and now there is also active 7.0 kernel work for Aeolia and Belize. Baikal is still catching up.
 
 ### What about more performance?
 If all you care about is squeezing as much performance as possible out of the PS4 (you do) try the performance kernel section. Those have patches to make the system more responsive.
 :::
 
 ### Kernel list
-These are normal Linux kernels with additional patches to make them work properly on the PS4.
+These are normal general-use kernels with additional patches to make them work properly on the PS4.
 
 > [!tip]
 > Get the `bzImage_Clang_thinLTO`, if available. Some consoles may require the use of the `no-built-in-fw` variant.
 
 | Kernel Download                                                                                           | Compatible Southbridges | Source Code                                         | Extra info                                                                            |
 | --------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [6.18.21](https://github.com/rmuxnet/ps4-linux-12xx/releases)<br>(Recommended)                            | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Too many amazing things to list, just use this already.<br>Includes a server variant. |
+| [7.0-Clean](https://github.com/rmuxnet/ps4-linux-12xx)                                                     | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | 7.0 work by rmux lives here.<br>Pick the branch or release you need from the repo.   |
+| [6.18.21](https://github.com/rmuxnet/ps4-linux-12xx) <br> (Recommended)                                    | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Prebuilts are in the repo releases even if they are not marked latest.                |
 | [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__crashnt-4.7)                      | Aeolia, Belize          | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | LTO and other improvements.<br>**ThinLTO** recommended.                               |
 | [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__obsidianx-4.0) <br> Belize Ver. | Belize                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Same as above. Might provide better performance than 6.15.4.                          |
 | [5.4.247](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.4.247__neocine-1.1)                    | Baikal                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Specific for Baikal systems. Don't use on any other console!                          |
+
+### Server kernels
+If you are using the PS4 as a server, use these instead of the normal desktop-oriented builds when available.
+
+> [!TIP]
+> Pair server kernels with the `128MB` server payload unless you have a specific reason not to.
+
+| Kernel Download                                                                                           | Compatible Southbridges | Source Code                                         | Extra info                                                                                                  |
+| --------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [6.18.21](https://github.com/rmuxnet/ps4-linux-12xx) <br> (Recommended)                                  | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Contains the Strawberry server prebuilts in the repo releases.                        |
+| [7.0-Clean](https://github.com/rmuxnet/ps4-linux-12xx)                                                    | Aeolia, Belize          | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Newer 7.0 server work by rmux.<br>Use the repo to pick the branch or release you want. |
 
 ::: details More kernels
 ### Other kernels
