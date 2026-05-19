@@ -37,7 +37,7 @@ Follow these steps:
 
 Even though this website is probably not maintained anymore it'll stay here, as the newer website doesn't work on low firmwares.
 - [ps4boot.github.io](https://ps4boot.github.io/) (5.05/6.72/9.60) (Webkit method)
-- [ps4boot.free.nf](http://ps4boot.free.nfl) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
+- [ps4boot.free.nf](http://ps4boot.free.nf) (5.05-12.02) (GoldHEN method, works only with HTTP not HTTPS)
 :::
 
 > [!TIP]
