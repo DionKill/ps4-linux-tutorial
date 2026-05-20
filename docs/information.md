@@ -33,16 +33,12 @@ However, every console has a different southbridge, and Baikal in particular has
 
 ## Important places
 Here are some links you'll probably find useful. You can come back to them if needed.
-1. [PS4Linux Website](https://ps4linux.com)
-2. [PS4Linux Forums](https://ps4linux.com/forums/)
-3. Discord
+1. Discord
 	1. [Linux for PS4 Community](https://discord.gg/fZQScGvRQb)
-		1. New community created because the PS4Linux.com Discord is terrible
+		1. For general help regarding things not working, chatting, and a overall nice community :)
 	2. [PS4 Linux Fluxer](https://fluxer.gg/b7fFDGsY)
 		1. A Fluxer server, in case Discord were to become unavailable we got this
-	3. [PS4Linux Forums' Discord server](https://discord.com/invite/QtcPmzHVVm)
-		1. For general help regarding things not working
-4. Mental Health Institute of your choice (optional, if you feel overwhelmed)
+2. Mental Health Institute of your choice (optional, if you feel overwhelmed)
 
 ## Warning before you proceed
 
