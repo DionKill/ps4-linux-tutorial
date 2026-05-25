@@ -15,6 +15,8 @@ To update the drivers, you need to open the pacman config:
 sudo nano /etc/pacman.conf
 ```
 
+If you installed an older distro, pacman might refuse to run, citing the following error: `restricting filesystem access failed because Landlock is not supported by the kernel`. If you run into this problem, search for the line containing `DisableSandbox`, and uncomment it by deleting the `#` character from the beginning.
+
 If you installed a distro from the forums, you may have go to the `[Options]` section and delete the lines `IgnorePkg` and `IgnoreGroup`.
 
 Then, under the `REPOSITORIES` section, add this ([GitHub](https://github.com/DionKill/ps4-video-archlinux)):
