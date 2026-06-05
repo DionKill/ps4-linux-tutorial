@@ -60,6 +60,17 @@ IgnoreGroup = mesa
 ```
 :::
 
+Before compressing the distro and publish it, you can clean your terminal history by running this in Bash:
+```bash
+history clear
+```
+
+Or if you are using Fish as your shell, run this:
+```bash
+rm ~/.local/share/fish/fish_history
+exec fish
+```
+
 After that, you can compress your installation and move it over to your PS4 for installation. This next command skips all the useless folders and aims to be relatively fast at compression, using multiple cores. Compression levels higher than 6 are a waste of time.
 ```bash
 cd / && sudo tar \
