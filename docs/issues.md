@@ -12,7 +12,7 @@ If this happens, these are possible causes:
 2. The installer can't find the `psxitarch.tar.xz` or `psxitarch.tar.gz` file. Check that the name and location are correct.
 3. You are using different payloads than the one mentioned on the guide. Those will not work on modern distros and are known to have issues, therefore they are incompatible with this guide.
 
-If none of these help you, go to the PS4Linux.com Discord server.
+If none of these help you, go to the Linux for PS4 Community Discord server.
 :::
 
 ::: details Mounting error - `No valid USB device found`
