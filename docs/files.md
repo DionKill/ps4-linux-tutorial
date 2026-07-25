@@ -16,16 +16,25 @@ The newest kernels are already built with all the necessary patches to make the 
 LTO is a topic of debate, but both ThinLTO and FullLTO are good options.
 :::
 
+::: details <Badge type="warning" text="Warning regarding other kernels not on this list" />
+Some kernels are to be avoided, specifically the ones "made" by the KHEOPS team, which are stealing work from the PS4 Abuse Club team. You can find more info in the Linux for PS4 Community Discord server, in [this message](https://discord.com/channels/1493663490659975350/1499549352320958514/1530306022508597268), (this is a guide and not a place for drama).
+
+On top of that, there is also a malware problem:
+> triki1 is on the same team. He said in writing that they will not publish source code because it is malware. He said it "could set your PlayStation on fire". This is a serious problem. Do not ignore this.
+
+
+:::
 ### Kernel list
 These are normal general-use kernels with additional patches to make them work properly on the PS4.
 
-| Kernel Download                                                                                           | Compatible Southbridges           | Source Code                                         | Extra info                                                                                         |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [7.0](https://github.com/rmuxnet/ps4-linux-12xx)<br>*Recommended*                                         | Aeolia, Belize<br>(Baikal is WIP) | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | 7.0 with a ton of fixes.<br>For Baikal, build from source or wait for a release.                   |
-| [6.18.21](https://github.com/rmuxnet/ps4-linux-12xx/releases/tag/6.18.21-April-3)                         | Aeolia, Belize                    | [GitHub](https://github.com/rmuxnet/ps4-linux-12xx) | Prebuilts are in the repo releases.                                                                |
-| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__crashnt-4.7)                      | Aeolia, Belize                    | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | LTO and other improvements.<br>**ThinLTO** recommended.<br>Some consoles may need `no-builtin-fw`. |
-| [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__obsidianx-4.0) <br> Belize Ver. | Belize                            | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Same as above. Might provide better performance than 6.15.4.                                       |
-| [5.4.247](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.4.247__neocine-1.1)                    | Baikal                            | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Specific for Baikal systems. Don't use on any other console!                                       |
+| Kernel Download                                                                                           | Compatible Southbridges           | Source Code                                         | Extra info                                                                                                                                            |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [7.1.3](https://github.com/rmuxnet/linux/releases/latest)<br>*Recommended*                                | Aeolia, Belize                    | [GitHub](https://github.com/rmuxnet/linux/)         | Upgrade to the 7.0 release.<br><br>- General (*recommended*)<br>- Server<br>- SlopMax (General with VM support)<br>- Slopium (Server with VM support) |
+| [7.0](https://github.com/rmuxnet/linux/releases/tag/7.0-April-24)                                         | Aeolia, Belize<br>(Baikal is WIP) | [GitHub](https://github.com/rmuxnet/linux/)         | Port of 7.0 with loads of fixes                                                                                                                       |
+| [6.18.21](https://github.com/rmuxnet/ps4-linux-12xx/releases/tag/6.18.21-April-3)                         | Aeolia, Belize                    | [GitHub](https://github.com/rmuxnet/linux/)         | Prebuilts are in the repo releases.                                                                                                                   |
+| [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__crashnt-4.7)                      | Aeolia, Belize                    | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | LTO and other improvements.<br>**ThinLTO** recommended.<br>Some consoles may need `no-builtin-fw`.                                                    |
+| [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__obsidianx-4.0) <br> Belize Ver. | Belize                            | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Same as above. Might provide better performance than 6.15.4.                                                                                          |
+| [5.4.247](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.4.247__neocine-1.1)                    | Baikal                            | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Specific for Baikal systems. Don't use on any other console!                                                                                          |
 
 ::: details Server kernels
 ### Server kernels

@@ -34,11 +34,8 @@ Since kernel 6.18, display issues should mostly be fixed, so if you can use that
 
 Once upon a time, these issues were caused by using old kernels that required bootargs, but they are not necessary anymore.
 
-If you are using CachyOS by Elokuba/Qba, make sure to change from Xorg/X11 to Wayland at the bottom of the login screen before clicking login. Doesn't apply for CachyOS "Light".
-
 Rarely, a gray image can happen even with fixes like bootargs. Make sure that you try to reboot at least twice.
 
-Thanks to mircoho and saya for helping out in clarifying these problems.
 ### Other possible fixes
 If booting a display manager or your desktop environment results in a black screen, and the distro is using X11, try Wayland.
 
@@ -87,14 +84,13 @@ I mean it was kind of expected. How else are you gonna go back to the main menu?
 Previously I used this as a rant to pour all of my stress into figuring how the fuck this shit is supposed to work, but the more I got into it and the more I understood.
 
 In a nutshell, the scene is a mess and a lot of stuff may be shared privately or on Discord servers because:
-- It's in testing phase and therefore not public yet
+- It's in testing phase and therefore not public yet (very rare nowadays)
 - It's not open sourced because there's a lot of people who steal the developer's work
-- It hasn't been merged into main projects because it would be too difficult to maintain thereafter, and would require it to be in a perfect condition
-- A lot of this stuff is from developers all across the world and there's a language barrier
+- It hasn't been merged into main projects because it would be too difficult to maintain thereafter, and would require it to be in a perfect condition (kernel and mesa)
 
-Especially the second reason is why the community is like this, unfortunately.
+Especially the second reason is why the community is like this. The KHEOPS team has made a mess by stealing, lying and even pointing the finger at other developers claiming the work is all done by them instead. But I'm not gonna go into the details here.
 
-It will take time, I'm grateful for all the help from everyone in the community, and I'm also hopefully making the scene a little bit better and one day we'll all have stuff uploaded in proper places :D
+Fortunately, the new ps4 abuse club team has been hard at work fixing this whole endeavour and I thank them for all of their work.
 :::
 
 ::: details How can I improve the situation?
