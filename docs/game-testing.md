@@ -171,6 +171,7 @@ There's multiple levels of stability:
 | Ultimate Marvel vs Capcom 3                                  | Perfect   | 60 FPS, no issues.                                                          | Online play works.                                        |
 | Ultra Street Fighter 4                                       | Perfect   | 60 FPS, no issues.                                                          | Online play works.                                        |
 | Vampire Survivors                                            | Perfect   | 60 FPS, no issues.                                                          | Not applicable (single-player).                           |
+| Unreal Tournament                                            | Perfect   | 60 FPS, no issues (native Linux).                                           | Online play works.                                        |
 | Veloren                                                      | High      | 50-60 FPS, minor issues.                                                    | Online play works.                                        |
 | Werewolf: The Apocalypse – Earthblood                        | Low       | 20-40 FPS, heavy lag.                                                       | Not applicable (single-player).                           |
 | WipeOut Phantom Edition                                      | High      | 50-60 FPS, stable.                                                          | Not applicable (single-player).                           |

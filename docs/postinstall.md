@@ -15,7 +15,11 @@ To update the drivers, you need to open the pacman config:
 sudo nano /etc/pacman.conf
 ```
 
-If you installed an older distro, pacman might refuse to run, citing the following error: `restricting filesystem access failed because Landlock is not supported by the kernel`. If you run into this problem, search for the line containing `DisableSandbox`, and uncomment it by deleting the `#` character from the beginning.
+If you installed an older distro, pacman might refuse to run, citing the following error: `restricting filesystem access failed because Landlock is not supported by the kernel`. If you run into this problem, you can run the one liner below to disable the sandbox:
+
+```bash
+sudo sed -i'' -E "s|#DisableSandbox|DisableSandbox|" /etc/pacman.conf
+```
 
 If you installed a distro from the forums, you may have go to the `[Options]` section and delete the lines `IgnorePkg` and `IgnoreGroup`.
 
@@ -236,6 +240,26 @@ And there you go! You can change it back anytime of course.
 In the past there were overclocked kernels, but alas they don't make them anymore. This is because overclocked kernels... didn't actually overclock the CPU.
 
 Do not go and download an older kernel to try as they don't work anymore either!
+
+# Enable Tearfree
+
+To get rid of screen tearing when using X11 for just the current session, you can enable TearFree:
+```bash
+xrandr --output HDMI-A-0 --set TearFree on
+```
+
+To make it permenant, set a config with a one-liner:
+```bash
+sudo mkdir -p /etc/X11/xorg.conf.d && echo -e 'Section "Device"\n    Identifier "AMD Graphics"\n    Driver "amdgpu"\n    Option "TearFree" "true"\nEndSection' | sudo tee /etc/X11/xorg.conf.d/20-amdgpu.conf
+```
+
+After a reboot, TearFree will be enabled permanently.
+
+You can see if it was successful by running:
+```bash
+xrandr --prop | grep TearFree
+```
+
 ## Install more applications
 To play games, these are the recommended softwares:
 - Steam
