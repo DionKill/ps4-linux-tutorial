@@ -42,6 +42,7 @@ There's multiple levels of stability:
 | Blur                                                         | High      | 50-60 FPS, stable.                                                          | Not applicable (single-player).                           |
 | Borderlands 2                                                | High      | 40-60 FPS, minor drops.                                                     | Online co-op works.                                       |
 | Borderlands GOTY                                             | High      | 40-60 FPS, minor drops.                                                     | Online co-op works.                                       |
+| Brazilian Drug Dealer 3                                      | Perfect   | 60 FPS, very brazil.                                                        | Online play works.                                       |
 | Call of Duty 4 Modern Warfare                                | High      | 60 FPS+, stable.                                                            | Online play works.                                        |
 | Call of Duty World at War                                    | Medium    | 30-50 FPS, glitches via wine.                                               | Online play not tested.                                   |
 | Call of Duty: Black Ops II                                   | Low       | 20-30 FPS, major lag and stuttering.                                        | Online play not tested (likely limited).                  |
@@ -113,7 +114,9 @@ There's multiple levels of stability:
 | Path of Exile                                                | Perfect   | 20-60 FPS, minor stutters/shader issues.                                    | Online play works on Linux.                               |
 | Planet Base                                                  | High      | 50-60 FPS, stable.                                                          | Not applicable (single-player).                           |
 | Plants vs Zombies Garden Warfare                             | Medium    | 30-50 FPS, glitches.                                                        | Online play performance-limited.                          |
+| Portal                                                       | High      | 60 FPS (OpenGL), setting shader to "Very High" has issues.                  | Not applicable (single-player).                           |
 | Portal 2                                                     | Perfect   | 60-110 FPS (SteamOS3, OpenGL), no issues.                                   | Online co-op works via Steam.                             |
+| Portal 2: Community Edition                                  | Low       | 10-30 FPS, flickering. (tested on Vulkan)                                  | Not applicable (not added yet).                           |
 | Puyo Puyo Tetris 2                                           | Perfect   | 60 FPS, no issues.                                                          | Online play works.                                        |
 | Resident Evil 0 HD Remaster                                  | Low       | 20-40 FPS, glitches.                                                        | Not applicable (single-player).                           |
 | Resident Evil 4 Remake                                       | Low       | 10-20 FPS, freezes on Vulkan.                                               | Not applicable (single-player).                           |
