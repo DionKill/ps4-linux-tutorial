@@ -8,11 +8,11 @@ You can visit the website [here](https://dionkill.github.io/ps4-linux-tutorial/)
 
 ## Star History
 
-<a href="https://www.star-history.com/#DionKill/ps4-linux-tutorial&type=date&legend=top-left">
+<a href="https://www.star-history.com/?type=date&legend=top-left&repos=DionKill%2Fps4-linux-tutorial">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=DionKill/ps4-linux-tutorial&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=DionKill/ps4-linux-tutorial&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=DionKill/ps4-linux-tutorial&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=DionKill/ps4-linux-tutorial&type=date&theme=dark&legend=top-left&sealed_token=n10B67I11KQKkEGxbjBxzz2ej_9h19n-_OWKwmksMWUlqAjcdsixuqVoAdMDC8TW_EArsGhRuJm0t4dI6WlMk4kdX8HQRsev1li77MxPqxIG_nA7-wlkPOLd6UfCDB3L-3e34qcYJsGvqFA9oPChVDPYATz6rhCQIYFoeyuYSdS9svbhMbsxIXY2h9_h" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=DionKill/ps4-linux-tutorial&type=date&legend=top-left&sealed_token=n10B67I11KQKkEGxbjBxzz2ej_9h19n-_OWKwmksMWUlqAjcdsixuqVoAdMDC8TW_EArsGhRuJm0t4dI6WlMk4kdX8HQRsev1li77MxPqxIG_nA7-wlkPOLd6UfCDB3L-3e34qcYJsGvqFA9oPChVDPYATz6rhCQIYFoeyuYSdS9svbhMbsxIXY2h9_h" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=DionKill/ps4-linux-tutorial&type=date&legend=top-left&sealed_token=n10B67I11KQKkEGxbjBxzz2ej_9h19n-_OWKwmksMWUlqAjcdsixuqVoAdMDC8TW_EArsGhRuJm0t4dI6WlMk4kdX8HQRsev1li77MxPqxIG_nA7-wlkPOLd6UfCDB3L-3e34qcYJsGvqFA9oPChVDPYATz6rhCQIYFoeyuYSdS9svbhMbsxIXY2h9_h" />
  </picture>
 </a>
 
