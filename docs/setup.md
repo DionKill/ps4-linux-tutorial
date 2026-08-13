@@ -10,7 +10,9 @@ In a nutshell, you'll need:
 - An internet connection
 - (Optional) - one or more USB drives
 	- If you want to install to an external drive, you can use a USB pendrive or HDD, but it's recommend to have a SATA SSD and a SATA to USB adapter (preferrably one that supports UAS).
-
+- Moderate reading skills
+    - Seriously, you're not getting anything done if you don't read the guide fully.
+- Basic knowledge of Linux (obviously)
 ## Storage devices to install to
 Before we talk about anything, you must choose now a method of installation.
 You will need a device to store Linux, obviously.
