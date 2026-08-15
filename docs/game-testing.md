@@ -67,6 +67,7 @@ There's multiple levels of stability:
 | Doom (2016)                                                  | Low       | 22-32 FPS, lags heavily.                                                    | Not applicable (primarily single-player).                 |
 | Doom 3 BFG Edition                                           | High      | 60 FPS, minor issues.                                                       | Not applicable (single-player).                           |
 | Driver San Francisco                                         | Medium    | 30-50 FPS, stutters.                                                        | Not applicable (single-player).                           |
+| DELTARUNE                                                    | Perfect   | 30 FPS, no issues.                                                          | Not applicable (single-player).                           |
 | Dying Light                                                  | Low       | 20-40 FPS, heavy lag.                                                       | Online co-op performance-limited.                         |
 | Elden Ring                                                   | Low       | 30 FPS in small window, low performance.                                    | Online co-op likely works but performance-limited.        |
 | Enter the Gungeon                                            | Perfect   | 60 FPS, no issues.                                                          | Not applicable (single-player).                           |
