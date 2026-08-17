@@ -52,6 +52,8 @@ Thanks to @kalaposfos and @package on Discord for mentioning this fix.
 Sometimes it fails, try to reboot. It could take you even three or more attempts. Do not leave any apps "suspended" while you launch the exploit.
 
 However, if it keeps happening, and the console gets stuck on a white LED instead of launching Linux, make sure you are following all steps correctly, and that you are using the correct payloads. Also, if you are using FTP, wait for a while or move the data using a USB drive instead.
+
+...If you uploaded the kernel and initramfs using FileZilla, re-upload them with "Binary" mode enabled.
 :::
 
 ::: details Wi-Fi and/or Bluetooth don't work (MediaTek modem)

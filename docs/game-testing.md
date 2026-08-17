@@ -60,6 +60,7 @@ There's multiple levels of stability:
 | Dead Island Riptide                                          | High      | 20-60 FPS, minor stutters/shader issues.                                    | Not applicable (single-player).                           |
 | Dead Space                                                   | Medium    | 30-50 FPS, glitches.                                                        | Not applicable (single-player).                           |
 | Deadpool 2013                                                | High      | 50-60 FPS, stable.                                                          | Not applicable (single-player).                           |
+| Deltarune                                                     | Perfect   | 30 FPS (max fps for this game), no issues.                                 | Not applicable (single-player).                           |
 | Detroit Become Human                                         | Low       | 20-40 FPS, crashes via wine.                                                | Not applicable (single-player).                           |
 | Diablo III                                                   | Medium    | 30-50 FPS, drops during shader compiling.                                   | Online play works on Linux.                               |
 | Diablo IV                                                    | Broken    | Instant crash.                                                              | Not applicable (doesn't launch).                          |
@@ -104,6 +105,8 @@ There's multiple levels of stability:
 | Need for Speed Most Wanted 2005                              | High      | 50-60 FPS, stable.                                                          | Not applicable (single-player).                           |
 | Need for Speed: Hot Pursuit                                  | High      | 50-60 FPS, stable.                                                          | Online play not tested.                                   |
 | Nickelodeon All-Star Brawl                                   | Perfect   | 60 FPS, no issues.                                                          | Online play works.                                        |
+| One Armed Cook                                               | Low       | Insane flickering, but still 60 FPS.                                        | Not tested.                                               |
+| One Armed Robber                                             | Low       | Insane flickering, but still 60 FPS.                                        | Not tested.                                               |
 | OpenRa                                                       | High      | 50-60 FPS, stable.                                                          | Online play works.                                        |
 | Orcs Must Die! 2                                             | High      | 50-60 FPS, minor issues.                                                    | Online co-op works.                                       |
 | Ori And The Blind Forest                                     | Perfect   | 60 FPS, no issues.                                                          | Not applicable (single-player).                           |
