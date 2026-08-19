@@ -22,7 +22,7 @@ Use `128MB` by default for server or general headless use, as `32MB` and `64MB` 
 > Do not use GoldHEN version v2.4b18.8, [update it](https://ko-fi.com/s/407bb9c94a)!
 
 Follow these steps:
-- Go to [arabpixel.github.io/PSFree-Enhanced](https://arabpixel.github.io/PSFree-Enhance) on your PS4's browser
+- Go to [http://webkitty.arabpixel.isroot.in/](http://webkitty.arabpixel.isroot.in/) on your PS4's browser
 - Select Linux tab at the top center
 	- Wait for the cache to finish installing!
 - Load your desired payload
