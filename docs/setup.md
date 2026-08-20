@@ -10,7 +10,10 @@ In a nutshell, you'll need:
 - An internet connection
 - (Optional) - one or more USB drives
 	- If you want to install to an external drive, you can use a USB pendrive or HDD, but it's recommend to have a SATA SSD and a SATA to USB adapter (preferrably one that supports UAS).
-
+- Ability to read and follow instructions
+	- You'll know this if you've read the [Key Information](/information) page.
+- Patience
+	- Installing Linux on the PS4 (or just, in general...) *can* take a while.
 ## Storage devices to install to
 Before we talk about anything, you must choose now a method of installation.
 You will need a device to store Linux, obviously.
@@ -98,11 +101,13 @@ In order to do that, open up your FTP file manager of choice.
 
 #### Linux
 - Built in File explorer, if yours allows it (KDE, Gnome and Cinnamon should)
+> [!warning]
+> Dolphin has a weird tendency (i think?) to break the FTP server?
+> You'll need to restart the FTP server from GoldHen Server settings.
 - Filezilla
 
 #### MacOS
-- I'm not rich, you tell me
-- Probably Filezilla
+- Filezilla
 
 > [!warning]
 > If you use Filezilla, use "binary mode" to transfer files, as the FTP in GoldHen has issues when transferring files!
