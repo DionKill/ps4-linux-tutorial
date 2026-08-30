@@ -35,6 +35,20 @@ panic=0 clocksource=tsc consoleblank=0 net.ifnames=0 radeon.dpm=0 amdgpu.dpm=0 d
 
 Remember that this `bootargs.txt` needs to be placed in the same folder as the bzImage.
 ### Distro
+Distros made by other members of the PS4 community that we cannot trust anymore are moved here. They also haven't really been updated in a long time as far as I'm aware.
+
+| Distro                                                                                           | Compatible Southbridge & Mesa          | Port credits                                                              | Info                                                                    |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [CachyOS](https://mega.nz/file/RyUVQARB#HZD49XXac_v2CYKD4Oqa7Tg1aiZ7ltH_cnDxixw9JjY)             | All<br>(Mesa 25.1.0)                   | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | "Final Fantasy v2" version. It has nothing to do with FF. Mere fantasy. |
+| [EndeavourOS](https://ps4linux.com/forums/d/386-endeavouros-gaming-rebirth)                      | All?<br>(Mesa Version ?)               | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | Arch based distro that's nice to use and easy to maintain               |
+| [Manjaro](https://ps4linux.com/forums/d/342-manjaro-from-scratch)                                | All?<br>(Mesa Version ?)               | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | A Manjaro KDE distro                                                    |
+| [Garuda](https://ps4linux.com/forums/d/415-garuda-dr460nized-gaming-v2/2)                        | All?<br>(Mesa Version ?)               | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | "Gaming focused" distro (not really)                                    |
+| [Fedora 42](https://ps4linux.com/forums/d/399-fedora42-by-qba-triki1kdewayland)                  | Aeolia, Belize<br>(Mesa 26)            | [Elokuba (Qba)](https://www.youtube.com/channel/UCU-eXjZ7Ud0k2wC_14mqdOw) | Normal Fedora running KDE on Wayland                                    |
+| [Debian Forky](https://ps4linux.com/forums/d/373-debian-forky-sid/3)                             | Aeolia, Belize<br>(Mesa 25.3+)         | [triki1](https://www.youtube.com/@trakerchris9876)                        | Very new distro. Extremely bleeding edge.                               |
+| [Kali Linux](https://ps4linux.com/forums/d/392-debian-forky-kali-linux-edition)                  | All<br>(Mesa 25.0.3-devel+)            | [triki1](https://www.youtube.com/@trakerchris9876)                        | Based on Debian Forky, but with Kali Linux stuff included               |
+| [Debian Trixie](https://ps4linux.com/forums/d/369-debien-trixie-full-update-mesa-2520-devel/13)  | Aeolia, Belize<br>(Mesa 25.2.0-devel+) | [triki1](https://www.youtube.com/@trakerchris9876)                        | Latest Debian                                                           |
+| [Xubuntu](https://ps4linux.com/forums/d/337-xubuntu-2504-final-release)                          | All<br>(Mesa 25.0.5)                   | [triki1](https://www.youtube.com/@trakerchris9876)                        | Divided into multiple files                                             |
+| [Batocera 40](https://ps4linux.com/forums/d/252-batocera-40-for-ps4-installation-setup-tutorial) | All<br>(Mesa 22.1.7)                   | [Noob404](https://www.youtube.com/channel/UC9pY5BDCjDLOC4j-zkHPu8)        | For retrogaming                                                         |
 
 If you are looking for really old distros, check out the downloads from PS4Linux [here](https://ps4linux.com/downloads/#PS4_Linux_Distro_Downloads).
 
