@@ -16,9 +16,6 @@ hero:
       text: 📹 YT Guide (Modded Warfare)
       link: https://www.youtube.com/watch?v=KW_lRyXQcb8
     - theme: alt
-      text: 🪡 Technical guide (zFentom)
-      link: https://zfentom.github.io/playstation-linux-tutorial/
-    - theme: alt
       text: 📖 Source on GitHub
       link: https://github.com/DionKill/ps4-linux-tutorial/
 
