@@ -51,8 +51,9 @@ Remember to check the GoldHEN "Server" settings (or ps4hen's equivalent if you'r
 <img src="/screenshots/payload-server-conf.png" width="75%">
 
 These are required to be able to move files and load Linux later into the guide.
+
 ### Settings
-These need to be taken as a precaution, not as a necessity, as they aren't actually needed anymore.
+These need to be taken as a precaution, not as a necessity, as nowadays they aren't actually needed anymore.
 However, as some issues may arise on certain consoles, you should still go and tweak these settings.
 #### "Audio and Display" settings
 ##### Resolution
@@ -60,27 +61,29 @@ However, as some issues may arise on certain consoles, you should still go and t
 <img src="/screenshots/settings-sound-and-screen.png" width="75%">
 <img src="/screenshots/resolution.png" width="75%">
 
-- Set your resolution to 1080p (or 720p)
-	- 4K may not work on PS4 Pro. Try 1080p first.
-	- Not always required? Works on Belize in Automatic.
+- Set your resolution
+	- 720p probably won't work, so on Phat/Slim set 1080p.
+	- 4K is only available on PS4 on kernels 6.18 or higher.
+	- Not always required? Sometimes Automatic breaks though.
 
 ##### RGB Color gamut
 
 <img src="/screenshots/rgb-range.png" width="75%">
 
 - Set your RGB color gamut
-	- It may be automatically set to "Limited" even if your display supports "Full".
-	- "Full" may not work on really old displays. If the image looks weird, set it to "Limited".
+	- It may be automatically set to "Limited" even if your display supports "Full" or viceversa.
+	- "Full" may not work on some displays (even new ones). If the image looks really dark, set it to "Limited".
+ 	- It is assumed that Limited refers to 6 bit colors and Full to 8 bit. Check what your monitor supports.
 - Wide color gamut
 	- Disable, or you won't have any video output at all!
+ 	- This refers to outputs higher than 8 bit colors. It isn't currently supported.
 
 #### "System" settings
 
 <img src="/screenshots/settings-system.png" width="75%">
 <img src="/screenshots/hdcp-and-device-link.png" width="75%">
 
-- ~~Disable "HDCP" and "HDMI device link"~~
-	- This is just not true anymore. Also, it must be on for the BD-JB exploit to work.
+- Disable "HDCP" and "HDMI device link" is a lie, it works perfectly fine and in fact you should leave them enabled for ease of use with some exploits (notably the BD-JB)
 - Check your internet connection
 	- Some models have issues if they aren't already connected to internet.
 	- Ethernet may not work on PS4 Pro Baikal
@@ -94,21 +97,23 @@ You'll be accessing your PS4's filesystem from FTP. You can also transfer files 
 In order to do that, open up your FTP file manager of choice.
 
 #### Windows
-- Windows' built-in file manager
+- Windows File Explorer
 	- This one likes to crash the desktop if it can't connect, be careful
 - WinSCP (recommended, using the simple interface)
 - Filezilla
 
 #### Linux
 - Built in File explorer, if yours allows it (KDE, Gnome and Cinnamon should)
-> [!warning]
-> Dolphin has a weird tendency (i think?) to break the FTP server?
-> You'll need to restart the FTP server from GoldHen Server settings.
 - Filezilla
+
+> [!warning]
+> Dolphin has a weird tendency to break the FTP server.
+> You'll need to restart the FTP server from GoldHen Server settings.
 
 #### MacOS
 - Filezilla
 
+### Note regarding Filezilla
 > [!warning]
 > If you use Filezilla, use "binary mode" to transfer files, as the FTP in GoldHen has issues when transferring files!
 
