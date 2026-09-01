@@ -40,8 +40,6 @@ You should now have up-to-date drivers. If you want to, you can also go to the [
 :::
 
 ::: details Debian/Ubuntu based distros (WITH Mesa updates, WIP)
-Use triki1's updater (should be included in their distro releases now)
-
 Use uar's script updater:
 ```bash
 wget [https://uar.no/ps4/baikal/mesa-25.sh](https://uar.no/ps4/baikal/mesa-25.sh "https://uar.no/ps4/baikal/mesa-25.sh") && sudo sh mesa-25.sh

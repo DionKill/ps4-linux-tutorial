@@ -62,3 +62,8 @@ If you want, you can check out their repos:
 	- For their forking this project for new additions. You can find it [here](https://flyingphantom.github.io/ps4-linux-tutorial/).
 
 Thank you all so much for making this possible.
+
+### A quick note
+This scene only survives if we keep things **open and clean**. Everything you see here is free, open source, and battle-tested by the community. When you contribute to docs, kernels, distros, tools, keep it that way: public source code, no closed blobs, no bloated gatekeeping. If it's not open, the scene ends up shit, like it always did in the past.
+
+If there is something this guide is missing or got wrong, [open an issue](https://github.com/DionKill/ps4-linux-tutorial/issues) and help make it better!

@@ -52,7 +52,7 @@ It should already boot into the desktop. If it doesn't, run:
 resume-boot
 ```
 
-<!-- @include: /_includes/resume-boot-warnings.md -->
+<!-- @include: /_includes/resume-boot-warning.md -->
 
 ## Finale
 Go now, conquer the finale. Also, read the post-credit stuff.

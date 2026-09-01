@@ -27,7 +27,9 @@ If the installer can't find the USB device, you have two options:
 There are a lot of undocumented issues. Or, if they are documented, I couldn't even find them because no search engine indexed those pages or they are in a foreign language.
 
 ::: details Black/gray screen or "no signal"
-Since kernel 6.18, display issues should mostly be fixed, so if you can use that kernel, please do. It also supports monitor hotplugging. Wait about 10 seconds or more for it to show an image in case you disconnect the cable!
+Since the 6.18 kernels, display issues should mostly be fixed, so if you can use a newer 7.x one instead, please do. Note that monitor hotplugging is not supported anymore.
+
+If you get a black screen right after running the Linux payload, try another TV first. If that doesn't help, try this trick: boot back into the game OS (you'll have to, to run the Linux payload again anyways), run the payload and wait for it to go fully black, then turn your TV or monitor off and back on quickly. You should get a signal in the end.
 
 > [!TIP]
 > The rest of this stuff is mostly for safekeeping, but shouldn't be necessary anymore. Keep on readying if you need to!
