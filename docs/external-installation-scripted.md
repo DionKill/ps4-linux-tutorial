@@ -41,6 +41,7 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 
 <img src="/screenshots/rescue-shell.png" width="80%">
 
+- If you have a disc in your console, remove it by running `eject /dev/sr0` or it'll corrupt the installation
 - Type `install-psxitarch.sh`
 	- If it fails, go to the [Installation Issues](/issues#installation-issues), or use the [alternative method](external-installation-manual).
 

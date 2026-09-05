@@ -40,6 +40,7 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 
 <img src="/screenshots/rescue-shell.png" width="80%">
 
+- If you have a disc in your console, remove it by running `eject /dev/sr0` or it'll corrupt the installation
 - Type `install-linux-hdd.sh` or `linux-install-hdd.sh`
 - Type how much storage you want to use for the installation
 	- Check how much free space you have, don't fill up your drive as the PS4 will only report the used amount of space inside the partition, and not the total partition size!
