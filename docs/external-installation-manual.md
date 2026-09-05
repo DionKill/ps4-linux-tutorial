@@ -40,8 +40,6 @@ Now that the storage is covered, here comes the moment of truth. It should alrea
 resume-boot
 ```
 
-<!-- @include: /_includes/resume-boot-warning.md -->
-
 ::: details If it doesn't work check this!
 If for some reason it doesn't work for you, run the following commands (thanks @gryoza on Discord and @bene4k on Reddit for this):
 ```bash
@@ -50,5 +48,8 @@ exec chroot
 ```
 You may need to do this at every reboot.
 :::
+
+<!-- @include: /_includes/resume-boot-warning.md -->
+
 ## Finale
 Go now, conquer the finale. Also, read the post-credit stuff.
