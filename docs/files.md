@@ -30,6 +30,7 @@ These are normal general-use kernels with additional patches to make them work p
 | Kernel Download                                                                                           | Compatible Southbridges | Source Code                                         | Extra info                                                                                                                                              |
 | --------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [7.1.7](https://gitlab.com/rmuxnet/linux/-/releases)<br>*Recommended*                                     | Aeolia, Belize          | [GitLab](https://gitlab.com/rmuxnet/linux)          | All 4 profiles, FullLTO.<br>**General**: desktop/gaming, default.<br>**Server**: headless.<br>**SlopMax**: General + KVM.<br>**Slopium**: Server + KVM. |
+| [7.0.8](https://gatto.fae5.de/archive/kernels/strawberry/baikal/7.0.8/bzImage)<br>*Mirror*                | Baikal                  | [GitLab](https://gitlab.com/rmuxnet/linux)          | Just a mirror of the FullLTO version for baikal.                                                                                                        |
 | [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__crashnt-4.7)                      | Aeolia, Belize          | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | LTO and other improvements.<br>**ThinLTO** recommended.<br>Some consoles may need `no-builtin-fw`.                                                      |
 | [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__obsidianx-4.0) <br> Belize Ver. | Belize                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Same as above. Might provide better performance than 6.15.4.                                                                                            |
 | [5.4.247](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.4.247__neocine-1.1)                    | Baikal                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Specific for Baikal systems. Don't use on any other console!                                                                                            |
@@ -55,7 +56,7 @@ If you have issues, remember to check the [Issues page](/issues). If you want mo
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. Think of it as GRUB, but more basic.
 
-Download [this one](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
+Download [this one](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) or [from here](https://gatto.fae5.de/archive/initramfs/ps4linux/) (mirror). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
 
 ::: details More details
 There's another in-dev initramfs (probably not working), if you want to check out the source it's [here](https://github.com/ps4gentoo/initramfs).
