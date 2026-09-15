@@ -16,12 +16,6 @@ The newest kernels are already built with all the necessary patches to make the 
 LTO is a topic of debate, but both ThinLTO and FullLTO are good options.
 :::
 
-::: details <Badge type="warning" text="Warning regarding other kernels not on this list" />
-Some kernels are to be avoided, specifically the ones "made" by the KHEOPS team, which are stealing work from the PS4 Abuse Club team. You can find more info in the Linux for PS4 Community Discord server, in [this message](https://discord.com/channels/1493663490659975350/1499549352320958514/1530306022508597268), (this is a guide and not a place for drama).
-
-On top of that, there is also a malware problem:
-> triki1 is on the same team. He said in writing that they will not publish source code because it is malware. He said it "could set your PlayStation on fire". This is a serious problem. Do not ignore this.
-
 
 :::
 ### Kernel list
@@ -82,7 +76,7 @@ You can of course use other distros, but you do run the risk of breaking your di
 
 | Distro Download                                                                                                    | Compatible Southbridge & Mesa     | Port credits                                    | Info                                                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------ | --------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CachyOS Light (Mega)](https://mega.nz/file/kS0CwBLJ#I2GtfEZ0HigRyoSoHnBWGH85NqTnNCOUHIBvxlQmUZM)<br>*Recommended* | Aeolia, Belize, Baikal<br>(Mesa 26.0.4) | DionKill                                        | CachyOS, but without it running like crap. Automatic Mesa updates.<br><br><br>[Info on the forums](https://ps4linux.com/forums/d/422-cachyos-light-lxqt-a-light-and-fast-distro) |
+| [CachyOS Light (Mega)](https://mega.nz/file/kS0CwBLJ#I2GtfEZ0HigRyoSoHnBWGH85NqTnNCOUHIBvxlQmUZM)<br>*Recommended* | Aeolia, Belize, Baikal<br>(Mesa 26.0.4) | DionKill                                        | CachyOS, but without it running like crap. Automatic Mesa updates.<br><br><br>[Info on pastebin](https://pastebin.com/6tdMKGeU) |
 | [Arch](https://github.com/ErkkolaMaitohappo/arch-ps4-aur-smth-fork/releases/latest)                                | Aeolia, Belize, Baikal<br>(Mesa 26.0.4) | [Erkkola](https://github.com/ErkkolaMaitohappo) | An Arch install with different desktops: KDE, XFCE or even TempleOS!                                                                                                             |
 | [Artix](https://github.com/ErkkolaMaitohappo/ps4-arch-based-distros/releases)                                      | Aeolia, Belize, Baikal<br>(Mesa 26.0.4) | [Erkkola](https://github.com/ErkkolaMaitohappo) | A distro not for noobies.                                                                                                                                                        |
 | [CachyOS "Strawberry" Server Edition](https://github.com/sony-jaguar-devs/distros/releases)                        | Aeolia, Belize, Baikal                  | [rmux](https://github.com/rmuxnet/)             | *For server use only*! It doesn't run any DE!                                                                                                                                    |
@@ -90,7 +84,7 @@ You can of course use other distros, but you do run the risk of breaking your di
 ::: details More distros
 Here are the distros that we can't recommend anymore, as they have been superseeded, or haven't had any major updates in a while.
 
-It may be useful to you if you want something other than Arch, or if you have a Baikal southbridge.
+It may be useful to you if you want something other than Arch, or if you need to run kernel 5.4.
 
 If you want to take the risk, go to the [legacy page](legacy).
 
