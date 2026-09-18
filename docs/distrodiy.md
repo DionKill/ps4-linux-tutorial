@@ -78,18 +78,18 @@ cd / && sudo tar \
   --acls \
   --xattrs \
   --numeric-owner \
-  --exclude=/proc \
-  --exclude=/sys \
-  --exclude=/dev \
-  --exclude=/run \
-  --exclude=/tmp \
-  --exclude=/var/tmp \
-  --exclude=/var/cache \
-  --exclude=/var/log \
+  --exclude=/proc/* \
+  --exclude=/sys/* \
+  --exclude=/dev/* \
+  --exclude=/run/* \
+  --exclude=/tmp/* \
+  --exclude=/var/tmp/* \
+  --exclude=/var/cache/* \
+  --exclude=/var/log/* \
   --exclude=/swapfile \
   --exclude=/lost+found \
-  --exclude=/mnt \
-  --exclude=/media \
+  --exclude=/mnt/* \
+  --exclude=/media/* \
   --exclude=/ps4linux.tar.xz \
   -cvpf /ps4linux.tar.xz / -I "xz -T0 -6"
 ```
