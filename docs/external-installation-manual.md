@@ -24,6 +24,10 @@ Then, plug in your drive, and use "GParted", "KDE Partition Manager", or "Aoemi 
 
 Now move your bzImage (and bootargs if you need it) and initramfs to the FAT32 partition.
 
+> [!NOTE]
+> If you're using Windows and can't get the partitioning right using 3rd-party tools, you can use wsl.
+> For resources on how to do so, check out [TheVorkMan's PS4 Linux notes](https://thevorkman.github.io/ps4-linux-notes/Guides/5.-Manual-external-install-on-Windows)
+
 Then, you will need to untar your distro of choice at the root of the bigger EXT4 partition, using this command:
 ```bash
 sudo tar -xvJpf ps4linux.tar.xz -C /run/media/YOURNAME/psxitarch --numeric-owner
@@ -47,6 +51,24 @@ mount /dev/sdb2 /newroot
 exec chroot
 ```
 You may need to do this at every reboot.
+
+If the error you're getting is:
+`mount: mounting /dev on /newroot/dev failed: No such file or directory`
+Then the distro archive you used during the previous steps excluded some directories needed by the initramfs.
+It's easy to create the needed directories (and all the others excluded during the process of making the archive) with these commands:
+```bash
+mkdir /newroot/dev
+mkdir /newroot/media
+mkdir /newroot/mnt
+mkdir /newroot/proc
+mkdir /newroot/run
+mkdir /newroot/sys
+mkdir /newroot/tmp
+mkdir /newroot/var/cache
+mkdir /newroot/var/log
+mkdir /newroot/var/tmp
+```
+Now that you've made the necessary directories, `resume-boot` should function as normal. You may also simply press `ctrl+alt+del` to reboot the console, then run the linux payload again.
 :::
 
 <!-- @include: /_includes/resume-boot-warning.md -->
