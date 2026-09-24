@@ -52,10 +52,16 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'Installation Methods', link: '/installation' },
-              { text: 'Internal Installation', link: '/internal-installation' },
+              {
+                text: 'Internal Installation',
+                items: [
+                  { text: 'Standard', link: '/internal-installation' },
+                  { text: 'Different Filesystem', link: '/internal-installation-diff-fs' },
+                ]
+              },
               { text: 'Scripted External Installation', link: '/external-installation-scripted' },
               { text: 'Manual External Installation', link: '/external-installation-manual' },
-            ],
+            ]
           },
           { text: 'Ending', link: '/ending' },
         ]
@@ -65,6 +71,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Post install setup', link: '/postinstall' },
+          { text: 'Updating the Kernel', link: '/updating-kernel' },
           { text: 'Common issues', link: '/issues' }
         ]
       },
