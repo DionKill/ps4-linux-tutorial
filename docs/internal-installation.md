@@ -13,6 +13,10 @@ Here you'll setup the internal HDD for installation of a Linux distro.
 > [!CAUTION]
 > Baikal internal installation is still unstable. Proceed with caution and make backups beforehand.
 
+> [!CAUTION]
+> This method uses `Ext2`, which... isn't the best at error handling and power cuts. So if you want to change the file system, we've included instructions down below.
+
+
 > [!WARNING]
 > This shit is slow on an HDD. Be careful and prepare your balls for imminent explosion.
 > 
@@ -42,6 +46,9 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 
 - If you have a disc in your console, remove it by running `eject /dev/sr0` or it'll corrupt the installation
 - Type `install-linux-hdd.sh` or `linux-install-hdd.sh`
+> [!NOTE]
+> Pick 8GB if you want to change the file system after this. See [Different Filesystem](/internal-installation-diff-fs).
+
 - Type how much storage you want to use for the installation
 	- Check how much free space you have, don't fill up your drive as the PS4 will only report the used amount of space inside the partition, and not the total partition size!
 	- If it fails, check your initramfs, or go to the [Installation Issues](/issues#installation-issues)
