@@ -16,6 +16,10 @@ Here you'll setup the internal HDD for installation of a Linux distro.
 > [!CAUTION]
 > This method uses `Ext2`, which... isn't the best at error handling and power cuts. So if you want to change the file system, we've included instructions down below.
 
+> [!CAUTION]
+> The PS4 System Storage Checker™ *might* nuke your `linux.img`, So be careful of that.
+
+
 
 > [!WARNING]
 > This shit is slow on an HDD. Be careful and prepare your balls for imminent explosion.
