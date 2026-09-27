@@ -49,6 +49,8 @@ If you have issues, remember to check the [Issues page](/issues). If you want mo
 
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. Think of it as GRUB, but more basic.
+> [!NOTE]
+> The Aeolia script is wrong, You should try the Belize initramfs file. (You might think It won't work, but It will.)
 
 Download [this one](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) or [from here](https://gatto.fae5.de/archive/initramfs/ps4linux/) (mirror). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
 
