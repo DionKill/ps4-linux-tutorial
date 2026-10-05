@@ -9,7 +9,7 @@ It shows when booting up before installing, don't worry as it's normal because t
 If this happens, these are possible causes:
 
 1. The initramfs you are using is not the correct one. If you are installing on external, use the one called external, if you are installing for internal check if it's the one for internal, and remember to check for the southbridge.
-2. The installer can't find the `psxitarch.tar.xz` or `psxitarch.tar.gz` file. Check that the name and location are correct.
+2. The installer can't find the `distro.tar.xz`file. Check that the name and location are correct.
 3. You are using different payloads than the one mentioned on the guide. Those will not work on modern distros and are known to have issues, therefore they are incompatible with this guide.
 
 If none of these help you, go to the Linux for PS4 Community Discord server.

@@ -82,7 +82,7 @@ Here, you have two paths:
 5. Flash the system onto the file (this will take a while, hydrate yourself):
 
    ```bash
-   sudo tar -xvJpf /mnt/system/boot/psxitarch.tar.xz -C /tmp --numeric-owner
+   sudo tar -xvJpf /mnt/system/boot/distro.tar.xz -C /tmp --numeric-owner
    ```
 
 6. Reboot to Orbis, delete `/user/home/linux.img`, and rename `/user/home/linux2.img` to `/user/home/linux.img`.
