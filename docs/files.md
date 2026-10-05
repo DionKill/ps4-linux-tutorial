@@ -52,10 +52,12 @@ This is the rescue shell that boots your Linux installer/installation. Think of 
 > [!NOTE]
 > On 7.x kernels the Aeolia script is wrong, You should try the Belize initramfs file. (You might think It won't work, but It will.)
 
-Download [this one](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) or [from here](https://gatto.fae5.de/archive/initramfs/ps4linux/) (mirror). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
+Download [this new one](https://github.com/GattoDev-debug/initramfs-ps4/releases/latest) (for now, this only has internal support, external will be added soon.) or [the old one](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) (shouldnt use, use only for external right now) [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
 
 ::: details More details
 There's another in-dev initramfs (probably not working), if you want to check out the source it's [here](https://github.com/ps4gentoo/initramfs).
+
+There's also "initramfs-ps4" which DOES work, that is the "this new one" link.
 
 Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial-for-building-a-custom-initramfs-research-development) on the PS4 Linux forums, it explains what an initramfs is and does in actuality.
 :::

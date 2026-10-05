@@ -47,7 +47,7 @@ Once you're in the operating system, you will need to create a second `linux.img
 Here, you have two paths:
 
 1. [Btrfs](#btrfs) (recommended)
-2. [Ext4](#ext4)
+2. ~~[Ext4](#ext4)~~ (already done on new initramfs)
 
 ### Btrfs
 
@@ -63,7 +63,7 @@ Here, you have two paths:
    sudo mkfs.btrfs /dev/loop1
    ```
 
-### Ext4
+### Ext4 (dont use this)
 
 1. Format the file as Ext4:
 
