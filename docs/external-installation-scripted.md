@@ -16,7 +16,7 @@ next:
 > [!TIP]
 > If you have issues or just want to do manual partitioning (which often works better) try the [alternative installation here](/external-installation-manual).
 ## Installation scripts
-Put the kernel (bzImage, and the bootargs if you need it), initramfs (initramfs.cpio.gz), and your distro `psxitarch.tar.xz/gz` on the root of a FAT32 formatted drive, like so:
+Put the kernel (bzImage, and the bootargs if you need it), initramfs (initramfs.cpio.gz), and your distro `distro.tar.xz` on the root of a FAT32 formatted drive, like so:
 
 <img src="/screenshots/external-drive-conf.png" width="75%">
 

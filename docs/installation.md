@@ -39,7 +39,7 @@ An internal SSD is going to be much faster and probably more reliable than a dan
 2. Take the initramfs.zip file, open it, and choose your installation method (mind the Southbridge)
 	- Put it somewhere like on your desktop as we'll need it
 3. Pick your kernel (bzImage), extract the file from the zip and place it somewhere you can remember
-4. Choose your distro and and rename it `psxitarch.tar.xz/gz` depending on the original file type
+4. Choose your distro and and rename it `distro.tar.xz` depending on the original file type
 
 ## Choosing a method of installation 
 > [!WARNING]
