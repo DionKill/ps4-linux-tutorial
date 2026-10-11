@@ -16,8 +16,6 @@ The newest kernels are already built with all the necessary patches to make the 
 LTO is a topic of debate, but both ThinLTO and FullLTO are good options.
 :::
 
-
-:::
 ### Kernel list
 These are normal general-use kernels with additional patches to make them work properly on the PS4. Some 
 
@@ -49,20 +47,25 @@ If you have issues, remember to check the [Issues page](/issues). If you want mo
 
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. Think of it as GRUB, but more basic.
-> [!NOTE]
-> On 7.x kernels the Aeolia script is wrong, You should try the Belize initramfs file. (You might think It won't work, but It will.)
 
-Download [this new one](https://github.com/GayCorp/initramfs-ps4/releases/latest) or [the old one](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) (shouldnt use) [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
+You can download the new one and improved initramfs-ps4 [here](https://github.com/GayCorp/initramfs-ps4/releases/latest).
 
 ::: details More details
-There's another in-dev initramfs (probably not working), if you want to check out the source it's [here](https://github.com/ps4gentoo/initramfs).
+The new "initramfs-ps4" does work, and it's the one in the link above.
 
-There's also "initramfs-ps4" which DOES work, that is the "this new one" link.
+ [Here is the old initramfs](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) (shouldn't use). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
+ > [!NOTE]
+> On 7.x kernels the Aeolia script is wrong, You should try the Belize initramfs file. (You might think It won't work, but It will.)
+There's another in-dev initramfs (probably not working), if you want to check out the source it's [here](https://github.com/ps4gentoo/initramfs).
 
 Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial-for-building-a-custom-initramfs-research-development) on the PS4 Linux forums, it explains what an initramfs is and does in actuality.
 :::
 ## Distros (that you ACTUALLY wanna use)
 Honestly there's a neptillion distros... If you're indecisive, click on all the links and check them out. Either way they are listed from most to least recommended.
+
+> [!TIP]
+> Arch based distros are recommended due to ease of update for drivers as the hardware is really peculiar.
+
 
 ::: details Read more here
 Each distro has it's own pros and cons. But most of the difference on PS4 comes down to drivers; each distro requires it's own version of them and it can be a pain in the ass to install.
@@ -72,20 +75,17 @@ Each distro has it's own pros and cons. But most of the difference on PS4 comes 
 You can of course use other distros, but you do run the risk of breaking your distro or having to reinstall everything when something needs updating, unless you know what you are doing.
 :::
 
-> [!TIP]
-> Arch based distros are recommended due to ease of update for drivers as the hardware is really peculiar.
-
 > [!NOTE]
 > We don't suggest using anything closed-source or bloated (looking at you, Debian, and "MultiBoot" initramfs). Stick to the distros below, they're proven to work without issues by at least 200 people in our own Discord server :)
 
-| Distro Download                                                                                                    | Compatible Southbridge & Mesa     | Port credits                                    | Info                                                                                                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------ | --------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CachyOS Light (Mega)](https://mega.nz/file/kS0CwBLJ#I2GtfEZ0HigRyoSoHnBWGH85NqTnNCOUHIBvxlQmUZM)<br>*Recommended* | Aeolia, Belize, Baikal<br>(Mesa 26.0.4) | DionKill                                        | CachyOS, but without it running like crap. Automatic Mesa updates.<br><br><br>[Info on pastebin](https://pastebin.com/6tdMKGeU) |
-| [CachyOS Light (Mediafire)](https://www.mediafire.com/file/hvlz6qk3e36rlk1/ps4linux.tar.xz/file)                   | Aeolia, Belize, Baikal<br>(Mesa 26.0.4) | DionKill                                        | Same thing, but hosted on Mediafire because Mega loves rate limiting.                                                           |
-| [Arch](https://github.com/ErkkolaMaitohappo/arch-ps4-aur-smth-fork/releases/latest)                                | Aeolia, Belize, Baikal<br>(Mesa 26.0.4) | [Erkkola](https://github.com/ErkkolaMaitohappo) | An Arch install with different desktops: KDE, XFCE or even TempleOS!                                                                                                             |
-| [Artix](https://github.com/ErkkolaMaitohappo/ps4-arch-based-distros/releases)                                      | Aeolia, Belize, Baikal<br>(Mesa 26.0.4) | [Erkkola](https://github.com/ErkkolaMaitohappo) | A distro not for noobies.                                                                                                                                                        |
-| [CachyOS "Strawberry" Server Edition](https://github.com/sony-jaguar-devs/distros/releases)                        | Aeolia, Belize, Baikal                  | [rmux](https://github.com/rmuxnet/)             | *For server use only*! It doesn't run any DE!                                                                                                                                    |
-| [JaguarLinux](https://ps4linux.com/forums/d/265-jaguarlinux-a-ps4-linux-only-distro-beta-release/3)                | Aeolia, Belize, Baikal<br>(Mesa 26-devel) | [TigerClips1](https://github.com/TigerClips1/)  | A distro made from scratch for the PS4! Void-based & in development. Worth a mention.                                                                                            |
+| Distro Download                                                                                                    | Compatible Southbridge & Mesa             | Port credits                                    | Info                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [CachyOS Light (Mega)](https://mega.nz/file/kS0CwBLJ#I2GtfEZ0HigRyoSoHnBWGH85NqTnNCOUHIBvxlQmUZM)<br>*Recommended* | Aeolia, Belize, Baikal<br>(Mesa 26.0.4)   | DionKill                                        | CachyOS, but without it running like crap. Automatic Mesa updates.<br><br><br>[Info on pastebin](https://pastebin.com/6tdMKGeU) |
+| [CachyOS Light (Mediafire)](https://www.mediafire.com/file/hvlz6qk3e36rlk1/ps4linux.tar.xz/file)                   | Aeolia, Belize, Baikal<br>(Mesa 26.0.4)   | DionKill                                        | Same thing, but hosted on Mediafire because Mega loves rate limiting.                                                           |
+| [Arch](https://github.com/ErkkolaMaitohappo/arch-ps4-aur-smth-fork/releases/latest)                                | Aeolia, Belize, Baikal<br>(Mesa 26.0.4)   | [Erkkola](https://github.com/ErkkolaMaitohappo) | An Arch install with different desktops: KDE, XFCE or even TempleOS!                                                            |
+| [Artix](https://github.com/ErkkolaMaitohappo/ps4-arch-based-distros/releases)                                      | Aeolia, Belize, Baikal<br>(Mesa 26.0.4)   | [Erkkola](https://github.com/ErkkolaMaitohappo) | A distro not for noobies.                                                                                                       |
+| [CachyOS "Strawberry" Server Edition](https://github.com/sony-jaguar-devs/distros/releases)                        | Aeolia, Belize, Baikal                    | [rmux](https://github.com/rmuxnet/)             | *For server use only*! It doesn't run any DE!                                                                                   |
+| [JaguarLinux](https://ps4linux.com/forums/d/265-jaguarlinux-a-ps4-linux-only-distro-beta-release/3)                | Aeolia, Belize, Baikal<br>(Mesa 26-devel) | [TigerClips1](https://github.com/TigerClips1/)  | A distro made from scratch for the PS4! Void-based & in development. Worth a mention.                                           |
 ::: details More distros
 Here are the distros that we can't recommend anymore, as they have been superseeded, or haven't had any major updates in a while.
 

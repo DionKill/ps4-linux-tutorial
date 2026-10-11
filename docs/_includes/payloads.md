@@ -23,13 +23,15 @@ Use `128MB` by default for server or general headless use, as `32MB` and `64MB` 
 
 Follow these steps:
 - Go to [http://webkitty.arabpixel.net](http://webkitty.arabpixel.net) on your PS4's browser
-- Select Linux tab at the top center
+- Scroll down with your right thumbstick, mouse, or keyboard
+- Select Linux tab at the top right
 	- Wait for the cache to finish installing!
 - Load your desired payload
 	- Again, 1GB is necessary for first time installation!
 	- If you use the PS4 as a server after installation, switch to one of the server payloads for more system RAM.
 
-<img src="/screenshots/psfree-payloads.jpg" width="75%">
+<img src="/screenshots/webkitty-1.jpg" width="75%">
+<img src="/screenshots/webkitty-2.jpg" width="75%">
 :::
 
 ::: details Local payloads (if website doesn't work for you)

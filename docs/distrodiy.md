@@ -19,15 +19,21 @@ In order to port a distro on the PS4, you will need the following:
 - A way to install said distro in a VM
 
 ### Drivers
-To get the drivers, there's a couple of ways:
-- On Arch based distros, there are precompiled packages that can be found at this pacman repo, forked and updated to latest stable ([source](https://github.com/DionKill/ps4-video-archlinux)):
+To get the drivers, there's a couple of ways.
+#### Arch based distros
+On Arch based distros, there are precompiled packages that can be found at this pacman repo, forked and updated to latest stable ([source](https://github.com/DionKill/ps4-video-archlinux)):
 ```bash
 [ps4-video]
 SigLevel = Optional 
 Server = https://dionkill.github.io/ps4-video-archlinux/repo/
 ```
 
+To install the packages, you must first remove all `vulkan, lib32-vulkan, mesa, lib32-mesa` related packages. On Arch, use `sudo pacman -Rdd -insert name-` to remove them, then proceed to install the new ones with:
+```bash
+sudo pacman -S libdrm-ps4 lib32-ps4 mesa-ps4 lib32-mesa-ps4 xf86-video-amdgpu-ps4
+```
 
+#### Other distros
 - The `mesa-git`, `libdrm`, and `xf86-video-amdgpu` packages compiled with patches for the PS4, or compile them yourself
 	- It is necessary to compile mesa in 32 bit too
 - You can find patches [here](https://github.com/DionKill/ps4-linux-patches) (forked from FalsePhilosopher) to compile yourself
@@ -78,18 +84,18 @@ cd / && sudo tar \
   --acls \
   --xattrs \
   --numeric-owner \
-  --exclude=/proc/* \
-  --exclude=/sys/* \
-  --exclude=/dev/* \
-  --exclude=/run/* \
-  --exclude=/tmp/* \
-  --exclude=/var/tmp/* \
-  --exclude=/var/cache/* \
-  --exclude=/var/log/* \
+  --exclude=/proc/ \
+  --exclude=/sys/ \
+  --exclude=/dev/ \
+  --exclude=/run/ \
+  --exclude=/tmp/ \
+  --exclude=/var/tmp/ \
+  --exclude=/var/cache/ \
+  --exclude=/var/log/ \
   --exclude=/swapfile \
   --exclude=/lost+found \
-  --exclude=/mnt/* \
-  --exclude=/media/* \
+  --exclude=/mnt/ \
+  --exclude=/media/ \
   --exclude=/ps4linux.tar.xz \
   -cvpf /ps4linux.tar.xz / -I "xz -T0 -6"
 ```
