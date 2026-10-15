@@ -20,20 +20,10 @@ Put the kernel (bzImage, and the bootargs if you need it), initramfs (initramfs.
 
 <img src="/screenshots/external-drive-conf.png" width="75%">
 
-### Manual format for big drives
-If the drive is larger than 32GB, Windows will dastardly act like it can't format it in FAT32, but only in NTFS or ExFAT, which is just wrong, as FAT32 supports up to 2TB drives.
-To fix it, go ahead and download the mythical [Rufus](https://rufus.ie) program.
+You will also need a separate drive for the Linux installation. This drive does not need to be formatted or partitioned beforehand, as the installation script will partition and format it automatically.
 
-- Select "List USB Hard Drives"
-- Select "Non bootable" as a type of format
-- Select "MBR" as partition scheme
-- Select "FAT32" as filesystem
-
-Click start and wait.
-Once done, place the files on the drive.
-Plug your drive on the PS4 and continue.
-
-<img src="/screenshots/rufus-format.png" width="50%">
+> [!WARNING]
+> Make sure you select the correct installation drive. Everything on the selected installation drive will be erased.
 
 <!-- @include: /_includes/payloads.md -->
 ## Installation commands
@@ -42,8 +32,11 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 <img src="/screenshots/rescue-shell.png" width="80%">
 
 - If you have a disc in your console, remove it by running `eject /dev/sr0` or it'll corrupt the installation
-- Type `install-psxitarch.sh`
+- Connect both the FAT32 source drive containing the installation files and the separate installation drive.
+- Type `install-linux-ext.sh`
 	- If it fails, go to the [Installation Issues](/issues#installation-issues), or use the [alternative method](external-installation-manual).
+
+The script will automatically look for the drive containing the installation files. If it cannot find it, it will ask you to select the source drive, then ask you to select the installation drive.
 
 Hydrate yourself while you wait. It'll take a while.
 
