@@ -4,12 +4,13 @@ In order to install Linux on the PS4, a lot of things are needed. You may have t
 
 In a nutshell, you'll need:
 - A PS4 (duh)
+	- The console *must* have HEN (GoldHEN, ps4hen), modding is *not* covered by the guide
 	- Extra mouse and keyboard
 	- A USB hub to connect all the peripherals is recommended
 - A computer
 - An internet connection
-- (Optional) - one or more USB drives
-	- If you want to install to an external drive, you can use a USB pendrive or HDD, but it's recommend to have a SATA SSD and a SATA to USB adapter (preferrably one that supports UAS).
+- One or more USB drives (depends on installation method)
+	- If you want to install to an external drive, you can use a USB pendrive or HDD, but it's recommend to have a SATA SSD and a SATA to USB adapter (preferrably one that supports UAS, or else expect issues).
 - Ability to read and follow instructions
 	- You'll know this if you've read the [Key Information](/information) page.
 - Patience
@@ -46,7 +47,9 @@ You need a system that is already jailbroken and has a homebrew enabler (such as
 In order to input text on your PS4, you can't use the PS4 built in keyboard, as that is not available on Linux. You must have a keyboard and mouse combo ready to use with your PS4.
 
 #### Payload server settings
-Remember to check the GoldHEN "Server" settings (or ps4hen's equivalent if you're using that) so that they are both enabled:
+Remember to check the GoldHEN "Server" settings (or ps4hen's equivalent if you're using that) so that these are enabled:
+- Enable FTP server
+- Enable BinLoader server
 
 <img src="/screenshots/payload-server-conf.png" width="75%">
 
@@ -63,7 +66,7 @@ However, as some issues may arise on certain consoles, you should still go and t
 
 - Set your resolution
 	- 720p probably won't work, so on Phat/Slim set 1080p.
-	- 4K is only available on PS4 on kernels 6.18 or higher.
+	- 4K is only available on PS4 Pro on kernels 6.18 or higher.
 	- Not always required? Sometimes Automatic breaks though.
 
 ##### RGB Color gamut
@@ -83,7 +86,8 @@ However, as some issues may arise on certain consoles, you should still go and t
 <img src="/screenshots/settings-system.png" width="75%">
 <img src="/screenshots/hdcp-and-device-link.png" width="75%">
 
-- Disable "HDCP" and "HDMI device link" is a lie, it works perfectly fine and in fact you should leave them enabled for ease of use with some exploits (notably the BD-JB)
+- HDCP and HDMI Device Link
+	- Many report that they must be disabled, but this isn't needed anymore. In fact, these need to be enabled for certain exploits, notably BD-JB and PSVue
 - Check your internet connection
 	- Some models have issues if they aren't already connected to internet.
 	- Ethernet may not work on PS4 Pro Baikal
