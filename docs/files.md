@@ -51,7 +51,7 @@ If you have issues, remember to check the [Issues page](/issues). If you want mo
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. Think of it as GRUB, but more basic.
 
-You can download the new one and improved initramfs-ps4 [here](https://github.com/GayCorp/initramfs-ps4/releases/latest).
+You can download the new one and improved initramfs-ps4 [here](https://git.gay/GayCorp/initramfs-ps4/releases/tag/latest).
 
 ::: details More information and other initramfses
 The new "initramfs-ps4" does work, and it's the one in the link above.
