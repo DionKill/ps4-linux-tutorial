@@ -19,7 +19,7 @@ In a nutshell, you'll need:
 Before we talk about anything, you must choose now a method of installation.
 You will need a device to store Linux, obviously.
 1. Internal HDD
-	- Baikal still unsupported, veeery slow, needs free space
+	- Baikal: experimental, needs a linux-psx kernel. Veeery slow on the stock HDD, needs free space
 2. External HDD/SSD
     - External USB Hard Disk Drive or USB Solid State Drive. Use a USB 3.x capable disk and cable for the best performance
 	- External SATA-USB or NVMe-USB adapter (if using a SATA/NVMe drive)

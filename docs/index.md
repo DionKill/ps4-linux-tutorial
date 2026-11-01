@@ -71,7 +71,7 @@ Another thing. We have two methods of installation:
 1. Internal HDD of the PS4
 2. External Drive via USB
 
-But some consoles don't support internal drives. This will addressed further into the guide.
+On some consoles (Baikal), internal installation is still experimental. This will be addressed further into the guide.
 
 By the way, if you have any problems, you can make an issue on GitHub. PRs are welcome as well!
 ## Little bonus

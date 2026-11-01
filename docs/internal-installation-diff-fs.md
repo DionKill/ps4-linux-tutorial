@@ -12,6 +12,8 @@ next:
 Here you'll set up the internal HDD for installation of a Linux distro. again?
 > [!CAUTION]
 > Baikal internal installation is still unstable. Proceed with caution and make backups beforehand.
+>
+> It needs a [linux-psx](https://github.com/meerzulee/linux-psx) 7.2 kernel with its [internal-SATA boot arguments](https://github.com/meerzulee/linux-psx/blob/master/docs/PS4-BOOTARGS.md#internal-sata-test-profile). On one tested console, older Baikal kernels dropped the internal drive within the first two minutes after booting.
 
 
 > [!WARNING]

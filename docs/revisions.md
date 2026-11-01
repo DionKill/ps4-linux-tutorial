@@ -33,7 +33,7 @@ The second gen southbridge, and the one with the most support. Gets kernel updat
 It can be found on late Phat models, but also on Slims and Pros.
 
 ### Baikal
-The third and final southbridge, released very late into the console's lifespan, and the one with the least support. It doesn't have support for internal HDD installation, and is known to have issues, especially on PS4 Pros, but you may be able to get a working system.
+The third and final southbridge, released very late into the console's lifespan, and the one with the least support. Internal installation is experimental: it needs a [linux-psx](https://github.com/meerzulee/linux-psx) 7.2 kernel with its internal-SATA boot arguments. It's also known to have issues, especially on PS4 Pros, but you may be able to get a working system.
 
 This is because there are fewer people with Baikal PS4s, so there aren't many developers and testers.
 
