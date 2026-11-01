@@ -36,8 +36,9 @@ sudo pacman -S libdrm-ps4 lib32-ps4 mesa-ps4 lib32-mesa-ps4 xf86-video-amdgpu-ps
 #### Other distros
 - The `mesa-git`, `libdrm`, and `xf86-video-amdgpu` packages compiled with patches for the PS4, or compile them yourself
 	- It is necessary to compile mesa in 32 bit too
-- You can find patches [here](https://github.com/DionKill/ps4-linux-patches) (forked from FalsePhilosopher) to compile yourself
-	- Either build the PKGBUILDS for Arch or straight up take the patches and apply them to Mesa-git
+- The old standalone patch repos (DionKill's and FalsePhilosopher's `ps4-linux-patches`) are gone. The patches now live in:
+	- [ps4-video-archlinux](https://github.com/DionKill/ps4-video-archlinux): the PKGBUILDs for the Arch repo above, with their patches next to them. Build them on Arch, or take the patches and apply them to your distro's Mesa, libdrm and xf86-video-amdgpu sources
+	- [linux-psx `userspace/mesa`](https://github.com/meerzulee/linux-psx/tree/master/userspace/mesa): the Mesa patches and build scripts the linux-psx kernel is tested with
 - You will still need to use a kernel of choice, and use the initramfs.
 
 ## Porting
