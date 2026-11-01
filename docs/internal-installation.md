@@ -35,6 +35,10 @@ FTP to your PS4. Go to the `/data/` folder, and create the folder `/linux/boot/`
 
 > [!NOTE]
 > Files sent via FTP can transfer incorrectly, especially if overwritten. In that case, try to move them using a USB drive.
+>
+> FileZilla is particularly prone to corrupting files unless "binary mode" is selected. Make sure to switch the transfer mode if you're using FileZilla.
+>
+> <img src="/screenshots/binary-mode.png" width="75%">
 
 <img src="/screenshots/internal-drive-conf.png" width="50%">
 
