@@ -10,14 +10,7 @@ This guide was originally made because the PS4Linux.com's guide was old, hard to
 
 Still, thanks to noob404 for their website, as this is a better-put-together version of their work. This guide wouldn't exist without it.
 
-::: details Is it reversible? Will it delete all my games and saves?
-All your data will stay intact. Whether you install it on the internal HDD or an external drive, you will keep your data as you first need to exploit your console at every boot.
-
-The internal drive method actually creates a file as big as you want it to be which is going to be mounted whenever you launch Linux as it's own virtual hard disk, so it won't overwrite any data you have on your console.
-For the external drive method your Internal HDD isn't even touched at all.
-
-TLDR: yes it is reversible, and no you won't lose any data.
-:::
+<!-- @include: /_includes/reversibility-faq.md -->
 
 ::: details What consoles are compatible? <Badge type="tip" text="Up to 13.52" />
 All consoles that can run a homebrew enabler (like GoldHEN or ps4hen) are able to run Linux.

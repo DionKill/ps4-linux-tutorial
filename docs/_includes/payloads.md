@@ -1,5 +1,9 @@
 ## Launching Linux Rescue Shell
 After that, either launch your payload with a payload website to load them, or use GoldHEN's built-in payloader if the website doesn't work for you.
+
+> [!NOTE]
+> On the first boot after launching the Linux payload, the PS4's LED should turn blue, then orange. If you get no video signal, create a plain-text `bootargs.txt` in the same folder as `bzImage` and add `amdgpu.dc=0`. After the initramfs takes over, it sets the LED orange if an error opens the rescue shell, and violet-blue just before switching to the installed system.
+
 > [!NOTE]
 > You'll need to be using GoldHEN v2.4b18.10 or higher to use the built-in payloader. 
 > Some users have reported that the payloads only work correctly when using the "Payload Guest" app.

@@ -49,12 +49,16 @@ If you are using the PS4 as a server, use these instead of the normal desktop-or
 If you have issues, remember to check the [Issues page](/issues). If you want more help, check out [Discord servers](/information#important-places).
 
 ## Initramfs
-This is the rescue shell that boots your Linux installer/installation. Think of it as GRUB, but more basic.
+An initramfs is a temporary root filesystem loaded by the kernel early in boot. `initramfs-ps4` finds and mounts the installed Linux root, prepares its mount points, and hands off to the distro with `switch_root`. If it cannot find an installation, it opens a rescue shell. It is not a bootloader like GRUB.
+
+The current `initramfs-ps4` handles internal and external installations in one image. It finds external installs by the `psxitarch` partition label and internal installs at `/user/app/linux.img`. Internal-drive access requires the loader to add `/key/eap_hdd_key.bin` to the initramfs. Automatic internal discovery is disabled on Baikal, so use an external installation on those systems. The initramfs also ejects an inserted disc automatically.
+
+Initramfs-specific options can be passed in the kernel command line as `initramfs=option1,option2`. For example, `initramfs=quiet,debug,setupnet,noboot` suppresses most initramfs output, enables kernel logging, configures networking, and prevents automatic handoff to the distro.
 
 You can download the new one and improved initramfs-ps4 [here](https://git.gay/GayCorp/initramfs-ps4/releases/tag/latest).
 
 ::: details More information and other initramfses
-The new "initramfs-ps4" does work, and it's the one in the link above.
+The linked `initramfs-ps4` release is the current combined internal/external image. The older downloads and southbridge-specific advice below refer to legacy initramfs versions.
 
  [Here is the old initramfs](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) (shouldn't use). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
  > [!NOTE]

@@ -11,7 +11,7 @@ Installing Linux on the PS4 is surprisingly easy, and it helps you free your min
 Just kidding, it's fucking terrible.
 
 ::: details Internal vs External: The Finale - GOTY Limited Edition (rant)
-As I've mentioned beforehand, you can't install Linux on the internal PS4's HDD on Baikal systems. I know, you're crying your heart out because you wanted to use it, but trust me it's atrocious.
+The current `initramfs-ps4` does not automatically boot internal installations on Baikal systems, so use an external installation there. Internal-drive performance is also poor, as described below.
 To give you an explanation, it took me 30 MINUTES to update my CachyOS installation (1500MBs) and the system was so unresponsive that I could watch entire anime episodes in between clicks.
 
 Using an external SATA-USB adapter with a Samsung 870 EVO 500GB, the time it took shrinked to less than 5 minutes, same when using it as the internal drive.
@@ -31,7 +31,7 @@ An internal SSD is going to be much faster and probably more reliable than a dan
 > [!TIP]
 > TL;DR:
 > 
-> Internal HDD is only for Aeolia/Belize, not recommended (unless you have switched to an SSD).
+> Automatic internal boot is supported on Aeolia and Belize, but not Baikal. Internal HDD installs are not recommended unless you have replaced the drive with an SSD.
 > Every console supports external, which is recommend with an SSD via an adapter.
 
 ## Preparing the installation
@@ -49,7 +49,7 @@ An internal SSD is going to be much faster and probably more reliable than a dan
 
 Here you will choose a method of installation.
 
-Again, choose only one method and stick with it, and remember that Baikal can't currently install to internal reliably.
+Again, choose only one method and stick with it. With the current initramfs, Baikal systems must use an external installation.
 
 ::: tip Internal Installation
 This method installs Linux on the internal PS4 HDD, by creating a partition as big as you want. It will not overwrite anything on the drive.
