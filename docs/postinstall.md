@@ -86,8 +86,23 @@ sudo dpkg-reconfigure locales
 ```
 :::
 
-::: details Fedora based distros (to-do)
-No idea, sorry
+::: details Fedora based distros
+List the installed locales:
+```bash
+localectl list-locales
+```
+
+If your locale is missing, install its language pack. For example, to add French:
+```bash
+sudo dnf install glibc-langpack-fr
+```
+
+Set the system locale to one of the values listed by `localectl list-locales`. This example uses French; replace it with your locale:
+```bash
+sudo localectl set-locale LANG=fr_FR.UTF-8
+```
+
+`localectl` updates `/etc/locale.conf`. Log out and back in, or reboot, for the new locale to apply to your session. See the [localectl manual](https://man7.org/linux/man-pages/man1/localectl.1.html) for details.
 :::
 
 ::: details Arch based distros

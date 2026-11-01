@@ -8,74 +8,52 @@ next:
 ---
 
 # Internal HDD installation
-Here you'll setup the internal HDD for installation of a Linux distro.
+Set up the PS4 internal HDD to install a Linux distro.
 
 > [!CAUTION]
-> Baikal internal installation is still unstable. Proceed with caution and make backups beforehand.
-
-> [!CAUTION]
-> This method uses `Ext2`, which... isn't the best at error handling and power cuts. So if you want to change the file system, we've included instructions down below.
+> The current `initramfs-ps4` does not automatically boot internal installations on Baikal. Use an external installation on those systems. Back up your data before proceeding; the PS4 System Storage Checker may also delete `linux.img`.
 >
-> ...Though, If you're using "initramfs-ps4" and not "better-initramfs", This doesn't apply.
-
-> [!CAUTION]
-> The PS4 System Storage Checker™ *might* nuke your `linux.img`, So be careful of that.
-
-
-
-> [!WARNING]
-> This shit is slow on an HDD. Be careful and prepare your balls for imminent explosion.
-> 
-> However, if you have swapped your internal HDD for an SSD, this doesn't apply.
-
-## Internal HDD setup
-Check your PS4 storage, as you'll need to choose the size of the installation. Leave some free space in your console, and remember that the PS4 doesn't report the space taken internally by Linux!
-
-FTP to your PS4. Go to the `/data/` folder, and create the folder `/linux/boot/` and place your bzImage (and bootargs.txt if you have it) and initramfs in there.
 
 > [!NOTE]
-> Files sent via FTP can transfer incorrectly, especially if overwritten. In that case, try to move them using a USB drive.
->
-> FileZilla is particularly prone to corrupting files unless "binary mode" is selected. Make sure to switch the transfer mode if you're using FileZilla.
+> Internal-drive access requires the payload loader to add `/key/eap_hdd_key.bin` to the initramfs. Without this key, `install-linux-int.sh` cannot open the internal drive.
+
+> [!WARNING]
+> Installation is slow on an HDD. This does not apply if you have replaced it with an SSD.
+
+## Internal HDD setup
+Check the available PS4 storage and choose an installation size. Leave free space: the PS4 **will** report the used size.
+
+1. Connect to the PS4 over FTP. In `/data/`, create `/linux/boot/` and place the kernel (`bzImage`), initramfs, and optional `bootargs.txt` there.
+
+> [!NOTE]
+> FTP transfers can corrupt files, especially when overwriting them. If this happens, transfer the files with a USB drive instead. In FileZilla, select binary transfer mode.
 >
 > <img src="/screenshots/binary-mode.png" width="75%">
 
 <img src="/screenshots/internal-drive-conf.png" width="50%">
 
-Then, go to `/user/system/`, create a folder called `boot`, and paste your distro in there. Remember that it needs to be called `distro.tar.xz`!
-> [!NOTE]
-> If you're using the old initramfs, the distro archive file needs to be called `psxitarch.tar.gz` or `xz`.
+2. In `/user/system/`, create a `boot` folder and place the distro archive there as `distro.tar.xz`.
 
-When installed, you can remove your Linux installation by removing the above files, and the "linux.img" found in `/user/home/` folder. Just in case you realize I was correct.
+> [!NOTE]
+> With the old initramfs, name the archive `psxitarch.tar.gz` or `psxitarch.tar.xz`.
+
+To remove Linux later, delete the boot files and distro archive above, plus `/user/app/linux.img`.
 
 
 <!-- @include: /_includes/payloads.md -->
 
 ## Installation commands
-Now that the storage is covered, here comes the moment of truth. You'll be sent to the Rescue Shell, which will look like this:
+At the Rescue Shell:
 
 <img src="/screenshots/rescue-shell.png" width="80%">
 
-- If you have a disc in your console, remove it by running `eject /dev/sr0` or it'll corrupt the installation
-- Type `install-linux-int.sh`
+1. Run `install-linux-int.sh`.
+
 > [!NOTE]
-> Type `install-linux-hdd.sh` or `linux-install-hdd.sh` if you're using the old initramfs.
+> With the old initramfs, run `install-linux-hdd.sh` or `linux-install-hdd.sh` instead.
 
-- Type how much storage you want to use for the installation
-	- Check how much free space you have, don't fill up your drive as the PS4 will only report the used amount of space inside the partition, and not the total partition size!
-	- If it fails, check your initramfs, or go to the [Installation Issues](/issues#installation-issues)
+2. Enter the amount of storage to allocate. Leave free space on the drive; the PS4 reports only the space used inside the partition, not its total size. If installation fails, check the initramfs or see [Installation Issues](/issues#installation-issues).
 
-> [!TIP]
-> Pick 8GB if you want to change the file system after this. See [Different Filesystem](/internal-installation-diff-fs).
-
-Hydrate yourself while you wait. It'll take a while.
-
-It should already boot into the desktop. If it doesn't, run:
-```bash
-resume-boot
-```
+<!-- @include: /_includes/resume-boot.md -->
 
 <!-- @include: /_includes/resume-boot-warning.md -->
-
-## Finale
-Go now, conquer the finale. Also, read the post-credit stuff.

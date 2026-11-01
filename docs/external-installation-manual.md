@@ -8,9 +8,7 @@ next:
 ---
 
 # External Installation - Method 2 (manual partitioning)
-> [!WARNING]
-> Remember we'll format the external drive!
-> Back up any existing data you care about.
+<!-- @include: /_includes/external-drive-format-warning.md -->
 
 
 This method involves manual partitioning. It's slower to do, but works flawlessly, therefore it's recommended if you have issues.
@@ -39,39 +37,9 @@ sudo tar -xvJpf ps4linux.tar.xz -C /run/media/YOURNAME/psxitarch --numeric-owner
 
 <!-- @include: /_includes/payloads.md -->
 ## Booting up
-Now that the storage is covered, here comes the moment of truth. It should already boot into the desktop. If it doesn't, and instead shows a Rescue Shell command prompt, type this until the distro starts:
-```bash
-resume-boot
-```
+<!-- @include: /_includes/resume-boot.md -->
 
-::: details If it doesn't work check this!
-If for some reason it doesn't work for you, run the following commands (thanks @gryoza on Discord and @bene4k on Reddit for this):
-```bash
-mount /dev/sdb2 /newroot
-exec chroot
-```
-You may need to do this at every reboot.
-
-If the error you're getting is:
-`mount: mounting /dev on /newroot/dev failed: No such file or directory`
-Then the distro archive you used during the previous steps excluded some directories needed by the initramfs.
-It's easy to create the needed directories (and all the others excluded during the process of making the archive) with these commands:
-```bash
-mkdir /newroot/dev
-mkdir /newroot/media
-mkdir /newroot/mnt
-mkdir /newroot/proc
-mkdir /newroot/run
-mkdir /newroot/sys
-mkdir /newroot/tmp
-mkdir /newroot/var/cache
-mkdir /newroot/var/log
-mkdir /newroot/var/tmp
-```
-Now that you've made the necessary directories, `resume-boot` should function as normal. You may also simply press `ctrl+alt+del` to reboot the console, then run the linux payload again.
-:::
+> [!NOTE]
+> The current initramfs creates the standard mount-point directories under `/newroot` before handing off to the distro. If boot still stops at the rescue shell, see [Installation Issues](/issues) and use the exact error message to troubleshoot.
 
 <!-- @include: /_includes/resume-boot-warning.md -->
-
-## Finale
-Go now, conquer the finale. Also, read the post-credit stuff.
