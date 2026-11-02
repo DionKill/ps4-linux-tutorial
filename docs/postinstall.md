@@ -187,15 +187,15 @@ swap-priority=60
 `zram-size` is how much RAM we are allocating for the ZRAM device. Possible values are, for example, `50%`, `2G` (i.e. 2 GB), `ram` or `max` for maximum allocation (all RAM is ZRAM).
 Don't change the other values unless you really know what you're doing.
 
-It is also recommended to disable ZSWAP. Many PS4 kernels already have it off (linux-psx 7.2 and Strawberry 7.0.8 Baikal do), so check first:
+It is also recommended to disable ZSWAP. Many PS4 kernels disable it by default, so check first:
 ```bash
 cat /sys/module/zswap/parameters/enabled
 ```
-`N`, or "No such file" (your kernel doesn't have zswap at all), means you're done. If it prints `Y`: the PS4 has no GRUB, so kernel options go in `bootargs.txt` (next to your `bzImage`). Add this to the end of its line, separated by a space, then reboot:
+`N`, or "No such file" (your kernel doesn't have zswap at all), means you're done. If it prints `Y`, you'll need to add an entry to your `bootargs.txt` (next to your `bzImage`, create the file if it doesn't exist). 
 ```bash
 zswap.enabled=0
 ```
-`bootargs.txt` must stay on a single line: only the first line is read. If you don't have one yet, read the warning in [Get more CPU performance](#get-more-cpu-performance) before creating it.
+Remember that all entries in `bootargs.txt` must be separated by a space and stay on a single line.
 
 :::
 
@@ -234,21 +234,10 @@ Yes, you can disable some security patches for attacks like Meltdown and Spectre
 
 Obviously this is usually not recommended, but if all you want to do is game from your Steam library and occasionally browse the web (which is most of us), you are probably going to be fine. Also remember the console is already jailbroken... Not really going for security with that one.
 
-To do that it's surprisingly simple. Open the `bootargs.txt` file next to your kernel, add this to the **end of its line** (separated by a space), save and reboot:
+To do that it's surprisingly simple. Open the `bootargs.txt` file next to your kernel, add this to the **end of its single line** (separated by a space), save and reboot:
 ```bash
 mitigations=off
 ```
-
-> [!WARNING]
-> `bootargs.txt` is a single line: the loader only reads the first one, so anything on a new line is ignored.
->
-> If you don't have a `bootargs.txt` yet, don't create one with only `mitigations=off`. When the file is missing, the loader uses its own default line, and your file **replaces** it completely. Start from the loader's default instead:
-> ```bash
-> panic=0 clocksource=tsc consoleblank=0 net.ifnames=0 radeon.dpm=0 amdgpu.dpm=0 drm.debug=0 console=ttyS0,115200n8 console=tty0 video=HDMI-A-1:1920x1080@60 mitigations=off
-> ```
-> This is the line the loader was already using, so your display won't change. `HDMI-A-1` is the PS4's own HDMI port, whatever cable or adapter you plug into it. On a PS4 Pro with a kernel that supports 4K, change `1920x1080@60` to your mode (or remove the `video=` part) so you aren't capped at 1080p.
->
-> Check that it worked with `cat /proc/cmdline`.
 
 And there you go! You can change it back anytime of course.
 :::
