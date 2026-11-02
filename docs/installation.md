@@ -31,7 +31,7 @@ An internal SSD is going to be much faster and probably more reliable than a dan
 > [!TIP]
 > TL;DR:
 > 
-> Internal HDD is for Aeolia/Belize (Baikal: experimental, with a linux-psx kernel), not recommended (unless you have switched to an SSD).
+> Internal HDD is only for Aeolia and Belize as of now. Baikal support is limited, and not recommended.
 > Every console supports external, which is recommend with an SSD via an adapter.
 
 ## Preparing the installation
