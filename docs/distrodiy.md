@@ -33,12 +33,12 @@ To install the packages, you must first remove all `vulkan, lib32-vulkan, mesa, 
 sudo pacman -S libdrm-ps4 lib32-ps4 mesa-ps4 lib32-mesa-ps4 xf86-video-amdgpu-ps4
 ```
 
-#### Other distros
-- The `mesa-git`, `libdrm`, and `xf86-video-amdgpu` packages compiled with patches for the PS4, or compile them yourself
-	- It is necessary to compile mesa in 32 bit too
-- You can find patches [here](https://github.com/DionKill/ps4-linux-patches) (forked from FalsePhilosopher) to compile yourself
-	- Either build the PKGBUILDS for Arch or straight up take the patches and apply them to Mesa-git
-- You will still need to use a kernel of choice, and use the initramfs.
+#### Other distros / Compiling your own
+- The `mesa`, `libdrm`, and `xf86-video-amdgpu` packages compiled with patches for the PS4.
+	- It is necessary to compile 32-bit versions of the `mesa` and `libdrm` packages as well.
+- Appropriate patch files can be found in: [ps4-video-archlinux](https://github.com/DionKill/ps4-video-archlinux)
+	- For Arch and Arch-based distros, you can simply use the PKGBUILDs to build working packages. For non-Arch distros, you will need to apply the patches to that distro's mesa, libdrm and xf86-video-amdgpu sources.
+- You will still need a PS4 compatible Linux kernel, and the initramfs.
 
 ## Porting
 > [!TIP]

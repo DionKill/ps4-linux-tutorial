@@ -13,7 +13,6 @@ Here you'll set up the internal HDD for installation of a Linux distro. again?
 > [!CAUTION]
 > Baikal internal installation is still unstable. Proceed with caution and make backups beforehand.
 
-
 > [!WARNING]
 > This is slow on an HDD. Be careful and prepare your balls for imminent explosion.
 >

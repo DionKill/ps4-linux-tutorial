@@ -138,9 +138,17 @@ sudo swapoff -v /swapfile
 sudo rm /swapfile
 ```
 
-Then, we need to enable new swap (8GB for this tutorial, you may change it)
+Then, we need to enable new swap (8GB for this tutorial, you may change it).
+
+> [!NOTE]
+> If your root filesystem is **Btrfs**, the `fallocate` method below makes a swapfile that won't work. Check with `findmnt -no FSTYPE /`. On Btrfs, run these two commands instead of the four below:
+> ```bash
+> sudo btrfs filesystem mkswapfile --size 8g /swapfile
+> sudo swapon /swapfile
+> ```
+
 ```bash
-sudo fallocate -l 8G /swapfile 8GB # Allocates 8GBs
+sudo fallocate -l 8G /swapfile # Allocates 8GBs
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
@@ -166,7 +174,7 @@ sudo pacman -Syu zram-generator
 
 We then create the config file:
 ```bash
-sudo nano /usr/lib/systemd/zram-generator.conf
+sudo nano /etc/systemd/zram-generator.conf
 ```
 
 And we paste this inside of it:
@@ -179,12 +187,15 @@ swap-priority=60
 `zram-size` is how much RAM we are allocating for the ZRAM device. Possible values are, for example, `50%`, `2G` (i.e. 2 GB), `ram` or `max` for maximum allocation (all RAM is ZRAM).
 Don't change the other values unless you really know what you're doing.
 
-It is also recommended to disable ZSWAP. Some distro already do this, but just in case go to your grub config:
+It is also recommended to disable ZSWAP. Many PS4 kernels disable it by default, so check first:
 ```bash
-sudo nano /etc/default/grub
+cat /sys/module/zswap/parameters/enabled
 ```
-
-And in the `LINUX_CMDLINE_DEFAULT` check that `zswap-enabled=0` is present. If not, add it.
+`N`, or "No such file" (your kernel doesn't have zswap at all), means you're done. If it prints `Y`, you'll need to add an entry to your `bootargs.txt` (next to your `bzImage`, create the file if it doesn't exist). 
+```bash
+zswap.enabled=0
+```
+Remember that all entries in `bootargs.txt` must be separated by a space and stay on a single line.
 
 :::
 
@@ -223,7 +234,7 @@ Yes, you can disable some security patches for attacks like Meltdown and Spectre
 
 Obviously this is usually not recommended, but if all you want to do is game from your Steam library and occasionally browse the web (which is most of us), you are probably going to be fine. Also remember the console is already jailbroken... Not really going for security with that one.
 
-To do that it's surprisingly simple. Open the `bootargs.txt` file, or create it in the same folder of the kernel if it doesn't exist already, then add this line, save and reboot:
+To do that it's surprisingly simple. Open the `bootargs.txt` file next to your kernel, add this to the **end of its single line** (separated by a space), save and reboot:
 ```bash
 mitigations=off
 ```
