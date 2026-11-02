@@ -11,7 +11,7 @@ Installing Linux on the PS4 is surprisingly easy, and it helps you free your min
 Just kidding, it's fucking terrible.
 
 ::: details Internal vs External: The Finale - GOTY Limited Edition (rant)
-As I've mentioned beforehand, internal installation on Baikal systems is still experimental (it needs a linux-psx kernel). I know, you're crying your heart out because you wanted to use it, but trust me, on the stock HDD it's atrocious.
+As I've mentioned beforehand, internal installation on Baikal systems is still unstable at best, and is not recommended. I know, you're crying your heart out because you wanted to use it, but trust me, on the stock HDD it's atrocious.
 To give you an explanation, it took me 30 MINUTES to update my CachyOS installation (1500MBs) and the system was so unresponsive that I could watch entire anime episodes in between clicks.
 
 Using an external SATA-USB adapter with a Samsung 870 EVO 500GB, the time it took shrinked to less than 5 minutes, same when using it as the internal drive.
