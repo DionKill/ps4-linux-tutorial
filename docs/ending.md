@@ -26,7 +26,6 @@ These are the original kernel developers, who did the hard work to port the kern
 	- crashniels with 2 patches from mircoho (fastboot and ethernet kp fixes) (based on fail0verflow - psxitateam  - eeply - valeryy - mircoho - codedwrench)
 - 6.18 and 7.x kernel
 	- patches from rmux, help from everyone in the ps4 abuse club
-	- linux-psx Baikal builds by meerzulee (every imported patch and its author is recorded in their [CREDITS.md](https://github.com/meerzulee/linux-psx/blob/master/CREDITS.md))
 
 If you want, you can check out their repos:
 - [marcan (fail0verflow) ](https://github.com/fail0verflow/ps4-linux)
