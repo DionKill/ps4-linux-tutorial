@@ -17,7 +17,7 @@ These are the original kernel developers, who did the hard work to port the kern
 - 4.4  kernel
 	- marcan, fail0verflow team
 - 4.14 kernel
-	- rancido, and psxitateam, eeply, valery for Baikal (based on fail0verflow)
+	- rancido, and psxitateam, eeply, valeryy for Baikal (based on fail0verflow)
 - 4.19 and 5.3 kernel
 	- mircoho, (based on fail0verflow, psxitateam, eeply, valeryy)
 - 5.15 kernel

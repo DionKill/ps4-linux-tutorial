@@ -2,6 +2,9 @@
 
 If you wish to update your kernel within PS4 Linux, here's how to do it.
 
+> [!WARNING]
+> Read the script before you run it as root. It doesn't check your southbridge. Right now the only release is for Aeolia and Belize, so don't use it on Baikal.
+
 1. Download the script:
 
    ```bash

@@ -10,9 +10,6 @@ next:
 # Internal HDD Install with a Different File System
 
 Here you'll set up the internal HDD for installation of a Linux distro. again?
-> [!CAUTION]
-> Baikal internal installation is still unstable. Proceed with caution and make backups beforehand.
-
 > [!WARNING]
 > This is slow on an HDD. Be careful and prepare your balls for imminent explosion.
 >
@@ -37,10 +34,11 @@ Once you're in the operating system, you will need to create a second `linux.img
    sudo truncate -s 125G /mnt/home/linux2.img
    ```
 
-3. Make it mountable:
+3. Make it mountable (keep this terminal open until the end, the next steps use `$LOOP`):
 
    ```bash
-   sudo losetup /dev/loop1 /mnt/home/linux2.img
+   LOOP=$(sudo losetup -f --show /mnt/home/linux2.img)
+   echo $LOOP
    ```
 
 Here, you have two paths:
@@ -59,7 +57,7 @@ Here, you have two paths:
 2. Format the file as Btrfs:
 
    ```bash
-   sudo mkfs.btrfs /dev/loop1
+   sudo mkfs.btrfs $LOOP
    ```
 
 ### Ext4 (dont use this)
@@ -67,7 +65,7 @@ Here, you have two paths:
 1. Format the file as Ext4:
 
    ```bash
-   sudo mkfs.ext4 /dev/loop1
+   sudo mkfs.ext4 $LOOP
    ```
 
 ### Continue (both paths)
@@ -75,18 +73,27 @@ Here, you have two paths:
 4. Mount the file:
 
    ```bash
-   sudo mount /dev/loop1 /tmp
+   sudo mkdir -p /tmp/newroot && sudo mount $LOOP /tmp/newroot
    ```
 
 5. Flash the system onto the file (this will take a while, hydrate yourself):
 
    ```bash
-   sudo tar -xvJpf /mnt/system/boot/distro.tar.xz -C /tmp --numeric-owner
+   sudo tar -xvJpf /mnt/system/boot/distro.tar.xz -C /tmp/newroot --numeric-owner
    ```
 
-6. Reboot to Orbis, delete `/user/home/linux.img`, and rename `/user/home/linux2.img` to `/user/home/linux.img`.
+6. Unmount everything before you reboot, or the new image can lose data:
 
-7. Boot back into Linux.
+   ```bash
+   sudo umount /tmp/newroot
+   sudo losetup -d $LOOP
+   sudo umount /mnt
+   sync
+   ```
+
+7. Reboot to Orbis, delete `/user/home/linux.img`, and rename `/user/home/linux2.img` to `/user/home/linux.img`.
+
+8. Boot back into Linux.
 
 ## Finale
 

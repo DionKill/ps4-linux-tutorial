@@ -10,7 +10,7 @@ In a nutshell, you'll need:
 - A computer
 - An internet connection
 - One or more USB drives (depends on installation method)
-	- If you want to install to an external drive, you can use a USB pendrive or HDD, but it's recommend to have a SATA SSD and a SATA to USB adapter (preferrably one that supports UAS, or else expect issues).
+	- If you want to install to an external drive, you can use a USB pendrive or HDD, but it's recommended to have a SATA SSD and a SATA to USB adapter (preferably one that supports UAS).
 - Ability to read and follow instructions
 	- You'll know this if you've read the [Key Information](/information) page.
 - Patience
@@ -19,7 +19,6 @@ In a nutshell, you'll need:
 Before we talk about anything, you must choose now a method of installation.
 You will need a device to store Linux, obviously.
 1. Internal HDD
-	- Baikal: Still unsupported
 	- Veeery slow on the stock HDD, needs free space
 2. External HDD/SSD
     - External USB Hard Disk Drive or USB Solid State Drive. Use a USB 3.x capable disk and cable for the best performance
@@ -70,17 +69,17 @@ However, as some issues may arise on certain consoles, you should still go and t
 	- 4K is only available on PS4 Pro on kernels 6.18 or higher.
 	- Not always required? Sometimes Automatic breaks though.
 
-##### RGB Color gamut
+##### RGB Range
 
 <img src="/screenshots/rgb-range.png" width="75%">
 
-- Set your RGB color gamut
-	- It may be automatically set to "Limited" even if your display supports "Full" or viceversa.
+- Set your RGB Range
+	- It may be automatically set to "Limited" even if your display supports "Full" or vice versa.
 	- "Full" may not work on some displays (even new ones). If the image looks really dark, set it to "Limited".
- 	- It is assumed that Limited refers to 6 bit colors and Full to 8 bit. Check what your monitor supports.
-- Wide color gamut
-	- Disable, or you won't have any video output at all!
- 	- This refers to outputs higher than 8 bit colors. It isn't currently supported.
+	- Limited sends the 16-235 range, Full sends 0-255. Both are 8 bit colors.
+- HDR and Deep Color Output
+	- Set both to Off, or you may not have any video output at all!
+	- Linux only sends 8 bit RGB. HDR and deep color aren't currently supported.
 
 #### "System" settings
 

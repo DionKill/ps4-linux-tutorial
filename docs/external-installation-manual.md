@@ -17,7 +17,7 @@ This method involves manual partitioning. It's slower to do, but works flawlessl
 
 Get a Linux PC or VM (even a Live ISO works), or any program that can format drives in Linux's formats.
 
-Then, plug in your drive, and use "GParted", "KDE Partition Manager", or "Aoemi Partition Assistant" on Windows to format your external drive like so:
+Then, plug in your drive, and use "GParted", "KDE Partition Manager", or "AOMEI Partition Assistant" on Windows to format your external drive like so:
 - 50MB of FAT32 at the start of the drive <u>with an empty label</u>
 - And a partition of the remaining space formatted as EXT4 <u>labeled "psxitarch"</u>
 	- BTRFS works too, but EXT4 is faster and recommended
@@ -39,7 +39,7 @@ sudo tar -xvJpf ps4linux.tar.xz -C /run/media/YOURNAME/psxitarch --numeric-owner
 
 <!-- @include: /_includes/payloads.md -->
 ## Booting up
-Now that the storage is covered, here comes the moment of truth. It should already boot into the desktop. If it doesn't, and instead shows a Rescue Shell command prompt, type this until the distro starts:
+Now that the storage is covered, here comes the moment of truth. It should already boot into the desktop. If it doesn't, and instead shows a Rescue Shell command prompt, type this once:
 ```bash
 resume-boot
 ```
@@ -47,26 +47,28 @@ resume-boot
 ::: details If it doesn't work check this!
 If for some reason it doesn't work for you, run the following commands (thanks @gryoza on Discord and @bene4k on Reddit for this):
 ```bash
-mount /dev/sdb2 /newroot
-exec chroot
+lsblk
+mount /dev/sdX2 /newroot
+resume-boot
 ```
-You may need to do this at every reboot.
+Replace `sdX2` with your EXT4 partition from the `lsblk` output (often `sda2`). You may need to do this at every reboot.
 
 If the error you're getting is:
 `mount: mounting /dev on /newroot/dev failed: No such file or directory`
 Then the distro archive you used during the previous steps excluded some directories needed by the initramfs.
 It's easy to create the needed directories (and all the others excluded during the process of making the archive) with these commands:
 ```bash
-mkdir /newroot/dev
-mkdir /newroot/media
-mkdir /newroot/mnt
-mkdir /newroot/proc
-mkdir /newroot/run
-mkdir /newroot/sys
-mkdir /newroot/tmp
-mkdir /newroot/var/cache
-mkdir /newroot/var/log
-mkdir /newroot/var/tmp
+mount -o remount,rw /newroot
+mkdir -p /newroot/dev
+mkdir -p /newroot/media
+mkdir -p /newroot/mnt
+mkdir -p /newroot/proc
+mkdir -p /newroot/run
+mkdir -p /newroot/sys
+mkdir -p /newroot/tmp
+mkdir -p /newroot/var/cache
+mkdir -p /newroot/var/log
+mkdir -p /newroot/var/tmp
 ```
 Now that you've made the necessary directories, `resume-boot` should function as normal. You may also simply press `ctrl+alt+del` to reboot the console, then run the linux payload again.
 :::

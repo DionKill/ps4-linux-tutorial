@@ -40,7 +40,7 @@ Linux is a kernel, though nowadays many refer to it as the whole fleet of operat
 ::: details Is it reversible? Will it delete all my games and saves?
 All your data will stay intact. Whether you install it on the internal HDD or an external drive, you will keep your data as you first need to exploit your console at every boot.
 
-The internal drive method actually creates a file as big as you want it to be which is going to be mounted whenever you launch Linux as it's own virtual hard disk, so it won't overwrite any data you have on your console.
+The internal drive method actually creates a file as big as you want it to be which is going to be mounted whenever you launch Linux as its own virtual hard disk, so it won't overwrite any data you have on your console.
 For the external drive method your HDD isn't even touched at all.
 
 TLDR: yes it is reversible, and no you won't lose any data.
@@ -52,10 +52,10 @@ TLDR: yes it is reversible, and no you won't lose any data.
 		- In theory, it's two Athlon 5150s duct taped together
 		- Performance similar to an i3-2120 in multicore, or a Pentium 4 in single core
 	- AMD "Liverpool" (Phat/Slim) or "Gladius" (Pro) GPU
-		- Performance is comparable to an AMD HD 7850 or a Nvdia GTX 750 Ti on the Phat/Slim
+		- Performance is comparable to an AMD HD 7850 or a Nvidia GTX 750 Ti on the Phat/Slim
 		- For the Pro, we don't really know. Roughly a GTX 1060
 - 8GB of GDDR5 memory
-  - Note the G, stands for Graphics. This isn't DDR5 as it wasn't invented in 2013. DDR3 was the only one available.
+  - Note the G, stands for Graphics. This isn't DDR5 as it wasn't invented in 2013. DDR4 wasn't in shipping hardware yet either, so DDR3 was the norm.
   - Additional 256MB DDR3 for "Background applications" on Phat/Slim, or 1GB DDR3 on Pro
 :::
 
@@ -70,8 +70,6 @@ In practice, the PS4 is totally capable of handling not only modern web browsing
 Another thing. We have two methods of installation:
 1. Internal HDD of the PS4
 2. External Drive via USB
-
-On some consoles (Baikal), internal installation is still experimental, and isn't recommended. This will be addressed further into the guide.
 
 By the way, if you have any problems, you can make an issue on GitHub. PRs are welcome as well!
 ## Little bonus

@@ -8,7 +8,7 @@ It shows when booting up before installing, don't worry as it's normal because t
 ::: details Newroot error - `mount -o ro /newroot failed`
 If this happens, these are possible causes:
 
-1. The initramfs you are using is not the correct one. If you are installing on external, use the one called external, if you are installing for internal check if it's the one for internal, and remember to check for the southbridge.
+1. The initramfs you are using is not the correct one. Use the current initramfs-ps4 from the [files page](/files#initramfs), it's one file for every install method and southbridge.
 2. The installer can't find the `distro.tar.xz`file. Check that the name and location are correct.
 3. You are using different payloads than the one mentioned on the guide. Those will not work on modern distros and are known to have issues, therefore they are incompatible with this guide.
 
@@ -19,7 +19,7 @@ If none of these help you, go to the Linux for PS4 Community Discord server.
 If the installer can't find the USB device, you have two options:
 1. Try to disconnect everything, and connect the drive first. If that doesn't work, try to reboot but only with the drive connected, only when you get to the rescue shell connect a keyboard and a mouse.
 2. If that other method didn't work, you can try to scan for USB storage devices with `fdisk -l` or `lsblk`. It should show all the storage devices.
-	- If it shows with the commands, but the installer fails to find it, it's probably because the drive (or adapter if you are using one) doesn't support UAS, which is required in newer kernels. In that case, use the [Method 2](/installation#method-2-manual-partitioning) described.
+	- If it shows with the commands, but the installer fails to find it, try another drive or adapter, or use the [Method 2](/external-installation-manual) described.
 	- Also, don't use USB hubs, the drive may not show up.
 
 :::
@@ -32,7 +32,7 @@ Since the 6.18 kernels, display issues should mostly be fixed, so if you can use
 If you get a black screen right after running the Linux payload, try another TV first. If that doesn't help, try this trick: boot back into the game OS (you'll have to, to run the Linux payload again anyways), run the payload and wait for it to go fully black, then turn your TV or monitor off and back on quickly. You should get a signal in the end.
 
 > [!TIP]
-> The rest of this stuff is mostly for safekeeping, but shouldn't be necessary anymore. Keep on readying if you need to!
+> The rest of this stuff is mostly for safekeeping, but shouldn't be necessary anymore. Keep on reading if you need to!
 
 Once upon a time, these issues were caused by using old kernels that required bootargs, but they are not necessary anymore.
 
@@ -58,10 +58,10 @@ However, if it keeps happening, and the console gets stuck on a white LED instea
 ...If you uploaded the kernel and initramfs using FileZilla, re-upload them with "Binary" mode enabled.
 :::
 
-::: details Wi-Fi and/or Bluetooth don't work (MediaTek modem)
+::: details Wi-Fi and/or Bluetooth don't work
 Again this should be fixed, otherwise keep on reading.
 
-If they don't work, it's because your console is using a Wi-Fi or Bluetooth chip that is made by MediaTek, and unfortunately you will need to find a kernel that includes the fixes for that specific chip. MediaTek does not make open source drivers, so that's the reason it doesn't work normally.
+Some consoles (for example Baikal) use a MediaTek MT7668 Wi-Fi and Bluetooth chip. It works on current kernels. If Wi-Fi or Bluetooth don't work, make sure you use a current kernel from the [files page](/files).
 
 Try feeRnt's kernels, hopefully one of them will work for you.
 :::
@@ -71,7 +71,6 @@ This is caused by broken Mesa drivers. The community is working hard to fix this
 
 To solve Vulkan graphical issues you can try:
 - Set `RADV_DEBUG=nocompute` in `/etc/environment` (use nano or similar)
-- Try `amdgpu.abmlevel=0` with bootargs
 - Use WineD3D (terrible performance)
 :::
 

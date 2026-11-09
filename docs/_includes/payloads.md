@@ -11,13 +11,16 @@ After that, either launch your payload with a payload website to load them, or u
 > 
 > <img src="/screenshots/trash-statement.png" width="33%">
 
+> [!WARNING]
+> If a `vram.txt` file is next to your bzImage, the loader uses its value and ignores the payload size. Delete it if you want to pick the size with the payload.
+
 ::: details For servers
-Server payloads are available in `32MB`, `64MB`, and `128MB` VRAM variants.
+Server payloads are available in `32MB`, `64MB`, `128MB`, `256MB` and `512MB` VRAM variants.
 Use `128MB` by default for server or general headless use, as `32MB` and `64MB` can cause display issues on some setups.
 :::
 ### Payload website hosts
 
-::: details Firmware <Badge type="tip" text="5.05 - 13.52" />
+::: details Firmware <Badge type="tip" text="5.05 - 14.00" />
 
 > [!WARNING]
 > You MUST select 1GB of VRAM or less for installation and first boot. Afterwards, 2GB is recommended.
@@ -52,8 +55,8 @@ In order to do that, you need to download them [here](https://github.com/ps4-lin
 
 #### Local payloads setup (Payload Guest)
 - Install "Payload Guest" (or similar app) on your PS4
-- Extract from the ELF folders, and rename the file to have a `.bin` extension instead of `.elf`, because Payload Guest can't load ELFs
-	- Using the `.elf` seems to lead to a higher success rate when launching
+- Take the files from the `bin` folder, because Payload Guest can't load ELFs
+	- Don't rename an `.elf` to `.bin`, the file stays an ELF and won't load
 	- Enable "see file extensions" on Windows Explorer or what you're using
 - Put the files in the `/data/payloads/` directory, create it if it does not exist
 - Open Payload Guest and select your desired payload (A controller is required, as Payload Guest does not accept keyboard input)

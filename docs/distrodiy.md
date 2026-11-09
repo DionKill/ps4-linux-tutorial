@@ -30,8 +30,10 @@ Server = https://dionkill.github.io/ps4-video-archlinux/repo/
 
 To install the packages, you must first remove all `vulkan, lib32-vulkan, mesa, lib32-mesa` related packages. On Arch, use `sudo pacman -Rdd -insert name-` to remove them, then proceed to install the new ones with:
 ```bash
-sudo pacman -S libdrm-ps4 lib32-ps4 mesa-ps4 lib32-mesa-ps4 xf86-video-amdgpu-ps4
+sudo pacman -S libdrm-ps4 lib32-libdrm-ps4 mesa-ps4 lib32-mesa-ps4 xf86-video-amdgpu-ps4
 ```
+
+The `lib32-*` packages need the `[multilib]` repository enabled in `pacman.conf`.
 
 #### Other distros / Compiling your own
 - The `mesa`, `libdrm`, and `xf86-video-amdgpu` packages compiled with patches for the PS4.
@@ -51,7 +53,7 @@ Jokes aside, you would need to do something like so:
 Uninstall the `mesa-git`, `libdrm`, and `xf86-video-amdgpu` packages, and install the ones that are required by the PS4.
 To uninstall the mesa packages, use your package manager instructions. Do not remove the dependencies, as it could break your system. just remove `mesa` and `lib32-mesa`.
 - DO NOT USE MESA 22 FFS, IF YOU DO YOU ARE LIKE ACTUALLY A MORON
-- The PS4 does NOT support hardware video encoding. It's locked behind DRM.
+- Hardware video decode and encode isn't locked behind DRM. The next Strawberry kernel has it, see [Hardware video](/postinstall#hardware-video-decode-encode-streaming).
 
 ::: details Package management config (if you don't want to update Mesa)
 After that you need to add these packages to the ignore section so they can't be updated. On Arch based distros, change your pacman config, and add these packages to the ignore section:
@@ -61,14 +63,14 @@ sudo nano /etc/pacman.conf
 
 Then, add this inside your pacman config:
 ```bash
-IgnorePkg = lib32-mesa lib32-opencl-mesa ib32-vulkan-asahi lib32-vulkan-dzn lib32-vulkan-freedreno lib32-vulkan-gfxstream lib32-vulkan-intel lib32-vulkan-mesa-device-select lib32-vulkan-mesa-layers lib32-vulkan-nouveau lib32-vulkan-radeon lib32-vulkan-swrast lib32-vulkan-virtio mesa mesa-docs opencl-mesa vulkan-asahi vulkan-dzn vulkan-freedreno vulkan-gfxstream vulkan-intel vulkan-mesa-device-select vulkan-mesa-layers vulkan-nouveau vulkan-radeon vulkan-swrast vulkan-virtio lib32-vulkan-asahi  
+IgnorePkg = lib32-mesa lib32-opencl-mesa lib32-vulkan-dzn lib32-vulkan-freedreno lib32-vulkan-gfxstream lib32-vulkan-intel lib32-vulkan-mesa-device-select lib32-vulkan-mesa-layers lib32-vulkan-nouveau lib32-vulkan-radeon lib32-vulkan-swrast lib32-vulkan-virtio mesa mesa-docs opencl-mesa vulkan-asahi vulkan-dzn vulkan-freedreno vulkan-gfxstream vulkan-intel vulkan-mesa-device-select vulkan-mesa-layers vulkan-nouveau vulkan-radeon vulkan-swrast vulkan-virtio lib32-vulkan-asahi  
 IgnoreGroup = mesa
 ```
 :::
 
 Before compressing the distro and publish it, you can clean your terminal history by running this in Bash:
 ```bash
-history clear
+history -c && history -w
 ```
 
 Or if you are using Fish as your shell, run this:
@@ -84,18 +86,18 @@ cd / && sudo tar \
   --acls \
   --xattrs \
   --numeric-owner \
-  --exclude=/proc/ \
-  --exclude=/sys/ \
-  --exclude=/dev/ \
-  --exclude=/run/ \
-  --exclude=/tmp/ \
-  --exclude=/var/tmp/ \
-  --exclude=/var/cache/ \
-  --exclude=/var/log/ \
+  --exclude='/proc/*' \
+  --exclude='/sys/*' \
+  --exclude='/dev/*' \
+  --exclude='/run/*' \
+  --exclude='/tmp/*' \
+  --exclude='/var/tmp/*' \
+  --exclude='/var/cache/*' \
+  --exclude='/var/log/*' \
   --exclude=/swapfile \
   --exclude=/lost+found \
-  --exclude=/mnt/ \
-  --exclude=/media/ \
+  --exclude='/mnt/*' \
+  --exclude='/media/*' \
   --exclude=/ps4linux.tar.xz \
   -cvpf /ps4linux.tar.xz / -I "xz -T0 -6"
 ```

@@ -6,6 +6,7 @@ export default defineConfig({
   title: "PS4 Linux Tutorial",
   description: "A simple and modern guide on how to install Linux on PS4 systems.",
   base: "/ps4-linux-tutorial/",
+  cleanUrls: true,
   sitemap: {
     hostname: 'https://dionkill.github.io/ps4-linux-tutorial/'
   },
@@ -93,7 +94,6 @@ export default defineConfig({
       }
     ],
 
-    cleanUrls: 'true',
 
     socialLinks: [
       { icon: 'discord', link: 'https://discord.gg/fZQScGvRQb' },

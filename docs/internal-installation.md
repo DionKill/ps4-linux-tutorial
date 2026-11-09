@@ -11,9 +11,6 @@ next:
 Here you'll setup the internal HDD for installation of a Linux distro.
 
 > [!CAUTION]
-> Baikal internal installation is still unstable. Proceed with caution and make backups beforehand.
-
-> [!CAUTION]
 > This method uses `Ext2`, which... isn't the best at error handling and power cuts. So if you want to change the file system, we've included instructions down below.
 >
 > ...Though, If you're using "initramfs-ps4" and not "better-initramfs", This doesn't apply.
@@ -32,6 +29,9 @@ Here you'll setup the internal HDD for installation of a Linux distro.
 Check your PS4 storage, as you'll need to choose the size of the installation. Leave some free space in your console, and remember that the PS4 doesn't report the space taken internally by Linux!
 
 FTP to your PS4. Go to the `/data/` folder, and create the folder `/linux/boot/` and place your bzImage (and bootargs.txt if you have it) and initramfs in there.
+
+> [!WARNING]
+> Unplug any USB drive that has a bzImage on it. The loader uses the files from USB first.
 
 > [!NOTE]
 > Files sent via FTP can transfer incorrectly, especially if overwritten. In that case, try to move them using a USB drive.
@@ -62,7 +62,7 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 > Type `install-linux-hdd.sh` or `linux-install-hdd.sh` if you're using the old initramfs.
 
 - Type how much storage you want to use for the installation
-	- Check how much free space you have, don't fill up your drive as the PS4 will only report the used amount of space inside the partition, and not the total partition size!
+	- Check how much free space you have, don't fill up your drive as the PS4 will only report the used amount of space inside the image file, and not its total size!
 	- If it fails, check your initramfs, or go to the [Installation Issues](/issues#installation-issues)
 
 > [!TIP]

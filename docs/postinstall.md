@@ -36,20 +36,22 @@ Finally, install the driver packages:
 sudo pacman -Syu lib32-mesa-ps4 mesa-ps4 lib32-libdrm-ps4 libdrm-ps4 xf86-video-amdgpu-ps4
 ```
 
+The `lib32-*` packages need the `[multilib]` repository enabled in `pacman.conf`.
+
 You should now have up-to-date drivers. If you want to, you can also go to the [DIY section](distrodiy) and make them from the AUR or from scratch!
 :::
 
 ::: details Debian/Ubuntu based distros (WITH Mesa updates, WIP)
 Use uar's script updater:
 ```bash
-wget [https://uar.no/ps4/baikal/mesa-25.sh](https://uar.no/ps4/baikal/mesa-25.sh "https://uar.no/ps4/baikal/mesa-25.sh") && sudo sh mesa-25.sh
+wget https://uar.no/ps4/scripts/mesa-25.sh && sudo sh mesa-25.sh
 ```
 :::
 
 ::: details Debian/Ubuntu based distros (disabled Mesa updates)
 To make sure that the PS4 packages don't get updated run the command below:
 ```bash
-sudo apt-mark hold lib32-libdrm-git lib32-mesa-git libdrm-git mesa-git lib32-libdrm lib32-mesa libdrm mesa lib32-llvm-libs llvm-libs
+sudo apt-mark hold libgl1-mesa-dri libglx-mesa0 libegl-mesa0 libgbm1 mesa-vulkan-drivers libdrm2 libdrm-amdgpu1 xserver-xorg-video-amdgpu
 ```
 
 Then, you should be free to update your system with:
@@ -67,7 +69,7 @@ sudo nano /etc/dnf/dnf.conf
 
 Then, at the line next to the `[main]` section:
 ```bash
-exclude=lib32-libdrm-git lib32-mesa-git libdrm-git mesa-git lib32-libdrm lib32-mesa libdrm mesa lib32-llvm-libs llvm-libs
+exclude=mesa-* libdrm* xorg-x11-drv-amdgpu
 ```
 
 Then, you should be free to update your system with:
@@ -80,7 +82,7 @@ Otherwise, you can always update everything but not the driver packages.
 ## Fix language
 Some pre-packaged distros you can download are in foreign languages. Unfortunately changing it from your DE (KDE, Gnome...) doesn't apply system wide. So here's a cheap rundown of all of the commands:
 
-::: details Debian/Ubuntu based distros (thanks triky1)
+::: details Debian/Ubuntu based distros
 ```bash
 sudo dpkg-reconfigure locales
 ```
@@ -108,7 +110,7 @@ And last but not least, to change it system wide, add your language in this file
 sudo nano /etc/locale.conf
 ```
 
-If needed, change your language in yout DE (KDE, Gnome...)
+If needed, change your language in your DE (KDE, Gnome...)
 :::
 
 Reboot to apply these changes.
@@ -116,10 +118,11 @@ Reboot to apply these changes.
 ## Change username and password
 Honestly? Create a new user. It's faster. Or just keep it.
 
-You can however change the password, by doing:
+You can however change your password, by doing:
 ```bash
-sudo passwd
+passwd
 ```
+To change the root password instead, use `sudo passwd root`.
 And setting a new password.
 
 ## Download more RAM?!
@@ -205,21 +208,14 @@ To disable ZRAM, in case of swapping out kernels often for instance, you can sim
 sudo rm /etc/systemd/zram-generator.conf
 ```
 
-However, if you wish to completely remove it, do the following:
+However, if you wish to completely remove it, turn off the ZRAM swap first, then remove the package:
 ```bash
-sudo systemctl disable zram-generator.service # This may not be needed
+sudo swapoff /dev/zram0
+sudo zramctl --reset /dev/zram0
 sudo pacman -Rns zram-generator
 ```
 
-Also, remove the swap partitions:
-```bash
-sudo swapoff /dev/zram0
-sudo rm /dev/zram0
-```
-
 Then reboot the system. It should be gone.
-
-Thanks again to Qba for this [showcase](https://youtu.be/f_kXks8z9dc).
 :::
 
 Oh, and don't worry if you see that your installation is using a lot of memory. It's normal and is meant to happen in order to improve performance. Check this [link](https://linuxatemyram.com) to learn more.
@@ -227,7 +223,7 @@ Oh, and don't worry if you see that your installation is using a lot of memory. 
 ## Get more CPU performance
 You may have realized that the PS4's CPU is pretty lacking and is most likely it's biggest disadvantage. But apart from a really optimized kernel (which we already have), what else can you do?
 
-In computing you are always going to gain something and loose something else. Either your time, money, or in this case...
+In computing you are always going to gain something and lose something else. Either your time, money, or in this case...
 
 ::: details Disengage safety protocols, and run program
 Yes, you can disable some security patches for attacks like Meltdown and Spectre, to gain some CPU performance. It does work and should have a noticeable improvement.
@@ -245,13 +241,78 @@ And there you go! You can change it back anytime of course.
 In the past there were overclocked kernels, but alas they don't make them anymore. This is because overclocked kernels... didn't actually overclock the CPU.
 
 Do not go and download an older kernel to try as they don't work anymore either!
+## Hardware video (decode, encode, streaming)
+The next Strawberry kernel (not released yet) turns on the PS4 video engines: UVD for decode and VCE for encode. This works on Aeolia, Belize and Baikal consoles. It isn't available on the PS4 Pro yet.
+
+This means video playback, screen recording and game streaming can use the hardware instead of the weak CPU.
+
+What the hardware can do (checked with `vainfo` on a Baikal slim):
+- Decode: MPEG-2, VC-1 and H.264
+- Encode: H.264 (Baseline, Main and High), up to 1920x1080
+- Encode only works with constant QP (CQP) rate control. The kernel rejects CBR and VBR.
+
+To check that it works on your console, install `libva-utils` and run:
+```bash
+vainfo
+```
+You should see `VAEntrypointEncSlice` lines for H.264.
+
+::: details Video playback (mpv)
+```bash
+mpv --hwdec=vaapi video.mkv
+```
+:::
+
+::: details Screen recording (OBS)
+In OBS, go to Settings, Output, set the Output Mode to Advanced, and in the Recording tab pick the `FFmpeg VAAPI H.264` encoder with `CQP` rate control.
+:::
+
+::: details Streaming to your phone or PC (Sunshine and Moonlight)
+Install Sunshine (on CachyOS and other Arch based distros):
+```bash
+sudo pacman -S sunshine
+```
+
+Create `~/.config/sunshine/sunshine.conf` with this inside:
+```ini
+encoder = vaapi
+adapter_name = /dev/dri/renderD128
+vaapi_rc = cqp
+capture = wlr
+```
+
+- `vaapi_rc = cqp` is required. Without it, Sunshine asks for CBR, the kernel rejects it and Sunshine crashes.
+- `capture = wlr` is for Wayland desktops based on wlroots. `capture = kms` also works, but the mouse cursor isn't shown in the stream.
+- On X11, `capture = kms` with the amdgpu `SWcursor` option shows the mouse (thanks GattoDev). Create `/etc/X11/xorg.conf.d/20-amdgpu-cursor.conf` with this inside, then log out and back in:
+```
+Section "Device"
+    Identifier "AMD GPU"
+    Driver "amdgpu"
+    Option "SWcursor" "true"
+EndSection
+```
+
+Start Sunshine and make it start with your desktop:
+```bash
+systemctl --user enable --now app-dev.lizardbyte.app.Sunshine.service
+```
+
+If you use a firewall like `ufw`, open the Sunshine ports for your home network (change the network to yours):
+```bash
+sudo ufw allow from 192.168.1.0/24 to any port 47984,47989,47990,48010 proto tcp
+sudo ufw allow from 192.168.1.0/24 to any port 47998:48010 proto udp
+```
+
+Then open `https://<your-ps4-ip>:47990` in a browser, create a login, and add your phone or PC in Moonlight with the PIN it shows. In Moonlight, use H.264, the PS4 can't encode HEVC or AV1.
+:::
+
 ## Install more applications
 To play games, these are the recommended softwares:
 - Steam
 - Heroic Games Launcher (for Epic, GOG and Amazon)
 - Lutris (for other PC games not in those launchers)
 - Prism Launcher instead of those other shitty Minecraft launchers
-	- Minecraft has graphical issues in versions newer than 1.21.5
+	- Minecraft 1.21.6 and newer (also 26.x) needs Mesa 25.2 or newer, see [Game compatibility](/game-testing)
 - And a bunch of emulators!
 
 To do that, if using anything other than Arch based distros, use your Store app from the Start menu and install as a Flatpak. It works well.

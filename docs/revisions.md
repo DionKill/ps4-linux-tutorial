@@ -5,7 +5,7 @@ We need to clear any confusion for people that are new to this stuff. The PS4 is
 > Take notes and remember all you see in this page, as it will interest you during your installation.
 ## Revisions
 
-The PS4 family of consoles has had 3 revsions in total:
+The PS4 family of consoles has had 3 revisions in total:
 ### Phat/Fat
 - CUH-1000, CUH-1100 and CUH-1200 series
 <img src="/fat.png" width="50%">
@@ -33,7 +33,7 @@ The second gen southbridge, and the one with the most support. Gets kernel updat
 It can be found on late Phat models, but also on Slims and Pros.
 
 ### Baikal
-The third and final southbridge, released very late into the console's lifespan, and the one with the least support.  It has very limited support for internal HDD installation, and is known to have many issues, especially on PS4 Pros, but you may be able to get a working system.
+The third and final southbridge, released very late into the console's lifespan, and the one with the least support. It is known to have many issues, especially on PS4 Pros, but you may be able to get a working system.
 
 This is because there are fewer people with Baikal PS4s, so there aren't many developers and testers.
 
@@ -69,4 +69,4 @@ For all the other terms that didn't fit anywhere else:
 
 :::
 ## To the setup
-Now you've finally become the most powerful human in the world with all these achronyms! You should go to the next step, where you'll set up the console and PC to start the installation.
+Now you've finally become the most powerful human in the world with all these acronyms! You should go to the next step, where you'll set up the console and PC to start the installation.
