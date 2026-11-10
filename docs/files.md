@@ -44,7 +44,7 @@ If you are using the PS4 as a server, use these instead of the normal desktop-or
 
 | Kernel Download                                                                             | Compatible Southbridges                                                                                                      | Source Code                                | Extra info                                                                                      |
 | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| [7.1.7](https://gitlab.com/rmuxnet/linux/-/releases)<br>*Recommended*             | Aeolia, Belize                                                                                                              | [GitLab](https://gitlab.com/rmuxnet/linux)         | Use **Server** edition, or **Slopium** if you need VM support.                                      |
+| [7.3.3](https://gitlab.com/rmuxnet/linux/-/releases)<br>*Recommended*                       | Aeolia, Belize, Baikal                                                                                                       | [GitLab](https://gitlab.com/rmuxnet/linux) | Use **Server** edition, or **Slopium** if you need VM support.                                  |
 
 :::
 
