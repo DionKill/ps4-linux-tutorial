@@ -28,20 +28,18 @@ The oldest and very supported for Linux, but is known to have some Wi-Fi or Blue
 It's only present on early Phat models.
 
 ### Belize
-The second gen southbridge, and the one with the most support. Gets kernel updates faster and doesn't have any particular problems.
+The second gen southbridge, and very well supported. It doesn't have any particular problems.
 
 It can be found on late Phat models, but also on Slims and Pros.
 
 ### Baikal
-The third and final southbridge, released very late into the console's lifespan, and the one with the least support. It is known to have many issues, especially on PS4 Pros, but you may be able to get a working system.
-
-This is because there are fewer people with Baikal PS4s, so there aren't many developers and testers.
+The third and final southbridge, released very late into the console's lifespan. After years of being stuck on old kernels, it's now the most supported southbridge, on both Slims and Pros, with the 7.3.3 kernel.
 
 > [!TIP]
 > In a nutshell, the list from most to least supported is:
-> 1. Belize
-> 2. Aeolia
-> 3. Baikal
+> 1. Baikal
+> 2. Belize
+> 3. Aeolia
 ## Other terms
 ::: details Linux terms
 To be fair, it is expected that you already know some of these, but if not, at least you'll learn something today.

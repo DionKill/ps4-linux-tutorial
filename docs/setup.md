@@ -90,7 +90,6 @@ However, as some issues may arise on certain consoles, you should still go and t
 	- Many report that they must be disabled, but this isn't needed anymore. In fact, these need to be enabled for certain exploits, notably BD-JB and PSVue
 - Check your internet connection
 	- Some models have issues if they aren't already connected to internet.
-	- Ethernet may not work on PS4 Pro Baikal
 
 ## PC
 You'll need a way to connect to your PS4 to transfer files. A PC is recommended. You will also need an internet connection.

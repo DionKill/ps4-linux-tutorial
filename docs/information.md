@@ -24,7 +24,7 @@ All consoles that can run a homebrew enabler (like GoldHEN or ps4hen) are able t
 
 <!-- @include: /_includes/min-firm-ver.md -->
 
-However, every console has a different southbridge, and Baikal in particular has many issues. You should be able to get a working installation either way.
+Every console has a different southbridge, and all three are supported by the 7.3.3 kernel.
 :::
 
 ## Video guide (optional)

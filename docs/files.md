@@ -58,7 +58,7 @@ You can download the new one and improved initramfs-ps4 [here](https://git.gay/G
 ::: details More information and other initramfses
 The new "initramfs-ps4" does work, and it's the one in the link above.
 
-[Here is the old initramfs](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) (shouldn't use). [Source (not really)](https://bitbucket.org/piotrkarbowski/better-initramfs/src/master/).
+[Here is the old initramfs](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) (shouldn't use).
 
 > [!NOTE]
 > On 7.x kernels the Aeolia script is wrong, You should try the Belize initramfs file. (You might think It won't work, but It will.)
