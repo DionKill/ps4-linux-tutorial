@@ -242,7 +242,7 @@ In the past there were overclocked kernels, but alas they don't make them anymor
 
 Do not go and download an older kernel to try as they don't work anymore either!
 ## Hardware video (decode, encode, streaming)
-The next Strawberry kernel (not released yet) turns on the PS4 video engines: UVD for decode and VCE for encode. This works on Aeolia, Belize and Baikal consoles. It isn't available on the PS4 Pro yet.
+The Strawberry 7.3.3 kernel turns on the PS4 video engines: UVD for decode and VCE for encode. This works on Aeolia, Belize and Baikal consoles. It isn't available on the PS4 Pro yet.
 
 This means video playback, screen recording and game streaming can use the hardware instead of the weak CPU.
 

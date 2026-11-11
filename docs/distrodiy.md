@@ -53,7 +53,7 @@ Jokes aside, you would need to do something like so:
 Uninstall the `mesa-git`, `libdrm`, and `xf86-video-amdgpu` packages, and install the ones that are required by the PS4.
 To uninstall the mesa packages, use your package manager instructions. Do not remove the dependencies, as it could break your system. just remove `mesa` and `lib32-mesa`.
 - DO NOT USE MESA 22 FFS, IF YOU DO YOU ARE LIKE ACTUALLY A MORON
-- Hardware video decode and encode isn't locked behind DRM. The next Strawberry kernel has it, see [Hardware video](/postinstall#hardware-video-decode-encode-streaming).
+- Hardware video decode and encode isn't locked behind DRM. The Strawberry 7.3.3 kernel has it, see [Hardware video](/postinstall#hardware-video-decode-encode-streaming).
 
 ::: details Package management config (if you don't want to update Mesa)
 After that you need to add these packages to the ignore section so they can't be updated. On Arch based distros, change your pacman config, and add these packages to the ignore section:
