@@ -46,7 +46,7 @@ Then, go to `/user/system/`, create a folder called `boot`, and paste your distr
 > [!NOTE]
 > If you're using the old initramfs, the distro archive file needs to be called `psxitarch.tar.gz` or `xz`.
 
-When installed, you can remove your Linux installation by removing the above files, and the "linux.img" found in `/user/home/` folder. Just in case you realize I was correct.
+When installed, you can remove your Linux installation by removing the above files, and the "linux.img" found in `/user/app/` folder. Just in case you realize I was correct.
 
 
 <!-- @include: /_includes/payloads.md -->
