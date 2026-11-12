@@ -57,7 +57,6 @@ export default defineConfig({
                 text: 'Internal Installation',
                 items: [
                   { text: 'Standard', link: '/internal-installation' },
-                  { text: 'Different Filesystem', link: '/internal-installation-diff-fs' },
                 ]
               },
               { text: 'Scripted External Installation', link: '/external-installation-scripted' },

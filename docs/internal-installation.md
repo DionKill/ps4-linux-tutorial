@@ -11,11 +11,6 @@ next:
 Here you'll setup the internal HDD for installation of a Linux distro.
 
 > [!CAUTION]
-> This method uses `Ext2`, which... isn't the best at error handling and power cuts. So if you want to change the file system, we've included instructions down below.
->
-> ...Though, If you're using "initramfs-ps4" and not "better-initramfs", This doesn't apply.
-
-> [!CAUTION]
 > The PS4 System Storage Checker™ *might* nuke your `linux.img`, So be careful of that.
 
 
@@ -56,7 +51,6 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 
 <img src="/screenshots/rescue-shell.png" width="80%">
 
-- If you have a disc in your console, remove it by running `eject /dev/sr0` or it'll corrupt the installation
 - Type `install-linux-int.sh`
 > [!NOTE]
 > Type `install-linux-hdd.sh` or `linux-install-hdd.sh` if you're using the old initramfs.
@@ -65,8 +59,7 @@ Now that the storage is covered, here comes the moment of truth. You'll be sent 
 	- Check how much free space you have, don't fill up your drive as the PS4 will only report the used amount of space inside the image file, and not its total size!
 	- If it fails, check your initramfs, or go to the [Installation Issues](/issues#installation-issues)
 
-> [!TIP]
-> Pick 8GB if you want to change the file system after this. See [Different Filesystem](/internal-installation-diff-fs).
+- Pick the file system, `1` for ext4 or `2` for btrfs
 
 Hydrate yourself while you wait. It'll take a while.
 

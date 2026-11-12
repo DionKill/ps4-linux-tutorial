@@ -29,6 +29,9 @@ You will need a device to store Linux, obviously.
 Some configuration is necessary on the PS4's side before we load Linux.
 
 <!-- @include: /_includes/min-firm-ver.md -->
+> [!WARNING]
+> Disconnect the PlayStation VR (first generation) before you load Linux.
+
 ### Things to note down
 Note down what you see in "Settings -> System Information":
 - System software version
