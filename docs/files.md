@@ -53,12 +53,14 @@ If you have issues, remember to check the [Issues page](/issues). If you want mo
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. Think of it as GRUB, but more basic.
 
-You can download the new one and improved initramfs-ps4 [here](https://git.gay/GayCorp/initramfs-ps4/releases/tag/latest).
+You can download the new one and improved Thebe-Initramfs [here](https://gitlab.com/GattoDev-debug/thebe-initramfs/-/releases).
 
 ::: details More information and other initramfses
-The new "initramfs-ps4" does work, and it's the one in the link above.
+The new "Thebe-initramfs" does work, and it's the one in the link above.
 
 [Here is the old initramfs](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) (shouldn't use).
+
+[There's also initramfs-ps4](https://git.gay/GayCorp/initramfs-ps4) (also not recommended anymore)
 
 > [!NOTE]
 > On 7.x kernels the Aeolia script is wrong, You should try the Belize initramfs file. (You might think It won't work, but It will.)
