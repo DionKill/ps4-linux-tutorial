@@ -101,7 +101,7 @@ Distros primarily intended for use as a server (No included Desktop Environment,
 
 | Distro Download                                                                                                    | Port credits                                    | Info                                                                                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [thebe-server (Arch)](https://gatto.fae5.de/thebe-rootfs.tar.xz)                                                   | GattoDev                                        | Default password is `ps4`, it's required to change it after the first login. pacman must be initialized with `pacman-key --init` and `pacman-key --populate archlinux`  |
+| [thebe-server (Arch)](https://gatto.fae5.de/thebe-rootfs.tar.xz)                                                   | [GattoDev](https://gitlab.com/GattoDev-debug)   | Default password is `ps4`, it's required to change it after the first login. pacman must be initialized with `pacman-key --init` and `pacman-key --populate archlinux`  |
 
 ::: details More distros
 Here are the distros that we can't recommend anymore, as they have been superseded, or haven't had any major updates in a while.
