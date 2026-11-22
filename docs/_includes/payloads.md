@@ -20,7 +20,7 @@ Use `128MB` by default for server or general headless use, as `32MB` and `64MB` 
 :::
 ### Payload website hosts
 
-::: details Firmware <Badge type="tip" text="5.05 - 14.00" />
+::: details Firmware <Badge type="tip" text="5.05 - 14.02" />
 
 > [!WARNING]
 > You MUST select 1GB of VRAM or less for installation and first boot. Afterwards, 2GB is recommended.
@@ -43,7 +43,7 @@ Follow these steps:
 ::: details Local payloads (if website doesn't work for you)
 If you so desire, or you can't launch it from the web browser for some reason, it's possible to load these payloads locally.
 
-In order to do that, you need to download them [here](https://github.com/ps4-linux/ps4-linux-loader/releases/latest).
+In order to do that, you need to download them [here](https://github.com/ArabPixel/WebKitty/tree/main/includes/payloads/Linux). Alternatively you can get the source code [here](https://github.com/ArabPixel/ps4-linux-loader) and build payloads yourself.
 
 #### Local payloads setup (GoldHEN payloader)
 - Extract from the ELF folders

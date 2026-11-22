@@ -75,7 +75,9 @@ To solve Vulkan graphical issues you can try:
 :::
 
 ::: details DS4 must be paired again every time
-This is because we would need to copy the Bluetooth information from the PS4's OS to Linux before booting. It's a known problem and will get fixed at some point.
+This is because we would need to copy the Bluetooth information from the PS4's OS to Linux before booting.
+Good news is that we already can do that.
+Read the [postinstallation guide](/postinstall#use-dualshock-in-both-linux-and-orbis).
 :::
 
 ::: details Rebooting goes to OrbisOS (the PS4 main menu)

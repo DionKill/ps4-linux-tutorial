@@ -318,3 +318,24 @@ To play games, these are the recommended softwares:
 To do that, if using anything other than Arch based distros, use your Store app from the Start menu and install as a Flatpak. It works well.
 
 If you chose an Arch based distro however, use `pacman` or `yay` to install your packages. All packages you can even think of and more are available.
+
+## Use Dualshock in both Linux and Orbis
+
+To use Dualshock 4 without having to pair it again and again you have to copy Bluetooth pairing information from Orbis (Playstation OS) to Linux.
+
+Latest payloads combined with latest thebe-initramfs do this automatically on each boot.
+
+You'll also have to change your [bootargs.txt](/legacy#bootargs).
+
+1. Get the latest thebe-initramfs from [Recommended files](/files#initramfs).
+2. Get the latest payloads from [here](https://github.com/ArabPixel/WebKitty/tree/main/includes/payloads/Linux) or, if you use WebKitty, update WebKitty's cache.
+3. Boot into Linux, pair your controller using Bluetooth and make sure it works (you can skip this step if already did it)
+4. Boot back into Orbis (Playstation OS) and pair your controller using USB if needed.
+5. Update your bootargs:
+   - If you already use `bootargs.txt` then append `rd.btsync` to it, separated by space.
+     E.g. if older bootargs.txt content was `amdgpu.dc=0` then newer should be:
+     `amdgpu.dc=0 rd.btsync`.
+   - If you don't, then create a file `bootargs.txt` and put `amdgpu.dc=0 rd.btsync` into it.
+     Place the file next to your `bzImage` and `initramfs.cpio.gz` files in the same folder.
+6. Boot back into Linux. Make sure Bluetooth is discoverable in settings.
+7. Press the `PS` button. Controller should successfully connect without needing to pair again. Now it should work in both PS4 and Linux.
