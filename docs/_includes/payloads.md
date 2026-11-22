@@ -20,7 +20,7 @@ Use `128MB` by default for server or general headless use, as `32MB` and `64MB` 
 :::
 ### Payload website hosts
 
-::: details Firmware <Badge type="tip" text="5.05 - 14.00" />
+::: details Firmware <Badge type="tip" text="5.05 - 14.02" />
 
 > [!WARNING]
 > You MUST select 1GB of VRAM or less for installation and first boot. Afterwards, 2GB is recommended.
