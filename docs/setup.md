@@ -1,7 +1,6 @@
 # Requirements and initial setup
 In order to install Linux on the PS4, a lot of things are needed. You may have to buy some gear to make this work.
 ## Requirements
-
 In a nutshell, you'll need:
 - A PS4 (duh)
 	- The console *must* have HEN (GoldHEN, ps4hen), modding is *not* covered by the guide
@@ -10,27 +9,28 @@ In a nutshell, you'll need:
 - A computer
 - An internet connection
 - One or more USB drives (depends on installation method)
-	- If you want to install to an external drive, you can use a USB pendrive or HDD, but it's recommended to have a SATA SSD and a SATA to USB adapter (preferably one that supports UAS).
+	- If you want to install to an external drive, you can use a USB pendrive or HDD
+	- It's recommended to have a SATA SSD and a SATA to USB adapter (preferably one that supports UAS).
 - Ability to read and follow instructions
 	- You'll know this if you've read the [Key Information](/information) page.
 - Patience
 	- Installing Linux on the PS4 (or just, in general...) *can* take a while.
 ## Storage devices to install to
-Before we talk about anything, you must choose now a method of installation.
+Before we talk about anything, you must now choose a method of installation.
 You will need a device to store Linux, obviously.
-1. Internal HDD
-	- Veeery slow on the stock HDD, needs free space
-2. External HDD/SSD
-    - External USB Hard Disk Drive or USB Solid State Drive. Use a USB 3.x capable disk and cable for the best performance
-	- External SATA-USB or NVMe-USB adapter (if using a SATA/NVMe drive)
-	- You can use a pendrive, nobody's stopping you, but it's gonna be painful
+### Internal HDD
+- Veeery slow on the stock HDD, needs free space;
+
+### External HDD/SSD
+Some ways to install it externally:
+1. External USB HDD or USB SSD. Use a USB 3.x capable disk and cable for the best performance;
+2. External SATA-USB or NVMe-USB adapter (if using a SATA/NVMe drive);
+3. You can use a pendrive, nobody's stopping you... But it's gonna be painful.
 
 ## PS4 system
 Some configuration is necessary on the PS4's side before we load Linux.
 
 <!-- @include: /_includes/min-firm-ver.md -->
-> [!WARNING]
-> Disconnect the PlayStation VR (first generation) before you load Linux.
 
 ### Things to note down
 Note down what you see in "Settings -> System Information":
@@ -61,15 +61,19 @@ These are required to be able to move files and load Linux later into the guide.
 ### Settings
 These need to be taken as a precaution, not as a necessity, as nowadays they aren't actually needed anymore.
 However, as some issues may arise on certain consoles, you should still go and tweak these settings.
+
+#### PSVR
+Disconnect your PSVR before loading Linux.
 #### "Audio and Display" settings
+You need to change these settings to get a consistent video output at boot.
 ##### Resolution
 
 <img src="/screenshots/settings-sound-and-screen.png" width="75%">
 <img src="/screenshots/resolution.png" width="75%">
 
 - Set your resolution
-	- 720p probably won't work, so on Phat/Slim set 1080p.
-	- 4K is only available on PS4 Pro on kernels 6.18 or higher.
+	- 720p may not work, so on Phat/Slim set 1080p.
+	- 4K is only available on PS4 Pro since kernel 6.18.
 	- Not always required? Sometimes Automatic breaks though.
 
 ##### RGB Range
@@ -119,9 +123,10 @@ In order to do that, open up your FTP file manager of choice.
 #### MacOS
 - Filezilla
 
-### Note regarding Filezilla
-> [!warning]
+### Filezilla note (all OS)
+> [!note]
 > If you use Filezilla, use "binary mode" to transfer files, as the FTP in GoldHen has issues when transferring files!
+> <img src="/screenshots/binary-mode.png" width="75%">
 
 ### Necessary files
 In the next step, you also will need to download the following:

@@ -24,7 +24,7 @@ Then, plug in your drive, and use "GParted", "KDE Partition Manager", or "AOMEI 
 
 Now move your bzImage (and bootargs if you need it) and initramfs to the FAT32 partition.
 
-> [!NOTE]
+> [!TIP]
 > If you're using Windows and can't get the partitioning right using 3rd-party tools, you can use wsl.
 > For resources on how to do so, check out [TheVorkMan's PS4 Linux notes](https://thevorkman.github.io/ps4-linux-notes/Guides/5.-Manual-external-install-on-Windows)
 
@@ -33,9 +33,7 @@ Then, you will need to untar your distro of choice at the root of the bigger EXT
 sudo tar -xvJpf ps4linux.tar.xz -C /run/media/YOURNAME/psxitarch --numeric-owner
 ```
 
-> [!NOTE]
-> Replace `YOURNAME` and `ps4linux.tar.xz` accordingly.
-> Also, you need to check that the drive is actually called psxitarch, it'll be different if you didn't set it.
+Replace `YOURNAME` and `ps4linux.tar.xz` accordingly. Also, you need to check that the drive is actually called psxitarch, it'll be different if you didn't set it.
 
 <!-- @include: /_includes/payloads.md -->
 ## Booting up

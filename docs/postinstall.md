@@ -146,7 +146,7 @@ Then, we need to enable new swap (8GB for this tutorial, you may change it).
 > [!NOTE]
 > If your root filesystem is **Btrfs**, the `fallocate` method below makes a swapfile that won't work. Check with `findmnt -no FSTYPE /`. On Btrfs, run these two commands instead of the four below:
 > ```bash
-> sudo btrfs filesystem mkswapfile --size 8g /swapfile
+> sudo btrfs filesystem mkswapfile --size 8G /swapfile
 > sudo swapon /swapfile
 > ```
 

@@ -39,8 +39,20 @@ This line is for Aeolia and Belize. On Baikal, replace `console=uart8250,mmio32,
 If you are looking for really old distros, check out the downloads from PS4Linux [here](https://ps4linux.com/downloads/#PS4_Linux_Distro_Downloads).
 
 ### Initramfs
+> [!NOTE]
+> If you're using the old initramfs, the distro archive file needs to be called `psxitarch.tar.gz` or `xz`.
+> 
+> Type `install-linux-hdd.sh` or `linux-install-hdd.sh` if you're using the old initramfs. For internal installation
+> 
+> 
+
 Old downloads from PS4Linux can be found [here](https://ps4linux.com/downloads/#initramfscpiogz_Downloads).
 
+There's another in-dev initramfs (probably not working), if you want to check out the source it's [here](https://github.com/ps4gentoo/initramfs).
+
+[Here is the old initramfs](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) (shouldn't use).
+
+[There's also initramfs-ps4](https://git.gay/GayCorp/initramfs-ps4) (also not recommended anymore). On 7.x kernels the Aeolia script is wrong, You should try the Belize initramfs file. (You might think It won't work, but It will.)
 ### Other
 Honestly, it's all on the same page as above. [Here you go](https://ps4linux.com/downloads/).
 

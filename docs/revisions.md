@@ -33,7 +33,7 @@ The second gen southbridge, and very well supported. It doesn't have any particu
 It can be found on late Phat models, but also on Slims and Pros.
 
 ### Baikal
-The third and final southbridge, released very late into the console's lifespan. After years of being stuck on old kernels, it's now the most supported southbridge, on both Slims and Pros, with the 7.3.3 kernel.
+The third and final southbridge, released very late into the console's lifespan. After years of being stuck on old kernels, its now the most supported southbridge, on both Slims and Pros, since the 7.3.3 kernel.
 
 > [!TIP]
 > In a nutshell, the list from most to least supported is:

@@ -1,8 +1,8 @@
 ## Launching Linux Rescue Shell
-After that, either launch your payload with a payload website to load them, or use GoldHEN's built-in payloader if the website doesn't work for you.
-> [!NOTE]
-> You'll need to be using GoldHEN v2.4b18.10 or higher to use the built-in payloader. 
-> Some users have reported that the payloads only work correctly when using the "Payload Guest" app.
+After that, either launch your payload with a payload website to load them, or use GoldHEN's built-in payloader if the website doesn't work for you (GoldHEN v2.4b18.10).
+
+> [!WARNING]
+> Do not use GoldHEN version v2.4b18.8, [update it](https://ko-fi.com/s/407bb9c94a)!
 
 > [!TIP]
 > Remember that the amount of VRAM you allocate is taken from your system memory!
@@ -10,9 +10,6 @@ After that, either launch your payload with a payload website to load them, or u
 > You aren't creating memory out of thin air!
 > 
 > <img src="/screenshots/trash-statement.png" width="33%">
-
-> [!WARNING]
-> If a `vram.txt` file is next to your bzImage, the loader uses its value and ignores the payload size. Delete it if you want to pick the size with the payload.
 
 ::: details For servers
 Server payloads are available in `32MB`, `64MB`, `128MB`, `256MB` and `512MB` VRAM variants.
@@ -22,18 +19,12 @@ Use `128MB` by default for server or general headless use, as `32MB` and `64MB` 
 
 ::: details Firmware <Badge type="tip" text="5.05 - 14.02" />
 
-> [!WARNING]
-> You MUST select 1GB of VRAM or less for installation and first boot. Afterwards, 2GB is recommended.
-> 
-> Do not use GoldHEN version v2.4b18.8, [update it](https://ko-fi.com/s/407bb9c94a)!
-
 Follow these steps:
 - Go to [http://webkitty.arabpixel.net](http://webkitty.arabpixel.net) on your PS4's browser
 - Scroll down with your right thumbstick, mouse, or keyboard
 - Select Linux tab at the top right
 	- Wait for the cache to finish installing!
 - Load your desired payload
-	- Again, 1GB or less is necessary for first time installation!
 	- If you use the PS4 as a server after installation, switch to one of the server payloads for more system RAM.
 
 <img src="/screenshots/webkitty-1.jpg" width="75%">

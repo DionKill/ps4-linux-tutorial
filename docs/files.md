@@ -3,13 +3,13 @@
 ## Kernels
 Let's start with the kernels: they are very important as they have the software that controls all of the PS4's hardware. This is, by definition, Linux.
 
-This is the section for recommended kernels. There are both vanilla kernels and performance kernels. Ordered by newest to oldest, the top ones are the recommended ones.
+This is the section for recommended kernels. There are both vanilla kernels and performance kernels. Ordered by newest to oldest, the top ones are recommended.
 
 [Credits for all of these kernels](/ending#credits).
 
 ::: details Read this if you're confused!
 ### Do kernel versions matter?
-The community has moved on from 6.15 to 7.x kernels. Aeolia and Belize have the 7.1.7 release. Baikal has a 7.0.8 prebuilt after years of being stuck on 5.4, and a 7.1.7 branch on GitLab without a prebuilt yet, thanks to rmux.
+Newer kernels generally offer newer features, security patches, better performance and compatibility with newer devices. The PS4 also gets newer features as the kernel updates, and the higher the version the better.
 
 ### What about more performance?
 The newest kernels are already built with all the necessary patches to make the console work as good as it can, so there's no need to modify anything anymore.
@@ -21,19 +21,12 @@ These are normal general-use kernels with additional patches to make them work p
 
 | Kernel Download                                                                                           | Compatible Southbridges | Source Code                                         | Extra info                                                                                                                                              |
 | --------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [7.3.3](https://gitlab.com/rmuxnet/linux/-/releases)<br>*Recommended*                                     | Aeolia, Belize, Baikal  | [GitLab](https://gitlab.com/rmuxnet/linux)          | All 4 profiles, FullLTO.<br>**General**: desktop/gaming, default.<br>**Server**: headless.<br>**SlopMax**: General + KVM.<br>**Slopium**: Server + KVM. |
+| [7.3.4](https://gitlab.com/rmuxnet/linux/-/releases)<br>*Recommended*                                     | Aeolia, Belize, Baikal  | [GitLab](https://gitlab.com/rmuxnet/linux)          | All 4 profiles, FullLTO.<br>**General**: desktop/gaming, default.<br>**Server**: headless.<br>**SlopMax**: General + KVM.<br>**Slopium**: Server + KVM. |
 | [7.1.7](https://gatto.fae5.de/archive/kernels/strawberry/aeolia/7.1.7/bzImage)<br>*Mirror*                | Aeolia, Belize          | [GitLab](https://gitlab.com/rmuxnet/linux)          | An earlier strawberry release, worth a try if 7.3.3 isn't working for you.                                                                              |
 | [7.1.3](https://gatto.fae5.de/archive/kernels/strawberry/aeolia/7.1.3/bzImage)<br>*Mirror*                | Aeolia, Belize          | [GitLab](https://gitlab.com/rmuxnet/linux)          | Another earlier Strawberry release, works better than 7.1.7 on some systems.                                                                            |
 | [7.0.8](https://gatto.fae5.de/archive/kernels/strawberry/baikal/7.0.8/bzImage)<br>*Mirror*                | Baikal                  | [GitLab](https://gitlab.com/rmuxnet/linux)          | Just a mirror of the FullLTO version for baikal.                                                                                                        |
 | [6.15.4](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v6.15.4__crashnt-4.8.3)                    | Aeolia, Belize          | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | The base layer that Strawberry was built on. Still updated, and recommended for users experiencing issues with newer kernels.                           |
 | [5.15.15](https://github.com/feeRnt/ps4-linux-12xx/releases/tag/v5.15.15__obsidianx-4.0) <br> Belize Ver. | Belize                  | [GitHub](https://github.com/feeRnt/ps4-linux-12xx/) | Same as above. Might provide better performance than 6.15.4.                                                                                            |
-
-> [!NOTE]
-> Some people repackage these kernels into closed-source "packs" with "custom patches". Real fixes are public, people who hide them do so for a reason.
-> 
-> If you are wondering why some kernels are open-source only when asking for it, it's because of the point above.
->
-> <img src="/closed-source-pack.jpg" alt="Is this a pigeon meme. Kernel pack dev, pointing at someone else's public commit: is this my custom patch?" width="50%">
 
 ::: details Server kernels
 ### Server kernels
@@ -42,30 +35,34 @@ If you are using the PS4 as a server, use these instead of the normal desktop-or
 > [!TIP]
 > Pair server kernels with the `128MB` server payload unless you have a specific reason not to.
 
-| Kernel Download                                                                             | Compatible Southbridges                                                                                                      | Source Code                                | Extra info                                                                                      |
-| ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| [7.3.3](https://gitlab.com/rmuxnet/linux/-/releases)<br>*Recommended*                       | Aeolia, Belize, Baikal                                                                                                       | [GitLab](https://gitlab.com/rmuxnet/linux) | Use **Server** edition, or **Slopium** if you need VM support.                                  |
+| Kernel Download                                                       | Compatible Southbridges | Source Code                                | Extra info                                                     |
+| --------------------------------------------------------------------- | ----------------------- | ------------------------------------------ | -------------------------------------------------------------- |
+| [7.3.4](https://gitlab.com/rmuxnet/linux/-/releases)<br>*Recommended* | Aeolia, Belize, Baikal  | [GitLab](https://gitlab.com/rmuxnet/linux) | Use **Server** edition, or **Slopium** if you need VM support. |
 
 :::
+
+> [!NOTE]
+> Some people repackage these kernels into closed-source "packs" with "custom patches". Real fixes are public, people who hide them do so for a reason.
+>
+> <img src="/closed-source-pack.jpg" alt="Is this a pigeon meme. Kernel pack dev, pointing at someone else's public commit: is this my custom patch?" width="33%">
 
 If you have issues, remember to check the [Issues page](/issues). If you want more help, check out [Discord servers](/information#important-places).
 
 ## Initramfs
 This is the rescue shell that boots your Linux installer/installation. Think of it as GRUB, but more basic.
 
-You can download the new one and improved Thebe-Initramfs [here](https://gitlab.com/GattoDev-debug/thebe-initramfs/-/releases).
+You can download the new and improved Thebe-Initramfs [here](https://gitlab.com/GattoDev-debug/thebe-initramfs/-/releases).
 
 ::: details More information and other initramfses
 The new "Thebe-initramfs" does work, and it's the one in the link above.
 
-[Here is the old initramfs](https://github.com/DionKill/ps4-linux-tutorial/blob/main/PS4%20Linux/initramfs.zip) (shouldn't use).
+It offers new features, such as:
+- Boots instantly
+- Pairs your PS4 controllers automatically, taking them from the PS4's dashboard
+- Shows how big the installation can be in internal method
+- Doesn't require 1GB of VRAM payload for first time installation
 
-[There's also initramfs-ps4](https://git.gay/GayCorp/initramfs-ps4) (also not recommended anymore)
-
-> [!NOTE]
-> On 7.x kernels the Aeolia script is wrong, You should try the Belize initramfs file. (You might think It won't work, but It will.)
-
-There's another in-dev initramfs (probably not working), if you want to check out the source it's [here](https://github.com/ps4gentoo/initramfs).
+To see older initramfeses, go [here](/legacy#initramfs).
 
 Also, you may want to read [this post](https://ps4linux.com/forums/d/93-tutorial-for-building-a-custom-initramfs-research-development) on the PS4 Linux forums, it explains what an initramfs is and does in actuality.
 :::
@@ -99,9 +96,9 @@ You can of course use other distros, but you do run the risk of breaking your di
 ### Server distros
 Distros primarily intended for use as a server (No included Desktop Environment, some DIY required)
 
-| Distro Download                                                                                                    | Port credits                                    | Info                                                                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [thebe-server (Arch)](https://gatto.fae5.de/thebe-rootfs.tar.xz)                                                   | [GattoDev](https://gitlab.com/GattoDev-debug)   | Default password is `ps4`, it's required to change it after the first login. pacman must be initialized with `pacman-key --init` and `pacman-key --populate archlinux`  |
+| Distro Download                                                  | Port credits                                  | Info                                                                                                                                                                   |
+| ---------------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [thebe-server (Arch)](https://gatto.fae5.de/thebe-rootfs.tar.xz) | [GattoDev](https://gitlab.com/GattoDev-debug) | Default password is `ps4`, it's required to change it after the first login. pacman must be initialized with `pacman-key --init` and `pacman-key --populate archlinux` |
 
 ::: details More distros
 Here are the distros that we can't recommend anymore, as they have been superseded, or haven't had any major updates in a while.
